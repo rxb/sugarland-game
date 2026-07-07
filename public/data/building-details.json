@@ -1,0 +1,73 @@
+{
+  "-1002453": {
+    "name": "Clewiston Inn",
+    "confidence": "high",
+    "sources": ["commons:Clewiston-Inn-2.JPG", "commons:Clewiston-Inn-1.JPG"],
+    "stories": 2,
+    "wall": "#f2efe6",
+    "trim": "#1e4a34",
+    "roof": { "type": "flat", "color": "#ded9cc" },
+    "style": "colonial-revival",
+    "features": ["arched-entry", "columned-porch", "lantern-sconces", "divided-light-windows", "brick-steps", "dark-green-doors"],
+    "signage": "CLEWISTON INN"
+  },
+  "384440246": {
+    "name": "United States Sugar Corporation",
+    "confidence": "high",
+    "sources": ["commons:United_States_Sugar_Corporation_Headquarters.jpg"],
+    "stories": 2,
+    "wall": "#8f4f3c",
+    "trim": "#f5f2ea",
+    "roof": { "type": "gable", "color": "#3e7d5c" },
+    "style": "colonial-brick",
+    "features": ["white-columns", "pedimented-entries", "standing-seam-metal-roof", "brick-monument-sign", "lawn-campus"],
+    "signage": "UNITED STATES SUGAR CORPORATION"
+  },
+  "554185195": {
+    "name": "Clewiston Museum & Chamber of Commerce",
+    "confidence": "needs-confirmation",
+    "note": "Discrepancy: prior record guessed this footprint was the Dixie Crystal Theatre based on commons photos. All 9 usable street-level frames (823390702411869.jpg, 957659778527959.jpg, 788366492269470.jpg, 803482644039800.jpg, 167019682598187.jpg, 612117050706332.jpg, 627163309193121.jpg, 2071744059678824.jpg, 1236589494749326.jpg) consistently show a low, single-story, flat-roofed cream/beige commercial building with arched garage-door-style openings, currently fronted by a Jeep/truck dealership lot, labeled 'CLEWISTON MUSEUM & CHAMBER OF COMMERCE' in signage visible on the facade. No art-deco theatre with a stepped parapet or marquee appears in any frame. Rewritten to match what the imagery actually shows; confidence kept at needs-confirmation since this may be a footprint/address mismatch rather than a true theatre sighting, and Richard should confirm whether the theatre building exists elsewhere nearby.",
+    "sources": ["mapillary:1236589494749326.jpg", "mapillary:1362808674961963.jpg", "mapillary:1319057109825748.jpg"],
+    "stories": 1,
+    "wall": "#d9d3ba",
+    "trim": "#8a8a7a",
+    "roof": { "type": "flat", "color": "#c9c4ac" },
+    "style": "commercial-block",
+    "features": ["arched-openings", "flat-parapet", "used-as-vehicle-dealership-lot"],
+    "signage": "CLEWISTON MUSEUM & CHAMBER OF COMMERCE"
+  },
+  "886227326": {
+    "name": "Sugarland Hwy storefront (teal art-deco-revival)",
+    "confidence": "high",
+    "sources": ["mapillary:1583139372320498.jpg", "mapillary:981044354238121.jpg", "mapillary:760483353156254.jpg"],
+    "stories": 1,
+    "height": 6,
+    "wall": "#3fb6ae",
+    "trim": "#6b6b6b",
+    "roof": { "type": "flat", "color": "#6b6b6b" },
+    "style": "art-deco-revival",
+    "features": ["curved-central-bay", "corner-pilasters", "glass-double-doors", "white-window-trim", "storefront-glass"]
+  },
+  "886227325": {
+    "name": "Sugarland Hwy corridor building (unresolved)",
+    "confidence": "needs-confirmation",
+    "note": "Skipped: nearest frames (dist 1.7-9.1m) are unusable — camera facing an open park lawn (808895410032428.jpg), motion-blurred night shots (636420737748748.jpg, 2064717740693466.jpg, 23918091897777397.jpg), or a night frame with heavy blur. Remaining daytime frames (799081904635367.jpg, 687018830366561.jpg and others) only show the distant dealership-lot road scene shared with building -1002452's Clewiston Museum facade, not a distinct facade for this footprint. Could not confidently describe from available imagery."
+  },
+  "886227323": {
+    "name": "Sugarland Hwy corridor building (unresolved)",
+    "confidence": "needs-confirmation",
+    "note": "Skipped: only one matched frame (160529773274074.jpg, dist 66.7m) is available, and at that distance the target facade is not distinguishable from the surrounding dealership-lot buildings in the background; no closer or alternate-angle frames exist for this id. Could not confidently describe from available imagery."
+  },
+  "-1002452": {
+    "name": "Clewiston Museum & Chamber of Commerce",
+    "confidence": "high",
+    "sources": ["mapillary:1236589494749326.jpg", "mapillary:1362808674961963.jpg", "mapillary:1319057109825748.jpg"],
+    "stories": 1,
+    "wall": "#d9d3ba",
+    "trim": "#8a8a7a",
+    "roof": { "type": "flat", "color": "#c9c4ac" },
+    "style": "commercial-block",
+    "features": ["arched-openings", "flat-parapet", "used-as-vehicle-dealership-lot"],
+    "signage": "CLEWISTON MUSEUM & CHAMBER OF COMMERCE"
+  }
+}

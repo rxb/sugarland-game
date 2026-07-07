@@ -1,0 +1,90 @@
+[
+  {
+    "file": "Clewiston-Inn-2.JPG",
+    "source": "File:Clewiston-Inn-2.JPG",
+    "lat": 26.754222222222,
+    "lon": -80.933666666667,
+    "x": -16.57,
+    "z": -24.56,
+    "license": "CC BY-SA 3.0",
+    "artist": "Elmschrat",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "Clewiston-Inn-1.JPG",
+    "source": "File:Clewiston-Inn-1.JPG",
+    "lat": 26.754222222222,
+    "lon": -80.933666666667,
+    "x": -16.57,
+    "z": -24.56,
+    "license": "CC BY-SA 3.0",
+    "artist": "Elmschrat",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "Dixie--Crystal-Theater-aged-colorized.jpg",
+    "source": "File:Dixie--Crystal-Theater-aged-colorized.jpg",
+    "lat": 26.753889,
+    "lon": -80.934444,
+    "x": -93.84,
+    "z": 12.27,
+    "license": "CC BY-SA 3.0",
+    "artist": "Harriet Duncan",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "Everglades_Lounge_at_the_Clewiston_Inn-_Clewiston_Florida_8512105855_.jpg",
+    "source": "File:Everglades Lounge at the Clewiston Inn- Clewiston, Florida (8512105855).jpg",
+    "lat": 26.754423,
+    "lon": -80.933494,
+    "x": 0.6,
+    "z": -46.76,
+    "license": "Public domain",
+    "artist": "Florida Memory",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "Clewiston_Theatre_Clewiston_FL_3548984244_.jpg",
+    "source": "File:Clewiston Theatre, Clewiston, FL (3548984244).jpg",
+    "lat": 26.753677,
+    "lon": -80.934648,
+    "x": -114.11,
+    "z": 35.7,
+    "license": "CC BY 2.0",
+    "artist": "cohodas208c",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "United_States_Sugar_Corporation_Headquarters.jpg",
+    "source": "File:United States Sugar Corporation Headquarters.jpg",
+    "lat": 26.754361,
+    "lon": -80.935128,
+    "x": -161.83,
+    "z": -39.9,
+    "license": "CC BY-SA 4.0",
+    "artist": "Yanjipy",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "Sugar_cane_worker-_Clewiston_Region_Florida_7596668218_.jpg",
+    "source": "File:Sugar cane worker- Clewiston Region, Florida (7596668218).jpg",
+    "lat": 26.75427,
+    "lon": -80.935569,
+    "x": -205.66,
+    "z": -29.85,
+    "license": "Public domain",
+    "artist": "State Library and Archives of Florida",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  },
+  {
+    "file": "US_27_-_Mapillary_1038429127962374_.jpg",
+    "source": "File:US 27 - Mapillary (1038429127962374).jpg",
+    "lat": 26.754268231561,
+    "lon": -80.935965582021,
+    "x": -245.09,
+    "z": -29.65,
+    "license": "CC BY-SA 4.0",
+    "artist": "cubanoboi @ Mapillary",
+    "note": "geotag is usually the CAMERA position, not the subject"
+  }
+]

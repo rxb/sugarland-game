@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sugarland — Clewiston, FL</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { overflow: hidden; height: 100%; background: #0b1026; }
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    #game { display: block; width: 100vw; height: 100vh; }
+
+    .panel {
+      position: fixed; z-index: 10;
+      background: rgba(12, 18, 34, 0.72);
+      color: #f2ede3;
+      border-radius: 12px;
+      padding: 10px 14px;
+      backdrop-filter: blur(6px);
+      user-select: none;
+    }
+    #title-panel { top: 14px; left: 14px; }
+    #title-panel h1 { font-size: 18px; letter-spacing: 3px; margin-bottom: 2px; }
+    #title-panel p { font-size: 11px; opacity: 0.75; }
+
+    #time-panel { top: 14px; right: 14px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
+    #time-readout { min-width: 62px; text-align: center; font-variant-numeric: tabular-nums; font-size: 13px; }
+    #time-slider { width: 150px; accent-color: #f2c744; }
+    #time-panel label { display: flex; align-items: center; gap: 4px; opacity: 0.85; cursor: pointer; }
+
+    #hint-panel {
+      bottom: 16px; left: 50%; transform: translateX(-50%);
+      font-size: 12px; opacity: 0.85; white-space: nowrap;
+    }
+    #hint-panel kbd {
+      background: rgba(255,255,255,0.14); border-radius: 4px;
+      padding: 1px 5px; font-family: inherit; font-size: 11px;
+    }
+
+    #loading {
+      position: fixed; inset: 0; z-index: 20;
+      display: flex; align-items: center; justify-content: center;
+      color: #f2ede3; font-size: 15px; letter-spacing: 1px;
+      background: #0b1026;
+    }
+
+    /* ---- Title screen ---- */
+    #title-screen {
+      position: fixed; inset: 0; z-index: 15;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 28px; pointer-events: none;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(10, 16, 38, 0.45) 100%);
+      transition: opacity 1.2s ease;
+    }
+    #title-screen.fade-out { opacity: 0; }
+    #title-screen h1 {
+      font-size: clamp(56px, 11vw, 150px);
+      letter-spacing: 0.12em;
+      color: #f7d94c;
+      font-weight: 900;
+      text-shadow: 0 4px 0 #a83232, 0 8px 24px rgba(0,0,0,0.55);
+      transform: rotate(-2.5deg);
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    #title-screen p {
+      color: #fff; font-size: clamp(13px, 1.6vw, 20px);
+      letter-spacing: 0.35em; text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      margin-top: -18px;
+    }
+    #start-button {
+      pointer-events: auto;
+      font-size: 22px; letter-spacing: 3px;
+      padding: 14px 54px; border-radius: 999px;
+      border: 3px solid #f7d94c;
+      background: rgba(12, 18, 34, 0.75);
+      color: #f7d94c; cursor: pointer;
+      font-family: inherit; font-weight: 700;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    #start-button:hover { transform: scale(1.07); background: rgba(168, 50, 50, 0.85); }
+
+    /* Hide HUD panels while the title screen is up */
+    body.intro .panel { opacity: 0; pointer-events: none; }
+    .panel { transition: opacity 0.8s ease; }
+
+    .poi-label {
+      color: #fff; font-size: 12px; font-weight: 600;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+      background: rgba(12, 18, 34, 0.55);
+      padding: 2px 8px; border-radius: 8px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div class="panel" id="title-panel">
+    <h1>SUGARLAND</h1>
+    <p>Clewiston, Florida — America's Sweetest Town</p>
+  </div>
+
+  <div class="panel" id="time-panel">
+    <span id="time-readout">9:30 AM</span>
+    <input type="range" id="time-slider" min="0" max="24" step="0.05" value="9.5" />
+    <label><input type="checkbox" id="time-auto" /> cycle</label>
+  </div>
+
+  <div class="panel" id="hint-panel">
+    Click to look around &nbsp;•&nbsp; <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> walk/drive &nbsp;•&nbsp; <kbd>Shift</kbd> jog &nbsp;•&nbsp; <kbd>E</kbd> golf cart &nbsp;•&nbsp; slider sets time of day
+  </div>
+
+  <div id="title-screen">
+    <h1>SUGARLAND</h1>
+    <p>Clewiston &middot; Florida</p>
+    <button id="start-button">START</button>
+  </div>
+
+  <div id="loading">Loading Clewiston&hellip;</div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
