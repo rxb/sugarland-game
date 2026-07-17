@@ -602,7 +602,71 @@
         "type": "yes",
         "height": 3.9,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1385378097",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#e7e5df",
+          "wallMaterial": "unknown",
+          "trim": "#f2f0e9",
+          "roof": {
+            "type": "gable",
+            "color": "#984c43",
+            "material": "metal"
+          },
+          "style": "single-wide manufactured home with horizontal siding and metal skirting",
+          "features": [
+            "low-pitch red metal roof",
+            "white metal skirting",
+            "small exterior stair at side door"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 1,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": 3,
+                  "windowPattern": "three narrow rectangular windows spaced along the long side wall"
+                }
+              ],
+              "doors": [
+                {
+                  "position": 0.7,
+                  "type": "single exterior door with small diamond lite",
+                  "color": "#dedbd0"
+                }
+              ],
+              "lighting": [
+                {
+                  "position": 0.7,
+                  "type": "sconce"
+                }
+              ],
+              "notes": [
+                "window air-conditioning units are installed in two openings"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "537633899403135.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "Only edge 1 is described; the second geometric match contributes no usable facade detail."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0391-001.0",
           "physicalAddress": "730 S FRANCISCO ST, CLEWISTON, 33440",
@@ -963,7 +1027,45 @@
         "type": "church",
         "height": 8.45,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/614620912",
+          "confidence": "high",
+          "stories": 1,
+          "wall": "#e7e7df",
+          "wallMaterial": "masonry",
+          "trim": "#d8cfc2",
+          "roof": {
+            "type": "gable",
+            "color": "#d7d9d5",
+            "material": "metal"
+          },
+          "style": "one-story white masonry church with a tall stepped front tower and a bright metal gable roof",
+          "features": [
+            "scalloped stepped tower parapet",
+            "tall narrow side windows",
+            "small tan-brick base accent",
+            "broad open lawn"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "2522077718136744.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The close daylight view cleanly isolates the church; the front entrance is cropped, so no doorway details are inferred."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0359-001.0",
           "physicalAddress": "336 CENTRAL AVE, CLEWISTON, 33440",
@@ -994,7 +1096,7 @@
           "score": 0.909
         }
       ],
-      "reviewStatus": "needs-description"
+      "reviewStatus": "verify-existing"
     },
     {
       "taskId": "building:850884201",
@@ -2049,7 +2151,65 @@
         "type": "yes",
         "height": 3.67,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:5defe060-b6ce-4de8-b599-2330e1a198a7",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#b8d9dc",
+          "wallMaterial": "unknown",
+          "trim": "#eee9dc",
+          "roof": {
+            "type": "gable",
+            "color": "#c6c6bd",
+            "material": "metal"
+          },
+          "style": "single-wide manufactured home with pale blue horizontal siding",
+          "features": [
+            "white lattice skirting",
+            "small centered entry stair",
+            "shallow metal gable roof"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 0,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": 3,
+                  "windowPattern": "rectangular windows distributed along the long front wall"
+                }
+              ],
+              "doors": [
+                {
+                  "position": 0.72,
+                  "type": "single exterior door",
+                  "color": "#e4dfcf"
+                }
+              ],
+              "notes": [
+                "one window-mounted air conditioner is visible"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1752332775346901.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "The daylight frame is the sole usable view; the second match is a motion-blurred night frame."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0393-001.0",
           "physicalAddress": "500 S FRANCISCO ST, CLEWISTON, 33440",
@@ -2726,7 +2886,80 @@
         "type": "yes",
         "height": 4.41,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/894462374",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#6d7a74",
+          "wallMaterial": "stucco",
+          "trim": "#d9dedb",
+          "roof": {
+            "type": "gable",
+            "color": "#b8bec0",
+            "material": "metal"
+          },
+          "style": "plain one-story stucco building with a shallow metal gable roof",
+          "features": [
+            "deep roof overhang",
+            "tall narrow sash windows",
+            "contrasting muted red exterior door"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 0,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": 3,
+                  "windowPattern": "three tall rectangular windows to the right of the entrance"
+                }
+              ],
+              "doors": [
+                {
+                  "position": 0.38,
+                  "type": "single exterior door",
+                  "color": "#74404a"
+                }
+              ],
+              "lighting": [
+                {
+                  "position": 0.42,
+                  "type": "sconce"
+                }
+              ],
+              "notes": [
+                "parked vehicles obscure the lower portion of the facade"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1008748688187884.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "facades[0]"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1760049391645108.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "wall",
+                "roof"
+              ]
+            }
+          ],
+          "notes": [
+            "Window and door placement is limited to the clearly visible long facade."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0356-010.1",
           "physicalAddress": "335 CENTRAL AVE, CLEWISTON, 33440",
@@ -2806,7 +3039,68 @@
         "type": "yes",
         "height": 3.27,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:ee645712-7735-4d53-a2a6-682cc4b3f9bb",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d7d8d3",
+          "wallMaterial": "stucco",
+          "trim": "#596064",
+          "roof": {
+            "type": "gable",
+            "color": "#929a9b",
+            "material": "metal"
+          },
+          "style": "one-story tire and auto-service garage with a shallow metal gable roof and multiple roll-up bays",
+          "features": [
+            "repeating roll-up service bays",
+            "dark contrasting bay trim",
+            "painted business sign above the service area"
+          ],
+          "signage": [
+            {
+              "text": "LEALS TIRES",
+              "facadeEdge": 2,
+              "confidence": "medium"
+            }
+          ],
+          "facades": [
+            {
+              "edgeIndex": 2,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "garage facade organized around several roll-up service bays"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "the assigned region covers only part of the long service facade, so the total bay count is omitted"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "696493992899445.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "Only the clearly legible core business name is transcribed; punctuation and smaller wording are not inferred."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0377-004.0",
           "physicalAddress": "600 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -3028,7 +3322,60 @@
         "type": "yes",
         "height": 4.36,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1377669250",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d4c27d",
+          "wallMaterial": "siding",
+          "trim": "#eee9d8",
+          "roof": {
+            "type": "gable",
+            "color": "#5d5b55",
+            "material": null
+          },
+          "style": "single-wide manufactured home with a shallow gable roof and long street-facing facade",
+          "features": [
+            "pale yellow horizontal siding",
+            "white corner and opening trim",
+            "low raised foundation"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 2,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "several white-trimmed rectangular windows along the long facade"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "vegetation and the oblique view prevent a reliable opening count"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1392293832113988.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "One clear daylight view supports the building-level form and palette."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 460 000E-012.1",
           "physicalAddress": "713 BOWDEN RD, CLEWISTON, 33440",
@@ -3421,7 +3768,60 @@
         "type": "retail",
         "height": 4.59,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/384457194",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#deded8",
+          "wallMaterial": "metal",
+          "trim": "#a33b35",
+          "roof": {
+            "type": "gable",
+            "color": "#c7c8c3",
+            "material": "metal"
+          },
+          "style": "one-story light metal roadside warehouse or retail building with red roofline trim",
+          "features": [
+            "red fascia and corner accents",
+            "wide service or loading openings",
+            "outdoor pallet storage along the facade"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 1,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "large commercial service openings partly obscured by a mature tree"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "tree cover and stored materials prevent reliable bay counts"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1375014313681230.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "No small sign text is legible enough to transcribe."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0363-006.1",
           "physicalAddress": "310 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -3480,7 +3880,66 @@
         "type": "yes",
         "height": 4.24,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:36cfc03f-b049-4ea2-bb2e-bb3f7f03f80f",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d5d4cc",
+          "wallMaterial": "stucco",
+          "trim": "#515c60",
+          "roof": {
+            "type": "hip",
+            "color": "#aeb3b3",
+            "material": "metal"
+          },
+          "style": "small one-story commercial building with a metal hip roof and arched front openings",
+          "features": [
+            "four tall arched window bays",
+            "dark contrasting sill band",
+            "compact central entrance"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 3,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": 4,
+                  "windowPattern": "four tall arched window bays arranged around the entrance"
+                }
+              ],
+              "doors": [
+                {
+                  "position": 0.58,
+                  "type": "single glazed commercial door",
+                  "color": "#344044"
+                }
+              ],
+              "notes": [
+                "traffic-signal poles obscure narrow vertical strips of the facade"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1122471409647230.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "The parcel contains several buildings, but the assigned edge-3 region isolates this footprint clearly."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0161-002.0",
           "physicalAddress": "501 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -3568,7 +4027,60 @@
         "type": "yes",
         "height": 4.26,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:37128ef8-3b8f-42c2-aa47-ffddedb703a9",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d6d5ce",
+          "wallMaterial": "siding",
+          "trim": "#f0eee7",
+          "roof": {
+            "type": "gable",
+            "color": "#a7a79f",
+            "material": "metal"
+          },
+          "style": "modest one-story light-colored residence with a metal gable roof and covered front porch",
+          "features": [
+            "shallow covered entry porch",
+            "white porch posts",
+            "chain-link front fence"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 6,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "rectangular residential windows partly screened by a tree"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "a tree and parked vehicle obscure the center of the facade"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "697571003261838.jpg",
+              "facadeEdge": 6,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "Only building-level details visible around the tree and vehicle are recorded."
+          ]
+        },
         "parcelContext": {
           "parcelId": "1 34 43 24 A00 0012.0000",
           "physicalAddress": "1223 ART LAWRENCE RD, CLEWISTON, 33440",
@@ -3686,7 +4198,59 @@
         "type": "yes",
         "height": 4.3,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:87029388-315c-4e12-b695-fd0101afd83d",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#45687b",
+          "wallMaterial": "metal",
+          "trim": "#b8c4c8",
+          "roof": {
+            "type": "gable",
+            "color": "#344b58",
+            "material": "metal"
+          },
+          "style": "long one-story blue industrial building with a shallow metal roof",
+          "features": [
+            "regular exterior wall-mounted floodlights",
+            "long uninterrupted industrial facade",
+            "small high-set openings"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 0,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "sparse small openings along the long wall"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "night lighting prevents reliable opening counts and shifts the apparent blue palette"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1879506242802598.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "The form is clear, but wall and roof colors are approximate because the only view is at night."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0404-001.0",
           "physicalAddress": "E EL PASO AVE, CLEWISTON, 33440",
@@ -3781,7 +4345,60 @@
         "type": "yes",
         "height": 4.29,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/868836144",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#c98f79",
+          "wallMaterial": "stucco",
+          "trim": "#ead9ca",
+          "roof": {
+            "type": "hip",
+            "color": "#57483e",
+            "material": "shingle"
+          },
+          "style": "compact one-story peach stucco residence with a dark hipped roof",
+          "features": [
+            "broad front roof eave",
+            "light-colored opening trim",
+            "recessed central entry area"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 0,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "rectangular front windows partly hidden by a parked van"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "a parked van obscures the central facade and entrance"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1305616341100940.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "Opening counts and door details are intentionally omitted because of the parked vehicle."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 501 000A-003.0",
           "physicalAddress": "505 S BERNER RD, CLEWISTON, 33440",
@@ -4608,7 +5225,78 @@
         "type": "commercial",
         "height": 4.78,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/850884202",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#a98b6b",
+          "wallMaterial": "stucco",
+          "trim": "#eee8da",
+          "roof": {
+            "type": "flat",
+            "color": "#54473f",
+            "material": null
+          },
+          "style": "one-story neighborhood commercial building with a flat parapet and painted side-wall identity sign",
+          "features": [
+            "dark burgundy-brown side facade",
+            "large hand-painted wall lettering",
+            "simple rectangular commercial massing"
+          ],
+          "signage": [
+            {
+              "text": "P.D.Q. GROCERY AND LAUNDROMAT",
+              "facadeEdge": 0,
+              "confidence": "high"
+            }
+          ],
+          "facades": [
+            {
+              "edgeIndex": 0,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "side wall dominated by painted signage rather than storefront openings"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "the front storefront lies outside the assigned region"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1752189312034418.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage",
+                "facades[0]"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "3510539679079921.jpg",
+              "facadeEdge": 7,
+              "supports": [
+                "stories",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "The assigned side facade clearly identifies the business; storefront openings are not inferred."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0354-002.0",
           "physicalAddress": "211 W VENTURA AVE, CLEWISTON, 33440",
@@ -4739,7 +5427,44 @@
         "type": "yes",
         "height": 3.99,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:f3d217ee-d7ee-4ce9-bbf1-2709b9da983c",
+          "confidence": "medium",
+          "stories": 2,
+          "wall": "#274c43",
+          "wallMaterial": "siding",
+          "trim": "#d9ded9",
+          "roof": {
+            "type": "gable",
+            "color": "#3c413e",
+            "material": null
+          },
+          "style": "tall dark green two-story residence with horizontal siding and a simple gable roof",
+          "features": [
+            "dark green horizontal siding",
+            "white-trimmed side window",
+            "chain-link perimeter fence"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1065075278924066.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "Only the side and gable are visible; front-facade openings are not inferred."
+          ],
+          "facades": []
+        },
         "parcelContext": null
       },
       "evidence": [
@@ -4785,7 +5510,44 @@
         "type": "yes",
         "height": 4.03,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:5ccbd781-f421-42fa-a2af-ad0bd8bd1cf8",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#eeeeeb",
+          "wallMaterial": "metal",
+          "trim": "#b32732",
+          "roof": {
+            "type": "flat",
+            "color": "#e7e7e3",
+            "material": "metal"
+          },
+          "style": "Marathon fuel canopy with a broad flat white fascia and red-and-blue corner bands",
+          "features": [
+            "wide rectangular pump canopy",
+            "red and blue fascia accents",
+            "white square support columns"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1261781945455853.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The descriptor applies to the mapped canopy footprint; the separate convenience-store building is not described here."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 14 A00 0031.0200",
           "physicalAddress": "1990 DAVIDSON RD, CLEWISTON, 33440",
@@ -4940,7 +5702,44 @@
         "type": "yes",
         "height": 3.79,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/841005973",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#b9b8ab",
+          "wallMaterial": "stucco",
+          "trim": "#eeeeea",
+          "roof": {
+            "type": "hip",
+            "color": "#dadbd4",
+            "material": "metal"
+          },
+          "style": "one-story light gray residence with a bright metal hip roof",
+          "features": [
+            "broad roof eaves",
+            "white corner and opening trim",
+            "chain-link front fence"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1319424946332958.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The assigned region clearly isolates the right-hand residence; the front door is seen obliquely."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 501 000C-024.0",
           "physicalAddress": "302 W SUGARLAND CIR, CLEWISTON, 33440",
@@ -5194,7 +5993,79 @@
         "type": "yes",
         "height": 3.94,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/894462399",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#545c55",
+          "wallMaterial": "stucco",
+          "trim": "#60a567",
+          "roof": {
+            "type": "flat",
+            "color": "#555a55",
+            "material": null
+          },
+          "style": "one-story roadside strip center with a flat parapet and continuous storefront canopy",
+          "features": [
+            "bright green stepped parapet trim",
+            "dark continuous storefront band",
+            "multiple glazed tenant entrances"
+          ],
+          "signage": [
+            {
+              "text": "ICE CREAM",
+              "facadeEdge": 2,
+              "confidence": "high"
+            }
+          ],
+          "facades": [
+            {
+              "edgeIndex": 2,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "repeating dark storefront glazing separated by tenant entrances"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "parked vehicles prevent reliable opening counts"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "443130442196967.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage",
+                "facades[0]"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "935379738049321.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "wall",
+                "trim",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "Only the clearly readable ICE CREAM panel is transcribed; other tenant signs are too small or obscured."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0176-009.0",
           "physicalAddress": "307 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -5266,7 +6137,59 @@
         "type": "roof",
         "height": 4.55,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/384433551",
+          "confidence": "medium",
+          "wall": "#e5e7e6",
+          "wallMaterial": "metal",
+          "trim": "#23528a",
+          "roof": {
+            "type": "flat",
+            "color": "#e4e6e5",
+            "material": "metal"
+          },
+          "style": "long flat-roof fuel canopy with white fascia and blue Mobil trim",
+          "features": [
+            "open-sided fuel canopy",
+            "white square support columns",
+            "recessed canopy lighting"
+          ],
+          "signage": [
+            {
+              "text": "Mobil",
+              "facadeEdge": 2,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1121195571838624.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1218717429939141.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "signage",
+                "trim",
+                "roof"
+              ]
+            }
+          ],
+          "notes": [
+            "The mapped roof footprint corresponds to the fuel canopy rather than the convenience-store building behind it."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 09 A00 0002.1300",
           "physicalAddress": "101 N BERNER RD, CLEWISTON, 33440",
@@ -5397,7 +6320,66 @@
         "type": "yes",
         "height": 4.28,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:a377b073-2057-4ff8-8f2a-115a3907d077",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#718794",
+          "wallMaterial": "metal",
+          "trim": "#e5e7e5",
+          "roof": {
+            "type": "gable",
+            "color": "#5f7787",
+            "material": "metal"
+          },
+          "style": "one-story blue-gray roadside service building with a shallow metal gable roof",
+          "features": [
+            "white corner and opening trim",
+            "large service window",
+            "small projecting entrance canopy"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 1,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": 2,
+                  "windowPattern": "one small high window and one large service window"
+                }
+              ],
+              "doors": [
+                {
+                  "position": 0.88,
+                  "type": "single glazed service entrance",
+                  "color": "#d9dedf"
+                }
+              ],
+              "notes": [
+                "parked cars partially obscure the lower wall"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1930142711069513.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "No small promotional or window text is transcribed."
+          ]
+        },
         "parcelContext": {
           "parcelId": "1 34 43 23 A00 0003.0000",
           "physicalAddress": "1955 DAVIDSON RD, CLEWISTON, 33440",
@@ -5469,7 +6451,54 @@
         "type": "industrial",
         "height": 6.27,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/614620913",
+          "confidence": "low",
+          "stories": 2,
+          "wall": "#c8c2b7",
+          "wallMaterial": "stucco",
+          "trim": "#586269",
+          "roof": {
+            "type": "flat",
+            "color": "#555a5c",
+            "material": null
+          },
+          "style": "two-story institutional or service building with a flat roof and attached one-story service wing",
+          "features": [
+            "large roll-up service door",
+            "metal entrance canopies",
+            "bright wall-mounted floodlights"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "963394062557303.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1594219311971819.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "Both views are at night; massing is consistent, but the exterior palette is approximate."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0402-001.4",
           "physicalAddress": "611 E OBISPO AVE, CLEWISTON, 33440",
@@ -5649,7 +6678,76 @@
         "type": "yes",
         "height": 3.41,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:961f065e-187e-4246-b40e-69fc929af2ee",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#cfc2ab",
+          "wallMaterial": "stucco",
+          "trim": "#eee9df",
+          "roof": {
+            "type": "gable",
+            "color": "#e4e4de",
+            "material": "metal"
+          },
+          "style": "one-story beige residence with a bright metal gable roof and small projecting entry porch",
+          "features": [
+            "front-facing entry gable",
+            "white square porch columns",
+            "shallow concrete front steps"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 1,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": 4,
+                  "windowPattern": "paired rectangular windows flanking the central entry porch"
+                }
+              ],
+              "doors": [
+                {
+                  "position": 0.5,
+                  "type": "single exterior door beneath entry porch",
+                  "color": "#ddd8cc"
+                }
+              ],
+              "notes": []
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "657220506939769.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "facades[0]"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1455678055802097.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "The two daylight views consistently isolate the same street-facing residence."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0367-013.0",
           "physicalAddress": "434 E VENTURA AVE, CLEWISTON, 33440",
@@ -6501,7 +7599,58 @@
         "type": "yes",
         "height": 4.1,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/817555430",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d5a452",
+          "wallMaterial": "stucco",
+          "trim": "#963d32",
+          "roof": {
+            "type": "flat",
+            "color": "#b8afa1",
+            "material": null
+          },
+          "style": "one-story roadside commercial building with a flat parapet and broad red trim bands",
+          "features": [
+            "contrasting horizontal fascia bands",
+            "recessed storefront openings"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 1,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "dark storefront openings are visible but not countable at this distance"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "the daylight view confirms massing and color but not reliable opening counts"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1453015742726940.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "facades[0]"
+              ]
+            }
+          ],
+          "notes": [
+            "The night frame adds no dependable facade detail; no unreadable sign text is inferred."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0156-008.0",
           "physicalAddress": "711 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -6632,7 +7781,44 @@
         "type": "yes",
         "height": 4.02,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:14905d39-5654-4823-92ec-b189ef83e6b2",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d9d9d2",
+          "wallMaterial": "masonry",
+          "trim": "#486580",
+          "roof": {
+            "type": "flat",
+            "color": "#555a5d",
+            "material": null
+          },
+          "style": "small one-story fish-market storefront with a flat parapet and striped blue awnings",
+          "features": [
+            "repeating blue-and-white storefront awnings",
+            "dark rectangular entrance bays",
+            "freestanding fish market and produce sign"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "306140584398867.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The freestanding FISH MARKET / SEAFOOD / PRODUCE sign identifies the property but is not rendered as facade signage."
+          ],
+          "facades": []
+        },
         "parcelContext": null
       },
       "evidence": [
@@ -6823,7 +8009,52 @@
         "type": "yes",
         "height": 4.7,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:4121854a-3bba-45c0-891f-15ce9fef8dff",
+          "confidence": "high",
+          "stories": 1,
+          "wall": "#e9e5dc",
+          "wallMaterial": "stucco",
+          "trim": "#ef7b2c",
+          "roof": {
+            "type": "flat",
+            "color": "#5d5148",
+            "material": null
+          },
+          "style": "one-story Popeyes restaurant with a flat parapet, orange branding, and dark storefront glazing",
+          "features": [
+            "orange branded parapet panels",
+            "dark storefront windows",
+            "white and tan exterior bands"
+          ],
+          "signage": [
+            {
+              "text": "POPEYES",
+              "facadeEdge": 1,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1228046705396807.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            }
+          ],
+          "notes": [
+            "Parcel use, address, and the assigned region consistently identify the restaurant footprint."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0370-012.0",
           "physicalAddress": "504 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -6854,7 +8085,7 @@
           "score": 0.725
         }
       ],
-      "reviewStatus": "needs-description"
+      "reviewStatus": "verify-existing"
     },
     {
       "taskId": "building:894462381",
@@ -7362,7 +8593,44 @@
         "type": "shed",
         "height": 3.69,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:b532996c-becf-42b2-aa56-232ade5a90b5",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#6d777a",
+          "wallMaterial": "metal",
+          "trim": "#4c7a67",
+          "roof": {
+            "type": "hip",
+            "color": "#4c806c",
+            "material": "metal"
+          },
+          "style": "one-story vehicle dealership office with a green metal hip roof and dark glazed front",
+          "features": [
+            "green standing-seam hip roof",
+            "deep covered front walk",
+            "dark showroom or office glazing"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1260456035654307.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The descriptor is limited to the office footprint in the assigned region, not the adjacent service-bay building."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 14 A00 0002.0500",
           "physicalAddress": "1220 E US HWY 27, CLEWISTON, 33440",
@@ -7714,7 +8982,56 @@
         "type": "yes",
         "height": 4.19,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:fe788da3-d338-4e55-b348-04689b2677b3",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d6cfbd",
+          "wallMaterial": "stucco",
+          "trim": "#426d91",
+          "roof": {
+            "type": "gable",
+            "color": "#e0e1dc",
+            "material": "metal"
+          },
+          "style": "small one-story beige industrial outbuilding with a bright metal gable roof",
+          "features": [
+            "blue metal service door",
+            "simple rectangular side windows",
+            "chain-link service-yard fence"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "2427463204395353.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1317788230398052.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "Two daylight views consistently isolate the same right-side building on the multi-building parcel."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0356-002.0",
           "physicalAddress": "340 COMMERCIO ST, CLEWISTON, 33440",
@@ -8066,7 +9383,52 @@
         "type": "yes",
         "height": 3.97,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/850715462",
+          "confidence": "high",
+          "stories": 1,
+          "wall": "#c2a77e",
+          "wallMaterial": "stucco",
+          "trim": "#f0ece2",
+          "roof": {
+            "type": "gable",
+            "color": "#a94438",
+            "material": "metal"
+          },
+          "style": "large Marshalls retail facade with a red metal roof and raised central sign tower",
+          "features": [
+            "red standing-seam roof",
+            "white central sign tower",
+            "tan stone-textured entrance piers"
+          ],
+          "signage": [
+            {
+              "text": "Marshalls",
+              "facadeEdge": 1,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1229599148676156.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            }
+          ],
+          "notes": [
+            "The main tenant name and architectural palette are clear despite parked vehicles."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 16 A00 0004.0100",
           "physicalAddress": "901 W VENTURA AVE, CLEWISTON, 33440",
@@ -8097,7 +9459,7 @@
           "score": 0.693
         }
       ],
-      "reviewStatus": "needs-description"
+      "reviewStatus": "verify-existing"
     },
     {
       "taskId": "building:-1003262",
@@ -8237,7 +9599,44 @@
         "type": "commercial",
         "height": 5.4,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/850715455",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d7cebb",
+          "wallMaterial": "stucco",
+          "trim": "#e8e2d5",
+          "roof": {
+            "type": "hip",
+            "color": "#a9a8a2",
+            "material": "tile"
+          },
+          "style": "small one-story beige office or bank building with a low gray hipped roof",
+          "features": [
+            "low tiled hip roof",
+            "recessed covered entrance",
+            "dark rectangular front windows"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "610982344988592.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The small blue tenant panel is too distant to transcribe reliably."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0354-009.0",
           "physicalAddress": "100 S W C OWEN AVE, CLEWISTON, 33440",
@@ -8387,7 +9786,44 @@
         "type": "commercial",
         "height": 4.82,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/894462417",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d3d5d4",
+          "wallMaterial": "masonry",
+          "trim": "#444f53",
+          "roof": {
+            "type": "flat",
+            "color": "#555b5e",
+            "material": null
+          },
+          "style": "large one-story painted-block retail building with a flat parapet and minimal side-wall openings",
+          "features": [
+            "light gray painted concrete block",
+            "dark wall-mounted rectangular lights",
+            "tall red and green storefront accent panels"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "187011056610436.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "No tenant name is visible clearly enough to transcribe from the assigned side view."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 09 A00 0002.0900",
           "physicalAddress": "959 W SUGARLAND HWY, CLEWISTON, 33440",
@@ -8850,7 +10286,44 @@
         "type": "yes",
         "height": 3.47,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:8531d716-e566-4e80-9f9c-8918409e4d9e",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#deded9",
+          "wallMaterial": "stucco",
+          "trim": "#596269",
+          "roof": {
+            "type": "gable",
+            "color": "#92999c",
+            "material": "metal"
+          },
+          "style": "small one-story white roadside commercial building with a gray metal gable roof",
+          "features": [
+            "tall front parapet return",
+            "dark glazed entrance bay",
+            "simple white side wall"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "731395123172767.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The entrance is partly boarded; no tenant identity is visible."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0160-003.0",
           "physicalAddress": "611 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -8933,7 +10406,44 @@
         "type": "yes",
         "height": 3.97,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/835773465",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#d9d9d2",
+          "wallMaterial": "stucco",
+          "trim": "#eeeee8",
+          "roof": {
+            "type": "hip",
+            "color": "#55524c",
+            "material": "shingle"
+          },
+          "style": "one-story white residence with a compact dark hipped roof",
+          "features": [
+            "dark hip roof",
+            "regular rectangular front windows",
+            "broad open lawn"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "739632262099186.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The assigned right-side region isolates this residence from the detached garage and left-hand house on the four-building parcel."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 16 A00 0020.0000",
           "physicalAddress": "251 SUGARLAND PARK, CLEWISTON, 33440",
@@ -8992,7 +10502,54 @@
         "type": "yes",
         "height": 3.89,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1377925646",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#b9a78e",
+          "wallMaterial": "stucco",
+          "trim": "#e2ded4",
+          "roof": {
+            "type": "hip",
+            "color": "#51483e",
+            "material": "shingle"
+          },
+          "style": "one-story tan residence with a dark hipped roof and broad rectangular plan",
+          "features": [
+            "dark hipped roof",
+            "light opening trim",
+            "low horizontal street-facing form"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "751279437824999.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1918085849592113.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "Both views are distant and cross the railroad, so openings are intentionally omitted."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 560 0000-014.0",
           "physicalAddress": "717 HARVEST LN, CLEWISTON, 33440",
@@ -9666,7 +11223,44 @@
         "type": "yes",
         "height": 4.35,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:e08a2884-ccf9-4173-b642-5d05c9354319",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d9d9d2",
+          "wallMaterial": "siding",
+          "trim": "#8f704d",
+          "roof": {
+            "type": "gable",
+            "color": "#d0d1cb",
+            "material": "metal"
+          },
+          "style": "long one-story white residential building with a bright metal roof and repeating entrances",
+          "features": [
+            "repeating front doors",
+            "diamond-shaped tan wall accents",
+            "low red-brown foundation band"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1122074923097304.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The hedge obscures part of the left facade, but the long right section is clear."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 14 A00 0010.0200",
           "physicalAddress": "725 EVERCANE RD, CLEWISTON, 33440",
@@ -9879,7 +11473,70 @@
         "type": "yes",
         "height": 3.27,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:8885518f-e91a-4c44-826f-940a8d9c75b8",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#9ba789",
+          "wallMaterial": "stucco",
+          "trim": "#e2e1d8",
+          "roof": {
+            "type": "gable",
+            "color": "#deddd5",
+            "material": "metal"
+          },
+          "style": "one-story muted green residence with a front porch and attic gable",
+          "features": [
+            "full-width covered front porch",
+            "small rectangular attic vent",
+            "white metal gable roof"
+          ],
+          "facades": [
+            {
+              "edgeIndex": 3,
+              "floors": [
+                {
+                  "level": 1,
+                  "windows": null,
+                  "windowPattern": "porch and tree cover prevent a reliable count"
+                }
+              ],
+              "doors": [],
+              "notes": [
+                "front openings are partially hidden by the porch and mature tree"
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "757349116795449.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "714363451412127.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "wall",
+                "trim",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "The attic gable is not counted as a full second story."
+          ]
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0202-007.0",
           "physicalAddress": "336 W OSCEOLA AVE, CLEWISTON, 33440",
@@ -10084,7 +11741,44 @@
         "type": "yes",
         "height": 4.08,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1378660449",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#dddcd4",
+          "wallMaterial": "stucco",
+          "trim": "#f0eee8",
+          "roof": {
+            "type": "hip",
+            "color": "#d2d3ce",
+            "material": "metal"
+          },
+          "style": "one-story light residence with a bright metal hip roof and recessed front porch",
+          "features": [
+            "recessed central porch",
+            "broad metal roof planes",
+            "white perimeter wall"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1865321891076334.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The building is isolated but viewed across the railroad, so openings are not counted."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 560 0000-029.0",
           "physicalAddress": "549 OLD FARM PL, CLEWISTON, 33440",
@@ -10293,7 +11987,54 @@
         "type": "yes",
         "height": 4.44,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1377925605",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#c1bbaa",
+          "wallMaterial": "stucco",
+          "trim": "#e4e4dd",
+          "roof": {
+            "type": "hip",
+            "color": "#d2d2ca",
+            "material": "metal"
+          },
+          "style": "one-story beige residence with a bright metal hip roof and screened corner porch",
+          "features": [
+            "screened corner porch",
+            "low extended roof eaves",
+            "wall-mounted window air conditioners"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "966758608981965.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1363771054878083.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "The closer dusk view and partial daylight view agree on the building form."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 560 0000-004.0",
           "physicalAddress": "725 HARVEST LN, CLEWISTON, 33440",
@@ -10434,7 +12175,52 @@
         "type": "yes",
         "height": 3.73,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:5dfc6da7-9bf1-48b5-a256-4db82c119e45",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#ddd5c4",
+          "wallMaterial": "stucco",
+          "trim": "#405d7c",
+          "roof": {
+            "type": "flat",
+            "color": "#555a5d",
+            "material": null
+          },
+          "style": "one-story Marathon convenience store with a flat parapet and blue sign fascia",
+          "features": [
+            "blue branded parapet band",
+            "dark storefront glazing",
+            "shallow covered storefront walk"
+          ],
+          "signage": [
+            {
+              "text": "MARATHON",
+              "facadeEdge": 1,
+              "confidence": "medium"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1261781945455853.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            }
+          ],
+          "notes": [
+            "This is the store footprint paired with the separately described Marathon fuel canopy."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 14 A00 0031.0200",
           "physicalAddress": "1990 DAVIDSON RD, CLEWISTON, 33440",
@@ -10645,7 +12431,55 @@
         "type": "yes",
         "height": 4.37,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:1a257bad-0751-474e-9a1d-7a485a6571ec",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#d9ddda",
+          "wallMaterial": "siding",
+          "trim": "#f0eee8",
+          "roof": {
+            "type": "gable",
+            "color": "#c9c6bd",
+            "material": "metal"
+          },
+          "style": "light gray manufactured home with a shallow gable roof and small projecting entry cover",
+          "features": [
+            "white horizontal siding",
+            "small front entry cover",
+            "detached matching utility shed"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "2089445168209458.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1078183174191529.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "Both views are distant, so facade opening counts are omitted."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 14 A00 0006.0100",
           "physicalAddress": "1850 OLD US HWY 27, CLEWISTON, 33440",
@@ -10797,7 +12631,54 @@
         "type": "yes",
         "height": 4.26,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1377925637",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#c8bfa9",
+          "wallMaterial": "stucco",
+          "trim": "#e6e2d8",
+          "roof": {
+            "type": "hip",
+            "color": "#5e5449",
+            "material": "shingle"
+          },
+          "style": "one-story tan residence with a dark hipped roof and compact rectangular form",
+          "features": [
+            "dark hip roof",
+            "light opening trim",
+            "small covered entry"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1918085849592113.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "751279437824999.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "Both views are across the railroad; only consistent building-level details are recorded."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 560 0000-013.0",
           "physicalAddress": "714 HARVEST LN, CLEWISTON, 33440",
@@ -11306,7 +13187,44 @@
         "type": "yes",
         "height": 3.88,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1379207514",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#d6d2c6",
+          "wallMaterial": "stucco",
+          "trim": "#eeeae0",
+          "roof": {
+            "type": "hip",
+            "color": "#d8d9d4",
+            "material": "metal"
+          },
+          "style": "one-story light-colored residence with a bright metal hip roof",
+          "features": [
+            "broad bright roof",
+            "low horizontal massing",
+            "dark front window band"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1473079260686743.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The parcel is isolated in the mapped row, but the only view is distant and across the railroad."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 560 0000-037.0",
           "physicalAddress": "534 OLD FARM PL, CLEWISTON, 33440",
@@ -11373,7 +13291,52 @@
         "type": "yes",
         "height": 3.62,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:56193714-d9af-4cfa-b105-67dc0ae5e5e1",
+          "confidence": "medium",
+          "stories": 2,
+          "wall": "#8ebed2",
+          "wallMaterial": "masonry",
+          "trim": "#ece9df",
+          "roof": {
+            "type": "flat",
+            "color": "#63676a",
+            "material": null
+          },
+          "style": "two-story blue roadside commercial building with a flat parapet and ground-floor laundromat",
+          "features": [
+            "pale blue painted masonry",
+            "regular small second-floor windows",
+            "ground-floor commercial sign band"
+          ],
+          "signage": [
+            {
+              "text": "LAUNDRY MAT",
+              "facadeEdge": 3,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1453015742726940.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            }
+          ],
+          "notes": [
+            "Only the large, clearly readable laundromat lettering is transcribed."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0378-004.0",
           "physicalAddress": "718 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -11944,7 +13907,55 @@
         "type": "yes",
         "height": 3.85,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/867861755",
+          "confidence": "low",
+          "stories": 2,
+          "wall": "#8a665c",
+          "wallMaterial": "stucco",
+          "trim": "#c7b9a6",
+          "roof": {
+            "type": "flat",
+            "color": "#514c47",
+            "material": null
+          },
+          "style": "two-story muted red-brown residence with an upper balcony and attached carport",
+          "features": [
+            "full-width upper balcony",
+            "flat or very low-slope roof",
+            "attached one-story carport"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1049653725694148.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1003463357034405.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "The views are compressed and backlit, so the exterior colors are approximate."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 150 000C-002.0",
           "physicalAddress": "205 SAN LUIZ AVE, CLEWISTON, 33440",
@@ -12464,7 +14475,62 @@
         "type": "yes",
         "height": 4.08,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/886227336",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#6f6260",
+          "wallMaterial": "stucco",
+          "trim": "#d2c4ad",
+          "roof": {
+            "type": "flat",
+            "color": "#4c4746",
+            "material": null
+          },
+          "style": "one-story corner retail building with a tall flat parapet and alternating vertical facade panels",
+          "features": [
+            "tall painted parapet",
+            "large dark storefront bays",
+            "alternating gray and tan vertical panels"
+          ],
+          "signage": [
+            {
+              "text": "MATTRESS DEPOT USA",
+              "facadeEdge": 10,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1106656411050377.jpg",
+              "facadeEdge": 10,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1125545479618012.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "The closer oblique view establishes the tenant sign and facade palette."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0361-008.0",
           "physicalAddress": "202 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -13929,7 +15995,44 @@
         "type": "yes",
         "height": 4.01,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:fa58c903-cc40-4984-aaa1-ecd131b431ff",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#bfc3c0",
+          "wallMaterial": "masonry",
+          "trim": "#34464f",
+          "roof": {
+            "type": "flat",
+            "color": "#555c60",
+            "material": null
+          },
+          "style": "low one-story roadside retail building with a flat roof and dark recessed entrance",
+          "features": [
+            "long light-gray wall",
+            "dark blue-gray entrance bay",
+            "low continuous roofline"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "683515064680512.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "Backlighting limits color precision and the freestanding sign is unreadable."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 23 040 0000-001.0",
           "physicalAddress": "1377 EVERCANE RD, CLEWISTON, 33440",
@@ -14020,7 +16123,99 @@
         "type": "retail",
         "height": 5.31,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/850884198",
+          "confidence": "high",
+          "stories": 1,
+          "wall": "#4a5051",
+          "wallMaterial": "stucco",
+          "trim": "#b58455",
+          "roof": {
+            "type": "flat",
+            "color": "#3e4344",
+            "material": null
+          },
+          "style": "modern one-story Jeep dealership with a dark flat parapet and tan-framed showroom bays",
+          "features": [
+            "full-height glazed showroom entrances",
+            "dark charcoal facade panels",
+            "tan vertical portal frames"
+          ],
+          "signage": [
+            {
+              "text": "Jeep",
+              "facadeEdge": 6,
+              "confidence": "high"
+            },
+            {
+              "text": "MOPAR",
+              "facadeEdge": 6,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1472857853917293.jpg",
+              "facadeEdge": 6,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1008065261252126.jpg",
+              "facadeEdge": 6,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "552248581063206.jpg",
+              "facadeEdge": 6,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1074027117882871.jpg",
+              "facadeEdge": 6,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            }
+          ],
+          "notes": [
+            "Four consistent daylight and dusk views establish the dealership facade and branding."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0354-011.0",
           "physicalAddress": "202 W SUGARLAND HWY, CLEWISTON, 33440",
@@ -14103,7 +16298,7 @@
           "score": 0.366
         }
       ],
-      "reviewStatus": "needs-description"
+      "reviewStatus": "verify-existing"
     },
     {
       "taskId": "building:-1003384",
@@ -14592,7 +16787,44 @@
         "type": "yes",
         "height": 3.01,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:c1789a1a-b7ec-4c90-bbd1-b1c617a5b9e2",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#aeb2ae",
+          "wallMaterial": "siding",
+          "trim": "#e8e8e2",
+          "roof": {
+            "type": "gable",
+            "color": "#d1d2cd",
+            "material": "metal"
+          },
+          "style": "gray manufactured home with a shallow metal gable roof and light foundation skirting",
+          "features": [
+            "gray horizontal siding",
+            "white foundation skirting",
+            "small covered side area"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1449442532916354.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The assigned region captures the left portion and side of the isolated home; openings are omitted."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 24 010 0000-055.0",
           "physicalAddress": "1709 RED RD, CLEWISTON, 33440",
@@ -14781,7 +17013,45 @@
         "type": "yes",
         "height": 3.86,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1385379880",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#a9423e",
+          "wallMaterial": "masonry",
+          "trim": "#4d4542",
+          "roof": {
+            "type": "flat",
+            "color": "#55504c",
+            "material": null
+          },
+          "style": "low one-story red roadside restaurant with a flat parapet and dark recessed entrance wing",
+          "features": [
+            "strong red painted facade",
+            "dark rectangular doors and windows",
+            "long low horizontal massing",
+            "paved corner frontage"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "124736053712858.jpg",
+              "facadeEdge": 2,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The assigned right-side region isolates the restaurant building; any small sign text is unreadable."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0385-009.0",
           "physicalAddress": "842 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -14997,7 +17267,44 @@
         "type": "yes",
         "height": 3.42,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:d3b88d66-5c08-45bb-85f2-0226c3739bed",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d7ccb7",
+          "wallMaterial": "siding",
+          "trim": "#eeeee8",
+          "roof": {
+            "type": "gable",
+            "color": "#c9cbc7",
+            "material": "metal"
+          },
+          "style": "one-story beige residence with a bright metal gable roof and small front porch",
+          "features": [
+            "front-facing porch gable",
+            "white square porch posts",
+            "paired rectangular front windows"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "552400471221058.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "Motion blur prevents precise opening counts, but the isolated facade form and palette are clear."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0366-005.1",
           "physicalAddress": "401 E ALVERDEZ AVE, CLEWISTON, 33440",
@@ -16277,7 +18584,58 @@
         "type": "yes",
         "height": 4.73,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:bd2af242-c905-43fa-938e-ec5d3a6acd83",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#e5e4db",
+          "wallMaterial": "masonry",
+          "trim": "#eeeee8",
+          "roof": {
+            "type": "gable",
+            "color": "#d9dad5",
+            "material": "metal"
+          },
+          "style": "long one-story white church building with bright connected gable roofs and a covered front walk",
+          "features": [
+            "repeating white gable roofline",
+            "deep shaded front walkway",
+            "dark rectangular front openings",
+            "open corner lawn"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "757349116795449.jpg",
+              "facadeEdge": 7,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "714363451412127.jpg",
+              "facadeEdge": 7,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "Two rainy views consistently isolate the same church wing on the two-building parcel; the freestanding sign is too small to transcribe."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0203-006.0",
           "physicalAddress": "331 W OSCEOLA AVE, CLEWISTON, 33440",
@@ -16865,7 +19223,56 @@
         "type": "yes",
         "height": 3.37,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:4fdbdb2f-59d1-4a7a-9a34-a48db03ce944",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#69706f",
+          "wallMaterial": "masonry",
+          "trim": "#d5d7d3",
+          "roof": {
+            "type": "flat",
+            "color": "#555b5b",
+            "material": null
+          },
+          "style": "one-story gray roadside commercial building with a flat parapet and recessed front bay",
+          "features": [
+            "dark gray painted side wall",
+            "light projecting front parapet",
+            "broad paved forecourt"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "737713922573414.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            },
+            {
+              "source": "mapillary",
+              "file": "1276874333808093.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style"
+              ]
+            }
+          ],
+          "notes": [
+            "Two views consistently show the same corner building; small signage is not legible."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 23 030 0000-018.0",
           "physicalAddress": "1055 HOOKERS POINT RD, CLEWISTON, 33440",
@@ -17364,7 +19771,44 @@
         "type": "yes",
         "height": 3.51,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:54a6e51e-cd85-4049-a61c-f47db32b2c62",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#c9bca8",
+          "wallMaterial": "stucco",
+          "trim": "#eee9df",
+          "roof": {
+            "type": "gable",
+            "color": "#d7d8d2",
+            "material": "metal"
+          },
+          "style": "one-story beige residence with a bright metal gable roof and attached garage",
+          "features": [
+            "front-facing garage gable",
+            "white vinyl side fence",
+            "arched entry recess"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1041110130973063.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The rainy view is distant but isolates the left-corner residence consistently with its single-building parcel."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 391 000A-024.0",
           "physicalAddress": "1001 CARIBBEAN AVE, CLEWISTON, 33440",
@@ -18041,7 +20485,45 @@
         "type": "yes",
         "height": 5.08,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:a25dc5fc-4132-4b0f-8ca4-237ef4cf153a",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#ddddd5",
+          "wallMaterial": "masonry",
+          "trim": "#eeeee8",
+          "roof": {
+            "type": "hip",
+            "color": "#4e5552",
+            "material": "shingle"
+          },
+          "style": "one-story white lodging wing with a dark hipped roof and repeating recessed guest-room bays",
+          "features": [
+            "rhythmic white pilasters",
+            "repeating dark window-and-entry bays",
+            "deep roof eaves",
+            "landscaped roadside setback"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "935379738049321.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The target is the left-hand lodging wing on the two-building parcel; the frame crops its far end, so bay counts are omitted."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0177-001.0",
           "physicalAddress": "108 ROYAL PALM AVE, CLEWISTON, 33440",
@@ -19170,7 +21652,45 @@
         "type": "yes",
         "height": 3.7,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:ec70c392-82d3-468d-9a84-bfbd13dc922e",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#bfc1bd",
+          "wallMaterial": "masonry",
+          "trim": "#6f8178",
+          "roof": {
+            "type": "flat",
+            "color": "#555a59",
+            "material": null
+          },
+          "style": "small one-story roadside retail strip with a flat parapet and repeating recessed storefront bays",
+          "features": [
+            "row of dark glazed storefront openings",
+            "light-gray front wall",
+            "short green fascia accent",
+            "paved forecourt"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "658863037262557.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The single-building parcel is isolated at the left edge of the view; small tenant signs are unreadable."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 14 A00 0047.0100",
           "physicalAddress": "1020 DAVIDSON RD, CLEWISTON, 33440",
@@ -19711,7 +22231,45 @@
         "type": "yes",
         "height": 4.23,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:ef377b45-eb4d-4923-976f-842c12618c23",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#b9a78f",
+          "wallMaterial": "stucco",
+          "trim": "#59483d",
+          "roof": {
+            "type": "flat",
+            "color": "#69645f",
+            "material": null
+          },
+          "style": "one-story tan roadside office with a flat roof and dark projecting window awnings",
+          "features": [
+            "three narrow dark front window bays",
+            "individual brown fabric awnings",
+            "plain rectangular parapet",
+            "setback sidewalk lawn"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1074776639832933.jpg",
+              "facadeEdge": 1,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The wide street view cleanly separates the office from the neighboring white commercial building."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 01 010 0369-010.0",
           "physicalAddress": "420 E SUGARLAND HWY, CLEWISTON, 33440",
@@ -20321,7 +22879,44 @@
         "type": "commercial",
         "height": 5.03,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/384433552",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#d8d9d4",
+          "wallMaterial": "masonry",
+          "trim": "#426a97",
+          "roof": {
+            "type": "flat",
+            "color": "#565b5c",
+            "material": null
+          },
+          "style": "one-story light-gray Mobil convenience store with a flat roof and blue fascia accents",
+          "features": [
+            "compact rectangular store mass",
+            "blue horizontal trim band",
+            "glazed entrance facing the pump court"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1218717429939141.jpg",
+              "facadeEdge": 3,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "The store is visible behind the separate fuel canopy; the distant rainy view does not support exact opening counts."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 09 A00 0002.1300",
           "physicalAddress": "101 N BERNER RD, CLEWISTON, 33440",
@@ -21005,7 +23600,52 @@
         "type": "yes",
         "height": 4.64,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "overture:0bcc0d34-8564-41dd-8f30-165263ac4ec8",
+          "confidence": "medium",
+          "stories": 1,
+          "wall": "#d6cfbd",
+          "wallMaterial": "metal",
+          "trim": "#7f6047",
+          "roof": {
+            "type": "gable",
+            "color": "#c6c7c1",
+            "material": "metal"
+          },
+          "style": "one-story roadside bait-and-rental shop with pale metal siding, a deep covered porch, and a shallow metal gable roof",
+          "features": [
+            "full-width shaded front porch",
+            "open rental-display bays",
+            "simple rectangular roadside massing"
+          ],
+          "signage": [
+            {
+              "text": "JOLLY ROGER",
+              "facadeEdge": 0,
+              "confidence": "high"
+            }
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1320750323048506.jpg",
+              "facadeEdge": 0,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features",
+                "signage"
+              ]
+            }
+          ],
+          "notes": [
+            "The assigned region isolates the main shop building; smaller service wording is not transcribed."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "1 34 43 11 A00 0002.0000",
           "physicalAddress": "525 RIDGELAWN RD, CLEWISTON, 33440",
@@ -21327,7 +23967,45 @@
         "type": "yes",
         "height": 4.04,
         "numFloors": null,
-        "existingDescriptor": null,
+        "existingDescriptor": {
+          "buildingSourceId": "osm:way/1377669196",
+          "confidence": "low",
+          "stories": 1,
+          "wall": "#d7d8d2",
+          "wallMaterial": "siding",
+          "trim": "#edede7",
+          "roof": {
+            "type": "gable",
+            "color": "#777b77",
+            "material": "metal"
+          },
+          "style": "light manufactured home with a shallow metal gable roof and a screened side porch",
+          "features": [
+            "light horizontal siding",
+            "shallow dark metal roof",
+            "screened side enclosure",
+            "chain-link front gate"
+          ],
+          "evidence": [
+            {
+              "source": "mapillary",
+              "file": "1264582124992904.jpg",
+              "facadeEdge": 4,
+              "supports": [
+                "stories",
+                "wall",
+                "trim",
+                "roof",
+                "style",
+                "features"
+              ]
+            }
+          ],
+          "notes": [
+            "Trees and the front fence obscure the facade, so openings are not counted; the single-building parcel and assigned region establish the home form."
+          ],
+          "facades": []
+        },
         "parcelContext": {
           "parcelId": "3 34 43 02 460 000F-003.0",
           "physicalAddress": "716 BOWDEN RD, CLEWISTON, 33440",

@@ -1,5674 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T21:54:07.459Z",
+  "generatedAt": "2026-07-17T13:15:38.352Z",
   "method": "geometric match + target region + view count + parcel uniqueness; visual verification still required",
-  "count": 375,
+  "count": 129,
   "categoryCounts": {
-    "residential": 201,
-    "commercial-industrial-mixed": 168,
-    "civic-religious": 6
+    "residential": 62,
+    "commercial-industrial-mixed": 64,
+    "civic-religious": 3
   },
   "queue": [
     {
       "rank": 1,
-      "reviewScore": 0.7922,
-      "category": "residential",
-      "buildingId": -1000682,
-      "buildingSourceId": "overture:e0406f9b-d3b0-4083-b564-29a7f0d89835",
-      "mappedType": "yes",
-      "address": "411 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1728766344661018.jpg",
-        "facadeEdge": 0,
-        "score": 0.881,
-        "distance": 10.7,
-        "imageRegion": {
-          "left": 0.018,
-          "right": 0.724
-        }
-      }
-    },
-    {
-      "rank": 2,
-      "reviewScore": 0.7894,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 1385378097,
-      "buildingSourceId": "osm:way/1385378097",
-      "mappedType": "yes",
-      "address": "730 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "537633899403135.jpg",
-        "facadeEdge": 1,
-        "score": 0.928,
-        "distance": 18.2,
-        "imageRegion": {
-          "left": 0.234,
-          "right": 0.84
-        }
-      }
-    },
-    {
-      "rank": 3,
-      "reviewScore": 0.7842,
-      "category": "residential",
-      "buildingId": 876594028,
-      "buildingSourceId": "osm:way/876594028",
-      "mappedType": "yes",
-      "address": "809 W AZTEC AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1984,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "817700770859042.jpg",
-        "facadeEdge": 2,
-        "score": 0.93,
-        "distance": 18.2,
-        "imageRegion": {
-          "left": 0.356,
-          "right": 0.68
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "reviewScore": 0.7794,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1001275,
-      "buildingSourceId": "overture:6924df4a-cc67-4a04-a3be-5122cebfe504",
-      "mappedType": "yes",
-      "address": "525 RIDGELAWN RD, CLEWISTON, 33440",
-      "useCode": "088",
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "24013240618356906.jpg",
-        "facadeEdge": 1,
-        "score": 0.828,
-        "distance": 20.1,
-        "imageRegion": {
-          "left": 0.154,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 5,
-      "reviewScore": 0.7604,
-      "category": "residential",
-      "buildingId": 894462374,
-      "buildingSourceId": "osm:way/894462374",
-      "mappedType": "yes",
-      "address": "335 CENTRAL AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1953,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1008748688187884.jpg",
-        "facadeEdge": 0,
-        "score": 0.858,
-        "distance": 14,
-        "imageRegion": {
-          "left": 0.388,
-          "right": 0.802
-        }
-      }
-    },
-    {
-      "rank": 6,
-      "reviewScore": 0.7422,
-      "category": "residential",
-      "buildingId": 1377669250,
-      "buildingSourceId": "osm:way/1377669250",
-      "mappedType": "yes",
-      "address": "713 BOWDEN RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1983,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1392293832113988.jpg",
-        "facadeEdge": 2,
-        "score": 0.839,
-        "distance": 12,
-        "imageRegion": {
-          "left": 0.004,
-          "right": 0.582
-        }
-      }
-    },
-    {
-      "rank": 7,
-      "reviewScore": 0.74,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 384433551,
-      "buildingSourceId": "osm:way/384433551",
-      "mappedType": "roof",
-      "address": "101 N BERNER RD, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1999,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1121195571838624.jpg",
-        "facadeEdge": 3,
-        "score": 0.761,
-        "distance": 26,
-        "imageRegion": {
-          "left": 0.407,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 8,
-      "reviewScore": 0.7186,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000416,
-      "buildingSourceId": "overture:5defe060-b6ce-4de8-b599-2330e1a198a7",
-      "mappedType": "yes",
-      "address": "500 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1752332775346901.jpg",
-        "facadeEdge": 0,
-        "score": 0.871,
-        "distance": 23.3,
-        "imageRegion": {
-          "left": 0.192,
-          "right": 0.609
-        }
-      }
-    },
-    {
-      "rank": 9,
-      "reviewScore": 0.717,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000411,
-      "buildingSourceId": "overture:ab349264-e333-402a-8366-461a77bc9f0b",
-      "mappedType": "yes",
-      "address": "500 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "973765141364652.jpg",
-        "facadeEdge": 5,
-        "score": 0.889,
-        "distance": 21.5,
-        "imageRegion": {
-          "left": 0.417,
-          "right": 0.774
-        }
-      }
-    },
-    {
-      "rank": 10,
-      "reviewScore": 0.709,
-      "category": "residential",
-      "buildingId": -1003118,
-      "buildingSourceId": "overture:9be75a86-6ca6-4ff8-8e01-ea491a266bee",
-      "mappedType": "yes",
-      "address": "817 N LOPEZ ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1981,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1182396373632573.jpg",
-        "facadeEdge": 1,
-        "score": 0.772,
-        "distance": 28.5,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.406
-        }
-      }
-    },
-    {
-      "rank": 11,
-      "reviewScore": 0.7082,
-      "category": "residential",
-      "buildingId": -1000808,
-      "buildingSourceId": "overture:d703ac99-0353-47e7-8b84-90aadafd588d",
-      "mappedType": "yes",
-      "address": "211 S SAN PEDRO ST, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1190033066182256.jpg",
-        "facadeEdge": 3,
-        "score": 0.881,
-        "distance": 16.3,
-        "imageRegion": {
-          "left": 0.396,
-          "right": 0.682
-        }
-      }
-    },
-    {
-      "rank": 12,
-      "reviewScore": 0.693,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 817555430,
-      "buildingSourceId": "osm:way/817555430",
-      "mappedType": "yes",
-      "address": "711 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "021",
-      "actualYearBuilt": 2007,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1268820774738089.jpg",
-        "facadeEdge": 1,
-        "score": 0.732,
-        "distance": 17.6,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.442
-        }
-      }
-    },
-    {
-      "rank": 13,
-      "reviewScore": 0.6915,
-      "category": "residential",
-      "buildingId": 894462381,
-      "buildingSourceId": "osm:way/894462381",
-      "mappedType": "yes",
-      "address": "220 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "003",
-      "actualYearBuilt": 1964,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "580885807606594.jpg",
-        "facadeEdge": 0,
-        "score": 0.723,
-        "distance": 64.9,
-        "imageRegion": {
-          "left": 0.291,
-          "right": 0.552
-        }
-      }
-    },
-    {
-      "rank": 14,
-      "reviewScore": 0.6856,
-      "category": "residential",
-      "buildingId": -1002436,
-      "buildingSourceId": "overture:6484b329-ce50-404e-9949-c23324bf97a4",
-      "mappedType": "yes",
-      "address": "322 BOND ST, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "609916878691278.jpg",
-        "facadeEdge": 5,
-        "score": 0.889,
-        "distance": 13.2,
-        "imageRegion": {
-          "left": 0.197,
-          "right": 0.522
-        }
-      }
-    },
-    {
-      "rank": 15,
-      "reviewScore": 0.6804,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 894462399,
-      "buildingSourceId": "osm:way/894462399",
-      "mappedType": "yes",
-      "address": "307 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "016",
-      "actualYearBuilt": 1961,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "443130442196967.jpg",
-        "facadeEdge": 2,
-        "score": 0.762,
-        "distance": 53.7,
-        "imageRegion": {
-          "left": 0.428,
-          "right": 0.72
-        }
-      }
-    },
-    {
-      "rank": 16,
-      "reviewScore": 0.6774,
-      "category": "residential",
-      "buildingId": -1002437,
-      "buildingSourceId": "overture:aaa262ab-ecf9-4db6-affd-80365341d596",
-      "mappedType": "yes",
-      "address": "326 BOND ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1935,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1006609484905785.jpg",
-        "facadeEdge": 2,
-        "score": 0.789,
-        "distance": 22.7,
-        "imageRegion": {
-          "left": 0.583,
-          "right": 0.782
-        }
-      }
-    },
-    {
-      "rank": 17,
-      "reviewScore": 0.6693,
-      "category": "residential",
-      "buildingId": -1000673,
-      "buildingSourceId": "overture:961f065e-187e-4246-b40e-69fc929af2ee",
-      "mappedType": "yes",
-      "address": "434 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "657220506939769.jpg",
-        "facadeEdge": 1,
-        "score": 0.755,
-        "distance": 33,
-        "imageRegion": {
-          "left": 0.102,
-          "right": 0.359
-        }
-      }
-    },
-    {
-      "rank": 18,
-      "reviewScore": 0.6624,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003555,
-      "buildingSourceId": "overture:a377b073-2057-4ff8-8f2a-115a3907d077",
-      "mappedType": "yes",
-      "address": "1955 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1930142711069513.jpg",
-        "facadeEdge": 1,
-        "score": 0.759,
-        "distance": 52.5,
-        "imageRegion": {
-          "left": 0.432,
-          "right": 0.643
-        }
-      }
-    },
-    {
-      "rank": 19,
-      "reviewScore": 0.6596,
-      "category": "residential",
-      "buildingId": -1003362,
-      "buildingSourceId": "overture:37128ef8-3b8f-42c2-aa47-ffddedb703a9",
-      "mappedType": "yes",
-      "address": "1223 ART LAWRENCE RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "697571003261838.jpg",
-        "facadeEdge": 6,
-        "score": 0.802,
-        "distance": 24.4,
-        "imageRegion": {
-          "left": 0.567,
-          "right": 0.839
-        }
-      }
-    },
-    {
-      "rank": 20,
-      "reviewScore": 0.6588,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000859,
-      "buildingSourceId": "overture:87029388-315c-4e12-b695-fd0101afd83d",
-      "mappedType": "yes",
-      "address": "E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "048",
-      "actualYearBuilt": 1970,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1879506242802598.jpg",
-        "facadeEdge": 0,
-        "score": 0.801,
-        "distance": 31.5,
-        "imageRegion": {
-          "left": 0.378,
-          "right": 0.649
-        }
-      }
-    },
-    {
-      "rank": 21,
-      "reviewScore": 0.6576,
-      "category": "residential",
-      "buildingId": 876594027,
-      "buildingSourceId": "osm:way/876594027",
-      "mappedType": "yes",
-      "address": "807 W AZTEC AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1979,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1328688192374706.jpg",
-        "facadeEdge": 2,
-        "score": 0.718,
-        "distance": 19.5,
-        "imageRegion": {
-          "left": 0.694,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 22,
-      "reviewScore": 0.6567,
-      "category": "residential",
-      "buildingId": 876594033,
-      "buildingSourceId": "osm:way/876594033",
-      "mappedType": "yes",
-      "address": "802 S BERNER RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1978,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1161072282788318.jpg",
-        "facadeEdge": 1,
-        "score": 0.826,
-        "distance": 19.5,
-        "imageRegion": {
-          "left": 0.402,
-          "right": 0.59
-        }
-      }
-    },
-    {
-      "rank": 23,
-      "reviewScore": 0.6537,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 850884202,
-      "buildingSourceId": "osm:way/850884202",
-      "mappedType": "commercial",
-      "address": "211 W VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "016",
-      "actualYearBuilt": 1966,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1752189312034418.jpg",
-        "facadeEdge": 0,
-        "score": 0.783,
-        "distance": 17,
-        "imageRegion": {
-          "left": 0.584,
-          "right": 0.682
-        }
-      }
-    },
-    {
-      "rank": 24,
-      "reviewScore": 0.6499,
-      "category": "residential",
-      "buildingId": 1377669262,
-      "buildingSourceId": "osm:way/1377669262",
-      "mappedType": "yes",
-      "address": "710 SEMINOLE AVE, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1996,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1338024500628626.jpg",
-        "facadeEdge": 5,
-        "score": 0.774,
-        "distance": 14.6,
-        "imageRegion": {
-          "left": 0.527,
-          "right": 0.632
-        }
-      }
-    },
-    {
-      "rank": 25,
-      "reviewScore": 0.6417,
-      "category": "residential",
-      "buildingId": -1000646,
-      "buildingSourceId": "overture:559a82cc-6f17-4e5e-ba92-d873905da947",
-      "mappedType": "yes",
-      "address": "400 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1584816285511240.jpg",
-        "facadeEdge": 0,
-        "score": 0.747,
-        "distance": 26.7,
-        "imageRegion": {
-          "left": 0.358,
-          "right": 0.5
-        }
-      }
-    },
-    {
-      "rank": 26,
-      "reviewScore": 0.641,
-      "category": "residential",
-      "buildingId": -1002493,
-      "buildingSourceId": "overture:8885518f-e91a-4c44-826f-940a8d9c75b8",
-      "mappedType": "yes",
-      "address": "336 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1960,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "757349116795449.jpg",
-        "facadeEdge": 3,
-        "score": 0.65,
-        "distance": 42.8,
-        "imageRegion": {
-          "left": 0.724,
-          "right": 0.944
-        }
-      }
-    },
-    {
-      "rank": 27,
-      "reviewScore": 0.6353,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 384457194,
-      "buildingSourceId": "osm:way/384457194",
-      "mappedType": "retail",
-      "address": "310 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1996,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1375014313681230.jpg",
-        "facadeEdge": 1,
-        "score": 0.825,
-        "distance": 34.9,
-        "imageRegion": {
-          "left": 0.128,
-          "right": 0.587
-        }
-      }
-    },
-    {
-      "rank": 28,
-      "reviewScore": 0.6351,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000566,
-      "buildingSourceId": "overture:36cfc03f-b049-4ea2-bb2e-bb3f7f03f80f",
-      "mappedType": "yes",
-      "address": "501 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "016",
-      "actualYearBuilt": 2000,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1122471409647230.jpg",
-        "facadeEdge": 3,
-        "score": 0.817,
-        "distance": 18.1,
-        "imageRegion": {
-          "left": 0.583,
-          "right": 0.864
-        }
-      }
-    },
-    {
-      "rank": 29,
-      "reviewScore": 0.6339,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000885,
-      "buildingSourceId": "overture:f44a43fd-0261-4c21-8e7b-9f819e766888",
-      "mappedType": "yes",
-      "address": "420 E HAITI AVE, CLEWISTON, 33440",
-      "useCode": "049",
-      "actualYearBuilt": 1965,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1266453348122561.jpg",
-        "facadeEdge": 3,
-        "score": 0.835,
-        "distance": 35.2,
-        "imageRegion": {
-          "left": 0.414,
-          "right": 0.637
-        }
-      }
-    },
-    {
-      "rank": 30,
-      "reviewScore": 0.6315,
-      "category": "residential",
-      "buildingId": 868836144,
-      "buildingSourceId": "osm:way/868836144",
-      "mappedType": "yes",
-      "address": "505 S BERNER RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2005,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1305616341100940.jpg",
-        "facadeEdge": 0,
-        "score": 0.797,
-        "distance": 25.9,
-        "imageRegion": {
-          "left": 0.338,
-          "right": 0.484
-        }
-      }
-    },
-    {
-      "rank": 31,
-      "reviewScore": 0.631,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 894462375,
-      "buildingSourceId": "osm:way/894462375",
-      "mappedType": "yes",
-      "address": "327 CENTRAL AVE, CLEWISTON, 33440",
-      "useCode": "012",
-      "actualYearBuilt": 1995,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1008748688187884.jpg",
-        "facadeEdge": 2,
-        "score": 0.709,
-        "distance": 9.4,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.399
-        }
-      }
-    },
-    {
-      "rank": 32,
-      "reviewScore": 0.6276,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000534,
-      "buildingSourceId": "overture:ee645712-7735-4d53-a2a6-682cc4b3f9bb",
-      "mappedType": "yes",
-      "address": "600 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "025",
-      "actualYearBuilt": 1950,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "696493992899445.jpg",
-        "facadeEdge": 2,
-        "score": 0.849,
-        "distance": 25.5,
-        "imageRegion": {
-          "left": 0.18,
-          "right": 0.531
-        }
-      }
-    },
-    {
-      "rank": 33,
-      "reviewScore": 0.625,
-      "category": "residential",
-      "buildingId": -1002628,
-      "buildingSourceId": "overture:4742d0d0-eb82-4b60-aae4-4d1daa7500e2",
-      "mappedType": "yes",
-      "address": "815 N LOPEZ ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1984,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1244556780439201.jpg",
-        "facadeEdge": 2,
-        "score": 0.701,
-        "distance": 42.4,
-        "imageRegion": {
-          "left": 0.528,
-          "right": 0.72
-        }
-      }
-    },
-    {
-      "rank": 34,
-      "reviewScore": 0.625,
-      "category": "residential",
-      "buildingId": 1377670847,
-      "buildingSourceId": "osm:way/1377670847",
-      "mappedType": "yes",
-      "address": "717 SEMINOLE AVE, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1982,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1691409471488726.jpg",
-        "facadeEdge": 3,
-        "score": 0.722,
-        "distance": 51.2,
-        "imageRegion": {
-          "left": 0.391,
-          "right": 0.522
-        }
-      }
-    },
-    {
-      "rank": 35,
-      "reviewScore": 0.6241,
-      "category": "residential",
-      "buildingId": -1000803,
-      "buildingSourceId": "overture:0739e619-2061-47f9-b852-464ea9bf9a8b",
-      "mappedType": "yes",
-      "address": "409 S SAN PEDRO ST, CLEWISTON, 33440",
-      "useCode": "003",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1008478591210731.jpg",
-        "facadeEdge": 0,
-        "score": 0.635,
-        "distance": 38.7,
-        "imageRegion": {
-          "left": 0.549,
-          "right": 0.928
-        }
-      }
-    },
-    {
-      "rank": 36,
-      "reviewScore": 0.6235,
-      "category": "residential",
-      "buildingId": 1377669195,
-      "buildingSourceId": "osm:way/1377669195",
-      "mappedType": "yes",
-      "address": "718 BOWDEN RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1988,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1264582124992904.jpg",
-        "facadeEdge": 0,
-        "score": 0.786,
-        "distance": 26.7,
-        "imageRegion": {
-          "left": 0.524,
-          "right": 0.662
-        }
-      }
-    },
-    {
-      "rank": 37,
-      "reviewScore": 0.623,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000925,
-      "buildingSourceId": "overture:8f00fd82-c2ff-412b-bc23-2da93f212778",
-      "mappedType": "yes",
-      "address": "813 E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1004779061749497.jpg",
-        "facadeEdge": 1,
-        "score": 0.791,
-        "distance": 17.3,
-        "imageRegion": {
-          "left": 0.216,
-          "right": 0.387
-        }
-      }
-    },
-    {
-      "rank": 38,
-      "reviewScore": 0.6229,
-      "category": "residential",
-      "buildingId": 841005973,
-      "buildingSourceId": "osm:way/841005973",
-      "mappedType": "yes",
-      "address": "302 W SUGARLAND CIR, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2002,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1319424946332958.jpg",
-        "facadeEdge": 3,
-        "score": 0.773,
-        "distance": 28.2,
-        "imageRegion": {
-          "left": 0.572,
-          "right": 0.745
-        }
-      }
-    },
-    {
-      "rank": 39,
-      "reviewScore": 0.6217,
-      "category": "residential",
-      "buildingId": -1003581,
-      "buildingSourceId": "overture:456f00b3-f59a-4be1-b57b-bb0816ab1be4",
-      "mappedType": "yes",
-      "address": "1802 MELISSA RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1986,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1622700545354227.jpg",
-        "facadeEdge": 1,
-        "score": 0.755,
-        "distance": 40.3,
-        "imageRegion": {
-          "left": 0.498,
-          "right": 0.717
-        }
-      }
-    },
-    {
-      "rank": 40,
-      "reviewScore": 0.6205,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000923,
-      "buildingSourceId": "overture:f7d63957-5a74-4af0-b64a-e72f4fa111ae",
-      "mappedType": "yes",
-      "address": "813 E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "633782476313001.jpg",
-        "facadeEdge": 0,
-        "score": 0.796,
-        "distance": 18.9,
-        "imageRegion": {
-          "left": 0.56,
-          "right": 0.704
-        }
-      }
-    },
-    {
-      "rank": 41,
-      "reviewScore": 0.6167,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 886227333,
-      "buildingSourceId": "osm:way/886227333",
-      "mappedType": "yes",
-      "address": "141 S DEANE DUFF AVE, CLEWISTON, 33440",
-      "useCode": "019",
-      "actualYearBuilt": 1965,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "580885807606594.jpg",
-        "facadeEdge": 9,
-        "score": 0.767,
-        "distance": 21.4,
-        "imageRegion": {
-          "left": 0.563,
-          "right": 0.722
-        }
-      }
-    },
-    {
-      "rank": 42,
-      "reviewScore": 0.6148,
-      "category": "residential",
-      "buildingId": -1002502,
-      "buildingSourceId": "overture:3bf1e920-56d8-40f3-90d8-115d99ea8b58",
-      "mappedType": "yes",
-      "address": "415 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1947,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "650895388021158.jpg",
-        "facadeEdge": 1,
-        "score": 0.669,
-        "distance": 19.2,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.034
-        }
-      }
-    },
-    {
-      "rank": 43,
-      "reviewScore": 0.6128,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 1385378129,
-      "buildingSourceId": "osm:way/1385378129",
-      "mappedType": "yes",
-      "address": "730 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "1227010659051103.jpg",
-        "facadeEdge": 1,
-        "score": 0.66,
-        "distance": 25,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.3
-        }
-      }
-    },
-    {
-      "rank": 44,
-      "reviewScore": 0.6125,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003546,
-      "buildingSourceId": "overture:5ccbd781-f421-42fa-a2af-ad0bd8bd1cf8",
-      "mappedType": "yes",
-      "address": "1990 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1981,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1261781945455853.jpg",
-        "facadeEdge": 3,
-        "score": 0.777,
-        "distance": 32.5,
-        "imageRegion": {
-          "left": 0.489,
-          "right": 0.598
-        }
-      }
-    },
-    {
-      "rank": 45,
-      "reviewScore": 0.6084,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000560,
-      "buildingSourceId": "overture:f2fc3454-468c-44c1-8153-072fc25db254",
-      "mappedType": "yes",
-      "address": "508 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "048",
-      "actualYearBuilt": 2000,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1211851917321785.jpg",
-        "facadeEdge": 1,
-        "score": 0.761,
-        "distance": 30.7,
-        "imageRegion": {
-          "left": 0.49,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 46,
-      "reviewScore": 0.607,
-      "category": "residential",
-      "buildingId": -1000842,
-      "buildingSourceId": "overture:52116def-e0d7-4bac-a053-54056dde41c5",
-      "mappedType": "yes",
-      "address": "404 S SAN GABRIEL ST, CLEWISTON, 33440",
-      "useCode": "000",
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "525229457347403.jpg",
-        "facadeEdge": 2,
-        "score": 0.752,
-        "distance": 36.2,
-        "imageRegion": {
-          "left": 0.535,
-          "right": 0.739
-        }
-      }
-    },
-    {
-      "rank": 47,
-      "reviewScore": 0.606,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000926,
-      "buildingSourceId": "overture:0c75e263-b7ea-4470-bf7a-e609b810e4a2",
-      "mappedType": "yes",
-      "address": "813 E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": null,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "1182966186706707.jpg",
-        "facadeEdge": 2,
-        "score": 0.67,
-        "distance": 43.1,
-        "imageRegion": {
-          "left": 0.712,
-          "right": 0.949
-        }
-      }
-    },
-    {
-      "rank": 48,
-      "reviewScore": 0.6014,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003499,
-      "buildingSourceId": "overture:f3d217ee-d7ee-4ce9-bbf1-2709b9da983c",
-      "mappedType": "yes",
-      "address": null,
-      "useCode": null,
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1065075278924066.jpg",
-        "facadeEdge": 2,
-        "score": 0.78,
-        "distance": 17.9,
-        "imageRegion": {
-          "left": 0.625,
-          "right": 0.92
-        }
-      }
-    },
-    {
-      "rank": 49,
-      "reviewScore": 0.6008,
-      "category": "residential",
-      "buildingId": 1377669194,
-      "buildingSourceId": "osm:way/1377669194",
-      "mappedType": "yes",
-      "address": "718 BOWDEN RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1988,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1264582124992904.jpg",
-        "facadeEdge": 4,
-        "score": 0.721,
-        "distance": 25.2,
-        "imageRegion": {
-          "left": 0.744,
-          "right": 0.957
-        }
-      }
-    },
-    {
-      "rank": 50,
-      "reviewScore": 0.5949,
-      "category": "residential",
-      "buildingId": -1000785,
-      "buildingSourceId": "overture:ba64c1ec-e3d3-441e-9326-36613f51286f",
-      "mappedType": "yes",
-      "address": "504 E OBISPO AVE, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1985,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "652422547757998.jpg",
-        "facadeEdge": 0,
-        "score": 0.657,
-        "distance": 36.9,
-        "imageRegion": {
-          "left": 0.152,
-          "right": 0.321
-        }
-      }
-    },
-    {
-      "rank": 51,
-      "reviewScore": 0.5949,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 886227336,
-      "buildingSourceId": "osm:way/886227336",
-      "mappedType": "yes",
-      "address": "202 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "012",
-      "actualYearBuilt": 1928,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "1125545479618012.jpg",
-        "facadeEdge": 0,
-        "score": 0.605,
-        "distance": 31.7,
-        "imageRegion": {
-          "left": 0.767,
-          "right": 0.887
-        }
-      }
-    },
-    {
-      "rank": 52,
-      "reviewScore": 0.5948,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000479,
-      "buildingSourceId": "overture:56193714-d9af-4cfa-b105-67dc0ae5e5e1",
-      "mappedType": "yes",
-      "address": "718 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "012",
-      "actualYearBuilt": 1927,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1453015742726940.jpg",
-        "facadeEdge": 3,
-        "score": 0.631,
-        "distance": 48.4,
-        "imageRegion": {
-          "left": 0.756,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 53,
-      "reviewScore": 0.5928,
-      "category": "residential",
-      "buildingId": 1377925605,
-      "buildingSourceId": "osm:way/1377925605",
-      "mappedType": "yes",
-      "address": "725 HARVEST LN, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2019,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "966758608981965.jpg",
-        "facadeEdge": 4,
-        "score": 0.641,
-        "distance": 42.3,
-        "imageRegion": {
-          "left": 0.127,
-          "right": 0.332
-        }
-      }
-    },
-    {
-      "rank": 54,
-      "reviewScore": 0.5926,
-      "category": "residential",
-      "buildingId": -1000575,
-      "buildingSourceId": "overture:046c8acc-4861-4376-a9d6-0396b194d7bc",
-      "mappedType": "yes",
-      "address": "524 E PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1957,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "811770641410764.jpg",
-        "facadeEdge": 5,
-        "score": 0.739,
-        "distance": 40.9,
-        "imageRegion": {
-          "left": 0.354,
-          "right": 0.474
-        }
-      }
-    },
-    {
-      "rank": 55,
-      "reviewScore": 0.589,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 614620913,
-      "buildingSourceId": "osm:way/614620913",
-      "mappedType": "industrial",
-      "address": "611 E OBISPO AVE, CLEWISTON, 33440",
-      "useCode": "046",
-      "actualYearBuilt": 2008,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "963394062557303.jpg",
-        "facadeEdge": 3,
-        "score": 0.758,
-        "distance": 20.4,
-        "imageRegion": {
-          "left": 0.476,
-          "right": 0.698
-        }
-      }
-    },
-    {
-      "rank": 56,
-      "reviewScore": 0.5878,
-      "category": "residential",
-      "buildingId": -1000721,
-      "buildingSourceId": "overture:9b17b440-22fc-4cca-9b75-2c3f8154e0d6",
-      "mappedType": "yes",
-      "address": "303 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1961,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1385084182542887.jpg",
-        "facadeEdge": 1,
-        "score": 0.662,
-        "distance": 60,
-        "imageRegion": {
-          "left": 0.379,
-          "right": 0.498
-        }
-      }
-    },
-    {
-      "rank": 57,
-      "reviewScore": 0.5877,
-      "category": "residential",
-      "buildingId": 1377925646,
-      "buildingSourceId": "osm:way/1377925646",
-      "mappedType": "yes",
-      "address": "717 HARVEST LN, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2016,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "751279437824999.jpg",
-        "facadeEdge": 0,
-        "score": 0.665,
-        "distance": 56.7,
-        "imageRegion": {
-          "left": 0.574,
-          "right": 0.684
-        }
-      }
-    },
-    {
-      "rank": 58,
-      "reviewScore": 0.5838,
-      "category": "residential",
-      "buildingId": -1003355,
-      "buildingSourceId": "overture:85f09126-17bf-4881-924b-9ee8c24cfdfb",
-      "mappedType": "yes",
-      "address": "2473 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2021,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1443869840278153.jpg",
-        "facadeEdge": 0,
-        "score": 0.711,
-        "distance": 12.5,
-        "imageRegion": {
-          "left": 0.843,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 59,
-      "reviewScore": 0.5805,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002429,
-      "buildingSourceId": "overture:1f655b0e-71b9-4065-8887-7d6b8aafadc0",
-      "mappedType": "yes",
-      "address": "341 S DEANE DUFF AVE, CLEWISTON, 33440",
-      "useCode": "010",
-      "actualYearBuilt": 2002,
-      "buildingsOnParcel": null,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "3958164831073140.jpg",
-        "facadeEdge": 1,
-        "score": 0.707,
-        "distance": 10.7,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.002
-        }
-      }
-    },
-    {
-      "rank": 60,
-      "reviewScore": 0.58,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 894462417,
-      "buildingSourceId": "osm:way/894462417",
-      "mappedType": "commercial",
-      "address": "959 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1994,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "187011056610436.jpg",
-        "facadeEdge": 1,
-        "score": 0.681,
-        "distance": 22.6,
-        "imageRegion": {
-          "left": 0.235,
-          "right": 0.46
-        }
-      }
-    },
-    {
-      "rank": 61,
-      "reviewScore": 0.5773,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 850715462,
-      "buildingSourceId": "osm:way/850715462",
-      "mappedType": "yes",
-      "address": "901 W VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "019",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1229599148676156.jpg",
-        "facadeEdge": 1,
-        "score": 0.693,
-        "distance": 51.3,
-        "imageRegion": {
-          "left": 0.587,
-          "right": 0.764
-        }
-      }
-    },
-    {
-      "rank": 62,
-      "reviewScore": 0.5751,
-      "category": "residential",
-      "buildingId": 1377925637,
-      "buildingSourceId": "osm:way/1377925637",
-      "mappedType": "yes",
-      "address": "714 HARVEST LN, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2008,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1918085849592113.jpg",
-        "facadeEdge": 1,
-        "score": 0.637,
-        "distance": 71.2,
-        "imageRegion": {
-          "left": 0.324,
-          "right": 0.452
-        }
-      }
-    },
-    {
-      "rank": 63,
-      "reviewScore": 0.5717,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 850715455,
-      "buildingSourceId": "osm:way/850715455",
-      "mappedType": "commercial",
-      "address": "100 S W C OWEN AVE, CLEWISTON, 33440",
-      "useCode": "017",
-      "actualYearBuilt": 1978,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "610982344988592.jpg",
-        "facadeEdge": 0,
-        "score": 0.687,
-        "distance": 44.1,
-        "imageRegion": {
-          "left": 0.528,
-          "right": 0.694
-        }
-      }
-    },
-    {
-      "rank": 64,
-      "reviewScore": 0.5713,
-      "category": "residential",
-      "buildingId": 1379207516,
-      "buildingSourceId": "osm:way/1379207516",
-      "mappedType": "yes",
-      "address": "530 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1473079260686743.jpg",
-        "facadeEdge": 0,
-        "score": 0.634,
-        "distance": 73.1,
-        "imageRegion": {
-          "left": 0.535,
-          "right": 0.653
-        }
-      }
-    },
-    {
-      "rank": 65,
-      "reviewScore": 0.5693,
-      "category": "residential",
-      "buildingId": -1002438,
-      "buildingSourceId": "overture:f6f8dfc4-f365-4e6f-adc3-0f5e80c90441",
-      "mappedType": "yes",
-      "address": "337 S DEANE DUFF AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1939,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "3958164831073140.jpg",
-        "facadeEdge": 3,
-        "score": 0.575,
-        "distance": 32.7,
-        "imageRegion": {
-          "left": 0.079,
-          "right": 0.158
-        }
-      }
-    },
-    {
-      "rank": 66,
-      "reviewScore": 0.569,
-      "category": "residential",
-      "buildingId": -1003352,
-      "buildingSourceId": "overture:dce6fcc7-107e-45e7-9d58-7e362f5077eb",
-      "mappedType": "shed",
-      "address": "2429 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1443869840278153.jpg",
-        "facadeEdge": 3,
-        "score": 0.689,
-        "distance": 32.5,
-        "imageRegion": {
-          "left": 0.641,
-          "right": 0.788
-        }
-      }
-    },
-    {
-      "rank": 67,
-      "reviewScore": 0.5674,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 822582927,
-      "buildingSourceId": "osm:way/822582927",
-      "mappedType": "yes",
-      "address": "S W C OWEN AVE, CLEWISTON, 33440",
-      "useCode": "018",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 10,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1358928768988392.jpg",
-        "facadeEdge": 5,
-        "score": 0.788,
-        "distance": 24.9,
-        "imageRegion": {
-          "left": 0.595,
-          "right": 0.822
-        }
-      }
-    },
-    {
-      "rank": 68,
-      "reviewScore": 0.5652,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 383907679,
-      "buildingSourceId": "osm:way/383907679",
-      "mappedType": "roof",
-      "address": "1550 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1982,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "187806460428796.jpg",
-        "facadeEdge": 3,
-        "score": 0.782,
-        "distance": 34.7,
-        "imageRegion": {
-          "left": 0.243,
-          "right": 0.476
-        }
-      }
-    },
-    {
-      "rank": 69,
-      "reviewScore": 0.5633,
-      "category": "residential",
-      "buildingId": 867861755,
-      "buildingSourceId": "osm:way/867861755",
-      "mappedType": "yes",
-      "address": "205 SAN LUIZ AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1953,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1049653725694148.jpg",
-        "facadeEdge": 1,
-        "score": 0.613,
-        "distance": 35,
-        "imageRegion": {
-          "left": 0.045,
-          "right": 0.184
-        }
-      }
-    },
-    {
-      "rank": 70,
-      "reviewScore": 0.5611,
-      "category": "residential",
-      "buildingId": -1002509,
-      "buildingSourceId": "overture:bf855451-97cd-414e-9508-001904d3e4c3",
-      "mappedType": "yes",
-      "address": "426 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "753544623883415.jpg",
-        "facadeEdge": 1,
-        "score": 0.614,
-        "distance": 32.3,
-        "imageRegion": {
-          "left": 0.739,
-          "right": 0.864
-        }
-      }
-    },
-    {
-      "rank": 71,
-      "reviewScore": 0.5605,
-      "category": "residential",
-      "buildingId": -1000681,
-      "buildingSourceId": "overture:25a0de29-9600-4dcd-a274-b2943555747e",
-      "mappedType": "yes",
-      "address": "415 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2005,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1728766344661018.jpg",
-        "facadeEdge": 5,
-        "score": 0.665,
-        "distance": 18.4,
-        "imageRegion": {
-          "left": 0.826,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 72,
-      "reviewScore": 0.5598,
-      "category": "residential",
-      "buildingId": 868836103,
-      "buildingSourceId": "osm:way/868836103",
-      "mappedType": "yes",
-      "address": "402 W SUGARLAND CIR, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "2000973457339112.jpg",
-        "facadeEdge": 19,
-        "score": 0.639,
-        "distance": 31.2,
-        "imageRegion": {
-          "left": 0.764,
-          "right": 0.81
-        }
-      }
-    },
-    {
-      "rank": 73,
-      "reviewScore": 0.5579,
-      "category": "residential",
-      "buildingId": 876594032,
-      "buildingSourceId": "osm:way/876594032",
-      "mappedType": "yes",
-      "address": "817 W AZTEC AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1984,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1161072282788318.jpg",
-        "facadeEdge": 6,
-        "score": 0.683,
-        "distance": 46.8,
-        "imageRegion": {
-          "left": 0.57,
-          "right": 0.679
-        }
-      }
-    },
-    {
-      "rank": 74,
-      "reviewScore": 0.5571,
-      "category": "residential",
-      "buildingId": -1003579,
-      "buildingSourceId": "overture:e08a2884-ccf9-4173-b642-5d05c9354319",
-      "mappedType": "yes",
-      "address": "725 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1975,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1122074923097304.jpg",
-        "facadeEdge": 4,
-        "score": 0.653,
-        "distance": 43.1,
-        "imageRegion": {
-          "left": 0.654,
-          "right": 0.846
-        }
-      }
-    },
-    {
-      "rank": 75,
-      "reviewScore": 0.5556,
-      "category": "residential",
-      "buildingId": 835773466,
-      "buildingSourceId": "osm:way/835773466",
-      "mappedType": "yes",
-      "address": "251 SUGARLAND PARK, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "739632262099186.jpg",
-        "facadeEdge": 2,
-        "score": 0.801,
-        "distance": 32,
-        "imageRegion": {
-          "left": 0.456,
-          "right": 0.586
-        }
-      }
-    },
-    {
-      "rank": 76,
-      "reviewScore": 0.5536,
-      "category": "residential",
-      "buildingId": 868836145,
-      "buildingSourceId": "osm:way/868836145",
-      "mappedType": "yes",
-      "address": "503 S BERNER RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2007,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1305616341100940.jpg",
-        "facadeEdge": 11,
-        "score": 0.668,
-        "distance": 30.1,
-        "imageRegion": {
-          "left": 0.742,
-          "right": 0.873
-        }
-      }
-    },
-    {
-      "rank": 77,
-      "reviewScore": 0.5529,
-      "category": "residential",
-      "buildingId": 1379207522,
-      "buildingSourceId": "osm:way/1379207522",
-      "mappedType": "yes",
-      "address": "518 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1088930256657144.jpg",
-        "facadeEdge": 1,
-        "score": 0.603,
-        "distance": 64.3,
-        "imageRegion": {
-          "left": 0.618,
-          "right": 0.734
-        }
-      }
-    },
-    {
-      "rank": 78,
-      "reviewScore": 0.5527,
-      "category": "residential",
-      "buildingId": -1000559,
-      "buildingSourceId": "overture:f2785d50-e59d-4256-8c15-6d909c76faef",
-      "mappedType": "yes",
-      "address": "505 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1228046705396807.jpg",
-        "facadeEdge": 3,
-        "score": 0.676,
-        "distance": 65.4,
-        "imageRegion": {
-          "left": 0.414,
-          "right": 0.517
-        }
-      }
-    },
-    {
-      "rank": 79,
-      "reviewScore": 0.5515,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000533,
-      "buildingSourceId": "overture:8531d716-e566-4e80-9f9c-8918409e4d9e",
-      "mappedType": "yes",
-      "address": "611 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1956,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "731395123172767.jpg",
-        "facadeEdge": 2,
-        "score": 0.666,
-        "distance": 19.7,
-        "imageRegion": {
-          "left": 0.718,
-          "right": 0.844
-        }
-      }
-    },
-    {
-      "rank": 80,
-      "reviewScore": 0.5504,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003547,
-      "buildingSourceId": "overture:5dfc6da7-9bf1-48b5-a256-4db82c119e45",
-      "mappedType": "yes",
-      "address": "1990 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1981,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1261781945455853.jpg",
-        "facadeEdge": 1,
-        "score": 0.64,
-        "distance": 38,
-        "imageRegion": {
-          "left": 0.804,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 81,
-      "reviewScore": 0.5502,
-      "category": "residential",
-      "buildingId": -1003489,
-      "buildingSourceId": "overture:9a0ba05e-3337-4883-acef-4a036438c737",
-      "mappedType": "yes",
-      "address": "1821 RED RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1986,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1087914196591765.jpg",
-        "facadeEdge": 1,
-        "score": 0.631,
-        "distance": 27.9,
-        "imageRegion": {
-          "left": 0.779,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 82,
-      "reviewScore": 0.5489,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000567,
-      "buildingSourceId": "overture:95ddeb54-0b78-4ef1-8c3d-f1be702732e3",
-      "mappedType": "yes",
-      "address": "445 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "025",
-      "actualYearBuilt": 1966,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1074776639832933.jpg",
-        "facadeEdge": 3,
-        "score": 0.636,
-        "distance": 31.4,
-        "imageRegion": {
-          "left": 1,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 83,
-      "reviewScore": 0.5477,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000876,
-      "buildingSourceId": "overture:1d613143-cb9d-4332-9816-a56b90b4bd53",
-      "mappedType": "yes",
-      "address": "445 E HAITI AVE, CLEWISTON, 33440",
-      "useCode": "043",
-      "actualYearBuilt": 1957,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1016865107067938.jpg",
-        "facadeEdge": 1,
-        "score": 0.604,
-        "distance": 74.3,
-        "imageRegion": {
-          "left": 0.687,
-          "right": 0.974
-        }
-      }
-    },
-    {
-      "rank": 84,
-      "reviewScore": 0.5476,
-      "category": "residential",
-      "buildingId": -1003575,
-      "buildingSourceId": "overture:47fef112-5298-41cc-9d1c-0c995400c782",
-      "mappedType": "yes",
-      "address": "779 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1992,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1032963495487113.jpg",
-        "facadeEdge": 0,
-        "score": 0.642,
-        "distance": 39.5,
-        "imageRegion": {
-          "left": 0.824,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 85,
-      "reviewScore": 0.5471,
-      "category": "residential",
-      "buildingId": -1000680,
-      "buildingSourceId": "overture:fef9e3c2-4dab-45d6-a7c2-027cefb5ea39",
-      "mappedType": "yes",
-      "address": "420 E TRINIDAD AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1963,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1728766344661018.jpg",
-        "facadeEdge": 3,
-        "score": 0.594,
-        "distance": 53.3,
-        "imageRegion": {
-          "left": 0.724,
-          "right": 0.837
-        }
-      }
-    },
-    {
-      "rank": 86,
-      "reviewScore": 0.5468,
-      "category": "residential",
-      "buildingId": -1000848,
-      "buildingSourceId": "overture:a8acf5ce-100b-4cc3-9024-f8adfa3c3573",
-      "mappedType": "yes",
-      "address": "410 S SAN GABRIEL ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1951,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1128302578615447.jpg",
-        "facadeEdge": 3,
-        "score": 0.652,
-        "distance": 28.3,
-        "imageRegion": {
-          "left": 0.733,
-          "right": 0.876
-        }
-      }
-    },
-    {
-      "rank": 87,
-      "reviewScore": 0.5447,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000547,
-      "buildingSourceId": "overture:4121854a-3bba-45c0-891f-15ce9fef8dff",
-      "mappedType": "yes",
-      "address": "504 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "021",
-      "actualYearBuilt": 1979,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1228046705396807.jpg",
-        "facadeEdge": 1,
-        "score": 0.725,
-        "distance": 21.2,
-        "imageRegion": {
-          "left": 0.001,
-          "right": 0.297
-        }
-      }
-    },
-    {
-      "rank": 88,
-      "reviewScore": 0.5426,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003647,
-      "buildingSourceId": "overture:1a257bad-0751-474e-9a1d-7a485a6571ec",
-      "mappedType": "yes",
-      "address": "1850 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "2089445168209458.jpg",
-        "facadeEdge": 0,
-        "score": 0.638,
-        "distance": 54,
-        "imageRegion": {
-          "left": 0.677,
-          "right": 0.89
-        }
-      }
-    },
-    {
-      "rank": 89,
-      "reviewScore": 0.5418,
-      "category": "residential",
-      "buildingId": -1000554,
-      "buildingSourceId": "overture:7c08eefe-ef9c-42bd-9bdc-777e90fe0f93",
-      "mappedType": "yes",
-      "address": "516 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1953,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1211851917321785.jpg",
-        "facadeEdge": 4,
-        "score": 0.66,
-        "distance": 60.5,
-        "imageRegion": {
-          "left": 0.382,
-          "right": 0.477
-        }
-      }
-    },
-    {
-      "rank": 90,
-      "reviewScore": 0.5418,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000784,
-      "buildingSourceId": "overture:5d25f612-968e-49f3-8da6-0918f0b12b3d",
-      "mappedType": "yes",
-      "address": "444 E OBISPO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1123306596219674.jpg",
-        "facadeEdge": 3,
-        "score": 0.66,
-        "distance": 23.9,
-        "imageRegion": {
-          "left": 0.83,
-          "right": 0.975
-        }
-      }
-    },
-    {
-      "rank": 91,
-      "reviewScore": 0.5397,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002404,
-      "buildingSourceId": "overture:fe788da3-d338-4e55-b348-04689b2677b3",
-      "mappedType": "yes",
-      "address": "340 COMMERCIO ST, CLEWISTON, 33440",
-      "useCode": "048",
-      "actualYearBuilt": 2000,
-      "buildingsOnParcel": 5,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "2427463204395353.jpg",
-        "facadeEdge": 3,
-        "score": 0.697,
-        "distance": 33.9,
-        "imageRegion": {
-          "left": 0.66,
-          "right": 0.812
-        }
-      }
-    },
-    {
-      "rank": 92,
-      "reviewScore": 0.5378,
-      "category": "residential",
-      "buildingId": -1003551,
-      "buildingSourceId": "overture:5ccc2700-dcb2-4881-97c3-1942073909d6",
-      "mappedType": "yes",
-      "address": "1713 RED RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2001,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1449442532916354.jpg",
-        "facadeEdge": 0,
-        "score": 0.642,
-        "distance": 26.3,
-        "imageRegion": {
-          "left": 0.873,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 93,
-      "reviewScore": 0.5376,
-      "category": "residential",
-      "buildingId": -1000672,
-      "buildingSourceId": "overture:0316ef41-1381-42d7-b393-c9d2c4842414",
-      "mappedType": "yes",
-      "address": "428 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1975,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1455678055802097.jpg",
-        "facadeEdge": 2,
-        "score": 0.708,
-        "distance": 35.9,
-        "imageRegion": {
-          "left": 0.467,
-          "right": 0.577
-        }
-      }
-    },
-    {
-      "rank": 94,
-      "reviewScore": 0.5363,
-      "category": "residential",
-      "buildingId": 1379207520,
-      "buildingSourceId": "osm:way/1379207520",
-      "mappedType": "yes",
-      "address": "522 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1088930256657144.jpg",
-        "facadeEdge": 2,
-        "score": 0.585,
-        "distance": 75.1,
-        "imageRegion": {
-          "left": 0.498,
-          "right": 0.583
-        }
-      }
-    },
-    {
-      "rank": 95,
-      "reviewScore": 0.5358,
-      "category": "residential",
-      "buildingId": 1378660449,
-      "buildingSourceId": "osm:way/1378660449",
-      "mappedType": "yes",
-      "address": "549 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2019,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1865321891076334.jpg",
-        "facadeEdge": 2,
-        "score": 0.642,
-        "distance": 57.4,
-        "imageRegion": {
-          "left": 0.521,
-          "right": 0.638
-        }
-      }
-    },
-    {
-      "rank": 96,
-      "reviewScore": 0.5351,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864238,
-      "buildingSourceId": "osm:way/867864238",
-      "mappedType": "yes",
-      "address": "1312 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1954,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "977194867503903.jpg",
-        "facadeEdge": 3,
-        "score": 0.603,
-        "distance": 78.2,
-        "imageRegion": {
-          "left": 0.475,
-          "right": 0.502
-        }
-      }
-    },
-    {
-      "rank": 97,
-      "reviewScore": 0.5328,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000318,
-      "buildingSourceId": "overture:14905d39-5654-4823-92ec-b189ef83e6b2",
-      "mappedType": "yes",
-      "address": null,
-      "useCode": null,
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "306140584398867.jpg",
-        "facadeEdge": 0,
-        "score": 0.728,
-        "distance": 30.4,
-        "imageRegion": {
-          "left": 0.375,
-          "right": 0.478
-        }
-      }
-    },
-    {
-      "rank": 98,
-      "reviewScore": 0.5328,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000421,
-      "buildingSourceId": "overture:07fc6f7e-9dba-4d4c-8b25-fa8e61e1a89c",
-      "mappedType": "yes",
-      "address": "501 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "017",
-      "actualYearBuilt": 1984,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "493362977076582.jpg",
-        "facadeEdge": 1,
-        "score": 0.608,
-        "distance": 46,
-        "imageRegion": {
-          "left": 0.009,
-          "right": 0.21
-        }
-      }
-    },
-    {
-      "rank": 99,
-      "reviewScore": 0.5326,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000933,
-      "buildingSourceId": "overture:4f79a447-9cc9-445d-b2d3-166557ef0228",
-      "mappedType": "yes",
-      "address": "813 E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": null,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "1182966186706707.jpg",
-        "facadeEdge": 3,
-        "score": 0.609,
-        "distance": 66.2,
-        "imageRegion": {
-          "left": 0.351,
-          "right": 0.398
-        }
-      }
-    },
-    {
-      "rank": 100,
-      "reviewScore": 0.5326,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 850884198,
-      "buildingSourceId": "osm:way/850884198",
-      "mappedType": "retail",
-      "address": "202 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 2023,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 5,
-      "bestEvidence": {
-        "file": "1472857853917293.jpg",
-        "facadeEdge": 6,
-        "score": 0.591,
-        "distance": 77,
-        "imageRegion": {
-          "left": 0.152,
-          "right": 0.376
-        }
-      }
-    },
-    {
-      "rank": 101,
-      "reviewScore": 0.5319,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000852,
-      "buildingSourceId": "overture:385b1d7a-21b6-4834-ac71-9450bda9a693",
-      "mappedType": "yes",
-      "address": "548 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "041",
-      "actualYearBuilt": 1977,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "963394062557303.jpg",
-        "facadeEdge": 1,
-        "score": 0.565,
-        "distance": 53.9,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.121
-        }
-      }
-    },
-    {
-      "rank": 102,
-      "reviewScore": 0.5305,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864239,
-      "buildingSourceId": "osm:way/867864239",
-      "mappedType": "yes",
-      "address": "1312 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1954,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "977194867503903.jpg",
-        "facadeEdge": 3,
-        "score": 0.595,
-        "distance": 78.7,
-        "imageRegion": {
-          "left": 0.506,
-          "right": 0.533
-        }
-      }
-    },
-    {
-      "rank": 103,
-      "reviewScore": 0.5295,
-      "category": "residential",
-      "buildingId": 1379207514,
-      "buildingSourceId": "osm:way/1379207514",
-      "mappedType": "yes",
-      "address": "534 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1473079260686743.jpg",
-        "facadeEdge": 0,
-        "score": 0.633,
-        "distance": 75.2,
-        "imageRegion": {
-          "left": 0.385,
-          "right": 0.497
-        }
-      }
-    },
-    {
-      "rank": 104,
-      "reviewScore": 0.5292,
-      "category": "residential",
-      "buildingId": -1002517,
-      "buildingSourceId": "overture:1efc4d73-a849-4daa-b864-cff444179b89",
-      "mappedType": "yes",
-      "address": "426 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "753544623883415.jpg",
-        "facadeEdge": 2,
-        "score": 0.602,
-        "distance": 20.2,
-        "imageRegion": {
-          "left": 1,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 105,
-      "reviewScore": 0.5291,
-      "category": "residential",
-      "buildingId": -1000392,
-      "buildingSourceId": "overture:e6be19db-59d7-4310-8a2c-1507f8f70ebd",
-      "mappedType": "yes",
-      "address": "724 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2007,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2048607162331539.jpg",
-        "facadeEdge": 1,
-        "score": 0.615,
-        "distance": 64.4,
-        "imageRegion": {
-          "left": 0.202,
-          "right": 0.364
-        }
-      }
-    },
-    {
-      "rank": 106,
-      "reviewScore": 0.5271,
-      "category": "residential",
-      "buildingId": -1002483,
-      "buildingSourceId": "overture:4cced981-e023-4c75-ac1f-5dac05985db8",
-      "mappedType": "yes",
-      "address": "412 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1938,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "650895388021158.jpg",
-        "facadeEdge": 3,
-        "score": 0.643,
-        "distance": 20.1,
-        "imageRegion": {
-          "left": 0.929,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 107,
-      "reviewScore": 0.526,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002106,
-      "buildingSourceId": "overture:4fdbdb2f-59d1-4a7a-9a34-a48db03ce944",
-      "mappedType": "yes",
-      "address": "1055 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1958,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "737713922573414.jpg",
-        "facadeEdge": 3,
-        "score": 0.548,
-        "distance": 54.1,
-        "imageRegion": {
-          "left": 0.761,
-          "right": 0.902
-        }
-      }
-    },
-    {
-      "rank": 108,
-      "reviewScore": 0.5255,
-      "category": "residential",
-      "buildingId": -1002070,
-      "buildingSourceId": "overture:d446f4ad-d70b-4bbd-b734-4ade14659680",
-      "mappedType": "yes",
-      "address": "1996 STRICKLAND RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1993,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "737713922573414.jpg",
-        "facadeEdge": 1,
-        "score": 0.564,
-        "distance": 36.7,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.092
-        }
-      }
-    },
-    {
-      "rank": 109,
-      "reviewScore": 0.5242,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000292,
-      "buildingSourceId": "overture:d2cf1e9b-737b-49e7-a6ec-1a3e3c1da29e",
-      "mappedType": "yes",
-      "address": "831 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "124736053712858.jpg",
-        "facadeEdge": 2,
-        "score": 0.641,
-        "distance": 72.8,
-        "imageRegion": {
-          "left": 0.468,
-          "right": 0.58
-        }
-      }
-    },
-    {
-      "rank": 110,
-      "reviewScore": 0.5208,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000316,
-      "buildingSourceId": "overture:c93599b0-328c-4edd-9ea6-a582f2a675ba",
-      "mappedType": "yes",
-      "address": "831 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1070611787880104.jpg",
-        "facadeEdge": 1,
-        "score": 0.658,
-        "distance": 61.4,
-        "imageRegion": {
-          "left": 0.512,
-          "right": 0.558
-        }
-      }
-    },
-    {
-      "rank": 111,
-      "reviewScore": 0.5206,
-      "category": "residential",
-      "buildingId": 1379207518,
-      "buildingSourceId": "osm:way/1379207518",
-      "mappedType": "yes",
-      "address": "526 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1473079260686743.jpg",
-        "facadeEdge": 0,
-        "score": 0.549,
-        "distance": 76.1,
-        "imageRegion": {
-          "left": 0.693,
-          "right": 0.804
-        }
-      }
-    },
-    {
-      "rank": 112,
-      "reviewScore": 0.5202,
-      "category": "residential",
-      "buildingId": 876594029,
-      "buildingSourceId": "osm:way/876594029",
-      "mappedType": "yes",
-      "address": "811 W AZTEC AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1984,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "817700770859042.jpg",
-        "facadeEdge": 0,
-        "score": 0.559,
-        "distance": 27.7,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.08
-        }
-      }
-    },
-    {
-      "rank": 113,
-      "reviewScore": 0.5193,
-      "category": "residential",
-      "buildingId": -1002101,
-      "buildingSourceId": "overture:cf07d978-a397-4368-90e1-efcee1744c15",
-      "mappedType": "yes",
-      "address": "1007 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "658863037262557.jpg",
-        "facadeEdge": 0,
-        "score": 0.585,
-        "distance": 50.5,
-        "imageRegion": {
-          "left": 0.792,
-          "right": 0.992
-        }
-      }
-    },
-    {
-      "rank": 114,
-      "reviewScore": 0.5184,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 383907720,
-      "buildingSourceId": "osm:way/383907720",
-      "mappedType": "roof",
-      "address": "433 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1965,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1074776639832933.jpg",
-        "facadeEdge": 3,
-        "score": 0.618,
-        "distance": 41.1,
-        "imageRegion": {
-          "left": 0.739,
-          "right": 0.839
-        }
-      }
-    },
-    {
-      "rank": 115,
-      "reviewScore": 0.5182,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000527,
-      "buildingSourceId": "overture:3f4981ab-4ce4-467f-a83e-c5bdb611890a",
-      "mappedType": "yes",
-      "address": "604 E PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "012",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "731395123172767.jpg",
-        "facadeEdge": 2,
-        "score": 0.731,
-        "distance": 48.3,
-        "imageRegion": {
-          "left": 0.35,
-          "right": 0.496
-        }
-      }
-    },
-    {
-      "rank": 116,
-      "reviewScore": 0.5181,
-      "category": "residential",
-      "buildingId": -1000755,
-      "buildingSourceId": "overture:d3b88d66-5c08-45bb-85f2-0226c3739bed",
-      "mappedType": "yes",
-      "address": "401 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2001,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "552400471221058.jpg",
-        "facadeEdge": 1,
-        "score": 0.573,
-        "distance": 24.2,
-        "imageRegion": {
-          "left": 0.04,
-          "right": 0.269
-        }
-      }
-    },
-    {
-      "rank": 117,
-      "reviewScore": 0.5168,
-      "category": "residential",
-      "buildingId": 868836090,
-      "buildingSourceId": "osm:way/868836090",
-      "mappedType": "yes",
-      "address": "1001 W AZTEC AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2000973457339112.jpg",
-        "facadeEdge": 0,
-        "score": 0.599,
-        "distance": 37.4,
-        "imageRegion": {
-          "left": 0.074,
-          "right": 0.221
-        }
-      }
-    },
-    {
-      "rank": 118,
-      "reviewScore": 0.5141,
-      "category": "residential",
-      "buildingId": -1002485,
-      "buildingSourceId": "overture:6f5eb899-bf09-406f-a0a1-45cbb2bf64ca",
-      "mappedType": "yes",
-      "address": "404 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "650895388021158.jpg",
-        "facadeEdge": 7,
-        "score": 0.616,
-        "distance": 40.8,
-        "imageRegion": {
-          "left": 0.744,
-          "right": 0.828
-        }
-      }
-    },
-    {
-      "rank": 119,
-      "reviewScore": 0.5138,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864237,
-      "buildingSourceId": "osm:way/867864237",
-      "mappedType": "yes",
-      "address": "1312 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1954,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "977194867503903.jpg",
-        "facadeEdge": 0,
-        "score": 0.569,
-        "distance": 81.2,
-        "imageRegion": {
-          "left": 0.531,
-          "right": 0.55
-        }
-      }
-    },
-    {
-      "rank": 120,
-      "reviewScore": 0.512,
-      "category": "residential",
-      "buildingId": -1002518,
-      "buildingSourceId": "overture:90fdd3ba-447c-4d2e-a3fe-bf1bfd10e044",
-      "mappedType": "yes",
-      "address": "438 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2209259286258909.jpg",
-        "facadeEdge": 5,
-        "score": 0.638,
-        "distance": 22.3,
-        "imageRegion": {
-          "left": 0.99,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 121,
-      "reviewScore": 0.5109,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000564,
-      "buildingSourceId": "overture:5a82cb81-719d-40c2-bc48-f0e46368a3a2",
-      "mappedType": "yes",
-      "address": "438 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "019",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1074776639832933.jpg",
-        "facadeEdge": 2,
-        "score": 0.595,
-        "distance": 32.7,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.129
-        }
-      }
-    },
-    {
-      "rank": 122,
-      "reviewScore": 0.51,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003262,
-      "buildingSourceId": "overture:012e26b6-c56c-4702-a7bd-2a3f578d5a63",
-      "mappedType": "yes",
-      "address": "CLEWISTON, 33440",
-      "useCode": "069",
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "697086179853645.jpg",
-        "facadeEdge": 3,
-        "score": 0.692,
-        "distance": 54.8,
-        "imageRegion": {
-          "left": 0.399,
-          "right": 0.492
-        }
-      }
-    },
-    {
-      "rank": 123,
-      "reviewScore": 0.5099,
-      "category": "residential",
-      "buildingId": -1000526,
-      "buildingSourceId": "overture:038ced9b-c4e2-403e-a258-cc3ff09b21db",
-      "mappedType": "shed",
-      "address": "532 E PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1937,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "811770641410764.jpg",
-        "facadeEdge": 1,
-        "score": 0.623,
-        "distance": 50.7,
-        "imageRegion": {
-          "left": 0.653,
-          "right": 0.696
-        }
-      }
-    },
-    {
-      "rank": 124,
-      "reviewScore": 0.5089,
-      "category": "residential",
-      "buildingId": -1000525,
-      "buildingSourceId": "overture:040ff175-f563-4483-8fe4-c14a4e3c7a99",
-      "mappedType": "yes",
-      "address": "532 E PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1937,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "811770641410764.jpg",
-        "facadeEdge": 3,
-        "score": 0.606,
-        "distance": 52.8,
-        "imageRegion": {
-          "left": 0.697,
-          "right": 0.784
-        }
-      }
-    },
-    {
-      "rank": 125,
-      "reviewScore": 0.5086,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864242,
-      "buildingSourceId": "osm:way/867864242",
-      "mappedType": "yes",
-      "address": "1312 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1954,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "977194867503903.jpg",
-        "facadeEdge": 21,
-        "score": 0.541,
-        "distance": 86.1,
-        "imageRegion": {
-          "left": 0.58,
-          "right": 0.654
-        }
-      }
-    },
-    {
-      "rank": 126,
-      "reviewScore": 0.5083,
-      "category": "residential",
-      "buildingId": -1002069,
-      "buildingSourceId": "overture:f4e4e82e-b63f-4565-8790-58ceb891ac2c",
-      "mappedType": "yes",
-      "address": "1180 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1983,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "737713922573414.jpg",
-        "facadeEdge": 1,
-        "score": 0.555,
-        "distance": 65,
-        "imageRegion": {
-          "left": 0.255,
-          "right": 0.287
-        }
-      }
-    },
-    {
-      "rank": 127,
-      "reviewScore": 0.5082,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 850715463,
-      "buildingSourceId": "osm:way/850715463",
-      "mappedType": "yes",
-      "address": "905 W VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "019",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1229599148676156.jpg",
-        "facadeEdge": 3,
-        "score": 0.598,
-        "distance": 64,
-        "imageRegion": {
-          "left": 0.33,
-          "right": 0.437
-        }
-      }
-    },
-    {
-      "rank": 128,
-      "reviewScore": 0.507,
-      "category": "residential",
-      "buildingId": -1000675,
-      "buildingSourceId": "overture:5cd28f59-7899-4082-9157-c1e461906580",
-      "mappedType": "yes",
-      "address": "429 E TRINIDAD AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1455678055802097.jpg",
-        "facadeEdge": 1,
-        "score": 0.548,
-        "distance": 82.8,
-        "imageRegion": {
-          "left": 0.37,
-          "right": 0.416
-        }
-      }
-    },
-    {
-      "rank": 129,
-      "reviewScore": 0.5065,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 1455097839,
-      "buildingSourceId": "osm:way/1455097839",
-      "mappedType": "roof",
-      "address": "300 S BERNER RD, CLEWISTON, 33440",
-      "useCode": "089",
-      "actualYearBuilt": 1974,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "694244986577498.jpg",
-        "facadeEdge": 2,
-        "score": 0.595,
-        "distance": 68.5,
-        "imageRegion": {
-          "left": 0.343,
-          "right": 0.45
-        }
-      }
-    },
-    {
-      "rank": 130,
-      "reviewScore": 0.5057,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000854,
-      "buildingSourceId": "overture:63a7a835-471b-470b-a9bd-9ca6d05d5fc8",
-      "mappedType": "yes",
-      "address": "544 E OBISPO AVE, CLEWISTON, 33440",
-      "useCode": "048",
-      "actualYearBuilt": 2022,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1879506242802598.jpg",
-        "facadeEdge": 3,
-        "score": 0.524,
-        "distance": 69.9,
-        "imageRegion": {
-          "left": 0.532,
-          "right": 0.841
-        }
-      }
-    },
-    {
-      "rank": 131,
-      "reviewScore": 0.5049,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000407,
-      "buildingSourceId": "overture:35f9ff27-6485-460c-be3a-f0f21b56bd27",
-      "mappedType": "yes",
-      "address": "500 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "493362977076582.jpg",
-        "facadeEdge": 2,
-        "score": 0.605,
-        "distance": 47.2,
-        "imageRegion": {
-          "left": 0.653,
-          "right": 0.773
-        }
-      }
-    },
-    {
-      "rank": 132,
-      "reviewScore": 0.5038,
-      "category": "residential",
-      "buildingId": -1003384,
-      "buildingSourceId": "overture:69add6b2-1893-4cc3-92bf-7bf9e4b3146f",
-      "mappedType": "yes",
-      "address": "2490 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1981,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "746445114713767.jpg",
-        "facadeEdge": 5,
-        "score": 0.591,
-        "distance": 43.4,
-        "imageRegion": {
-          "left": 0.895,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 133,
-      "reviewScore": 0.5035,
-      "category": "residential",
-      "buildingId": -1000552,
-      "buildingSourceId": "overture:24f6333e-6a52-4486-b0a3-54bc46ce23ae",
-      "mappedType": "yes",
-      "address": "521 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2648879875465596.jpg",
-        "facadeEdge": 0,
-        "score": 0.597,
-        "distance": 69.5,
-        "imageRegion": {
-          "left": 0.596,
-          "right": 0.682
-        }
-      }
-    },
-    {
-      "rank": 134,
-      "reviewScore": 0.5015,
-      "category": "residential",
-      "buildingId": 850715461,
-      "buildingSourceId": "osm:way/850715461",
-      "mappedType": "shed",
-      "address": "321 W VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1939,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "8806414832780314.jpg",
-        "facadeEdge": 3,
-        "score": 0.546,
-        "distance": 79.2,
-        "imageRegion": {
-          "left": 0.563,
-          "right": 0.587
-        }
-      }
-    },
-    {
-      "rank": 135,
-      "reviewScore": 0.5,
-      "category": "residential",
-      "buildingId": -1001627,
-      "buildingSourceId": "overture:b3225fca-a121-4c32-915f-1bfc72cfefb0",
-      "mappedType": "yes",
-      "address": "766 MIDSTATE LOOP, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2022,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "713057981459977.jpg",
-        "facadeEdge": 3,
-        "score": 0.569,
-        "distance": 42.6,
-        "imageRegion": {
-          "left": 0.829,
-          "right": 0.979
-        }
-      }
-    },
-    {
-      "rank": 136,
-      "reviewScore": 0.4981,
-      "category": "residential",
-      "buildingId": -1000677,
-      "buildingSourceId": "overture:3b874aae-8e66-4c7f-abe1-e7174dbed157",
-      "mappedType": "shed",
-      "address": "434 E TRINIDAD AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1957,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1008478591210731.jpg",
-        "facadeEdge": 2,
-        "score": 0.707,
-        "distance": 43,
-        "imageRegion": {
-          "left": 0.302,
-          "right": 0.417
-        }
-      }
-    },
-    {
-      "rank": 137,
-      "reviewScore": 0.4967,
-      "category": "residential",
-      "buildingId": -1003550,
-      "buildingSourceId": "overture:c1789a1a-b7ec-4c90-bbd1-b1c617a5b9e2",
-      "mappedType": "yes",
-      "address": "1709 RED RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1990,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1449442532916354.jpg",
-        "facadeEdge": 0,
-        "score": 0.583,
-        "distance": 52.8,
-        "imageRegion": {
-          "left": 0.717,
-          "right": 0.81
-        }
-      }
-    },
-    {
-      "rank": 138,
-      "reviewScore": 0.4962,
-      "category": "residential",
-      "buildingId": -1000807,
-      "buildingSourceId": "overture:246f34ab-7355-4479-ba0b-e221d97fb106",
-      "mappedType": "yes",
-      "address": "439 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1190033066182256.jpg",
-        "facadeEdge": 2,
-        "score": 0.592,
-        "distance": 31,
-        "imageRegion": {
-          "left": 0.59,
-          "right": 0.829
-        }
-      }
-    },
-    {
-      "rank": 139,
-      "reviewScore": 0.4959,
-      "category": "residential",
-      "buildingId": -1003363,
-      "buildingSourceId": "overture:d8b65fc3-0605-4324-a1b0-1c7b5f2d7227",
-      "mappedType": "shed",
-      "address": "1223 ART LAWRENCE RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "697571003261838.jpg",
-        "facadeEdge": 1,
-        "score": 0.604,
-        "distance": 19.6,
-        "imageRegion": {
-          "left": 0.972,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 140,
-      "reviewScore": 0.4952,
-      "category": "residential",
-      "buildingId": 850884226,
-      "buildingSourceId": "osm:way/850884226",
-      "mappedType": "house",
-      "address": "320 W SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "8806414832780314.jpg",
-        "facadeEdge": 4,
-        "score": 0.53,
-        "distance": 52.2,
-        "imageRegion": {
-          "left": 0.754,
-          "right": 0.793
-        }
-      }
-    },
-    {
-      "rank": 141,
-      "reviewScore": 0.4945,
-      "category": "residential",
-      "buildingId": -1000658,
-      "buildingSourceId": "overture:d0f744e6-cc1e-40e2-8480-86f1b7ab8400",
-      "mappedType": "yes",
-      "address": "433 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1935,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1478061919653716.jpg",
-        "facadeEdge": 3,
-        "score": 0.534,
-        "distance": 64.3,
-        "imageRegion": {
-          "left": 0.728,
-          "right": 0.752
-        }
-      }
-    },
-    {
-      "rank": 142,
-      "reviewScore": 0.4943,
-      "category": "residential",
-      "buildingId": -1000701,
-      "buildingSourceId": "overture:4a38e33c-de83-4f34-beec-eb9199cc9696",
-      "mappedType": "yes",
-      "address": "303 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1961,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "3958164831073140.jpg",
-        "facadeEdge": 0,
-        "score": 0.523,
-        "distance": 70.8,
-        "imageRegion": {
-          "left": 0.258,
-          "right": 0.313
-        }
-      }
-    },
-    {
-      "rank": 143,
-      "reviewScore": 0.4942,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003478,
-      "buildingSourceId": "overture:fa58c903-cc40-4984-aaa1-ecd131b431ff",
-      "mappedType": "yes",
-      "address": "1377 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1964,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "683515064680512.jpg",
-        "facadeEdge": 4,
-        "score": 0.592,
-        "distance": 55.7,
-        "imageRegion": {
-          "left": 0.26,
-          "right": 0.314
-        }
-      }
-    },
-    {
-      "rank": 144,
-      "reviewScore": 0.4924,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1001293,
-      "buildingSourceId": "overture:b532996c-becf-42b2-aa56-232ade5a90b5",
-      "mappedType": "shed",
-      "address": "1220 E US HWY 27, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 2004,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1260456035654307.jpg",
-        "facadeEdge": 2,
-        "score": 0.709,
-        "distance": 48.7,
-        "imageRegion": {
-          "left": 0.498,
-          "right": 0.579
-        }
-      }
-    },
-    {
-      "rank": 145,
-      "reviewScore": 0.4918,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000313,
-      "buildingSourceId": "overture:9bff3747-e2e2-4be7-8698-91c80e3e5079",
-      "mappedType": "yes",
-      "address": "831 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1070611787880104.jpg",
-        "facadeEdge": 1,
-        "score": 0.61,
-        "distance": 63.3,
-        "imageRegion": {
-          "left": 0.613,
-          "right": 0.653
-        }
-      }
-    },
-    {
-      "rank": 146,
-      "reviewScore": 0.4888,
-      "category": "residential",
-      "buildingId": 1377670848,
-      "buildingSourceId": "osm:way/1377670848",
-      "mappedType": "yes",
-      "address": "715 SEMINOLE AVE, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1691409471488726.jpg",
-        "facadeEdge": 2,
-        "score": 0.568,
-        "distance": 63.4,
-        "imageRegion": {
-          "left": 0.233,
-          "right": 0.33
-        }
-      }
-    },
-    {
-      "rank": 147,
-      "reviewScore": 0.4885,
-      "category": "residential",
-      "buildingId": 841005990,
-      "buildingSourceId": "osm:way/841005990",
-      "mappedType": "yes",
-      "address": "603 S BERNER RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1319424946332958.jpg",
-        "facadeEdge": 1,
-        "score": 0.595,
-        "distance": 38.9,
-        "imageRegion": {
-          "left": 0.248,
-          "right": 0.265
-        }
-      }
-    },
-    {
-      "rank": 148,
-      "reviewScore": 0.4884,
-      "category": "residential",
-      "buildingId": -1002500,
-      "buildingSourceId": "overture:f36d4714-b4e9-40c8-9123-7b68131c863e",
-      "mappedType": "yes",
-      "address": "425 W ARCADE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1937,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "650895388021158.jpg",
-        "facadeEdge": 0,
-        "score": 0.572,
-        "distance": 58.8,
-        "imageRegion": {
-          "left": 0.2,
-          "right": 0.283
-        }
-      }
-    },
-    {
-      "rank": 149,
-      "reviewScore": 0.4883,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002606,
-      "buildingSourceId": "overture:bdc85a0d-7c30-498e-a7b7-0ede5cb16b41",
-      "mappedType": "yes",
-      "address": "CMS W PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "083",
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1429953305022024.jpg",
-        "facadeEdge": 1,
-        "score": 0.643,
-        "distance": 64.6,
-        "imageRegion": {
-          "left": 0.306,
-          "right": 0.433
-        }
-      }
-    },
-    {
-      "rank": 150,
-      "reviewScore": 0.4879,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 817555429,
-      "buildingSourceId": "osm:way/817555429",
-      "mappedType": "yes",
-      "address": "721 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "033",
-      "actualYearBuilt": 1935,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1268820774738089.jpg",
-        "facadeEdge": 5,
-        "score": 0.424,
-        "distance": 51.5,
-        "imageRegion": {
-          "left": 0.208,
-          "right": 0.518
-        }
-      }
-    },
-    {
-      "rank": 151,
-      "reviewScore": 0.4876,
-      "category": "residential",
-      "buildingId": 835773467,
-      "buildingSourceId": "osm:way/835773467",
-      "mappedType": "yes",
-      "address": "251 SUGARLAND PARK, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "739632262099186.jpg",
-        "facadeEdge": 3,
-        "score": 0.67,
-        "distance": 56.8,
-        "imageRegion": {
-          "left": 0.243,
-          "right": 0.413
-        }
-      }
-    },
-    {
-      "rank": 152,
-      "reviewScore": 0.4856,
-      "category": "residential",
-      "buildingId": -1002501,
-      "buildingSourceId": "overture:f844aa96-4ee6-4dd0-8efa-af6fdc1f5e49",
-      "mappedType": "shed",
-      "address": "425 W ARCADE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1937,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "650895388021158.jpg",
-        "facadeEdge": 0,
-        "score": 0.57,
-        "distance": 48,
-        "imageRegion": {
-          "left": 0.093,
-          "right": 0.168
-        }
-      }
-    },
-    {
-      "rank": 153,
-      "reviewScore": 0.4854,
-      "category": "residential",
-      "buildingId": -1003383,
-      "buildingSourceId": "overture:671b6297-94ab-4644-9ac6-337b22f47f15",
-      "mappedType": "yes",
-      "address": "2490 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1981,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "746445114713767.jpg",
-        "facadeEdge": 4,
-        "score": 0.559,
-        "distance": 51.6,
-        "imageRegion": {
-          "left": 0.754,
-          "right": 0.86
-        }
-      }
-    },
-    {
-      "rank": 154,
-      "reviewScore": 0.4847,
-      "category": "residential",
-      "buildingId": -1003549,
-      "buildingSourceId": "overture:52f32eab-63d6-4ee8-9399-d0ad7886ad2c",
-      "mappedType": "yes",
-      "address": "1705 RED RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1995,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "614492805002825.jpg",
-        "facadeEdge": 5,
-        "score": 0.444,
-        "distance": 48.2,
-        "imageRegion": {
-          "left": 0.964,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 155,
-      "reviewScore": 0.4841,
-      "category": "residential",
-      "buildingId": 835773465,
-      "buildingSourceId": "osm:way/835773465",
-      "mappedType": "yes",
-      "address": "251 SUGARLAND PARK, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "739632262099186.jpg",
-        "facadeEdge": 4,
-        "score": 0.665,
-        "distance": 57.6,
-        "imageRegion": {
-          "left": 0.588,
-          "right": 0.755
-        }
-      }
-    },
-    {
-      "rank": 156,
-      "reviewScore": 0.4838,
-      "category": "residential",
-      "buildingId": -1000664,
-      "buildingSourceId": "overture:f22afb64-b542-4d0e-89ba-c8adc0c34466",
-      "mappedType": "yes",
-      "address": "428 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1478061919653716.jpg",
-        "facadeEdge": 0,
-        "score": 0.582,
-        "distance": 69.1,
-        "imageRegion": {
-          "left": 0.346,
-          "right": 0.377
-        }
-      }
-    },
-    {
-      "rank": 157,
-      "reviewScore": 0.4837,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003640,
-      "buildingSourceId": "overture:0e8927bb-7a6a-4e78-bdce-44e1e87820ed",
-      "mappedType": "yes",
-      "address": "1850 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1889169665253740.jpg",
-        "facadeEdge": 0,
-        "score": 0.564,
-        "distance": 59.5,
-        "imageRegion": {
-          "left": 0.744,
-          "right": 0.877
-        }
-      }
-    },
-    {
-      "rank": 158,
-      "reviewScore": 0.4832,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000875,
-      "buildingSourceId": "overture:c848c4b1-d2c5-4d78-9300-2e707e93278e",
-      "mappedType": "yes",
-      "address": "E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1963,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1016865107067938.jpg",
-        "facadeEdge": 1,
-        "score": 0.56,
-        "distance": 64.8,
-        "imageRegion": {
-          "left": 0.233,
-          "right": 0.325
-        }
-      }
-    },
-    {
-      "rank": 159,
-      "reviewScore": 0.4825,
-      "category": "residential",
-      "buildingId": 841005988,
-      "buildingSourceId": "osm:way/841005988",
-      "mappedType": "yes",
-      "address": "725 S BERNER RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1524660262316443.jpg",
-        "facadeEdge": 3,
-        "score": 0.557,
-        "distance": 37.7,
-        "imageRegion": {
-          "left": 0.875,
-          "right": 0.972
-        }
-      }
-    },
-    {
-      "rank": 160,
-      "reviewScore": 0.4806,
-      "category": "residential",
-      "buildingId": -1003133,
-      "buildingSourceId": "overture:4bcb90ef-deae-45de-b0ea-dac7bc20abc6",
-      "mappedType": "yes",
-      "address": "815 CARIBBEAN AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1987,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1041110130973063.jpg",
-        "facadeEdge": 5,
-        "score": 0.568,
-        "distance": 45.1,
-        "imageRegion": {
-          "left": 0.944,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 161,
-      "reviewScore": 0.4804,
-      "category": "residential",
-      "buildingId": -1002508,
-      "buildingSourceId": "overture:93e28cd8-906e-4154-b371-ce26cb0fe602",
-      "mappedType": "yes",
-      "address": "418 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "753544623883415.jpg",
-        "facadeEdge": 2,
-        "score": 0.478,
-        "distance": 57.7,
-        "imageRegion": {
-          "left": 0.667,
-          "right": 0.783
-        }
-      }
-    },
-    {
-      "rank": 162,
-      "reviewScore": 0.4804,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003556,
-      "buildingSourceId": "overture:18facd64-d063-423f-81f1-4e0d30b7cbd4",
-      "mappedType": "yes",
-      "address": "1955 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 2006,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1930142711069513.jpg",
-        "facadeEdge": 1,
-        "score": 0.559,
-        "distance": 51,
-        "imageRegion": {
-          "left": 0.85,
-          "right": 0.931
-        }
-      }
-    },
-    {
-      "rank": 163,
-      "reviewScore": 0.4787,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000546,
-      "buildingSourceId": "overture:da81afa9-1787-47ca-81a3-436873c829bb",
-      "mappedType": "yes",
-      "address": "516 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1946,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1228046705396807.jpg",
-        "facadeEdge": 1,
-        "score": 0.584,
-        "distance": 41.8,
-        "imageRegion": {
-          "left": 0,
-          "right": 0
-        }
-      }
-    },
-    {
-      "rank": 164,
-      "reviewScore": 0.4784,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000888,
-      "buildingSourceId": "overture:98b09c95-0b2d-49c8-974f-ae1201de7057",
-      "mappedType": "yes",
-      "address": "410 E HAITI AVE, CLEWISTON, 33440",
-      "useCode": "049",
-      "actualYearBuilt": 1964,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1635796507358780.jpg",
-        "facadeEdge": 3,
-        "score": 0.588,
-        "distance": 79.1,
-        "imageRegion": {
-          "left": 0.223,
-          "right": 0.385
-        }
-      }
-    },
-    {
-      "rank": 165,
-      "reviewScore": 0.4775,
-      "category": "residential",
-      "buildingId": -1003135,
-      "buildingSourceId": "overture:54a6e51e-cd85-4049-a61c-f47db32b2c62",
-      "mappedType": "yes",
-      "address": "1001 CARIBBEAN AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1994,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1041110130973063.jpg",
-        "facadeEdge": 3,
-        "score": 0.536,
-        "distance": 76.5,
-        "imageRegion": {
-          "left": 0.21,
-          "right": 0.343
-        }
-      }
-    },
-    {
-      "rank": 166,
-      "reviewScore": 0.4754,
-      "category": "residential",
-      "buildingId": -1003576,
-      "buildingSourceId": "overture:97d437bf-74ea-4ca5-b8af-ad62fe1193d2",
-      "mappedType": "yes",
-      "address": "807 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1979,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1032963495487113.jpg",
-        "facadeEdge": 5,
-        "score": 0.548,
-        "distance": 71.6,
-        "imageRegion": {
-          "left": 0.653,
-          "right": 0.741
-        }
-      }
-    },
-    {
-      "rank": 167,
-      "reviewScore": 0.4751,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002274,
-      "buildingSourceId": "overture:d6369cc8-abaa-4114-913b-dc43c0e5c895",
-      "mappedType": "yes",
-      "address": "311 W ARROYO AVE, CLEWISTON, 33440",
-      "useCode": "010",
-      "actualYearBuilt": 1988,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "706024682144740.jpg",
-        "facadeEdge": 2,
-        "score": 0.596,
-        "distance": 75.9,
-        "imageRegion": {
-          "left": 0.175,
-          "right": 0.372
-        }
-      }
-    },
-    {
-      "rank": 168,
-      "reviewScore": 0.4736,
-      "category": "residential",
-      "buildingId": 876594035,
-      "buildingSourceId": "osm:way/876594035",
-      "mappedType": "yes",
-      "address": "210 E SUGARLAND CIR, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1988,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1328688192374706.jpg",
-        "facadeEdge": 0,
-        "score": 0.532,
-        "distance": 67.2,
-        "imageRegion": {
-          "left": 0.406,
-          "right": 0.531
-        }
-      }
-    },
-    {
-      "rank": 169,
-      "reviewScore": 0.4731,
-      "category": "residential",
-      "buildingId": 1379207508,
-      "buildingSourceId": "osm:way/1379207508",
-      "mappedType": "yes",
-      "address": "548 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2019,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1865321891076334.jpg",
-        "facadeEdge": 0,
-        "score": 0.473,
-        "distance": 92.3,
-        "imageRegion": {
-          "left": 0.754,
-          "right": 0.848
-        }
-      }
-    },
-    {
-      "rank": 170,
-      "reviewScore": 0.4727,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 835773432,
-      "buildingSourceId": "osm:way/835773432",
-      "mappedType": "yes",
-      "address": "1203 S W C OWEN AVE, CLEWISTON, 33440",
-      "useCode": "086",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "706024682144740.jpg",
-        "facadeEdge": 2,
-        "score": 0.536,
-        "distance": 38.5,
-        "imageRegion": {
-          "left": 0.877,
-          "right": 0.986
-        }
-      }
-    },
-    {
-      "rank": 171,
-      "reviewScore": 0.4722,
-      "category": "residential",
-      "buildingId": 850884225,
-      "buildingSourceId": "osm:way/850884225",
-      "mappedType": "shed",
-      "address": "320 W SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "8806414832780314.jpg",
-        "facadeEdge": 3,
-        "score": 0.488,
-        "distance": 71.2,
-        "imageRegion": {
-          "left": 0.697,
-          "right": 0.743
-        }
-      }
-    },
-    {
-      "rank": 172,
-      "reviewScore": 0.471,
-      "category": "residential",
-      "buildingId": -1000568,
-      "buildingSourceId": "overture:b30e005d-3385-4369-8985-49dbfc1090dc",
-      "mappedType": "yes",
-      "address": "115 N SAN PEDRO ST, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1122471409647230.jpg",
-        "facadeEdge": 1,
-        "score": 0.532,
-        "distance": 63.2,
-        "imageRegion": {
-          "left": 0.103,
-          "right": 0.215
-        }
-      }
-    },
-    {
-      "rank": 173,
-      "reviewScore": 0.4695,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000563,
-      "buildingSourceId": "overture:5a3dcc43-af94-4a11-85f4-4c7d0acfe818",
-      "mappedType": "yes",
-      "address": "119 S SAN PEDRO ST, CLEWISTON, 33440",
-      "useCode": "012",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1478061919653716.jpg",
-        "facadeEdge": 1,
-        "score": 0.625,
-        "distance": 26.9,
-        "imageRegion": {
-          "left": 0.99,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 174,
-      "reviewScore": 0.4695,
-      "category": "residential",
-      "buildingId": 1379207524,
-      "buildingSourceId": "osm:way/1379207524",
-      "mappedType": "yes",
-      "address": "1002 S SAN PEDRO ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1088930256657144.jpg",
-        "facadeEdge": 1,
-        "score": 0.535,
-        "distance": 56.4,
-        "imageRegion": {
-          "left": 0.904,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 175,
-      "reviewScore": 0.4687,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000645,
-      "buildingSourceId": "overture:5d2120d7-91b7-41ee-8c93-4995dd7420c9",
-      "mappedType": "yes",
-      "address": "311 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "017",
-      "actualYearBuilt": 1949,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "443130442196967.jpg",
-        "facadeEdge": 1,
-        "score": 0.446,
-        "distance": 61.9,
-        "imageRegion": {
-          "left": 0.69,
-          "right": 0.84
-        }
-      }
-    },
-    {
-      "rank": 176,
-      "reviewScore": 0.4684,
-      "category": "civic-religious",
-      "buildingId": -1000403,
-      "buildingSourceId": "overture:cb8c1ff5-c9a0-460b-92b2-cd9d2b3703b5",
-      "mappedType": "yes",
-      "address": "402 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "075",
-      "actualYearBuilt": 1996,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "493362977076582.jpg",
-        "facadeEdge": 0,
-        "score": 0.532,
-        "distance": 99.1,
-        "imageRegion": {
-          "left": 0.559,
-          "right": 0.658
-        }
-      }
-    },
-    {
-      "rank": 177,
-      "reviewScore": 0.4683,
-      "category": "residential",
-      "buildingId": 1379207512,
-      "buildingSourceId": "osm:way/1379207512",
-      "mappedType": "yes",
-      "address": "538 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2017,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1473079260686743.jpg",
-        "facadeEdge": 0,
-        "score": 0.533,
-        "distance": 81.2,
-        "imageRegion": {
-          "left": 0.252,
-          "right": 0.348
-        }
-      }
-    },
-    {
-      "rank": 178,
-      "reviewScore": 0.4644,
-      "category": "residential",
-      "buildingId": -1003584,
-      "buildingSourceId": "overture:15a2a145-d411-4a87-a9c5-c52f78885b43",
-      "mappedType": "yes",
-      "address": "1798 MELISSA RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1991,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1622700545354227.jpg",
-        "facadeEdge": 1,
-        "score": 0.501,
-        "distance": 74.3,
-        "imageRegion": {
-          "left": 0.775,
-          "right": 0.944
-        }
-      }
-    },
-    {
-      "rank": 179,
-      "reviewScore": 0.4644,
-      "category": "residential",
-      "buildingId": 868836143,
-      "buildingSourceId": "osm:way/868836143",
-      "mappedType": "yes",
-      "address": "303 W SUGARLAND CIR, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2002,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1305616341100940.jpg",
-        "facadeEdge": 7,
-        "score": 0.52,
-        "distance": 48.7,
-        "imageRegion": {
-          "left": 0.042,
-          "right": 0.156
-        }
-      }
-    },
-    {
-      "rank": 180,
-      "reviewScore": 0.464,
-      "category": "residential",
-      "buildingId": -1000840,
-      "buildingSourceId": "overture:1832ec17-2876-46ad-a064-0721e5e1de0b",
-      "mappedType": "yes",
-      "address": "605 E TRINIDAD AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1960,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "525229457347403.jpg",
-        "facadeEdge": 3,
-        "score": 0.542,
-        "distance": 94.3,
-        "imageRegion": {
-          "left": 0.417,
-          "right": 0.465
-        }
-      }
-    },
-    {
-      "rank": 181,
-      "reviewScore": 0.4625,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000565,
-      "buildingSourceId": "overture:b23ff769-e3ae-4b78-ab88-d8c779098138",
-      "mappedType": "yes",
-      "address": "444 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "021",
-      "actualYearBuilt": 1946,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1228046705396807.jpg",
-        "facadeEdge": 1,
-        "score": 0.556,
-        "distance": 47.6,
-        "imageRegion": {
-          "left": 1,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 182,
-      "reviewScore": 0.4625,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864264,
-      "buildingSourceId": "osm:way/867864264",
-      "mappedType": "yes",
-      "address": "W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1987,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1003463357034405.jpg",
-        "facadeEdge": 2,
-        "score": 0.473,
-        "distance": 48.9,
-        "imageRegion": {
-          "left": 0.919,
-          "right": 0.96
-        }
-      }
-    },
-    {
-      "rank": 183,
-      "reviewScore": 0.4619,
-      "category": "residential",
-      "buildingId": -1000806,
-      "buildingSourceId": "overture:89d5a68b-870c-45c9-a2f8-cf4e88cdaa94",
-      "mappedType": "yes",
-      "address": "440 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1930,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "657220506939769.jpg",
-        "facadeEdge": 2,
-        "score": 0.486,
-        "distance": 47.1,
-        "imageRegion": {
-          "left": 0,
-          "right": 0
-        }
-      }
-    },
-    {
-      "rank": 184,
-      "reviewScore": 0.4614,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002094,
-      "buildingSourceId": "overture:ec70c392-82d3-468d-9a84-bfbd13dc922e",
-      "mappedType": "yes",
-      "address": "1020 DAVIDSON RD, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "658863037262557.jpg",
-        "facadeEdge": 3,
-        "score": 0.51,
-        "distance": 59.7,
-        "imageRegion": {
-          "left": 0.021,
-          "right": 0.149
-        }
-      }
-    },
-    {
-      "rank": 185,
-      "reviewScore": 0.4613,
-      "category": "civic-religious",
-      "buildingId": -1002464,
-      "buildingSourceId": "overture:bd2af242-c905-43fa-938e-ec5d3a6acd83",
-      "mappedType": "yes",
-      "address": "331 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "071",
-      "actualYearBuilt": 1999,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "757349116795449.jpg",
-        "facadeEdge": 7,
-        "score": 0.557,
-        "distance": 70.4,
-        "imageRegion": {
-          "left": 0.108,
-          "right": 0.274
-        }
-      }
-    },
-    {
-      "rank": 186,
-      "reviewScore": 0.4588,
-      "category": "residential",
-      "buildingId": -1003657,
-      "buildingSourceId": "overture:5c6a9eb1-84eb-4b92-a714-29bf6dcf43b9",
-      "mappedType": "yes",
-      "address": "511 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1994,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "23889954650625903.jpg",
-        "facadeEdge": 0,
-        "score": 0.511,
-        "distance": 61.4,
-        "imageRegion": {
-          "left": 0.145,
-          "right": 0.257
-        }
-      }
-    },
-    {
-      "rank": 187,
-      "reviewScore": 0.4584,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864240,
-      "buildingSourceId": "osm:way/867864240",
-      "mappedType": "yes",
-      "address": "1312 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1954,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "977194867503903.jpg",
-        "facadeEdge": 0,
-        "score": 0.472,
-        "distance": 89.8,
-        "imageRegion": {
-          "left": 0.659,
-          "right": 0.682
-        }
-      }
-    },
-    {
-      "rank": 188,
-      "reviewScore": 0.4571,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000656,
-      "buildingSourceId": "overture:ef377b45-eb4d-4923-976f-842c12618c23",
-      "mappedType": "yes",
-      "address": "420 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "017",
-      "actualYearBuilt": 1952,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1074776639832933.jpg",
-        "facadeEdge": 1,
-        "score": 0.494,
-        "distance": 90.7,
-        "imageRegion": {
-          "left": 0.122,
-          "right": 0.275
-        }
-      }
-    },
-    {
-      "rank": 189,
-      "reviewScore": 0.4557,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000258,
-      "buildingSourceId": "overture:72c73c13-aec3-45c0-8367-3061775856b8",
-      "mappedType": "shed",
-      "address": "SAN DIEGO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1992,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1723696451885331.jpg",
-        "facadeEdge": 0,
-        "score": 0.533,
-        "distance": 85,
-        "imageRegion": {
-          "left": 0.272,
-          "right": 0.355
-        }
-      }
-    },
-    {
-      "rank": 190,
-      "reviewScore": 0.4553,
-      "category": "residential",
-      "buildingId": -1002624,
-      "buildingSourceId": "overture:e7c8918a-5b1b-42ed-8d8a-185414ecf0d9",
-      "mappedType": "yes",
-      "address": "813 N LOPEZ ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1983,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1244556780439201.jpg",
-        "facadeEdge": 2,
-        "score": 0.446,
-        "distance": 62.5,
-        "imageRegion": {
-          "left": 0.683,
-          "right": 0.766
-        }
-      }
-    },
-    {
-      "rank": 191,
-      "reviewScore": 0.4545,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000350,
-      "buildingSourceId": "overture:3108c9ba-c3e5-4801-a38d-ebd0f32ca536",
-      "mappedType": "yes",
-      "address": "500 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 4,
-      "bestEvidence": {
-        "file": "9567161730041552.jpg",
-        "facadeEdge": 1,
-        "score": 0.447,
-        "distance": 82.5,
-        "imageRegion": {
-          "left": 0.839,
-          "right": 0.965
-        }
-      }
-    },
-    {
-      "rank": 192,
-      "reviewScore": 0.4538,
-      "category": "residential",
-      "buildingId": 868836106,
-      "buildingSourceId": "osm:way/868836106",
-      "mappedType": "yes",
-      "address": "408 W SUGARLAND CIR, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2000973457339112.jpg",
-        "facadeEdge": 3,
-        "score": 0.52,
-        "distance": 97.1,
-        "imageRegion": {
-          "left": 0.576,
-          "right": 0.637
-        }
-      }
-    },
-    {
-      "rank": 193,
-      "reviewScore": 0.4533,
-      "category": "residential",
-      "buildingId": -1003548,
-      "buildingSourceId": "overture:fb4db030-6855-43fb-87df-f43b235f276e",
-      "mappedType": "yes",
-      "address": "1700 RED RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1987,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "614492805002825.jpg",
-        "facadeEdge": 0,
-        "score": 0.524,
-        "distance": 58.1,
-        "imageRegion": {
-          "left": 0.825,
-          "right": 0.872
-        }
-      }
-    },
-    {
-      "rank": 194,
-      "reviewScore": 0.4528,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 1356546102,
-      "buildingSourceId": "osm:way/1356546102",
-      "mappedType": "commercial",
-      "address": "106 W OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "089",
-      "actualYearBuilt": 1960,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 5,
-      "bestEvidence": {
-        "file": "743255202092314.jpg",
-        "facadeEdge": 14,
-        "score": 0.521,
-        "distance": 102.8,
-        "imageRegion": {
-          "left": 0.52,
-          "right": 0.548
-        }
-      }
-    },
-    {
-      "rank": 195,
-      "reviewScore": 0.4528,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864248,
-      "buildingSourceId": "osm:way/867864248",
-      "mappedType": "yes",
-      "address": "1312 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1954,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "977194867503903.jpg",
-        "facadeEdge": 3,
-        "score": 0.531,
-        "distance": 94.5,
-        "imageRegion": {
-          "left": 0.42,
-          "right": 0.444
-        }
-      }
-    },
-    {
-      "rank": 196,
-      "reviewScore": 0.4522,
-      "category": "residential",
-      "buildingId": -1000537,
-      "buildingSourceId": "overture:29764f48-9a70-4eb9-8d2d-e5b6056341b0",
-      "mappedType": "yes",
-      "address": "153 S SAN GABRIEL ST, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1935,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "696493992899445.jpg",
-        "facadeEdge": 3,
-        "score": 0.392,
-        "distance": 80.3,
-        "imageRegion": {
-          "left": 0.875,
-          "right": 0.899
-        }
-      }
-    },
-    {
-      "rank": 197,
-      "reviewScore": 0.4511,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1001288,
-      "buildingSourceId": "overture:0bcc0d34-8564-41dd-8f30-165263ac4ec8",
-      "mappedType": "yes",
-      "address": "525 RIDGELAWN RD, CLEWISTON, 33440",
-      "useCode": "088",
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1320750323048506.jpg",
-        "facadeEdge": 0,
-        "score": 0.465,
-        "distance": 40.4,
-        "imageRegion": {
-          "left": 0.37,
-          "right": 0.827
-        }
-      }
-    },
-    {
-      "rank": 198,
-      "reviewScore": 0.4509,
-      "category": "residential",
-      "buildingId": 1377670845,
-      "buildingSourceId": "osm:way/1377670845",
-      "mappedType": "yes",
-      "address": "721 SEMINOLE AVE, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2000,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1691409471488726.jpg",
-        "facadeEdge": 0,
-        "score": 0.574,
-        "distance": 36.4,
-        "imageRegion": {
-          "left": 0.859,
-          "right": 0.999
-        }
-      }
-    },
-    {
-      "rank": 199,
-      "reviewScore": 0.4496,
-      "category": "residential",
-      "buildingId": 867861754,
-      "buildingSourceId": "osm:way/867861754",
-      "mappedType": "yes",
-      "address": "202 TROCADERO AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1969,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1049653725694148.jpg",
-        "facadeEdge": 3,
-        "score": 0.509,
-        "distance": 71.1,
-        "imageRegion": {
-          "left": 0.444,
-          "right": 0.516
-        }
-      }
-    },
-    {
-      "rank": 200,
-      "reviewScore": 0.4493,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003648,
-      "buildingSourceId": "overture:313fd847-5ad5-4008-a797-09ed9549331b",
-      "mappedType": "yes",
-      "address": "1850 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2089445168209458.jpg",
-        "facadeEdge": 2,
-        "score": 0.605,
-        "distance": 23.8,
-        "imageRegion": {
-          "left": 0.958,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 201,
-      "reviewScore": 0.4492,
-      "category": "residential",
-      "buildingId": 1377669196,
-      "buildingSourceId": "osm:way/1377669196",
-      "mappedType": "yes",
-      "address": "716 BOWDEN RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 2007,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1264582124992904.jpg",
-        "facadeEdge": 4,
-        "score": 0.45,
-        "distance": 41.9,
-        "imageRegion": {
-          "left": 0.386,
-          "right": 0.627
-        }
-      }
-    },
-    {
-      "rank": 202,
-      "reviewScore": 0.448,
-      "category": "residential",
-      "buildingId": -1000843,
-      "buildingSourceId": "overture:04e2457d-527e-40f1-b31e-b56b882df48e",
-      "mappedType": "yes",
-      "address": "612 E TRINIDAD AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1975,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "525229457347403.jpg",
-        "facadeEdge": 8,
-        "score": 0.489,
-        "distance": 73.5,
-        "imageRegion": {
-          "left": 0.781,
-          "right": 0.903
-        }
-      }
-    },
-    {
-      "rank": 203,
-      "reviewScore": 0.4471,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 867864250,
-      "buildingSourceId": "osm:way/867864250",
-      "mappedType": "yes",
-      "address": "W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "027",
-      "actualYearBuilt": 1987,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1096682937678088.jpg",
-        "facadeEdge": 1,
-        "score": 0.426,
-        "distance": 36.3,
-        "imageRegion": {
-          "left": 0.587,
-          "right": 0.887
-        }
-      }
-    },
-    {
-      "rank": 204,
-      "reviewScore": 0.4455,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000544,
-      "buildingSourceId": "overture:eecc34b0-b5b0-4a7c-9af0-c59149f33613",
-      "mappedType": "yes",
-      "address": "517 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "025",
-      "actualYearBuilt": 1961,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "811770641410764.jpg",
-        "facadeEdge": 6,
-        "score": 0.514,
-        "distance": 33.5,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.037
-        }
-      }
-    },
-    {
-      "rank": 205,
-      "reviewScore": 0.4422,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 384433552,
-      "buildingSourceId": "osm:way/384433552",
-      "mappedType": "commercial",
-      "address": "101 N BERNER RD, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1999,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1218717429939141.jpg",
-        "facadeEdge": 3,
-        "score": 0.479,
-        "distance": 82.7,
-        "imageRegion": {
-          "left": 0.443,
-          "right": 0.565
-        }
-      }
-    },
-    {
-      "rank": 206,
-      "reviewScore": 0.4417,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 1385378130,
-      "buildingSourceId": "osm:way/1385378130",
-      "mappedType": "yes",
-      "address": "730 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1227010659051103.jpg",
-        "facadeEdge": 3,
-        "score": 0.433,
-        "distance": 35.7,
-        "imageRegion": {
-          "left": 0.127,
-          "right": 0.43
-        }
-      }
-    },
-    {
-      "rank": 207,
-      "reviewScore": 0.4416,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003645,
-      "buildingSourceId": "overture:03dfcded-53da-4cf4-8244-5b026c386448",
-      "mappedType": "yes",
-      "address": "1850 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1078183174191529.jpg",
-        "facadeEdge": 3,
-        "score": 0.582,
-        "distance": 26,
-        "imageRegion": {
-          "left": 0.811,
-          "right": 0.881
-        }
-      }
-    },
-    {
-      "rank": 208,
-      "reviewScore": 0.4414,
-      "category": "residential",
-      "buildingId": -1002407,
-      "buildingSourceId": "overture:5c9cdf12-0daf-464c-b116-67308c4410fa",
-      "mappedType": "yes",
-      "address": "501 CENTRAL AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1992,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1370286317469699.jpg",
-        "facadeEdge": 2,
-        "score": 0.601,
-        "distance": 29.8,
-        "imageRegion": {
-          "left": 0.861,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 209,
-      "reviewScore": 0.4408,
-      "category": "residential",
-      "buildingId": -1003580,
-      "buildingSourceId": "overture:72fc802b-aeff-496c-a821-753858bc3a64",
-      "mappedType": "yes",
-      "address": "753 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1996,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1122074923097304.jpg",
-        "facadeEdge": 1,
-        "score": 0.478,
-        "distance": 67.4,
-        "imageRegion": {
-          "left": 0.58,
-          "right": 0.698
-        }
-      }
-    },
-    {
-      "rank": 210,
-      "reviewScore": 0.4396,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1002454,
-      "buildingSourceId": "overture:a25dc5fc-4132-4b0f-8ca4-237ef4cf153a",
-      "mappedType": "yes",
-      "address": "108 ROYAL PALM AVE, CLEWISTON, 33440",
-      "useCode": "039",
-      "actualYearBuilt": 1939,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "935379738049321.jpg",
-        "facadeEdge": 0,
-        "score": 0.532,
-        "distance": 51,
-        "imageRegion": {
-          "left": 0.011,
-          "right": 0.141
-        }
-      }
-    },
-    {
-      "rank": 211,
-      "reviewScore": 0.4392,
-      "category": "residential",
-      "buildingId": 867861756,
-      "buildingSourceId": "osm:way/867861756",
-      "mappedType": "yes",
-      "address": "204 TROCADERO AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1964,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1003463357034405.jpg",
-        "facadeEdge": 1,
-        "score": 0.502,
-        "distance": 68.4,
-        "imageRegion": {
-          "left": 0.159,
-          "right": 0.199
-        }
-      }
-    },
-    {
-      "rank": 212,
-      "reviewScore": 0.4384,
-      "category": "residential",
-      "buildingId": -1003552,
-      "buildingSourceId": "overture:c558e0ec-0ee1-4b52-8dfe-6a756bacb2f3",
-      "mappedType": "shed",
-      "address": "1709 RED RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1990,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1449442532916354.jpg",
-        "facadeEdge": 1,
-        "score": 0.498,
-        "distance": 57.4,
-        "imageRegion": {
-          "left": 0.811,
-          "right": 0.859
-        }
-      }
-    },
-    {
-      "rank": 213,
-      "reviewScore": 0.438,
-      "category": "residential",
-      "buildingId": 876594034,
-      "buildingSourceId": "osm:way/876594034",
-      "mappedType": "yes",
-      "address": "212 E SUGARLAND CIR, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1981,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "817700770859042.jpg",
-        "facadeEdge": 1,
-        "score": 0.471,
-        "distance": 65.4,
-        "imageRegion": {
-          "left": 0.625,
-          "right": 0.749
-        }
-      }
-    },
-    {
-      "rank": 214,
-      "reviewScore": 0.437,
-      "category": "residential",
-      "buildingId": 1379207510,
-      "buildingSourceId": "osm:way/1379207510",
-      "mappedType": "yes",
-      "address": "542 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2018,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1473079260686743.jpg",
-        "facadeEdge": 0,
-        "score": 0.418,
-        "distance": 90.9,
-        "imageRegion": {
-          "left": 0.147,
-          "right": 0.22
-        }
-      }
-    },
-    {
-      "rank": 215,
-      "reviewScore": 0.4365,
-      "category": "residential",
-      "buildingId": 1377669193,
-      "buildingSourceId": "osm:way/1377669193",
-      "mappedType": "yes",
-      "address": "720 BOWDEN RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1987,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1264582124992904.jpg",
-        "facadeEdge": 0,
-        "score": 0.503,
-        "distance": 44,
-        "imageRegion": {
-          "left": 0.976,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 216,
-      "reviewScore": 0.4345,
-      "category": "residential",
-      "buildingId": -1003382,
-      "buildingSourceId": "overture:e3862fb0-2718-48d5-9277-6eaaf344a4c8",
-      "mappedType": "yes",
-      "address": "2610 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "003",
-      "actualYearBuilt": 2019,
-      "buildingsOnParcel": 20,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "746445114713767.jpg",
-        "facadeEdge": 1,
-        "score": 0.585,
-        "distance": 39.2,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.151
-        }
-      }
-    },
-    {
-      "rank": 217,
-      "reviewScore": 0.4326,
-      "category": "residential",
-      "buildingId": -1000844,
-      "buildingSourceId": "overture:9d72b941-b963-4da8-96f1-dcdf25937ea0",
-      "mappedType": "yes",
-      "address": "615 E ALVERDEZ AVE, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1972,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1128302578615447.jpg",
-        "facadeEdge": 3,
-        "score": 0.479,
-        "distance": 59.4,
-        "imageRegion": {
-          "left": 0.926,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 218,
-      "reviewScore": 0.4325,
-      "category": "residential",
-      "buildingId": -1002439,
-      "buildingSourceId": "overture:a9297144-0fc7-4f3d-9163-cf04df764f35",
-      "mappedType": "yes",
-      "address": "322 BOND ST, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1006609484905785.jpg",
-        "facadeEdge": 2,
-        "score": 0.586,
-        "distance": 32.5,
-        "imageRegion": {
-          "left": 0.289,
-          "right": 0.427
-        }
-      }
-    },
-    {
-      "rank": 219,
-      "reviewScore": 0.4311,
-      "category": "residential",
-      "buildingId": -1000522,
-      "buildingSourceId": "overture:0804fc2d-61b6-4904-948a-c2fd3418d0e7",
-      "mappedType": "yes",
-      "address": "524 E OSCEOLA AVE, CLEWISTON, 33440",
-      "useCode": "000",
-      "actualYearBuilt": 1950,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "811770641410764.jpg",
-        "facadeEdge": 3,
-        "score": 0.563,
-        "distance": 101.1,
-        "imageRegion": {
-          "left": 0.465,
-          "right": 0.538
-        }
-      }
-    },
-    {
-      "rank": 220,
-      "reviewScore": 0.4311,
-      "category": "residential",
-      "buildingId": -1002495,
-      "buildingSourceId": "overture:298647d1-2dd4-4de3-9603-03cc467a56c8",
-      "mappedType": "yes",
-      "address": "337 W PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1939,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "757349116795449.jpg",
-        "facadeEdge": 3,
-        "score": 0.433,
-        "distance": 52.5,
-        "imageRegion": {
-          "left": 1,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 221,
-      "reviewScore": 0.4282,
-      "category": "residential",
-      "buildingId": -1003386,
-      "buildingSourceId": "overture:454267f9-6260-4a5b-bb06-75fa06b2a4ee",
-      "mappedType": "yes",
-      "address": "1425 STOKER RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1993,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "746445114713767.jpg",
-        "facadeEdge": 3,
-        "score": 0.481,
-        "distance": 108.8,
-        "imageRegion": {
-          "left": 0.533,
-          "right": 0.579
-        }
-      }
-    },
-    {
-      "rank": 222,
-      "reviewScore": 0.4274,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 1385379880,
-      "buildingSourceId": "osm:way/1385379880",
-      "mappedType": "yes",
-      "address": "842 E SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "021",
-      "actualYearBuilt": 1976,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "124736053712858.jpg",
-        "facadeEdge": 2,
-        "score": 0.579,
-        "distance": 52.6,
-        "imageRegion": {
-          "left": 0.771,
-          "right": 0.904
-        }
-      }
-    },
-    {
-      "rank": 223,
-      "reviewScore": 0.4267,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003642,
-      "buildingSourceId": "overture:09b2efad-803b-430e-abb7-59e0ab8cf7a1",
-      "mappedType": "yes",
-      "address": "1850 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "637632478697889.jpg",
-        "facadeEdge": 1,
-        "score": 0.557,
-        "distance": 25.8,
-        "imageRegion": {
-          "left": 0.861,
-          "right": 0.929
-        }
-      }
-    },
-    {
-      "rank": 224,
-      "reviewScore": 0.426,
-      "category": "residential",
-      "buildingId": 885973873,
-      "buildingSourceId": "osm:way/885973873",
-      "mappedType": "yes",
-      "address": "324 W SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "8806414832780314.jpg",
-        "facadeEdge": 2,
-        "score": 0.46,
-        "distance": 74.9,
-        "imageRegion": {
-          "left": 0.862,
-          "right": 0.958
-        }
-      }
-    },
-    {
-      "rank": 225,
-      "reviewScore": 0.4232,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000390,
-      "buildingSourceId": "overture:189cccf5-9653-4407-a91e-c9f11becc6eb",
-      "mappedType": "yes",
-      "address": "800 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "011",
-      "actualYearBuilt": 1974,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2048607162331539.jpg",
-        "facadeEdge": 5,
-        "score": 0.46,
-        "distance": 65.5,
-        "imageRegion": {
-          "left": 0.894,
-          "right": 0.976
-        }
-      }
-    },
-    {
-      "rank": 226,
-      "reviewScore": 0.4205,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1001277,
-      "buildingSourceId": "overture:799f47b1-b786-4690-92e9-cadb48fff97c",
-      "mappedType": "yes",
-      "address": "525 RIDGELAWN RD, CLEWISTON, 33440",
-      "useCode": "088",
-      "actualYearBuilt": null,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1723696451885331.jpg",
-        "facadeEdge": 1,
-        "score": 0.525,
-        "distance": 83.7,
-        "imageRegion": {
-          "left": 0.685,
-          "right": 0.815
-        }
-      }
-    },
-    {
-      "rank": 227,
-      "reviewScore": 0.4205,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1001574,
-      "buildingSourceId": "overture:0307127c-d3e0-4963-a5f1-76acdff83e28",
-      "mappedType": "yes",
-      "address": "1550 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "026",
-      "actualYearBuilt": 1982,
-      "buildingsOnParcel": 2,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "187806460428796.jpg",
-        "facadeEdge": 1,
-        "score": 0.514,
-        "distance": 68.4,
-        "imageRegion": {
-          "left": 0.088,
-          "right": 0.375
-        }
-      }
-    },
-    {
-      "rank": 228,
-      "reviewScore": 0.42,
-      "category": "commercial-industrial-mixed",
-      "buildingId": 384437023,
-      "buildingSourceId": "osm:way/384437023",
-      "mappedType": "retail",
-      "address": "975 W SUGARLAND HWY, CLEWISTON, 33440",
-      "useCode": "016",
-      "actualYearBuilt": 1986,
-      "buildingsOnParcel": 3,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "682346074427566.jpg",
-        "facadeEdge": 19,
-        "score": 0.612,
-        "distance": 28.4,
-        "imageRegion": {
-          "left": 0,
-          "right": 0
-        }
-      }
-    },
-    {
-      "rank": 229,
-      "reviewScore": 0.4195,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000408,
-      "buildingSourceId": "overture:0d6306b2-2dc5-407c-a6a1-af283f8219d6",
-      "mappedType": "yes",
-      "address": "500 S FRANCISCO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "9567161730041552.jpg",
-        "facadeEdge": 3,
-        "score": 0.484,
-        "distance": 43.4,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.044
-        }
-      }
-    },
-    {
-      "rank": 230,
-      "reviewScore": 0.4195,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000884,
-      "buildingSourceId": "overture:01eccdf2-2d49-4d80-998e-40ed898a1d6e",
-      "mappedType": "yes",
-      "address": "430 E HAITI AVE, CLEWISTON, 33440",
-      "useCode": "047",
-      "actualYearBuilt": 1948,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1266453348122561.jpg",
-        "facadeEdge": 0,
-        "score": 0.485,
-        "distance": 37.6,
-        "imageRegion": {
-          "left": 0.959,
-          "right": 1
-        }
-      }
-    },
-    {
-      "rank": 231,
-      "reviewScore": 0.4191,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003643,
-      "buildingSourceId": "overture:8191fd02-9ee6-4c06-8e5d-52ecb81da998",
-      "mappedType": "yes",
-      "address": "1850 OLD US HWY 27, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 2003,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "637632478697889.jpg",
-        "facadeEdge": 2,
-        "score": 0.496,
-        "distance": 54.9,
-        "imageRegion": {
-          "left": 0.685,
-          "right": 0.892
-        }
-      }
-    },
-    {
-      "rank": 232,
-      "reviewScore": 0.4189,
-      "category": "residential",
-      "buildingId": -1000649,
-      "buildingSourceId": "overture:ff13a181-b4c0-4a19-a0db-367c2baf6160",
-      "mappedType": "yes",
-      "address": "408 E SAGAMORE AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1941,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "4077381922521746.jpg",
-        "facadeEdge": 2,
-        "score": 0.383,
-        "distance": 69,
-        "imageRegion": {
-          "left": 0.132,
-          "right": 0.216
-        }
-      }
-    },
-    {
-      "rank": 233,
-      "reviewScore": 0.4169,
-      "category": "civic-religious",
-      "buildingId": 894462377,
-      "buildingSourceId": "osm:way/894462377",
-      "mappedType": "yes",
-      "address": "110 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "071",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": 5,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2522077718136744.jpg",
-        "facadeEdge": 2,
-        "score": 0.563,
-        "distance": 57.7,
-        "imageRegion": {
-          "left": 0,
-          "right": 0.127
-        }
-      }
-    },
-    {
-      "rank": 234,
-      "reviewScore": 0.4165,
-      "category": "residential",
-      "buildingId": 835773423,
-      "buildingSourceId": "osm:way/835773423",
-      "mappedType": "yes",
-      "address": "251 SUGARLAND PARK, CLEWISTON, 33440",
-      "useCode": "008",
-      "actualYearBuilt": 1945,
-      "buildingsOnParcel": 4,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1109276990869626.jpg",
-        "facadeEdge": 2,
-        "score": 0.564,
-        "distance": 50.3,
-        "imageRegion": {
-          "left": 0.845,
-          "right": 0.967
-        }
-      }
-    },
-    {
-      "rank": 235,
-      "reviewScore": 0.416,
-      "category": "residential",
-      "buildingId": -1000670,
-      "buildingSourceId": "overture:c65f5b7a-6c11-4efa-b93f-9e899ec06df0",
-      "mappedType": "yes",
-      "address": "416 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2013,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "657220506939769.jpg",
-        "facadeEdge": 3,
-        "score": 0.378,
-        "distance": 77.2,
-        "imageRegion": {
-          "left": 0.776,
-          "right": 0.86
-        }
-      }
-    },
-    {
-      "rank": 236,
-      "reviewScore": 0.413,
-      "category": "residential",
-      "buildingId": 868836093,
-      "buildingSourceId": "osm:way/868836093",
-      "mappedType": "yes",
-      "address": "1007 W AZTEC AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2001,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2000973457339112.jpg",
-        "facadeEdge": 11,
-        "score": 0.419,
-        "distance": 102.7,
-        "imageRegion": {
-          "left": 0.287,
-          "right": 0.437
-        }
-      }
-    },
-    {
-      "rank": 237,
-      "reviewScore": 0.4091,
-      "category": "residential",
-      "buildingId": -1002408,
-      "buildingSourceId": "overture:06f9966c-b89e-4f99-8597-ac69f01e4385",
-      "mappedType": "yes",
-      "address": "508 CENTRAL AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1957,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1370286317469699.jpg",
-        "facadeEdge": 1,
-        "score": 0.445,
-        "distance": 77.7,
-        "imageRegion": {
-          "left": 0.148,
-          "right": 0.203
-        }
-      }
-    },
-    {
-      "rank": 238,
-      "reviewScore": 0.4088,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000935,
-      "buildingSourceId": "overture:02036d12-42f2-472a-a0f8-5177864dd6e1",
-      "mappedType": "yes",
-      "address": "813 E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": null,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1182966186706707.jpg",
-        "facadeEdge": 2,
-        "score": 0.539,
-        "distance": 96.6,
-        "imageRegion": {
-          "left": 0.444,
-          "right": 0.475
-        }
-      }
-    },
-    {
-      "rank": 239,
-      "reviewScore": 0.4082,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1003353,
-      "buildingSourceId": "overture:081df959-d3d6-41b4-9a7f-f3236c3a1b41",
-      "mappedType": "yes",
-      "address": "2425 HOOKERS POINT RD, CLEWISTON, 33440",
-      "useCode": "080",
-      "actualYearBuilt": 1989,
-      "buildingsOnParcel": 10,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1443869840278153.jpg",
-        "facadeEdge": 2,
-        "score": 0.549,
-        "distance": 100.8,
-        "imageRegion": {
-          "left": 0.472,
-          "right": 0.596
-        }
-      }
-    },
-    {
-      "rank": 240,
-      "reviewScore": 0.4066,
-      "category": "residential",
-      "buildingId": -1000398,
-      "buildingSourceId": "overture:6b46fb13-525f-4123-873f-d279768e0196",
-      "mappedType": "yes",
-      "address": "718 E VENTURA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1940,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "2048607162331539.jpg",
-        "facadeEdge": 1,
-        "score": 0.43,
-        "distance": 71.4,
-        "imageRegion": {
-          "left": 0.072,
-          "right": 0.158
-        }
-      }
-    },
-    {
-      "rank": 241,
-      "reviewScore": 0.4066,
-      "category": "residential",
-      "buildingId": 1377925606,
-      "buildingSourceId": "osm:way/1377925606",
-      "mappedType": "yes",
-      "address": "729 HARVEST LN, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2019,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "1363771054878083.jpg",
-        "facadeEdge": 3,
-        "score": 0.33,
-        "distance": 54.1,
-        "imageRegion": {
-          "left": 0.763,
-          "right": 0.939
-        }
-      }
-    },
-    {
-      "rank": 242,
-      "reviewScore": 0.4062,
-      "category": "residential",
-      "buildingId": -1003583,
-      "buildingSourceId": "overture:842c6988-a559-40b8-944c-d44d0805c213",
-      "mappedType": "yes",
-      "address": "671 EVERCANE RD, CLEWISTON, 33440",
-      "useCode": "002",
-      "actualYearBuilt": 1985,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1622700545354227.jpg",
-        "facadeEdge": 5,
-        "score": 0.442,
-        "distance": 95.1,
-        "imageRegion": {
-          "left": 0.465,
-          "right": 0.514
-        }
-      }
-    },
-    {
-      "rank": 243,
-      "reviewScore": 0.4044,
-      "category": "residential",
-      "buildingId": -1000529,
-      "buildingSourceId": "overture:84fce8fd-acce-40f5-a758-a881c9817b06",
-      "mappedType": "yes",
-      "address": "613 E PASADENA AVE, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "731395123172767.jpg",
-        "facadeEdge": 0,
-        "score": 0.42,
-        "distance": 98.9,
-        "imageRegion": {
-          "left": 0.555,
-          "right": 0.659
-        }
-      }
-    },
-    {
-      "rank": 244,
-      "reviewScore": 0.4043,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000937,
-      "buildingSourceId": "overture:c59a53b3-6cf1-4dde-83f2-81c34a23529e",
-      "mappedType": "yes",
-      "address": "813 E EL PASO AVE, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1959,
-      "buildingsOnParcel": null,
-      "evidenceCount": 3,
-      "bestEvidence": {
-        "file": "1752332775346901.jpg",
-        "facadeEdge": 2,
-        "score": 0.395,
-        "distance": 104.3,
-        "imageRegion": {
-          "left": 0.751,
-          "right": 0.777
-        }
-      }
-    },
-    {
-      "rank": 245,
-      "reviewScore": 0.4032,
-      "category": "residential",
-      "buildingId": 1379207506,
-      "buildingSourceId": "osm:way/1379207506",
-      "mappedType": "yes",
-      "address": "552 OLD FARM PL, CLEWISTON, 33440",
-      "useCode": "001",
-      "actualYearBuilt": 2018,
-      "buildingsOnParcel": 1,
-      "evidenceCount": 1,
-      "bestEvidence": {
-        "file": "1865321891076334.jpg",
-        "facadeEdge": 1,
-        "score": 0.432,
-        "distance": 103.7,
-        "imageRegion": {
-          "left": 0.628,
-          "right": 0.691
-        }
-      }
-    },
-    {
-      "rank": 246,
-      "reviewScore": 0.4018,
-      "category": "commercial-industrial-mixed",
-      "buildingId": -1000260,
-      "buildingSourceId": "overture:9dee3d91-da7a-42ec-a7c5-f5d14cf443d8",
-      "mappedType": "shed",
-      "address": "SAN DIEGO ST, CLEWISTON, 33440",
-      "useCode": "028",
-      "actualYearBuilt": 1992,
-      "buildingsOnParcel": null,
-      "evidenceCount": 2,
-      "bestEvidence": {
-        "file": "306140584398867.jpg",
-        "facadeEdge": 3,
-        "score": 0.449,
-        "distance": 106.6,
-        "imageRegion": {
-          "left": 0.606,
-          "right": 0.663
-        }
-      }
-    },
-    {
-      "rank": 247,
       "reviewScore": 0.4004,
       "category": "residential",
       "buildingId": -1000679,
@@ -5691,7 +33,7 @@
       }
     },
     {
-      "rank": 248,
+      "rank": 2,
       "reviewScore": 0.3995,
       "category": "residential",
       "buildingId": -1000650,
@@ -5714,7 +56,7 @@
       }
     },
     {
-      "rank": 249,
+      "rank": 3,
       "reviewScore": 0.3991,
       "category": "residential",
       "buildingId": -1003659,
@@ -5737,7 +79,7 @@
       }
     },
     {
-      "rank": 250,
+      "rank": 4,
       "reviewScore": 0.3988,
       "category": "commercial-industrial-mixed",
       "buildingId": 384436281,
@@ -5760,7 +102,7 @@
       }
     },
     {
-      "rank": 251,
+      "rank": 5,
       "reviewScore": 0.3978,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000700,
@@ -5783,7 +125,7 @@
       }
     },
     {
-      "rank": 252,
+      "rank": 6,
       "reviewScore": 0.3971,
       "category": "civic-religious",
       "buildingId": -1000853,
@@ -5806,7 +148,7 @@
       }
     },
     {
-      "rank": 253,
+      "rank": 7,
       "reviewScore": 0.3969,
       "category": "residential",
       "buildingId": 868836146,
@@ -5829,7 +171,7 @@
       }
     },
     {
-      "rank": 254,
+      "rank": 8,
       "reviewScore": 0.3965,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000891,
@@ -5852,7 +194,7 @@
       }
     },
     {
-      "rank": 255,
+      "rank": 9,
       "reviewScore": 0.3963,
       "category": "residential",
       "buildingId": -1002107,
@@ -5875,7 +217,7 @@
       }
     },
     {
-      "rank": 256,
+      "rank": 10,
       "reviewScore": 0.3957,
       "category": "residential",
       "buildingId": -1003529,
@@ -5898,7 +240,7 @@
       }
     },
     {
-      "rank": 257,
+      "rank": 11,
       "reviewScore": 0.3956,
       "category": "residential",
       "buildingId": -1000523,
@@ -5921,7 +263,7 @@
       }
     },
     {
-      "rank": 258,
+      "rank": 12,
       "reviewScore": 0.3932,
       "category": "residential",
       "buildingId": -1000659,
@@ -5944,7 +286,7 @@
       }
     },
     {
-      "rank": 259,
+      "rank": 13,
       "reviewScore": 0.3932,
       "category": "commercial-industrial-mixed",
       "buildingId": 867864247,
@@ -5967,7 +309,7 @@
       }
     },
     {
-      "rank": 260,
+      "rank": 14,
       "reviewScore": 0.3928,
       "category": "residential",
       "buildingId": 868836091,
@@ -5990,7 +332,7 @@
       }
     },
     {
-      "rank": 261,
+      "rank": 15,
       "reviewScore": 0.3911,
       "category": "residential",
       "buildingId": 868836104,
@@ -6013,7 +355,7 @@
       }
     },
     {
-      "rank": 262,
+      "rank": 16,
       "reviewScore": 0.3888,
       "category": "residential",
       "buildingId": -1002071,
@@ -6036,7 +378,7 @@
       }
     },
     {
-      "rank": 263,
+      "rank": 17,
       "reviewScore": 0.3878,
       "category": "residential",
       "buildingId": -1003498,
@@ -6059,7 +401,7 @@
       }
     },
     {
-      "rank": 264,
+      "rank": 18,
       "reviewScore": 0.3867,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000261,
@@ -6082,7 +424,7 @@
       }
     },
     {
-      "rank": 265,
+      "rank": 19,
       "reviewScore": 0.385,
       "category": "commercial-industrial-mixed",
       "buildingId": 1385378131,
@@ -6105,7 +447,7 @@
       }
     },
     {
-      "rank": 266,
+      "rank": 20,
       "reviewScore": 0.3831,
       "category": "residential",
       "buildingId": 841005987,
@@ -6128,7 +470,7 @@
       }
     },
     {
-      "rank": 267,
+      "rank": 21,
       "reviewScore": 0.3829,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000413,
@@ -6151,7 +493,7 @@
       }
     },
     {
-      "rank": 268,
+      "rank": 22,
       "reviewScore": 0.3814,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000406,
@@ -6174,7 +516,7 @@
       }
     },
     {
-      "rank": 269,
+      "rank": 23,
       "reviewScore": 0.3814,
       "category": "residential",
       "buildingId": -1003573,
@@ -6197,7 +539,7 @@
       }
     },
     {
-      "rank": 270,
+      "rank": 24,
       "reviewScore": 0.3797,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000892,
@@ -6220,7 +562,7 @@
       }
     },
     {
-      "rank": 271,
+      "rank": 25,
       "reviewScore": 0.3792,
       "category": "residential",
       "buildingId": -1002068,
@@ -6243,7 +585,7 @@
       }
     },
     {
-      "rank": 272,
+      "rank": 26,
       "reviewScore": 0.3785,
       "category": "residential",
       "buildingId": -1000553,
@@ -6266,7 +608,7 @@
       }
     },
     {
-      "rank": 273,
+      "rank": 27,
       "reviewScore": 0.3749,
       "category": "residential",
       "buildingId": -1000550,
@@ -6289,7 +631,7 @@
       }
     },
     {
-      "rank": 274,
+      "rank": 28,
       "reviewScore": 0.3745,
       "category": "residential",
       "buildingId": 841005989,
@@ -6312,7 +654,7 @@
       }
     },
     {
-      "rank": 275,
+      "rank": 29,
       "reviewScore": 0.3743,
       "category": "residential",
       "buildingId": -1000532,
@@ -6335,7 +677,7 @@
       }
     },
     {
-      "rank": 276,
+      "rank": 30,
       "reviewScore": 0.3714,
       "category": "residential",
       "buildingId": 1378660447,
@@ -6358,7 +700,7 @@
       }
     },
     {
-      "rank": 277,
+      "rank": 31,
       "reviewScore": 0.371,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000792,
@@ -6381,7 +723,7 @@
       }
     },
     {
-      "rank": 278,
+      "rank": 32,
       "reviewScore": 0.3697,
       "category": "commercial-industrial-mixed",
       "buildingId": 867864260,
@@ -6404,7 +746,7 @@
       }
     },
     {
-      "rank": 279,
+      "rank": 33,
       "reviewScore": 0.3688,
       "category": "residential",
       "buildingId": -1002504,
@@ -6427,7 +769,7 @@
       }
     },
     {
-      "rank": 280,
+      "rank": 34,
       "reviewScore": 0.3672,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000942,
@@ -6450,7 +792,7 @@
       }
     },
     {
-      "rank": 281,
+      "rank": 35,
       "reviewScore": 0.3662,
       "category": "residential",
       "buildingId": -1002440,
@@ -6473,7 +815,7 @@
       }
     },
     {
-      "rank": 282,
+      "rank": 36,
       "reviewScore": 0.3662,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003477,
@@ -6496,7 +838,7 @@
       }
     },
     {
-      "rank": 283,
+      "rank": 37,
       "reviewScore": 0.3652,
       "category": "residential",
       "buildingId": -1002494,
@@ -6519,7 +861,7 @@
       }
     },
     {
-      "rank": 284,
+      "rank": 38,
       "reviewScore": 0.3641,
       "category": "residential",
       "buildingId": -1000805,
@@ -6542,7 +884,7 @@
       }
     },
     {
-      "rank": 285,
+      "rank": 39,
       "reviewScore": 0.3628,
       "category": "residential",
       "buildingId": 850715460,
@@ -6565,7 +907,7 @@
       }
     },
     {
-      "rank": 286,
+      "rank": 40,
       "reviewScore": 0.3623,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000349,
@@ -6588,7 +930,7 @@
       }
     },
     {
-      "rank": 287,
+      "rank": 41,
       "reviewScore": 0.3621,
       "category": "residential",
       "buildingId": -1000722,
@@ -6611,7 +953,7 @@
       }
     },
     {
-      "rank": 288,
+      "rank": 42,
       "reviewScore": 0.361,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000558,
@@ -6634,7 +976,7 @@
       }
     },
     {
-      "rank": 289,
+      "rank": 43,
       "reviewScore": 0.3589,
       "category": "residential",
       "buildingId": 868836142,
@@ -6657,7 +999,7 @@
       }
     },
     {
-      "rank": 290,
+      "rank": 44,
       "reviewScore": 0.3582,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000415,
@@ -6680,7 +1022,7 @@
       }
     },
     {
-      "rank": 291,
+      "rank": 45,
       "reviewScore": 0.3572,
       "category": "residential",
       "buildingId": 876594036,
@@ -6703,7 +1045,7 @@
       }
     },
     {
-      "rank": 292,
+      "rank": 46,
       "reviewScore": 0.3565,
       "category": "residential",
       "buildingId": -1002409,
@@ -6726,7 +1068,7 @@
       }
     },
     {
-      "rank": 293,
+      "rank": 47,
       "reviewScore": 0.356,
       "category": "residential",
       "buildingId": 876594040,
@@ -6749,7 +1091,7 @@
       }
     },
     {
-      "rank": 294,
+      "rank": 48,
       "reviewScore": 0.3557,
       "category": "commercial-industrial-mixed",
       "buildingId": 822582924,
@@ -6772,7 +1114,7 @@
       }
     },
     {
-      "rank": 295,
+      "rank": 49,
       "reviewScore": 0.3551,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000414,
@@ -6795,7 +1137,7 @@
       }
     },
     {
-      "rank": 296,
+      "rank": 50,
       "reviewScore": 0.3546,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003649,
@@ -6818,7 +1160,7 @@
       }
     },
     {
-      "rank": 297,
+      "rank": 51,
       "reviewScore": 0.354,
       "category": "residential",
       "buildingId": -1000783,
@@ -6841,7 +1183,7 @@
       }
     },
     {
-      "rank": 298,
+      "rank": 52,
       "reviewScore": 0.3534,
       "category": "residential",
       "buildingId": -1000570,
@@ -6864,7 +1206,7 @@
       }
     },
     {
-      "rank": 299,
+      "rank": 53,
       "reviewScore": 0.3533,
       "category": "commercial-industrial-mixed",
       "buildingId": -1002476,
@@ -6887,7 +1229,7 @@
       }
     },
     {
-      "rank": 300,
+      "rank": 54,
       "reviewScore": 0.3533,
       "category": "residential",
       "buildingId": 1377925602,
@@ -6910,7 +1252,7 @@
       }
     },
     {
-      "rank": 301,
+      "rank": 55,
       "reviewScore": 0.3511,
       "category": "residential",
       "buildingId": -1000601,
@@ -6933,7 +1275,7 @@
       }
     },
     {
-      "rank": 302,
+      "rank": 56,
       "reviewScore": 0.3507,
       "category": "commercial-industrial-mixed",
       "buildingId": 835773464,
@@ -6956,7 +1298,7 @@
       }
     },
     {
-      "rank": 303,
+      "rank": 57,
       "reviewScore": 0.3485,
       "category": "residential",
       "buildingId": -1000683,
@@ -6979,7 +1321,7 @@
       }
     },
     {
-      "rank": 304,
+      "rank": 58,
       "reviewScore": 0.3466,
       "category": "commercial-industrial-mixed",
       "buildingId": 1385378133,
@@ -7002,7 +1344,7 @@
       }
     },
     {
-      "rank": 305,
+      "rank": 59,
       "reviewScore": 0.3409,
       "category": "residential",
       "buildingId": -1000823,
@@ -7025,7 +1367,7 @@
       }
     },
     {
-      "rank": 306,
+      "rank": 60,
       "reviewScore": 0.3404,
       "category": "residential",
       "buildingId": -1000391,
@@ -7048,7 +1390,7 @@
       }
     },
     {
-      "rank": 307,
+      "rank": 61,
       "reviewScore": 0.3397,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003639,
@@ -7071,7 +1413,7 @@
       }
     },
     {
-      "rank": 308,
+      "rank": 62,
       "reviewScore": 0.3387,
       "category": "commercial-industrial-mixed",
       "buildingId": 886227329,
@@ -7094,7 +1436,7 @@
       }
     },
     {
-      "rank": 309,
+      "rank": 63,
       "reviewScore": 0.3373,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003646,
@@ -7117,7 +1459,7 @@
       }
     },
     {
-      "rank": 310,
+      "rank": 64,
       "reviewScore": 0.3372,
       "category": "residential",
       "buildingId": -1002434,
@@ -7140,7 +1482,7 @@
       }
     },
     {
-      "rank": 311,
+      "rank": 65,
       "reviewScore": 0.3367,
       "category": "residential",
       "buildingId": -1003496,
@@ -7163,7 +1505,7 @@
       }
     },
     {
-      "rank": 312,
+      "rank": 66,
       "reviewScore": 0.3366,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000889,
@@ -7186,7 +1528,7 @@
       }
     },
     {
-      "rank": 313,
+      "rank": 67,
       "reviewScore": 0.3365,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000412,
@@ -7209,7 +1551,7 @@
       }
     },
     {
-      "rank": 314,
+      "rank": 68,
       "reviewScore": 0.3353,
       "category": "residential",
       "buildingId": -1002499,
@@ -7232,7 +1574,7 @@
       }
     },
     {
-      "rank": 315,
+      "rank": 69,
       "reviewScore": 0.3347,
       "category": "residential",
       "buildingId": -1003495,
@@ -7255,7 +1597,7 @@
       }
     },
     {
-      "rank": 316,
+      "rank": 70,
       "reviewScore": 0.3318,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003481,
@@ -7278,7 +1620,7 @@
       }
     },
     {
-      "rank": 317,
+      "rank": 71,
       "reviewScore": 0.33,
       "category": "commercial-industrial-mixed",
       "buildingId": 835773462,
@@ -7301,7 +1643,7 @@
       }
     },
     {
-      "rank": 318,
+      "rank": 72,
       "reviewScore": 0.327,
       "category": "commercial-industrial-mixed",
       "buildingId": 1385378099,
@@ -7324,7 +1666,7 @@
       }
     },
     {
-      "rank": 319,
+      "rank": 73,
       "reviewScore": 0.3262,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000932,
@@ -7347,7 +1689,7 @@
       }
     },
     {
-      "rank": 320,
+      "rank": 74,
       "reviewScore": 0.3262,
       "category": "residential",
       "buildingId": -1001624,
@@ -7370,7 +1712,7 @@
       }
     },
     {
-      "rank": 321,
+      "rank": 75,
       "reviewScore": 0.3253,
       "category": "civic-religious",
       "buildingId": 260415700,
@@ -7393,7 +1735,7 @@
       }
     },
     {
-      "rank": 322,
+      "rank": 76,
       "reviewScore": 0.3246,
       "category": "residential",
       "buildingId": 850884204,
@@ -7416,7 +1758,7 @@
       }
     },
     {
-      "rank": 323,
+      "rank": 77,
       "reviewScore": 0.3244,
       "category": "commercial-industrial-mixed",
       "buildingId": 850884199,
@@ -7439,7 +1781,7 @@
       }
     },
     {
-      "rank": 324,
+      "rank": 78,
       "reviewScore": 0.3219,
       "category": "commercial-industrial-mixed",
       "buildingId": 867864263,
@@ -7462,7 +1804,7 @@
       }
     },
     {
-      "rank": 325,
+      "rank": 79,
       "reviewScore": 0.3218,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000873,
@@ -7485,7 +1827,7 @@
       }
     },
     {
-      "rank": 326,
+      "rank": 80,
       "reviewScore": 0.321,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000409,
@@ -7508,7 +1850,7 @@
       }
     },
     {
-      "rank": 327,
+      "rank": 81,
       "reviewScore": 0.321,
       "category": "residential",
       "buildingId": -1002506,
@@ -7531,7 +1873,7 @@
       }
     },
     {
-      "rank": 328,
+      "rank": 82,
       "reviewScore": 0.3203,
       "category": "residential",
       "buildingId": -1003585,
@@ -7554,7 +1896,7 @@
       }
     },
     {
-      "rank": 329,
+      "rank": 83,
       "reviewScore": 0.3184,
       "category": "commercial-industrial-mixed",
       "buildingId": 886227322,
@@ -7577,7 +1919,7 @@
       }
     },
     {
-      "rank": 330,
+      "rank": 84,
       "reviewScore": 0.3183,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000643,
@@ -7600,7 +1942,7 @@
       }
     },
     {
-      "rank": 331,
+      "rank": 85,
       "reviewScore": 0.3171,
       "category": "residential",
       "buildingId": 841005986,
@@ -7623,7 +1965,7 @@
       }
     },
     {
-      "rank": 332,
+      "rank": 86,
       "reviewScore": 0.3169,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000878,
@@ -7646,7 +1988,7 @@
       }
     },
     {
-      "rank": 333,
+      "rank": 87,
       "reviewScore": 0.316,
       "category": "residential",
       "buildingId": -1000824,
@@ -7669,7 +2011,7 @@
       }
     },
     {
-      "rank": 334,
+      "rank": 88,
       "reviewScore": 0.3145,
       "category": "commercial-industrial-mixed",
       "buildingId": 835773456,
@@ -7692,7 +2034,7 @@
       }
     },
     {
-      "rank": 335,
+      "rank": 89,
       "reviewScore": 0.3128,
       "category": "residential",
       "buildingId": -1000667,
@@ -7715,7 +2057,7 @@
       }
     },
     {
-      "rank": 336,
+      "rank": 90,
       "reviewScore": 0.3127,
       "category": "residential",
       "buildingId": 1377670849,
@@ -7738,7 +2080,7 @@
       }
     },
     {
-      "rank": 337,
+      "rank": 91,
       "reviewScore": 0.3122,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003637,
@@ -7761,7 +2103,7 @@
       }
     },
     {
-      "rank": 338,
+      "rank": 92,
       "reviewScore": 0.312,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000348,
@@ -7784,7 +2126,7 @@
       }
     },
     {
-      "rank": 339,
+      "rank": 93,
       "reviewScore": 0.3116,
       "category": "residential",
       "buildingId": 1378660442,
@@ -7807,7 +2149,7 @@
       }
     },
     {
-      "rank": 340,
+      "rank": 94,
       "reviewScore": 0.3094,
       "category": "residential",
       "buildingId": 869715615,
@@ -7830,7 +2172,7 @@
       }
     },
     {
-      "rank": 341,
+      "rank": 95,
       "reviewScore": 0.3093,
       "category": "residential",
       "buildingId": -1000600,
@@ -7853,7 +2195,7 @@
       }
     },
     {
-      "rank": 342,
+      "rank": 96,
       "reviewScore": 0.3087,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000312,
@@ -7876,7 +2218,7 @@
       }
     },
     {
-      "rank": 343,
+      "rank": 97,
       "reviewScore": 0.3058,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000931,
@@ -7899,7 +2241,7 @@
       }
     },
     {
-      "rank": 344,
+      "rank": 98,
       "reviewScore": 0.3038,
       "category": "commercial-industrial-mixed",
       "buildingId": 1385378098,
@@ -7922,7 +2264,7 @@
       }
     },
     {
-      "rank": 345,
+      "rank": 99,
       "reviewScore": 0.303,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000352,
@@ -7945,7 +2287,7 @@
       }
     },
     {
-      "rank": 346,
+      "rank": 100,
       "reviewScore": 0.3005,
       "category": "residential",
       "buildingId": 876594030,
@@ -7968,7 +2310,7 @@
       }
     },
     {
-      "rank": 347,
+      "rank": 101,
       "reviewScore": 0.2999,
       "category": "commercial-industrial-mixed",
       "buildingId": 835773463,
@@ -7991,7 +2333,7 @@
       }
     },
     {
-      "rank": 348,
+      "rank": 102,
       "reviewScore": 0.2995,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003557,
@@ -8014,7 +2356,7 @@
       }
     },
     {
-      "rank": 349,
+      "rank": 103,
       "reviewScore": 0.2983,
       "category": "commercial-industrial-mixed",
       "buildingId": 850884222,
@@ -8037,7 +2379,7 @@
       }
     },
     {
-      "rank": 350,
+      "rank": 104,
       "reviewScore": 0.2969,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000356,
@@ -8060,7 +2402,7 @@
       }
     },
     {
-      "rank": 351,
+      "rank": 105,
       "reviewScore": 0.2946,
       "category": "residential",
       "buildingId": -1000663,
@@ -8083,7 +2425,7 @@
       }
     },
     {
-      "rank": 352,
+      "rank": 106,
       "reviewScore": 0.2936,
       "category": "residential",
       "buildingId": -1000671,
@@ -8106,7 +2448,7 @@
       }
     },
     {
-      "rank": 353,
+      "rank": 107,
       "reviewScore": 0.289,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003638,
@@ -8129,7 +2471,7 @@
       }
     },
     {
-      "rank": 354,
+      "rank": 108,
       "reviewScore": 0.2884,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000410,
@@ -8152,7 +2494,7 @@
       }
     },
     {
-      "rank": 355,
+      "rank": 109,
       "reviewScore": 0.2825,
       "category": "commercial-industrial-mixed",
       "buildingId": 886159973,
@@ -8175,7 +2517,7 @@
       }
     },
     {
-      "rank": 356,
+      "rank": 110,
       "reviewScore": 0.2791,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000936,
@@ -8198,7 +2540,7 @@
       }
     },
     {
-      "rank": 357,
+      "rank": 111,
       "reviewScore": 0.2789,
       "category": "residential",
       "buildingId": -1003134,
@@ -8221,7 +2563,7 @@
       }
     },
     {
-      "rank": 358,
+      "rank": 112,
       "reviewScore": 0.2782,
       "category": "commercial-industrial-mixed",
       "buildingId": 1385378132,
@@ -8244,7 +2586,7 @@
       }
     },
     {
-      "rank": 359,
+      "rank": 113,
       "reviewScore": 0.2768,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000929,
@@ -8267,7 +2609,7 @@
       }
     },
     {
-      "rank": 360,
+      "rank": 114,
       "reviewScore": 0.2753,
       "category": "residential",
       "buildingId": -1003381,
@@ -8290,7 +2632,7 @@
       }
     },
     {
-      "rank": 361,
+      "rank": 115,
       "reviewScore": 0.2737,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000311,
@@ -8313,7 +2655,7 @@
       }
     },
     {
-      "rank": 362,
+      "rank": 116,
       "reviewScore": 0.2736,
       "category": "civic-religious",
       "buildingId": -1002498,
@@ -8336,7 +2678,7 @@
       }
     },
     {
-      "rank": 363,
+      "rank": 117,
       "reviewScore": 0.2705,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000887,
@@ -8359,7 +2701,7 @@
       }
     },
     {
-      "rank": 364,
+      "rank": 118,
       "reviewScore": 0.2653,
       "category": "residential",
       "buildingId": -1000662,
@@ -8382,7 +2724,7 @@
       }
     },
     {
-      "rank": 365,
+      "rank": 119,
       "reviewScore": 0.2584,
       "category": "residential",
       "buildingId": -1000693,
@@ -8405,7 +2747,7 @@
       }
     },
     {
-      "rank": 366,
+      "rank": 120,
       "reviewScore": 0.2542,
       "category": "commercial-industrial-mixed",
       "buildingId": 850884214,
@@ -8428,7 +2770,7 @@
       }
     },
     {
-      "rank": 367,
+      "rank": 121,
       "reviewScore": 0.2517,
       "category": "residential",
       "buildingId": -1000754,
@@ -8451,7 +2793,7 @@
       }
     },
     {
-      "rank": 368,
+      "rank": 122,
       "reviewScore": 0.2505,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000478,
@@ -8474,7 +2816,7 @@
       }
     },
     {
-      "rank": 369,
+      "rank": 123,
       "reviewScore": 0.2475,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000883,
@@ -8497,7 +2839,7 @@
       }
     },
     {
-      "rank": 370,
+      "rank": 124,
       "reviewScore": 0.2466,
       "category": "residential",
       "buildingId": -1002092,
@@ -8520,7 +2862,7 @@
       }
     },
     {
-      "rank": 371,
+      "rank": 125,
       "reviewScore": 0.2333,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000347,
@@ -8543,7 +2885,7 @@
       }
     },
     {
-      "rank": 372,
+      "rank": 126,
       "reviewScore": 0.221,
       "category": "residential",
       "buildingId": -1000809,
@@ -8566,7 +2908,7 @@
       }
     },
     {
-      "rank": 373,
+      "rank": 127,
       "reviewScore": 0.217,
       "category": "commercial-industrial-mixed",
       "buildingId": -1000471,
@@ -8589,7 +2931,7 @@
       }
     },
     {
-      "rank": 374,
+      "rank": 128,
       "reviewScore": 0.2161,
       "category": "commercial-industrial-mixed",
       "buildingId": -1003480,
@@ -8612,7 +2954,7 @@
       }
     },
     {
-      "rank": 375,
+      "rank": 129,
       "reviewScore": 0.1823,
       "category": "commercial-industrial-mixed",
       "buildingId": 835773455,

@@ -50,6 +50,961 @@
       "status": "needs-confirmation",
       "reason": "The predicted regions contain several closely spaced manufactured or display homes and never isolate one complete facade; the apparent units also conflict with the parcel context.",
       "reviewedAt": "2026-07-16"
+    },
+    "876594028": {
+      "status": "rejected",
+      "reason": "Both assigned edge-2 regions show only grass and the elevated railroad bed; no building is visible at the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1001275": {
+      "status": "needs-confirmation",
+      "reason": "The high-scoring region shows roadway and vegetation, while the alternate wide region contains several Jolley Roger structures without isolating the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000411": {
+      "status": "rejected",
+      "reason": "Both assigned regions are dark, motion-blurred night views in which facade material, color, openings, and building identity cannot be verified.",
+      "reviewedAt": "2026-07-16"
+    },
+    "894462381": {
+      "status": "needs-confirmation",
+      "reason": "The primary region shows a fenced commercial or utility yard, while the alternate regions point toward a residence and do not isolate the same building.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1003118": {
+      "status": "needs-confirmation",
+      "reason": "Both rainy views point toward the same residential cluster, but the assigned left-edge region is heavily obscured by a tree and screened porch and does not isolate the footprint boundary.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002436": {
+      "status": "needs-confirmation",
+      "reason": "The two-building parcel and motion-blurred views do not separate the mapped footprint from the adjacent house and parked vehicles.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002437": {
+      "status": "needs-confirmation",
+      "reason": "The assigned regions are dominated by vehicles, a large fabric canopy, and an RV-like structure; the residential footprint cannot be identified confidently.",
+      "reviewedAt": "2026-07-16"
+    },
+    "876594027": {
+      "status": "rejected",
+      "reason": "Both assigned regions show only grass, railroad embankment, and distant vegetation; no residential building is visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1377669262": {
+      "status": "needs-confirmation",
+      "reason": "The primary region falls across a tree and carport, while the alternate region points to a different portion of the residential cluster; the target facade is not isolated.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000646": {
+      "status": "rejected",
+      "reason": "Both assigned regions fall on the roadway or distant vegetation and never show the mapped residence.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000885": {
+      "status": "rejected",
+      "reason": "The assigned regions show grass and the railroad embankment; the small industrial building visible outside the region cannot be attached to this footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000682": {
+      "status": "needs-confirmation",
+      "reason": "The only assigned view is dark and motion-blurred, with a tree and parked vehicles obscuring most of the residence; its form and openings cannot be recorded reliably.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000808": {
+      "status": "rejected",
+      "reason": "The assigned region shows roadway and distant low industrial structures but does not isolate a building at the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "876594033": {
+      "status": "rejected",
+      "reason": "The assigned region shows an intersection, grass, and the railroad corridor; no building is visible at the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "894462375": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region appears adjacent to a facade already matched to neighboring footprint 894462374; the image does not separate the two building identities safely.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002628": {
+      "status": "needs-confirmation",
+      "reason": "Two rainy neighborhood views point toward a cluster of closely spaced homes, but neither narrow assigned region isolates the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1377670847": {
+      "status": "needs-confirmation",
+      "reason": "One region partly shows a white residence and carport while the alternate falls at the extreme edge of the frame; the target footprint cannot be confirmed across views.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000803": {
+      "status": "needs-confirmation",
+      "reason": "The two assigned views appear to point toward different nearby buildings—a yellow two-story structure and a small green residence—so identity must be resolved before importing details.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1377669195": {
+      "status": "needs-confirmation",
+      "reason": "The narrow assigned region is dominated by a tree, fence, and covered outdoor area; it does not expose enough of the mapped residence to describe safely.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000925": {
+      "status": "needs-confirmation",
+      "reason": "The apparent white manufactured home overlaps regions assigned to neighboring footprint -1000926, so the tightly spaced park units cannot be separated confidently.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1003581": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region contains a driveway, palms, and a distant manufactured home partly hidden by trees; the target footprint is not isolated.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000923": {
+      "status": "needs-confirmation",
+      "reason": "Both regions cross trees or the edge of a neighboring manufactured home, and neither reveals one complete, consistently identifiable unit.",
+      "reviewedAt": "2026-07-16"
+    },
+    "886227333": {
+      "status": "rejected",
+      "reason": "The assigned region falls on a fenced equipment yard and open pavement; the visible building sits outside the target region.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002502": {
+      "status": "needs-confirmation",
+      "reason": "The best region is only a sliver at the frame edge, and two distant rainy views do not isolate the mapped residence from neighboring houses and parked vehicles.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1385378129": {
+      "status": "needs-confirmation",
+      "reason": "One clear manufactured-home image has a zero-width predicted region, while the other views point to frame edges and a different-looking unit; identity needs confirmation.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000842": {
+      "status": "rejected",
+      "reason": "Both available views are dark, motion-blurred night frames with trees obscuring the assigned residential region; no usable building details are visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000926": {
+      "status": "needs-confirmation",
+      "reason": "Its strongest regions overlap the same white manufactured home assigned to neighboring footprint -1000925, so the unit boundary cannot be resolved safely.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1377669194": {
+      "status": "rejected",
+      "reason": "The assigned right-edge region shows dense trees and fencing but no building facade at the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000575": {
+      "status": "rejected",
+      "reason": "The assigned region shows chain-link fencing, pavement, and only a distant roofline; no mapped building facade can be identified.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000721": {
+      "status": "needs-confirmation",
+      "reason": "Both regions are distant and dominated by parked vehicles and trees; the residence behind them cannot be isolated or described reliably.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1003355": {
+      "status": "needs-confirmation",
+      "reason": "The only assigned region is an extreme right-edge slice showing part of a manufactured home behind palms and a utility pole; the full target is not visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000560": {
+      "status": "rejected",
+      "reason": "The assigned image region shows the Popeyes restaurant on the nearby 504 E Sugarland parcel, not this warehouse-parcel footprint at 508 E Sagamore; the geometric match is a false positive.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000785": {
+      "status": "needs-confirmation",
+      "reason": "The best regions show hedges, a roof edge, and nearby industrial siding but do not isolate the mapped residence.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002429": {
+      "status": "rejected",
+      "reason": "The strongest predicted region has effectively zero width and the visible frame is dominated by a fenced truck yard rather than the mapped retail footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1379207516": {
+      "status": "needs-confirmation",
+      "reason": "The target is one of several similar houses in a distant row across the railroad, while the alternate region has low visibility; identity remains uncertain.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002438": {
+      "status": "needs-confirmation",
+      "reason": "All assigned regions are narrow and cross a truck yard, trees, or distant residential structures without isolating the 1939 residence.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1003352": {
+      "status": "rejected",
+      "reason": "The assigned region falls on palms, a utility pole, and vegetation; the partial manufactured home begins outside the target region.",
+      "reviewedAt": "2026-07-16"
+    },
+    "822582927": {
+      "status": "needs-confirmation",
+      "reason": "The parcel contains ten industrial structures and the assigned region crosses tanks, conveyors, and background buildings without isolating the mapped footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "383907679": {
+      "status": "needs-confirmation",
+      "reason": "The only view is distant and across a divided highway, with two buildings on the parcel and the assigned region spanning the service-station complex.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002509": {
+      "status": "needs-confirmation",
+      "reason": "Both rainy views are dominated by parked trucks and neighboring houses; the mapped residence cannot be separated confidently.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000681": {
+      "status": "rejected",
+      "reason": "The sole assigned region is an extreme frame edge in a dark, motion-blurred view and contains no usable residential facade.",
+      "reviewedAt": "2026-07-16"
+    },
+    "868836103": {
+      "status": "needs-confirmation",
+      "reason": "The narrow regions show only part of a screened porch and neighboring utility structure; the large mapped footprint is not established.",
+      "reviewedAt": "2026-07-16"
+    },
+    "876594032": {
+      "status": "rejected",
+      "reason": "The assigned region shows the intersection and railroad corridor with no visible building at the mapped residential footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "835773466": {
+      "status": "needs-confirmation",
+      "reason": "Four buildings share the parcel and the assigned region crosses a detached garage and the neighboring residence, preventing a safe footprint assignment.",
+      "reviewedAt": "2026-07-16"
+    },
+    "868836145": {
+      "status": "needs-confirmation",
+      "reason": "The only region captures a partial neighboring residence at the far right of the image and does not show the target footprint completely.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1379207522": {
+      "status": "rejected",
+      "reason": "The strongest view shows only grass, railroad, and distant vegetation in the assigned region; no residential facade is visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000559": {
+      "status": "rejected",
+      "reason": "The assigned region falls on a parking lot and trees beside the Popeyes parcel rather than the mapped residence.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1003489": {
+      "status": "rejected",
+      "reason": "Strong sun glare, trees, and fencing fill the assigned right-edge region; no target residence can be identified.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000567": {
+      "status": "needs-confirmation",
+      "reason": "The highest-ranked match has a zero-width region and the alternate view does not establish a consistent service-station building footprint.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000876": {
+      "status": "rejected",
+      "reason": "The mapped church parcel is matched to an industrial wall and yard across the street; the visible use and location conflict with the target.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1003575": {
+      "status": "needs-confirmation",
+      "reason": "The assigned extreme-right region includes only part of a residence and several vehicles, leaving the mapped footprint boundary uncertain.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000680": {
+      "status": "rejected",
+      "reason": "Both regions come from dark, motion-blurred views dominated by trees and parked vehicles; no reliable facade details are visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000848": {
+      "status": "rejected",
+      "reason": "The sole view is a dark night frame in which the assigned residence is hidden by trees and motion blur.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000554": {
+      "status": "rejected",
+      "reason": "The assigned region shows the highway, turning vehicles, and distant storefronts rather than the mapped residence.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000784": {
+      "status": "needs-confirmation",
+      "reason": "The strongest right-edge region is dominated by parked vehicles and does not reveal a complete manufactured-home facade; the alternate view is also insufficient.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003551": {
+      "status": "needs-confirmation",
+      "reason": "The only region is an extreme frame-edge slice of a manufactured home and does not establish the full footprint or facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000672": {
+      "status": "needs-confirmation",
+      "reason": "The best region falls on the roadway between two buildings on the parcel, and the alternate view does not isolate either structure safely.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207520": {
+      "status": "rejected",
+      "reason": "The assigned regions show grass and the railroad corridor; no facade from the mapped Old Farm Place residence is visible.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864238": {
+      "status": "needs-confirmation",
+      "reason": "Several adjacent dealership footprints share narrow, overlapping regions in the same distant facade; this individual footprint cannot be separated.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000421": {
+      "status": "needs-confirmation",
+      "reason": "Only a partial office-like building appears at the extreme left of the frame, with no confirming view of the full footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000933": {
+      "status": "needs-confirmation",
+      "reason": "Three distant regions cross closely spaced manufactured homes and vegetation without isolating one consistent unit.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000852": {
+      "status": "rejected",
+      "reason": "The assigned regions are dark night views at the frame edge and do not show the mapped civic building or a usable facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864239": {
+      "status": "needs-confirmation",
+      "reason": "This narrow dealership region overlaps neighboring OSM footprints and does not isolate a distinct building section.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207518": {
+      "status": "needs-confirmation",
+      "reason": "One distant region points toward a row house while the alternate view shows only railroad and grass; identity is not confirmed across views.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002517": {
+      "status": "rejected",
+      "reason": "The highest-ranked region has zero width and the alternate rainy view is blocked by vehicles and neighboring homes.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000392": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region crosses a distant residential cluster and trailers rather than isolating the single mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002483": {
+      "status": "rejected",
+      "reason": "The only region is an extreme right-edge sliver in a rainy street view and contains no complete building facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002070": {
+      "status": "rejected",
+      "reason": "Both assigned regions fall at the frame edge on trees, fence, and roadside vegetation; no manufactured home is visible.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000292": {
+      "status": "rejected",
+      "reason": "The assigned region shows a red commercial building across the highway, conflicting with the mapped manufactured-home park footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000316": {
+      "status": "rejected",
+      "reason": "The regions show grass, trees, sheds, and distant trailers without a building at the mapped footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "876594029": {
+      "status": "rejected",
+      "reason": "Both assigned regions show grass, railroad, and distant vegetation; no residential building is visible.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002101": {
+      "status": "rejected",
+      "reason": "The sole right-edge region contains fence, palms, and vegetation but no identifiable residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "383907720": {
+      "status": "needs-confirmation",
+      "reason": "The distant region spans the service-station forecourt and neighboring storefront, so the mapped footprint cannot be assigned to a specific structure.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000527": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region points toward a red residential-looking structure on a two-building retail parcel; the use and footprint identity conflict.",
+      "reviewedAt": "2026-07-17"
+    },
+    "868836090": {
+      "status": "needs-confirmation",
+      "reason": "The narrow region shows lawn, trees, and only part of a side structure; the mapped residence is not fully visible.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002485": {
+      "status": "needs-confirmation",
+      "reason": "The only rainy view is dominated by parked trucks and neighboring houses, preventing a safe footprint assignment.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864237": {
+      "status": "needs-confirmation",
+      "reason": "The tiny regions fall within the same distant dealership facade as several neighboring footprints and cannot identify this section independently.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002518": {
+      "status": "rejected",
+      "reason": "The only predicted region is a one-percent extreme frame-edge slice with no usable facade evidence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000564": {
+      "status": "needs-confirmation",
+      "reason": "The assigned left-edge region includes only part of a windowless roadside wall and does not confirm the office footprint or entrance.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003262": {
+      "status": "rejected",
+      "reason": "A passing semi-trailer completely blocks the assigned region, leaving no building evidence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000526": {
+      "status": "rejected",
+      "reason": "The region shows fence, pavement, and distant low rooflines but no identifiable residence at the mapped footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000525": {
+      "status": "rejected",
+      "reason": "The assigned region contains fence and a distant vehicle rather than a residential facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864242": {
+      "status": "needs-confirmation",
+      "reason": "The assigned dealership region is distant and overlaps several adjacent mapped sections, so the footprint cannot be distinguished.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002069": {
+      "status": "rejected",
+      "reason": "Both narrow regions fall on roadway, trees, or fence and never expose the mapped manufactured home.",
+      "reviewedAt": "2026-07-17"
+    },
+    "850715463": {
+      "status": "needs-confirmation",
+      "reason": "The region falls between attached plaza sections near Marshalls and Tractor Supply, and the individual storefront footprint cannot be separated safely.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000675": {
+      "status": "needs-confirmation",
+      "reason": "Both views are distant and the narrow regions cross roadway and nearby homes without isolating the mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1455097839": {
+      "status": "rejected",
+      "reason": "The assigned region shows the Marshalls shopping-center facade, conflicting with the municipal parcel address and use for this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000854": {
+      "status": "needs-confirmation",
+      "reason": "The night region overlaps the blue warehouse already assigned to neighboring footprint -1000859, so the two mapped identities cannot be separated.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000407": {
+      "status": "needs-confirmation",
+      "reason": "The regions point toward a tree-obscured structure across a wide roadway and do not isolate one manufactured-home footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003384": {
+      "status": "rejected",
+      "reason": "The sole extreme-right region shows tree cover and a carport edge but no complete residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000552": {
+      "status": "rejected",
+      "reason": "A vehicle blocks nearly the entire assigned region, while the visible background signage identifies a real-estate storefront rather than the mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "850715461": {
+      "status": "needs-confirmation",
+      "reason": "Both regions are extremely narrow and distant within a residential row, preventing a confident footprint-to-facade match.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1001627": {
+      "status": "rejected",
+      "reason": "The assigned right-edge region is dominated by trees and fence, with only a fragment of a structure visible.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000677": {
+      "status": "needs-confirmation",
+      "reason": "The two-building parcel and motion-blurred view do not separate the mapped residence from the adjacent yellow multi-story structure.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000807": {
+      "status": "rejected",
+      "reason": "Both regions show roadway and distant industrial structures rather than either building on the mapped residential parcel.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003363": {
+      "status": "rejected",
+      "reason": "The sole region is a three-percent extreme frame-edge slice and contains no usable facade evidence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "850884226": {
+      "status": "needs-confirmation",
+      "reason": "The distant narrow regions cross several residences and vegetation, so the single mapped house is not isolated.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000658": {
+      "status": "needs-confirmation",
+      "reason": "Both regions are narrow, distant slices among closely spaced homes and do not reveal a complete target facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000701": {
+      "status": "needs-confirmation",
+      "reason": "The distant regions cross a truck yard, trees, and neighboring structures without isolating the mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002606": {
+      "status": "needs-confirmation",
+      "reason": "The rainy view shows a fenced utility or institutional complex, but the assigned region does not isolate the mapped footprint behind the fence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "817555429": {
+      "status": "rejected",
+      "reason": "The available night views are dark and motion-blurred, and the assigned regions do not expose a defensible building facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "835773467": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region overlaps the left residence and detached garage on a four-building parcel, so the individual footprint is ambiguous.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002500": {
+      "status": "needs-confirmation",
+      "reason": "The rainy distant region falls among several similar homes and trees without isolating the mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002501": {
+      "status": "needs-confirmation",
+      "reason": "The narrow region points toward a distant residential row but does not establish the target house independently.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003383": {
+      "status": "rejected",
+      "reason": "The assigned region is filled by trees, fence, and a carport with no complete residential facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003549": {
+      "status": "needs-confirmation",
+      "reason": "Three views place the target at narrow frame edges around neighboring manufactured homes; none isolates a complete footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000664": {
+      "status": "needs-confirmation",
+      "reason": "The only region is a narrow distant slice of a residential cluster and does not identify the mapped house.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003640": {
+      "status": "needs-confirmation",
+      "reason": "Two distant regions include trees, a shed, and only part of a manufactured home, leaving the unit identity uncertain.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000875": {
+      "status": "needs-confirmation",
+      "reason": "The region shows only part of an industrial wall across the street and does not confirm the auto-dealer footprint or entrance.",
+      "reviewedAt": "2026-07-17"
+    },
+    "841005988": {
+      "status": "rejected",
+      "reason": "The assigned region is a two-percent slice through vegetation and does not show the mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003133": {
+      "status": "rejected",
+      "reason": "The only region is an extreme right-edge slice containing no complete building facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002508": {
+      "status": "needs-confirmation",
+      "reason": "Both rainy regions are dominated by parked vehicles and neighboring homes, so the mapped residence cannot be identified safely.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003556": {
+      "status": "needs-confirmation",
+      "reason": "The region overlaps the blue-gray service building already assigned to neighboring footprint -1003555 and cannot separate the identities.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000546": {
+      "status": "rejected",
+      "reason": "The predicted region has zero width and provides no evidence for the mapped retail building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000888": {
+      "status": "needs-confirmation",
+      "reason": "The two-building parcel is viewed distantly across the railroad, and neither region isolates the mapped institutional structure.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003576": {
+      "status": "needs-confirmation",
+      "reason": "The distant region crosses parked vehicles and several adjacent residences without establishing the target house.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002274": {
+      "status": "rejected",
+      "reason": "The assigned region shows open lawn, a tree, and a partial structure at the frame edge rather than the mapped retail footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "876594035": {
+      "status": "rejected",
+      "reason": "The assigned region contains grass and railroad with no visible residential building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207508": {
+      "status": "needs-confirmation",
+      "reason": "Both regions are very distant across the railroad and point toward a row of similar houses without isolating this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000313": {
+      "status": "needs-confirmation",
+      "reason": "The narrow regions cross lawn, trees, and several mobile-park structures without isolating this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1377670848": {
+      "status": "needs-confirmation",
+      "reason": "The single region overlaps a cluster of similar neighboring homes and does not establish which facade belongs to this address.",
+      "reviewedAt": "2026-07-17"
+    },
+    "841005990": {
+      "status": "rejected",
+      "reason": "The predicted sliver contains vegetation and the edge of a neighboring scene rather than the target residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "835773432": {
+      "status": "rejected",
+      "reason": "The region shows open lawn, a blurred tree, and only a partial mobile home at the frame edge.",
+      "reviewedAt": "2026-07-17"
+    },
+    "850884225": {
+      "status": "needs-confirmation",
+      "reason": "Both views are distant and the narrow regions do not isolate the residence from adjacent roofs and vegetation.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000568": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region crosses parked trucks and several small buildings at the intersection rather than a uniquely identifiable target.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000563": {
+      "status": "rejected",
+      "reason": "Both predicted regions collapse against the far-right frame edge and provide no usable view of the target building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207524": {
+      "status": "rejected",
+      "reason": "The assigned right-edge region contains grass and railroad with no visible residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000645": {
+      "status": "needs-confirmation",
+      "reason": "The views show a multi-tenant strip, but the predicted regions do not reliably separate this office footprint from neighboring units.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000403": {
+      "status": "needs-confirmation",
+      "reason": "The civic parcel is viewed across a wide road and the small region overlaps multiple distant white buildings.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207512": {
+      "status": "needs-confirmation",
+      "reason": "The only view is distant across the railroad and points into a row of similar houses without sufficient facade detail.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003584": {
+      "status": "needs-confirmation",
+      "reason": "Trees and adjacent manufactured homes overlap the region, preventing a confident assignment to this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "868836143": {
+      "status": "needs-confirmation",
+      "reason": "The narrow left-edge region contains a partial neighboring structure and vegetation rather than an isolated residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000840": {
+      "status": "rejected",
+      "reason": "The nighttime image is too dark and the target occupies only a small indistinct region.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000565": {
+      "status": "rejected",
+      "reason": "The predicted image region has zero width and supplies no visual evidence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864264": {
+      "status": "needs-confirmation",
+      "reason": "The dealership is visible, but the narrow region captures only a fragment of the display complex and not a separable building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000806": {
+      "status": "rejected",
+      "reason": "The best predicted region has zero width; the second view also fails to isolate the residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003657": {
+      "status": "rejected",
+      "reason": "The image shows roadway, utility lines, and dense vegetation with no target building in the assigned region.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864240": {
+      "status": "needs-confirmation",
+      "reason": "Both regions are narrow fragments within the manufactured-home dealership and cannot identify this individual footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000258": {
+      "status": "rejected",
+      "reason": "The assigned canal-side region contains bridge rail, water, and vegetation rather than a visible mobile home.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002624": {
+      "status": "needs-confirmation",
+      "reason": "Rain and overlapping neighboring houses make the target residence indistinguishable in both regions.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000350": {
+      "status": "needs-confirmation",
+      "reason": "Four evidence regions are inconsistent; the highest-scored one points to a sign and parking area rather than the mapped mobile-home footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "868836106": {
+      "status": "needs-confirmation",
+      "reason": "The single region is distant and captures only a partial residence among several neighboring roofs.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003548": {
+      "status": "rejected",
+      "reason": "The region points into the county recreation entrance and vegetation, with no visible residence matching the mapped address.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1356546102": {
+      "status": "needs-confirmation",
+      "reason": "Five distant views place only a tiny region within a landscaped multi-building civic parcel and do not reveal the target facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864248": {
+      "status": "needs-confirmation",
+      "reason": "The predicted sliver lies within a dense dealership display and does not establish an individual fixed building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000537": {
+      "status": "needs-confirmation",
+      "reason": "All three predicted regions are extremely narrow and overlap trees or adjacent structures rather than a complete residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1377670845": {
+      "status": "needs-confirmation",
+      "reason": "The right-edge region includes a partial house and neighboring vegetation without enough context to confirm this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867861754": {
+      "status": "rejected",
+      "reason": "The predicted center region is dominated by a tree and yard between two different residences.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003648": {
+      "status": "rejected",
+      "reason": "The target prediction is clipped to the far-right edge and does not show a usable building facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000843": {
+      "status": "rejected",
+      "reason": "The nighttime capture is too dark and obstructed to support a building descriptor.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867864250": {
+      "status": "rejected",
+      "reason": "The wide predicted region contains dealership roadway and displayed manufactured homes but no identifiable fixed building for this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000544": {
+      "status": "rejected",
+      "reason": "The tiny region is clipped to the left frame edge and provides no view of the mapped commercial building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1385378130": {
+      "status": "needs-confirmation",
+      "reason": "The mobile-park views include multiple similar homes, and the broad region does not isolate this individual footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003645": {
+      "status": "needs-confirmation",
+      "reason": "Only a narrow, palm-obstructed portion of a manufactured home appears at the right edge.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002407": {
+      "status": "rejected",
+      "reason": "The right-edge region shows roadway, parked vehicles, and trees rather than the target building on the two-building parcel.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003580": {
+      "status": "needs-confirmation",
+      "reason": "The region overlaps the long white residence already associated with a neighboring footprint and cannot separate this address.",
+      "reviewedAt": "2026-07-17"
+    },
+    "867861756": {
+      "status": "needs-confirmation",
+      "reason": "The predicted sliver captures vegetation and only a fragment of the residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003552": {
+      "status": "needs-confirmation",
+      "reason": "The narrow region overlaps the manufactured home already assigned to neighboring footprint -1003550.",
+      "reviewedAt": "2026-07-17"
+    },
+    "876594034": {
+      "status": "rejected",
+      "reason": "The assigned region contains grass and railroad with no visible residential building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207510": {
+      "status": "needs-confirmation",
+      "reason": "Both views are distant across the railroad and do not separate this residence from the surrounding row.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1377669193": {
+      "status": "rejected",
+      "reason": "The target is reduced to a two-percent sliver at the far-right edge of the only image.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003382": {
+      "status": "needs-confirmation",
+      "reason": "The industrial parcel contains twenty mapped buildings and the single edge region cannot identify this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000844": {
+      "status": "rejected",
+      "reason": "The dark capture and far-right clipping leave no usable view of the residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002439": {
+      "status": "rejected",
+      "reason": "The assigned region is dominated by parked vehicles, a tree, and a screened enclosure; the building facade is not visible.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000522": {
+      "status": "rejected",
+      "reason": "The predicted region shows fence and pavement rather than the mapped building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002495": {
+      "status": "rejected",
+      "reason": "The best predicted region has zero width and the second view does not isolate the residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003386": {
+      "status": "rejected",
+      "reason": "The narrow region contains distant trees and no discernible building facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003642": {
+      "status": "needs-confirmation",
+      "reason": "The right-edge region shows only a partial manufactured home among several similar neighboring units.",
+      "reviewedAt": "2026-07-17"
+    },
+    "885973873": {
+      "status": "needs-confirmation",
+      "reason": "The single distant edge region does not provide enough of the residence to establish its form.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000390": {
+      "status": "needs-confirmation",
+      "reason": "Only a partial industrial wall appears at the far-right edge, and the image does not confirm that it is the mapped retail footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1001277": {
+      "status": "rejected",
+      "reason": "The assigned region shows canal, bridge rail, and a distant unrelated building rather than this recreation-site footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1001574": {
+      "status": "needs-confirmation",
+      "reason": "The service-station parcel has two buildings and the distant region does not separate the target from the canopy and forecourt.",
+      "reviewedAt": "2026-07-17"
+    },
+    "384437023": {
+      "status": "rejected",
+      "reason": "The predicted region has zero width and supplies no evidence for this footprint on the three-building parcel.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000408": {
+      "status": "rejected",
+      "reason": "Both regions collapse against a frame edge and do not show the mapped mobile-home structure.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000884": {
+      "status": "rejected",
+      "reason": "The edge regions contain railroad and grass with no identifiable building.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003643": {
+      "status": "needs-confirmation",
+      "reason": "The image shows several similar manufactured homes and the broad region does not establish this individual footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000649": {
+      "status": "needs-confirmation",
+      "reason": "Both street views are distant and the regions include only a partial residence among trees and neighboring structures.",
+      "reviewedAt": "2026-07-17"
+    },
+    "894462377": {
+      "status": "rejected",
+      "reason": "The left-edge region captures a cropped portion of a church complex on a five-building parcel and cannot identify this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "835773423": {
+      "status": "needs-confirmation",
+      "reason": "Only a partial residence appears at the right edge, and the parcel contains four buildings that the view does not separate.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000670": {
+      "status": "needs-confirmation",
+      "reason": "The two distant regions reveal only a small portion of the residence behind neighboring vegetation.",
+      "reviewedAt": "2026-07-17"
+    },
+    "868836093": {
+      "status": "needs-confirmation",
+      "reason": "The single view is distant and the region spans several roadside homes without a clear target facade.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1002408": {
+      "status": "rejected",
+      "reason": "The narrow left region contains tree canopy and yard rather than a visible residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000935": {
+      "status": "needs-confirmation",
+      "reason": "The single narrow region shows only a fragment within a dense mobile-home park.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003353": {
+      "status": "needs-confirmation",
+      "reason": "The parcel contains ten buildings and the single region cannot distinguish this industrial footprint from its neighbors.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000398": {
+      "status": "needs-confirmation",
+      "reason": "The narrow roadside region contains only a partial structure and does not establish the mapped residence.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1377925606": {
+      "status": "needs-confirmation",
+      "reason": "The two distant edge views are not consistent enough to establish the target residence's facade and roof form.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1003583": {
+      "status": "needs-confirmation",
+      "reason": "Only a narrow, tree-obstructed portion of a mobile home appears in the single view.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000529": {
+      "status": "needs-confirmation",
+      "reason": "The region overlaps a white commercial building and a neighboring residence without confirming which one maps to this footprint.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000937": {
+      "status": "needs-confirmation",
+      "reason": "All three regions are narrow fragments within the mobile-home park and do not isolate this unit.",
+      "reviewedAt": "2026-07-17"
+    },
+    "1379207506": {
+      "status": "needs-confirmation",
+      "reason": "The residence is very distant across the railroad and occupies too little of the image for a defensible descriptor.",
+      "reviewedAt": "2026-07-17"
+    },
+    "-1000260": {
+      "status": "rejected",
+      "reason": "The regions point to canal-side or distant industrial context and do not show the mapped mobile-home footprint.",
+      "reviewedAt": "2026-07-17"
     }
   }
 }

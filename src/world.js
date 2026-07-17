@@ -17,12 +17,30 @@ const COLORS = {
   water: new THREE.Color('#4d9ec4'),
   asphalt: new THREE.Color('#565a61'),
   asphaltMinor: new THREE.Color('#63666d'),
-  service: new THREE.Color('#8d8f94'),
+  service: new THREE.Color('#6d7076'),
   centerLine: new THREE.Color('#e8c04a'),
   palmTrunk: new THREE.Color('#a08050'),
   palmFrond: new THREE.Color('#3e8948'),
   oakCrown: new THREE.Color('#4f9146'),
 };
+
+const ROAD_SURFACE_Y = {
+  track: 0.042,
+  service: 0.048,
+  residential: 0.082,
+  unclassified: 0.083,
+  tertiary_link: 0.084,
+  tertiary: 0.085,
+  secondary: 0.087,
+  trunk_link: 0.089,
+  trunk: 0.091,
+  primary: 0.093,
+};
+
+export function roadSurfaceY(road) {
+  const base = ROAD_SURFACE_Y[road.kind] ?? 0.08;
+  return base + hash01(road.path[0][0] + road.path[0][1]) * 0.001;
+}
 
 function wallColorFor(b) {
   const h = hash01(b.id);
@@ -44,6 +62,7 @@ function roofColorFor(b) {
 
 function facadeArchetype(material, fallback) {
   if (!material) return fallback;
+  if (material === 'plain') return 'plain';
   if (material === 'metal') return 'industrial';
   if (material === 'glass') return 'storefront';
   if (material === 'wood-siding') return 'house';
@@ -597,7 +616,9 @@ export function buildWorld(scene, data, details = {}, roofColors = {}, trees = [
   const roadMask = new SpatialGrid(9);
   const roadPos = [], roadCol = [], linePos = [];
   for (const r of data.roads) {
-    const y = 0.05 + hash01(r.path[0][0] + r.path[0][1]) * 0.02;
+    // Surface hierarchy doubles as inexpensive clipping at intersections:
+    // roads cover crossing sidewalks, while sidewalks cover driveway aprons.
+    const y = roadSurfaceY(r);
     roadPos.push(ribbonPositions(r.path, r.width, y));
     roadCol.push(r.kind === 'service' || r.kind === 'track' ? COLORS.service
       : r.major ? COLORS.asphalt : COLORS.asphaltMinor);

@@ -67,6 +67,7 @@ The current checked-in snapshot contains roughly 5,700 building footprints, 1,25
 | `public/data/roof-colors.json` | NAIP-derived roof colors keyed by building ID | Type-based deterministic roof colors remain |
 | `public/data/trees.json` | NAIP-derived `[x, z, crownRadius]` records | A seeded procedural tree scatter is generated |
 | `public/data/places.json` | Combined OSM/Overture places used for wall-mounted signs | No business signs are mounted |
+| `public/data/freestanding-signs.json` | Curated pole, pylon, and monument signs with independent positions and provenance | No detached business signs are rendered |
 
 The two POI systems intentionally consume different inputs. The floating CSS label renderer can consume `clewiston.json.pois` (the curated OSM subset), while wall-mounted business signs use the broader `places.json` set. Floating building labels are currently disabled in `main.js` so building identity comes from facade signage, but the renderer remains available for future non-building POIs or a curated overlay.
 
@@ -103,7 +104,7 @@ Door placement is similarly heuristic: a 1.1-meter decal is centered on the long
 
 Roads and canals are triangulated ribbons around source polylines. Large roads get dashed center markings. Sidewalks are derived at runtime by offsetting both sides of qualifying roads; they are not present in the source data and do not form a navigation mesh.
 
-Several flat layers use slightly different `y` values, including small deterministic per-road jitter. These offsets are an important part of the renderer: they keep coplanar ground, green, water, asphalt, sidewalks, center lines, and painted names from flickering.
+Several flat layers use slightly different `y` values, including small deterministic per-road jitter. Roads also use an explicit surface hierarchy: tracks and service driveways sit below sidewalks; ordinary roads sit above sidewalks; and successively larger road classes sit slightly higher. This acts as inexpensive geometric clipping, making driveways end at pavement edges and preventing sidewalks from crossing through intersections while avoiding coplanar flicker among ground, green, water, asphalt, center lines, and painted names.
 
 Sidewalk generation has a hard-coded town-core boundary (`x -2600..2400`, `z -850..2850`). Features outside it can still render, but they do not receive generated sidewalks.
 
@@ -119,7 +120,7 @@ If `trees.json` cannot be loaded, the runtime uses a seeded scatter. The seed is
 
 There is no physics engine. Buildings are inserted into a uniform 24-meter spatial hash, and `Player.blockedAt()` performs a point-in-polygon test only against candidates in the current cell.
 
-Walking and driving share character-relative controls: forward/back moves along the current heading, while left/right combines forward motion with continuous rotation. Movement input recenters the chase camera behind that heading; mouse movement can orbit the camera while the controls are idle.
+Walking and driving share character-relative controls: forward/back moves along the current heading, while left/right combines forward motion with continuous rotation. Movement input recenters the chase camera behind that heading; mouse movement can orbit the camera while the controls are idle. Camera position uses exponential easing, with an additional distance-sensitive catch-up multiplier above the cart's normal top speed so turbo cannot outrun the framing.
 
 On foot, movement probes slightly ahead of the character. When a move is blocked, it separately tries the `x` and `z` portions, producing inexpensive wall sliding. The character animation is four limb pivots driven by a sine wave. Jogging increases forward speed without changing turn speed, so its turning circle is wider.
 
@@ -152,7 +153,11 @@ Text uses three strategies:
 - street blades, painted road names, and business signs are cached canvas textures on WebGL geometry;
 - visibility checks run only every 0.4–0.5 seconds and use squared planar distance.
 
+Business identity structures have two distinct paths. Wall-mounted signs are projected onto a matched building edge, while entries with `type: "freestanding-sign"` are independent scene structures loaded from `freestanding-signs.json`. A freestanding sign can use pole, pylon, or monument supports; stack multiple double-sided panels; set its own orientation and visibility distance; and retain evidence and confidence metadata without pretending to be part of a building facade.
+
 This avoids rebuilding text or doing distance work for every label on every frame.
+
+Street-blade poles are anchored from shared named-road vertices. Their curb offset is derived from each intersecting road's width: a radial search chooses the nearest point with perpendicular clearance beyond every pavement edge plus a small setback, which also handles angled and three-way intersections.
 
 ## Landmarks: data-derived and authored
 
@@ -160,8 +165,13 @@ The landmark layer is hybrid.
 
 - The Herbert Hoover Dike is data-derived: every road named exactly `Herbert Hoover Dike` is swept into a nine-meter grass berm with a crest path.
 - The sugar mill is authored: stacks, silos, conveyor, and steam use fixed local coordinates around the real industrial cluster. Six reused sprites create the looping plume.
+- The downtown communications tower is authored from two Sugarland Highway Mapillary views as a tapered lattice, antenna-panel cluster, dishes, mast, and blinking red obstruction lights.
+- The downtown civic cluster is hybrid: researched building descriptors style the library, Youth Center, pool bathhouse, First Bank, and St. Margaret sanctuary footprints, while Civic Park's gazebo and cadet memorial, the pool/splash-pad surfaces, and St. Margaret's tower are authored geometry.
+- The Clewiston Inn keeps its Overture U-shaped wall footprint, but landmark geometry supplies the features the generic building extruder cannot express: three green hipped roof masses, a full-height gabled portico with four square columns, its pediment oculus and fanlit entrance, and the five-bay west-facade window rhythm.
+- The Hampton Inn keeps its long OSM footprint but overrides the incorrect one-story source height with its documented four-story profile. Landmark geometry adds the raised parapet, warm facade panels, regular hotel-window grid, orange script sign, and deep square-column entrance canopy visible from Sugarland Highway.
+- A downtown landmark pass adds geometry that facade descriptors alone cannot express: the three-story U.S. Sugar headquarters and its green roofs, monumental portico, and monument sign; the Harry T. Vaughn Library's stepped civic facade; the reused Dixie Crystal Theatre's turquoise Moderne towers; First Baptist's square tower and spire; Evangel's broad roof, clerestory, and small spire; and City Hall's breeze-block screen, entrance porch, and flags.
 
-The exact road-name match and mill coordinates are hidden geographic dependencies. Renaming source roads, moving the projection origin, or changing the map area requires revisiting `src/landmarks.js`.
+The exact road-name match and authored landmark coordinates are hidden geographic dependencies. Renaming source roads, moving the projection origin, or changing the map area requires revisiting `src/landmarks.js`.
 
 ## Offline data pipeline
 

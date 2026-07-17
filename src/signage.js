@@ -22,6 +22,7 @@ const PALETTES = [
 ];
 
 const texCache = new Map();
+const freestandingTexCache = new Map();
 
 function signTexture(name, palette) {
   const key = name + '|' + palette.bg;
@@ -56,6 +57,115 @@ function signTexture(name, palette) {
   return entry;
 }
 
+function freestandingPanelTexture(panel) {
+  const bg = panel.bg ?? '#f2ede0';
+  const fg = panel.fg ?? '#252525';
+  const accent = panel.accent ?? '';
+  const key = `${panel.text}|${bg}|${fg}|${accent}`;
+  let tex = freestandingTexCache.get(key);
+  if (tex) return tex;
+
+  const c = document.createElement('canvas');
+  c.width = 512; c.height = 160;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, c.width, c.height);
+  if (accent) {
+    ctx.fillStyle = accent;
+    ctx.fillRect(0, c.height - 18, c.width, 18);
+  }
+  ctx.strokeStyle = panel.border ?? fg;
+  ctx.lineWidth = 8;
+  ctx.strokeRect(4, 4, c.width - 8, c.height - 8);
+  ctx.fillStyle = fg;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  const label = String(panel.text ?? '').toUpperCase();
+  let size = 78;
+  ctx.font = `bold ${size}px 'Arial Narrow', Arial, sans-serif`;
+  while (ctx.measureText(label).width > c.width - 42 && size > 30) {
+    size -= 4;
+    ctx.font = `bold ${size}px 'Arial Narrow', Arial, sans-serif`;
+  }
+  ctx.fillText(label, c.width / 2, c.height / 2 - (accent ? 7 : 0));
+  tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 4;
+  freestandingTexCache.set(key, tex);
+  return tex;
+}
+
+function buildFreestandingSign(definition) {
+  const group = new THREE.Group();
+  const width = Math.max(1.2, definition.width ?? 3.6);
+  const depth = Math.max(0.12, definition.depth ?? 0.32);
+  const panels = Array.isArray(definition.panels) && definition.panels.length
+    ? definition.panels
+    : [{ text: definition.text ?? '', height: definition.panelHeight ?? 1.2 }];
+  const gap = definition.panelGap ?? 0.12;
+  const panelTotal = panels.reduce((sum, panel) => sum + Math.max(0.35, panel.height ?? 1), 0)
+    + gap * Math.max(0, panels.length - 1);
+  const top = Math.max(panelTotal + 0.3, definition.height ?? 7);
+  const panelBottom = top - panelTotal;
+  const supportColor = definition.supportColor ?? '#686b69';
+
+  if (definition.style === 'monument') {
+    const baseHeight = Math.max(0.45, panelBottom);
+    const base = new THREE.Mesh(
+      new THREE.BoxGeometry(width + 0.75, baseHeight, depth + 0.5),
+      new THREE.MeshLambertMaterial({ color: definition.baseColor ?? '#b8a98f' })
+    );
+    base.position.y = baseHeight / 2;
+    base.castShadow = true;
+    group.add(base);
+  } else {
+    const supportCount = definition.supports ?? (definition.style === 'pylon' ? 2 : 1);
+    const supportHeight = Math.max(0.4, panelBottom);
+    const supportMat = new THREE.MeshLambertMaterial({ color: supportColor });
+    for (let i = 0; i < supportCount; i++) {
+      const spread = supportCount === 1 ? 0 : (i / (supportCount - 1) - 0.5) * width * 0.58;
+      const pole = new THREE.Mesh(
+        new THREE.BoxGeometry(definition.supportWidth ?? 0.2, supportHeight, definition.supportDepth ?? 0.2),
+        supportMat
+      );
+      pole.position.set(spread, supportHeight / 2, 0);
+      pole.castShadow = true;
+      group.add(pole);
+    }
+  }
+
+  let y = top;
+  for (const panel of panels) {
+    const h = Math.max(0.35, panel.height ?? 1);
+    const w = Math.max(1, width * (panel.widthScale ?? 1));
+    y -= h;
+    const backer = new THREE.Mesh(
+      new THREE.BoxGeometry(w, h, depth),
+      new THREE.MeshLambertMaterial({ color: panel.edge ?? supportColor })
+    );
+    backer.position.y = y + h / 2;
+    backer.castShadow = true;
+    group.add(backer);
+
+    const faceMaterial = new THREE.MeshBasicMaterial({ map: freestandingPanelTexture(panel), toneMapped: false });
+    for (const side of [-1, 1]) {
+      const face = new THREE.Mesh(new THREE.PlaneGeometry(w - 0.08, h - 0.08), faceMaterial);
+      face.position.set(0, y + h / 2, side * (depth / 2 + 0.006));
+      face.rotation.y = side < 0 ? Math.PI : 0;
+      group.add(face);
+    }
+    y -= gap;
+  }
+
+  const [x, z] = definition.pos;
+  group.position.set(x, definition.groundY ?? 0.1, z);
+  group.rotation.y = THREE.MathUtils.degToRad(definition.rotation ?? 0);
+  group.visible = false;
+  group.userData.structureType = 'freestanding-sign';
+  group.userData.signId = definition.id;
+  return group;
+}
+
 // Nearest point on the polygon boundary to (x,z); returns the edge too.
 function nearestEdgePoint(poly, x, z) {
   let best = null;
@@ -77,7 +187,7 @@ function nearestEdgePoint(poly, x, z) {
 }
 
 export class Signage {
-  constructor(scene, buildings, places, details = {}) {
+  constructor(scene, buildings, places, details = {}, freestandingSigns = []) {
     this.group = new THREE.Group();
     scene.add(this.group);
     this.items = [];
@@ -108,7 +218,7 @@ export class Signage {
     const mounted = new Set(); // avoid stacking identical signs
     let count = 0;
 
-    const mountSign = (name, building, edge, t = 0.5, paletteHint = null) => {
+    const mountSign = (name, building, edge, t = 0.5, paletteHint = null, yHint = null) => {
       const dedupe = `${name}|${building.id}`;
       if (mounted.has(dedupe)) return;
       mounted.add(dedupe);
@@ -128,7 +238,9 @@ export class Signage {
       const clampedT = Math.max(half / edgeLen, Math.min(1 - half / edgeLen, t));
       const sx = ax + ex * clampedT, sz = az + ez * clampedT;
       const detailHeight = details[building.id]?.height ?? (details[building.id]?.stories ? details[building.id].stories * 3.4 : null);
-      const y = Math.min(SIGN_Y, Math.max(2.2, (detailHeight ?? building.height ?? 4) - 0.6));
+      const y = Number.isFinite(yHint)
+        ? yHint
+        : Math.min(SIGN_Y, Math.max(2.2, (detailHeight ?? building.height ?? 4) - 0.6));
       const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, SIGN_H), new THREE.MeshBasicMaterial({ map: tex }));
       mesh.position.set(sx + nx * 0.09, y, sz + nz * 0.09);
       mesh.rotation.y = Math.atan2(nx, nz);
@@ -148,6 +260,7 @@ export class Signage {
         if (e && e.d2 < 35 * 35 && (!best || e.d2 < best.d2)) { best = e; bestB = b; }
       }
       if (!best) continue;
+      if (details[bestB.id]?.suppressPlaceSignage) continue;
 
       const palette = PALETTES[Math.floor(hash01(place.name.length * 7 + place.name.charCodeAt(0)) * PALETTES.length)];
       const edgeIndex = bestB.poly.findIndex(([x, z]) => x === best.ax && z === best.az);
@@ -174,13 +287,30 @@ export class Signage {
         if (!sign?.text) continue;
         const edge = Number.isInteger(sign.facadeEdge) ? sign.facadeEdge : longestEdge;
         if (edge < 0 || edge >= building.poly.length) continue;
-        const palette = { bg: detail.trim ?? '#f2ede0', fg: '#202020' };
-        mountSign(sign.text, building, edge, sign.position ?? 0.5, palette);
+        const palette = {
+          bg: sign.bg ?? detail.trim ?? '#f2ede0',
+          fg: sign.fg ?? '#202020',
+        };
+        mountSign(sign.text, building, edge, sign.position ?? 0.5, palette, sign.y);
       }
     }
 
+    let freestandingCount = 0;
+    for (const definition of freestandingSigns) {
+      if (definition?.type !== 'freestanding-sign' || !Array.isArray(definition.pos)) continue;
+      const sign = buildFreestandingSign(definition);
+      this.group.add(sign);
+      this.items.push({
+        obj: sign,
+        x: definition.pos[0],
+        z: definition.pos[1],
+        maxDistance: definition.maxDistance ?? SIGN_DIST,
+      });
+      freestandingCount++;
+    }
+
     this.cooldown = 0;
-    console.log(`signage: ${count} business signs mounted`);
+    console.log(`signage: ${count} wall signs and ${freestandingCount} freestanding signs mounted`);
   }
 
   update(dt, playerPos) {
@@ -189,7 +319,8 @@ export class Signage {
     this.cooldown = 0.5;
     for (const it of this.items) {
       const dx = it.x - playerPos.x, dz = it.z - playerPos.z;
-      it.obj.visible = dx * dx + dz * dz < SIGN_DIST * SIGN_DIST;
+      const maxDistance = it.maxDistance ?? SIGN_DIST;
+      it.obj.visible = dx * dx + dz * dz < maxDistance * maxDistance;
     }
   }
 }

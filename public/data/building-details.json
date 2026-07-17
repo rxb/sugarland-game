@@ -55,20 +55,375 @@
       "The Marathon pole sign and fuel canopy are separate structures, not facade features."
     ]
   },
+  "1356546102": {
+    "buildingSourceId": "osm:way/1356546102",
+    "name": "Harry T. Vaughn Library",
+    "confidence": "high",
+    "height": 4.4,
+    "stories": 1,
+    "wall": "#eee9e2",
+    "wallMaterial": "plain",
+    "trim": "#d5c7bb",
+    "roof": {
+      "type": "flat",
+      "color": "#d8d5ce"
+    },
+    "style": "one-story civic library with an Art Deco-influenced stepped parapet, pale masonry walls, and a recessed columned entrance",
+    "features": [
+      "stepped parapet volumes",
+      "tall narrow glass-block window bays",
+      "shallow geometric trim band",
+      "covered entrance with square columns",
+      "formal lawn and clipped foundation shrubs"
+    ],
+    "signage": [],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "city-of-clewiston:library-page",
+      "city-of-clewiston:image-document-2089",
+      "osm:way/1356546102"
+    ],
+    "notes": [
+      "The current City photograph clearly documents the principal Osceola Avenue elevation and Harry T. Vaughn Library lettering.",
+      "The stepped parapet, glass-block bays, entrance canopy, columns, and attached lettering are authored in the landmark layer."
+    ]
+  },
+  "1484095982": {
+    "buildingSourceId": "osm:way/1484095982",
+    "name": "Charles E. Wetherald Youth Center",
+    "confidence": "high",
+    "stories": 1,
+    "height": 4.6,
+    "wall": "#b9bcb8",
+    "wallMaterial": "masonry",
+    "trim": "#315b4d",
+    "roof": {
+      "type": "flat",
+      "color": "#ebeae4"
+    },
+    "style": "low renovated recreation building with broad pale roof planes, gray block walls, green entrance trim, and sheltered walkways",
+    "features": [
+      "deep low roof overhangs",
+      "green metal entrance canopy",
+      "square white entrance columns",
+      "long horizontal window band",
+      "adjacent tennis courts and chickee pavilion"
+    ],
+    "signage": [
+      {
+        "text": "YOUTH CENTER",
+        "facadeEdge": 2,
+        "position": 0.55,
+        "confidence": "medium"
+      }
+    ],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "city-of-clewiston:youth-center-page",
+      "city-of-clewiston:image-document-1966",
+      "city-of-clewiston:image-document-1971",
+      "osm:way/1484095982"
+    ],
+    "notes": [
+      "The City aerial gallery documents the recently renovated exterior, roof composition, entrance canopy, tennis courts, and neighboring chickee."
+    ]
+  },
+  "384457185": {
+    "buildingSourceId": "osm:way/384457185",
+    "name": "First Bank",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#eee8d8",
+    "wallMaterial": "plain",
+    "trim": "#315d49",
+    "roof": {
+      "type": "hip",
+      "color": "#315d49",
+      "material": "metal"
+    },
+    "style": "one-story community bank with pale stucco walls, a dark green metal roof, and a formal highway-facing entrance",
+    "features": [
+      "green roof and entrance accents",
+      "symmetrical dark window bays",
+      "landscaped highway frontage",
+      "detached roadside identity sign"
+    ],
+    "signage": [
+      {
+        "text": "FIRST BANK",
+        "facadeEdge": 0,
+        "position": 0.5,
+        "confidence": "medium"
+      }
+    ],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "first-bank:300-e-sugarland-hwy",
+      "city-of-clewiston:historic-structures-list",
+      "osm:way/384457185"
+    ],
+    "notes": [
+      "The detached highway sign is represented separately as a freestanding-sign structure."
+    ]
+  },
+  "-1002460": {
+    "buildingSourceId": "overture:7e33d087-37e3-4e8d-bb8b-463cccc77f9d",
+    "name": "C.S. Mott Pool bathhouse",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#c8c9c3",
+    "wallMaterial": "masonry",
+    "trim": "#315d4c",
+    "roof": {
+      "type": "gable",
+      "color": "#315d4c",
+      "material": "metal"
+    },
+    "style": "low municipal pool bathhouse with gray block walls, a dark green metal roof, and a colorful aquatic mural",
+    "features": [
+      "green metal gable roof",
+      "small horizontal window band",
+      "aquatic wall mural",
+      "fenced pool deck",
+      "adjacent splash pad"
+    ],
+    "signage": [
+      {
+        "text": "C.S. MOTT POOL",
+        "facadeEdge": 0,
+        "position": 0.55,
+        "confidence": "medium"
+      }
+    ],
+    "sources": [
+      "city-of-clewiston:cs-mott-pool-page",
+      "city-of-clewiston:image-document-1978",
+      "city-of-clewiston:image-document-1979",
+      "overture:7e33d087-37e3-4e8d-bb8b-463cccc77f9d"
+    ],
+    "notes": [
+      "The pool water, shade shelter, and splash pad are authored in the landmark layer because they are not building footprints."
+    ]
+  },
+  "-1000630": {
+    "buildingSourceId": "overture:d18e29c7-6c7e-4803-93cd-489f83f632ac",
+    "name": "St. Margaret Catholic Church entrance wing",
+    "confidence": "high",
+    "stories": 1,
+    "height": 5.5,
+    "wall": "#e9e4d8",
+    "wallMaterial": "masonry",
+    "trim": "#493d36",
+    "roof": {
+      "type": "flat",
+      "color": "#ddd7ca"
+    },
+    "style": "cream masonry entrance wing beneath the church's tall square Italianate tower",
+    "features": [
+      "recessed arched entry",
+      "dark brown horizontal trim",
+      "square bell-tower mass",
+      "front accessibility ramp"
+    ],
+    "sources": [
+      "commons:Clewiston_FL_St_Margarets_Catholic_Church04.jpg",
+      "overture-footprint:-1000630"
+    ],
+    "notes": [
+      "The distinctive upper tower, windows, cross, cornices, and finials are authored in the landmark layer."
+    ]
+  },
+  "-1000631": {
+    "buildingSourceId": "overture:d688f54c-f544-47b1-95f2-13b1c2beaa42",
+    "name": "St. Margaret Catholic Church sanctuary",
+    "confidence": "high",
+    "stories": 1,
+    "height": 5.8,
+    "wall": "#e9e4d8",
+    "wallMaterial": "masonry",
+    "trim": "#493d36",
+    "roof": {
+      "type": "gable",
+      "color": "#5d554e",
+      "material": "shingle"
+    },
+    "style": "long cream masonry sanctuary with a dark gable roof and repeated tall arched side windows",
+    "features": [
+      "tall round-arched side windows",
+      "dark contrasting window surrounds",
+      "simple gabled sanctuary mass",
+      "attached square entrance tower"
+    ],
+    "sources": [
+      "commons:Clewiston_FL_St_Margarets_Catholic_Church04.jpg",
+      "overture-footprint:-1000631"
+    ]
+  },
+  "-1002456": {
+    "buildingSourceId": "overture:6f467246-2925-42b3-8471-8139919c6b91",
+    "name": "St. Margaret campus footprint fragment",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#e9e4d8",
+    "trim": "#493d36",
+    "roof": {
+      "type": "hip",
+      "color": "#5d554e"
+    },
+    "suppressPlaceSignage": true,
+    "notes": [
+      "This small footprint is nearest the mapped church POI; automatic wall signage is suppressed so identity remains on the photographed freestanding board."
+    ]
+  },
+  "384433391": {
+    "buildingSourceId": "osm:way/384433391",
+    "name": "Walmart Supercenter",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#c9c8c1",
+    "wallMaterial": "masonry",
+    "trim": "#315f88",
+    "roof": {
+      "type": "flat",
+      "color": "#777b79",
+      "material": null
+    },
+    "style": "large one-story Walmart Supercenter with a long gray facade, blue entrance accents, and a flat parapet roof",
+    "features": [
+      "broad blue entrance portal",
+      "long low big-box massing",
+      "recessed glazed entrance",
+      "wide parking forecourt"
+    ],
+    "signage": [
+      {
+        "text": "Walmart",
+        "facadeEdge": 11,
+        "position": 0.58,
+        "confidence": "high"
+      }
+    ],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "commons:Walmart_in_Clewiston,_FL.jpg",
+      "osm:way/384433391",
+      "overture-place:Walmart@1005 W Sugarland Hwy"
+    ],
+    "notes": [
+      "The 2021 Clewiston-specific Commons photograph establishes the gray-and-blue facade, entrance treatment, and primary identity signage.",
+      "The detached Sugarland Highway pylon is represented separately as a freestanding-sign structure."
+    ]
+  },
+  "384433551": {
+    "buildingSourceId": "osm:way/384433551",
+    "confidence": "medium",
+    "wall": "#e5e7e6",
+    "wallMaterial": "metal",
+    "trim": "#23528a",
+    "roof": {
+      "type": "flat",
+      "color": "#e4e6e5",
+      "material": "metal"
+    },
+    "style": "long flat-roof fuel canopy with white fascia and blue Mobil trim",
+    "features": [
+      "open-sided fuel canopy",
+      "white square support columns",
+      "recessed canopy lighting"
+    ],
+    "signage": [
+      {
+        "text": "Mobil",
+        "facadeEdge": 2,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1121195571838624.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1218717429939141.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "signage",
+          "trim",
+          "roof"
+        ]
+      }
+    ],
+    "notes": [
+      "The mapped roof footprint corresponds to the fuel canopy rather than the convenience-store building behind it."
+    ],
+    "facades": []
+  },
+  "384433552": {
+    "buildingSourceId": "osm:way/384433552",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#d8d9d4",
+    "wallMaterial": "masonry",
+    "trim": "#426a97",
+    "roof": {
+      "type": "flat",
+      "color": "#565b5c",
+      "material": null
+    },
+    "style": "one-story light-gray Mobil convenience store with a flat roof and blue fascia accents",
+    "features": [
+      "compact rectangular store mass",
+      "blue horizontal trim band",
+      "glazed entrance facing the pump court"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1218717429939141.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The store is visible behind the separate fuel canopy; the distant rainy view does not support exact opening counts."
+    ],
+    "facades": []
+  },
   "384440246": {
+    "buildingSourceId": "osm:way/384440246",
     "name": "United States Sugar Corporation",
     "confidence": "high",
     "sources": [
-      "commons:United_States_Sugar_Corporation_Headquarters.jpg"
+      "commons:United_States_Sugar_Corporation_Headquarters.jpg",
+      "us-sugar:contact-headquarters",
+      "osm:way/384440246"
     ],
-    "stories": 2,
+    "height": 10.2,
+    "stories": 3,
     "wall": "#8f4f3c",
+    "wallMaterial": "brick",
     "trim": "#f5f2ea",
     "roof": {
       "type": "gable",
       "color": "#3e7d5c"
     },
-    "style": "colonial-brick",
+    "style": "three-story Georgian and Colonial Revival brick corporate headquarters with symmetrical wings and a monumental white portico",
     "features": [
       "white-columns",
       "pedimented-entries",
@@ -76,7 +431,65 @@
       "brick-monument-sign",
       "lawn-campus"
     ],
-    "signage": "UNITED STATES SUGAR CORPORATION"
+    "signage": [],
+    "suppressPlaceSignage": true,
+    "notes": [
+      "The green roof masses, full-height south portico, and corporate monument sign are authored as landmark geometry from the Commons headquarters photograph."
+    ]
+  },
+  "384457194": {
+    "buildingSourceId": "osm:way/384457194",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#deded8",
+    "wallMaterial": "metal",
+    "trim": "#a33b35",
+    "roof": {
+      "type": "gable",
+      "color": "#c7c8c3",
+      "material": "metal"
+    },
+    "style": "one-story light metal roadside warehouse or retail building with red roofline trim",
+    "features": [
+      "red fascia and corner accents",
+      "wide service or loading openings",
+      "outdoor pallet storage along the facade"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "large commercial service openings partly obscured by a mature tree"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "tree cover and stored materials prevent reliable bay counts"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1375014313681230.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "No small sign text is legible enough to transcribe."
+    ]
   },
   "554185195": {
     "buildingSourceId": "osm:way/554185195",
@@ -250,6 +663,221 @@
       "Identity comes from the mapped building and parcel context; only the side elevation is documented."
     ]
   },
+  "614620912": {
+    "buildingSourceId": "osm:way/614620912",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#e7e7df",
+    "wallMaterial": "masonry",
+    "trim": "#d8cfc2",
+    "roof": {
+      "type": "gable",
+      "color": "#d7d9d5",
+      "material": "metal"
+    },
+    "style": "one-story white masonry church with a tall stepped front tower and a bright metal gable roof",
+    "features": [
+      "scalloped stepped tower parapet",
+      "tall narrow side windows",
+      "small tan-brick base accent",
+      "broad open lawn"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "2522077718136744.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The close daylight view cleanly isolates the church; the front entrance is cropped, so no doorway details are inferred."
+    ],
+    "facades": []
+  },
+  "614620913": {
+    "buildingSourceId": "osm:way/614620913",
+    "confidence": "low",
+    "stories": 2,
+    "wall": "#c8c2b7",
+    "wallMaterial": "stucco",
+    "trim": "#586269",
+    "roof": {
+      "type": "flat",
+      "color": "#555a5c",
+      "material": null
+    },
+    "style": "two-story institutional or service building with a flat roof and attached one-story service wing",
+    "features": [
+      "large roll-up service door",
+      "metal entrance canopies",
+      "bright wall-mounted floodlights"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "963394062557303.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1594219311971819.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "Both views are at night; massing is consistent, but the exterior palette is approximate."
+    ],
+    "facades": []
+  },
+  "817555430": {
+    "buildingSourceId": "osm:way/817555430",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d5a452",
+    "wallMaterial": "stucco",
+    "trim": "#963d32",
+    "roof": {
+      "type": "flat",
+      "color": "#b8afa1",
+      "material": null
+    },
+    "style": "one-story roadside commercial building with a flat parapet and broad red trim bands",
+    "features": [
+      "contrasting horizontal fascia bands",
+      "recessed storefront openings"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "dark storefront openings are visible but not countable at this distance"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "the daylight view confirms massing and color but not reliable opening counts"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1453015742726940.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "The night frame adds no dependable facade detail; no unreadable sign text is inferred."
+    ]
+  },
+  "835773465": {
+    "buildingSourceId": "osm:way/835773465",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#d9d9d2",
+    "wallMaterial": "stucco",
+    "trim": "#eeeee8",
+    "roof": {
+      "type": "hip",
+      "color": "#55524c",
+      "material": "shingle"
+    },
+    "style": "one-story white residence with a compact dark hipped roof",
+    "features": [
+      "dark hip roof",
+      "regular rectangular front windows",
+      "broad open lawn"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "739632262099186.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The assigned right-side region isolates this residence from the detached garage and left-hand house on the four-building parcel."
+    ],
+    "facades": []
+  },
+  "841005973": {
+    "buildingSourceId": "osm:way/841005973",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#b9b8ab",
+    "wallMaterial": "stucco",
+    "trim": "#eeeeea",
+    "roof": {
+      "type": "hip",
+      "color": "#dadbd4",
+      "material": "metal"
+    },
+    "style": "one-story light gray residence with a bright metal hip roof",
+    "features": [
+      "broad roof eaves",
+      "white corner and opening trim",
+      "chain-link front fence"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1319424946332958.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The assigned region clearly isolates the right-hand residence; the front door is seen obliquely."
+    ],
+    "facades": []
+  },
   "850715431": {
     "buildingSourceId": "osm:way/850715431",
     "name": "Central State Bank",
@@ -330,6 +958,183 @@
     "notes": [
       "Identity comes from the mapped footprint and parcel context; bank wording is not readable in these frames."
     ]
+  },
+  "850715455": {
+    "buildingSourceId": "osm:way/850715455",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d7cebb",
+    "wallMaterial": "stucco",
+    "trim": "#e8e2d5",
+    "roof": {
+      "type": "hip",
+      "color": "#a9a8a2",
+      "material": "tile"
+    },
+    "style": "small one-story beige office or bank building with a low gray hipped roof",
+    "features": [
+      "low tiled hip roof",
+      "recessed covered entrance",
+      "dark rectangular front windows"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "610982344988592.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The small blue tenant panel is too distant to transcribe reliably."
+    ],
+    "facades": []
+  },
+  "850715462": {
+    "buildingSourceId": "osm:way/850715462",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#c2a77e",
+    "wallMaterial": "stucco",
+    "trim": "#f0ece2",
+    "roof": {
+      "type": "gable",
+      "color": "#a94438",
+      "material": "metal"
+    },
+    "style": "large Marshalls retail facade with a red metal roof and raised central sign tower",
+    "features": [
+      "red standing-seam roof",
+      "white central sign tower",
+      "tan stone-textured entrance piers"
+    ],
+    "signage": [
+      {
+        "text": "Marshalls",
+        "facadeEdge": 1,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1229599148676156.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      }
+    ],
+    "notes": [
+      "The main tenant name and architectural palette are clear despite parked vehicles."
+    ],
+    "facades": []
+  },
+  "850884198": {
+    "buildingSourceId": "osm:way/850884198",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#4a5051",
+    "wallMaterial": "stucco",
+    "trim": "#b58455",
+    "roof": {
+      "type": "flat",
+      "color": "#3e4344",
+      "material": null
+    },
+    "style": "modern one-story Jeep dealership with a dark flat parapet and tan-framed showroom bays",
+    "features": [
+      "full-height glazed showroom entrances",
+      "dark charcoal facade panels",
+      "tan vertical portal frames"
+    ],
+    "signage": [
+      {
+        "text": "Jeep",
+        "facadeEdge": 6,
+        "confidence": "high"
+      },
+      {
+        "text": "MOPAR",
+        "facadeEdge": 6,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1472857853917293.jpg",
+        "facadeEdge": 6,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1008065261252126.jpg",
+        "facadeEdge": 6,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "552248581063206.jpg",
+        "facadeEdge": 6,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1074027117882871.jpg",
+        "facadeEdge": 6,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      }
+    ],
+    "notes": [
+      "Four consistent daylight and dusk views establish the dealership facade and branding."
+    ],
+    "facades": []
   },
   "850884201": {
     "buildingSourceId": "osm:way/850884201",
@@ -418,6 +1223,181 @@
       "1752189312034418.jpg depicts adjacent building ends and is not used as evidence for this descriptor."
     ]
   },
+  "850884202": {
+    "buildingSourceId": "osm:way/850884202",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#a98b6b",
+    "wallMaterial": "stucco",
+    "trim": "#eee8da",
+    "roof": {
+      "type": "flat",
+      "color": "#54473f",
+      "material": null
+    },
+    "style": "one-story neighborhood commercial building with a flat parapet and painted side-wall identity sign",
+    "features": [
+      "dark burgundy-brown side facade",
+      "large hand-painted wall lettering",
+      "simple rectangular commercial massing"
+    ],
+    "signage": [
+      {
+        "text": "P.D.Q. GROCERY AND LAUNDROMAT",
+        "facadeEdge": 0,
+        "confidence": "high"
+      }
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "side wall dominated by painted signage rather than storefront openings"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "the front storefront lies outside the assigned region"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1752189312034418.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage",
+          "facades[0]"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "3510539679079921.jpg",
+        "facadeEdge": 7,
+        "supports": [
+          "stories",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "The assigned side facade clearly identifies the business; storefront openings are not inferred."
+    ]
+  },
+  "867861755": {
+    "buildingSourceId": "osm:way/867861755",
+    "confidence": "low",
+    "stories": 2,
+    "wall": "#8a665c",
+    "wallMaterial": "stucco",
+    "trim": "#c7b9a6",
+    "roof": {
+      "type": "flat",
+      "color": "#514c47",
+      "material": null
+    },
+    "style": "two-story muted red-brown residence with an upper balcony and attached carport",
+    "features": [
+      "full-width upper balcony",
+      "flat or very low-slope roof",
+      "attached one-story carport"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1049653725694148.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1003463357034405.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "The views are compressed and backlit, so the exterior colors are approximate."
+    ],
+    "facades": []
+  },
+  "868836144": {
+    "buildingSourceId": "osm:way/868836144",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#c98f79",
+    "wallMaterial": "stucco",
+    "trim": "#ead9ca",
+    "roof": {
+      "type": "hip",
+      "color": "#57483e",
+      "material": "shingle"
+    },
+    "style": "compact one-story peach stucco residence with a dark hipped roof",
+    "features": [
+      "broad front roof eave",
+      "light-colored opening trim",
+      "recessed central entry area"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "rectangular front windows partly hidden by a parked van"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "a parked van obscures the central facade and entrance"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1305616341100940.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "Opening counts and door details are intentionally omitted because of the parked vehicle."
+    ]
+  },
   "886227323": {
     "name": "Sugarland Hwy corridor building (unresolved)",
     "confidence": "needs-confirmation",
@@ -425,26 +1405,35 @@
   },
   "886227325": {
     "buildingSourceId": "osm:way/886227325",
-    "name": "100 E Sugarland Highway teal commercial building",
+    "name": "Captivating Dental Care / Dixie Crystal Theatre",
     "confidence": "high",
+    "height": 6.8,
     "stories": 1,
     "wall": "#2aaeb1",
-    "wallMaterial": "stucco",
+    "wallMaterial": "plain",
     "trim": "#f2eee5",
     "roof": {
       "type": "flat"
     },
-    "style": "one-story commercial building with a tall stepped Art Deco-influenced parapet and rounded central bay",
+    "style": "adaptively reused 1941 Moderne movie theater with turquoise outer towers, a tall rounded gray central bay, and symmetrical storefront openings",
+    "features": [
+      "historic high-volume theater shell",
+      "stepped turquoise parapet towers",
+      "rounded central entrance bay",
+      "symmetrical white-trimmed windows",
+      "recessed double entrance",
+      "current dental-office adaptation"
+    ],
     "signage": [],
     "facades": [
       {
         "edgeIndex": 0,
-        "wallMaterial": "stucco",
+        "wallMaterial": "plain",
         "floors": [
           {
             "level": 1,
-            "windows": 4,
-            "windowPattern": "two pairs of tall rectangular windows flanking two central glazed entrances"
+            "windows": 0,
+            "windowPattern": "four authored white-trimmed windows flanking the central glazed entrance"
           }
         ],
         "doors": [
@@ -524,7 +1513,8 @@
       }
     ],
     "notes": [
-      "This corrects the prior unresolved record: repeated views align the teal facade with 886227325, not 886227326."
+      "This corrects the prior unresolved record: repeated views align the teal facade with 886227325, not 886227326.",
+      "The present-day turquoise facade is supported by Mapillary; the National Register and historic Commons views establish the surviving stepped theater massing."
     ]
   },
   "886227326": {
@@ -674,6 +1664,136 @@
       "Only one daytime frame provides useful evidence; the rest are occluded, distant, or dark."
     ]
   },
+  "886227336": {
+    "buildingSourceId": "osm:way/886227336",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#6f6260",
+    "wallMaterial": "stucco",
+    "trim": "#d2c4ad",
+    "roof": {
+      "type": "flat",
+      "color": "#4c4746",
+      "material": null
+    },
+    "style": "one-story corner retail building with a tall flat parapet and alternating vertical facade panels",
+    "features": [
+      "tall painted parapet",
+      "large dark storefront bays",
+      "alternating gray and tan vertical panels"
+    ],
+    "signage": [
+      {
+        "text": "MATTRESS DEPOT USA",
+        "facadeEdge": 10,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1106656411050377.jpg",
+        "facadeEdge": 10,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1125545479618012.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "The closer oblique view establishes the tenant sign and facade palette."
+    ],
+    "facades": []
+  },
+  "894462374": {
+    "buildingSourceId": "osm:way/894462374",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#6d7a74",
+    "wallMaterial": "stucco",
+    "trim": "#d9dedb",
+    "roof": {
+      "type": "gable",
+      "color": "#b8bec0",
+      "material": "metal"
+    },
+    "style": "plain one-story stucco building with a shallow metal gable roof",
+    "features": [
+      "deep roof overhang",
+      "tall narrow sash windows",
+      "contrasting muted red exterior door"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 3,
+            "windowPattern": "three tall rectangular windows to the right of the entrance"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.38,
+            "type": "single exterior door",
+            "color": "#74404a"
+          }
+        ],
+        "lighting": [
+          {
+            "position": 0.42,
+            "type": "sconce"
+          }
+        ],
+        "notes": [
+          "parked vehicles obscure the lower portion of the facade"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1008748688187884.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "facades[0]"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1760049391645108.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "wall",
+          "roof"
+        ]
+      }
+    ],
+    "notes": [
+      "Window and door placement is limited to the clearly visible long facade."
+    ]
+  },
   "894462376": {
     "buildingSourceId": "osm:way/894462376",
     "name": "341 Central Avenue masonry service building",
@@ -733,6 +1853,210 @@
     ],
     "notes": [
       "Camera geometry confirms the target despite the cropped facade."
+    ]
+  },
+  "894462399": {
+    "buildingSourceId": "osm:way/894462399",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#545c55",
+    "wallMaterial": "stucco",
+    "trim": "#60a567",
+    "roof": {
+      "type": "flat",
+      "color": "#555a55",
+      "material": null
+    },
+    "style": "one-story roadside strip center with a flat parapet and continuous storefront canopy",
+    "features": [
+      "bright green stepped parapet trim",
+      "dark continuous storefront band",
+      "multiple glazed tenant entrances"
+    ],
+    "signage": [
+      {
+        "text": "ICE CREAM",
+        "facadeEdge": 2,
+        "confidence": "high"
+      }
+    ],
+    "facades": [
+      {
+        "edgeIndex": 2,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "repeating dark storefront glazing separated by tenant entrances"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "parked vehicles prevent reliable opening counts"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "443130442196967.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage",
+          "facades[0]"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "935379738049321.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "wall",
+          "trim",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "Only the clearly readable ICE CREAM panel is transcribed; other tenant signs are too small or obscured."
+    ]
+  },
+  "894462417": {
+    "buildingSourceId": "osm:way/894462417",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d3d5d4",
+    "wallMaterial": "masonry",
+    "trim": "#444f53",
+    "roof": {
+      "type": "flat",
+      "color": "#555b5e",
+      "material": null
+    },
+    "style": "large one-story painted-block retail building with a flat parapet and minimal side-wall openings",
+    "features": [
+      "light gray painted concrete block",
+      "dark wall-mounted rectangular lights",
+      "tall red and green storefront accent panels"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "187011056610436.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "No tenant name is visible clearly enough to transcribe from the assigned side view."
+    ],
+    "facades": []
+  },
+  "1377669196": {
+    "buildingSourceId": "osm:way/1377669196",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#d7d8d2",
+    "wallMaterial": "siding",
+    "trim": "#edede7",
+    "roof": {
+      "type": "gable",
+      "color": "#777b77",
+      "material": "metal"
+    },
+    "style": "light manufactured home with a shallow metal gable roof and a screened side porch",
+    "features": [
+      "light horizontal siding",
+      "shallow dark metal roof",
+      "screened side enclosure",
+      "chain-link front gate"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1264582124992904.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "Trees and the front fence obscure the facade, so openings are not counted; the single-building parcel and assigned region establish the home form."
+    ],
+    "facades": []
+  },
+  "1377669250": {
+    "buildingSourceId": "osm:way/1377669250",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d4c27d",
+    "wallMaterial": "siding",
+    "trim": "#eee9d8",
+    "roof": {
+      "type": "gable",
+      "color": "#5d5b55",
+      "material": null
+    },
+    "style": "single-wide manufactured home with a shallow gable roof and long street-facing facade",
+    "features": [
+      "pale yellow horizontal siding",
+      "white corner and opening trim",
+      "low raised foundation"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 2,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "several white-trimmed rectangular windows along the long facade"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "vegetation and the oblique view prevent a reliable opening count"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1392293832113988.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "One clear daylight view supports the building-level form and palette."
     ]
   },
   "1377669263": {
@@ -822,30 +2146,409 @@
       "The three views consistently identify the same gray residence; the tan residence visible beside it is a separate building."
     ]
   },
-  "-1002453": {
-    "name": "Clewiston Inn",
-    "confidence": "high",
-    "sources": [
-      "commons:Clewiston-Inn-2.JPG",
-      "commons:Clewiston-Inn-1.JPG"
+  "1377925605": {
+    "buildingSourceId": "osm:way/1377925605",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#c1bbaa",
+    "wallMaterial": "stucco",
+    "trim": "#e4e4dd",
+    "roof": {
+      "type": "hip",
+      "color": "#d2d2ca",
+      "material": "metal"
+    },
+    "style": "one-story beige residence with a bright metal hip roof and screened corner porch",
+    "features": [
+      "screened corner porch",
+      "low extended roof eaves",
+      "wall-mounted window air conditioners"
     ],
-    "stories": 2,
-    "wall": "#f2efe6",
-    "trim": "#1e4a34",
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "966758608981965.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1363771054878083.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "The closer dusk view and partial daylight view agree on the building form."
+    ],
+    "facades": []
+  },
+  "1377925637": {
+    "buildingSourceId": "osm:way/1377925637",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#c8bfa9",
+    "wallMaterial": "stucco",
+    "trim": "#e6e2d8",
+    "roof": {
+      "type": "hip",
+      "color": "#5e5449",
+      "material": "shingle"
+    },
+    "style": "one-story tan residence with a dark hipped roof and compact rectangular form",
+    "features": [
+      "dark hip roof",
+      "light opening trim",
+      "small covered entry"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1918085849592113.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "751279437824999.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "Both views are across the railroad; only consistent building-level details are recorded."
+    ],
+    "facades": []
+  },
+  "1377925646": {
+    "buildingSourceId": "osm:way/1377925646",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#b9a78e",
+    "wallMaterial": "stucco",
+    "trim": "#e2ded4",
+    "roof": {
+      "type": "hip",
+      "color": "#51483e",
+      "material": "shingle"
+    },
+    "style": "one-story tan residence with a dark hipped roof and broad rectangular plan",
+    "features": [
+      "dark hipped roof",
+      "light opening trim",
+      "low horizontal street-facing form"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "751279437824999.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1918085849592113.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "Both views are distant and cross the railroad, so openings are intentionally omitted."
+    ],
+    "facades": []
+  },
+  "1378660449": {
+    "buildingSourceId": "osm:way/1378660449",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#dddcd4",
+    "wallMaterial": "stucco",
+    "trim": "#f0eee8",
+    "roof": {
+      "type": "hip",
+      "color": "#d2d3ce",
+      "material": "metal"
+    },
+    "style": "one-story light residence with a bright metal hip roof and recessed front porch",
+    "features": [
+      "recessed central porch",
+      "broad metal roof planes",
+      "white perimeter wall"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1865321891076334.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The building is isolated but viewed across the railroad, so openings are not counted."
+    ],
+    "facades": []
+  },
+  "1379207514": {
+    "buildingSourceId": "osm:way/1379207514",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#d6d2c6",
+    "wallMaterial": "stucco",
+    "trim": "#eeeae0",
+    "roof": {
+      "type": "hip",
+      "color": "#d8d9d4",
+      "material": "metal"
+    },
+    "style": "one-story light-colored residence with a bright metal hip roof",
+    "features": [
+      "broad bright roof",
+      "low horizontal massing",
+      "dark front window band"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1473079260686743.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The parcel is isolated in the mapped row, but the only view is distant and across the railroad."
+    ],
+    "facades": []
+  },
+  "1385378097": {
+    "buildingSourceId": "osm:way/1385378097",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#e7e5df",
+    "wallMaterial": "unknown",
+    "trim": "#f2f0e9",
+    "roof": {
+      "type": "gable",
+      "color": "#984c43",
+      "material": "metal"
+    },
+    "style": "single-wide manufactured home with horizontal siding and metal skirting",
+    "features": [
+      "low-pitch red metal roof",
+      "white metal skirting",
+      "small exterior stair at side door"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 3,
+            "windowPattern": "three narrow rectangular windows spaced along the long side wall"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.7,
+            "type": "single exterior door with small diamond lite",
+            "color": "#dedbd0"
+          }
+        ],
+        "lighting": [
+          {
+            "position": 0.7,
+            "type": "sconce"
+          }
+        ],
+        "notes": [
+          "window air-conditioning units are installed in two openings"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "537633899403135.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "Only edge 1 is described; the second geometric match contributes no usable facade detail."
+    ]
+  },
+  "1385379880": {
+    "buildingSourceId": "osm:way/1385379880",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#a9423e",
+    "wallMaterial": "masonry",
+    "trim": "#4d4542",
     "roof": {
       "type": "flat",
-      "color": "#ded9cc"
+      "color": "#55504c",
+      "material": null
     },
-    "style": "colonial-revival",
+    "style": "low one-story red roadside restaurant with a flat parapet and dark recessed entrance wing",
     "features": [
-      "arched-entry",
-      "columned-porch",
-      "lantern-sconces",
-      "divided-light-windows",
-      "brick-steps",
-      "dark-green-doors"
+      "strong red painted facade",
+      "dark rectangular doors and windows",
+      "long low horizontal massing",
+      "paved corner frontage"
     ],
-    "signage": "CLEWISTON INN"
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "124736053712858.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The assigned right-side region isolates the restaurant building; any small sign text is unreadable."
+    ],
+    "facades": []
+  },
+  "-1002453": {
+    "buildingSourceId": "overture:5446cecf-8fe5-42e0-9ba2-0c947f36e513",
+    "name": "Clewiston Inn",
+    "confidence": "high",
+    "height": 6.8,
+    "sources": [
+      "commons:Clewiston_FL_Inn01.jpg",
+      "commons:Clewiston_FL_Inn02.jpg",
+      "nps:national-register-91000106",
+      "overture:5446cecf-8fe5-42e0-9ba2-0c947f36e513"
+    ],
+    "stories": 2,
+    "wall": "#f1efe8",
+    "wallMaterial": "masonry",
+    "trim": "#1e4a34",
+    "roof": {
+      "type": "hip",
+      "color": "#285b43",
+      "material": "metal"
+    },
+    "style": "two-story white Neoclassical Revival hotel with a U-shaped plan, green hipped roofs, and a full-height front-gabled portico",
+    "features": [
+      "symmetrical five-bay west facade",
+      "four colossal square portico columns",
+      "plain enclosed pediment with central oculus",
+      "fanlit double entrance doors",
+      "wrought-iron lantern sconces",
+      "arched first-story and rectangular second-story windows",
+      "dark green roof and entrance accents",
+      "circular entrance drive"
+    ],
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 0,
+            "windowPattern": "two authored divided-light bays on each story of the north wing"
+          }
+        ],
+        "doors": [],
+        "lighting": []
+      },
+      {
+        "edgeIndex": 9,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 0,
+            "windowPattern": "two authored divided-light bays on each story of the south wing"
+          }
+        ],
+        "doors": [],
+        "lighting": []
+      },
+      {
+        "edgeIndex": 11,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 0,
+            "windowPattern": "central fanlit entrance beneath attached Clewiston Inn lettering"
+          },
+          {
+            "level": 2,
+            "windows": 2,
+            "windowPattern": "paired divided-light windows behind the portico"
+          }
+        ],
+        "doors": [],
+        "lighting": []
+      }
+    ],
+    "suppressPlaceSignage": true,
+    "notes": [
+      "The portico, roof masses, oculus, entrance, attached name lettering, lamps, and principal west-facade window rhythm are authored in the landmark layer because descriptor feature labels do not create geometry."
+    ]
   },
   "-1002452": {
     "buildingSourceId": "overture:e4736416-51f6-4b7d-83be-41446d40bf2f",
@@ -1466,5 +3169,1515 @@
       "The roof surface is hidden by the fascia and should not be inferred as flat.",
       "The foreground ornamental fence is not part of the building."
     ]
+  },
+  "-1000416": {
+    "buildingSourceId": "overture:5defe060-b6ce-4de8-b599-2330e1a198a7",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#b8d9dc",
+    "wallMaterial": "unknown",
+    "trim": "#eee9dc",
+    "roof": {
+      "type": "gable",
+      "color": "#c6c6bd",
+      "material": "metal"
+    },
+    "style": "single-wide manufactured home with pale blue horizontal siding",
+    "features": [
+      "white lattice skirting",
+      "small centered entry stair",
+      "shallow metal gable roof"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 3,
+            "windowPattern": "rectangular windows distributed along the long front wall"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.72,
+            "type": "single exterior door",
+            "color": "#e4dfcf"
+          }
+        ],
+        "notes": [
+          "one window-mounted air conditioner is visible"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1752332775346901.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "The daylight frame is the sole usable view; the second match is a motion-blurred night frame."
+    ]
+  },
+  "-1000673": {
+    "buildingSourceId": "overture:961f065e-187e-4246-b40e-69fc929af2ee",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#cfc2ab",
+    "wallMaterial": "stucco",
+    "trim": "#eee9df",
+    "roof": {
+      "type": "gable",
+      "color": "#e4e4de",
+      "material": "metal"
+    },
+    "style": "one-story beige residence with a bright metal gable roof and small projecting entry porch",
+    "features": [
+      "front-facing entry gable",
+      "white square porch columns",
+      "shallow concrete front steps"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 4,
+            "windowPattern": "paired rectangular windows flanking the central entry porch"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.5,
+            "type": "single exterior door beneath entry porch",
+            "color": "#ddd8cc"
+          }
+        ],
+        "notes": []
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "657220506939769.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1455678055802097.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "The two daylight views consistently isolate the same street-facing residence."
+    ]
+  },
+  "-1003555": {
+    "buildingSourceId": "overture:a377b073-2057-4ff8-8f2a-115a3907d077",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#718794",
+    "wallMaterial": "metal",
+    "trim": "#e5e7e5",
+    "roof": {
+      "type": "gable",
+      "color": "#5f7787",
+      "material": "metal"
+    },
+    "style": "one-story blue-gray roadside service building with a shallow metal gable roof",
+    "features": [
+      "white corner and opening trim",
+      "large service window",
+      "small projecting entrance canopy"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 2,
+            "windowPattern": "one small high window and one large service window"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.88,
+            "type": "single glazed service entrance",
+            "color": "#d9dedf"
+          }
+        ],
+        "notes": [
+          "parked cars partially obscure the lower wall"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1930142711069513.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "No small promotional or window text is transcribed."
+    ]
+  },
+  "-1000566": {
+    "buildingSourceId": "overture:36cfc03f-b049-4ea2-bb2e-bb3f7f03f80f",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d5d4cc",
+    "wallMaterial": "stucco",
+    "trim": "#515c60",
+    "roof": {
+      "type": "hip",
+      "color": "#aeb3b3",
+      "material": "metal"
+    },
+    "style": "small one-story commercial building with a metal hip roof and arched front openings",
+    "features": [
+      "four tall arched window bays",
+      "dark contrasting sill band",
+      "compact central entrance"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 3,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 4,
+            "windowPattern": "four tall arched window bays arranged around the entrance"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.58,
+            "type": "single glazed commercial door",
+            "color": "#344044"
+          }
+        ],
+        "notes": [
+          "traffic-signal poles obscure narrow vertical strips of the facade"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1122471409647230.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "The parcel contains several buildings, but the assigned edge-3 region isolates this footprint clearly."
+    ]
+  },
+  "-1002493": {
+    "buildingSourceId": "overture:8885518f-e91a-4c44-826f-940a8d9c75b8",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#9ba789",
+    "wallMaterial": "stucco",
+    "trim": "#e2e1d8",
+    "roof": {
+      "type": "gable",
+      "color": "#deddd5",
+      "material": "metal"
+    },
+    "style": "one-story muted green residence with a front porch and attic gable",
+    "features": [
+      "full-width covered front porch",
+      "small rectangular attic vent",
+      "white metal gable roof"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 3,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "porch and tree cover prevent a reliable count"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "front openings are partially hidden by the porch and mature tree"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "757349116795449.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "714363451412127.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "wall",
+          "trim",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "The attic gable is not counted as a full second story."
+    ]
+  },
+  "-1003362": {
+    "buildingSourceId": "overture:37128ef8-3b8f-42c2-aa47-ffddedb703a9",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d6d5ce",
+    "wallMaterial": "siding",
+    "trim": "#f0eee7",
+    "roof": {
+      "type": "gable",
+      "color": "#a7a79f",
+      "material": "metal"
+    },
+    "style": "modest one-story light-colored residence with a metal gable roof and covered front porch",
+    "features": [
+      "shallow covered entry porch",
+      "white porch posts",
+      "chain-link front fence"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 6,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "rectangular residential windows partly screened by a tree"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "a tree and parked vehicle obscure the center of the facade"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "697571003261838.jpg",
+        "facadeEdge": 6,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "Only building-level details visible around the tree and vehicle are recorded."
+    ]
+  },
+  "-1000859": {
+    "buildingSourceId": "overture:87029388-315c-4e12-b695-fd0101afd83d",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#45687b",
+    "wallMaterial": "metal",
+    "trim": "#b8c4c8",
+    "roof": {
+      "type": "gable",
+      "color": "#344b58",
+      "material": "metal"
+    },
+    "style": "long one-story blue industrial building with a shallow metal roof",
+    "features": [
+      "regular exterior wall-mounted floodlights",
+      "long uninterrupted industrial facade",
+      "small high-set openings"
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "sparse small openings along the long wall"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "night lighting prevents reliable opening counts and shifts the apparent blue palette"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1879506242802598.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "roof",
+          "style",
+          "features",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "The form is clear, but wall and roof colors are approximate because the only view is at night."
+    ]
+  },
+  "-1000534": {
+    "buildingSourceId": "overture:ee645712-7735-4d53-a2a6-682cc4b3f9bb",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d7d8d3",
+    "wallMaterial": "stucco",
+    "trim": "#596064",
+    "roof": {
+      "type": "gable",
+      "color": "#929a9b",
+      "material": "metal"
+    },
+    "style": "one-story tire and auto-service garage with a shallow metal gable roof and multiple roll-up bays",
+    "features": [
+      "repeating roll-up service bays",
+      "dark contrasting bay trim",
+      "painted business sign above the service area"
+    ],
+    "signage": [
+      {
+        "text": "LEALS TIRES",
+        "facadeEdge": 2,
+        "confidence": "medium"
+      }
+    ],
+    "facades": [
+      {
+        "edgeIndex": 2,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "garage facade organized around several roll-up service bays"
+          }
+        ],
+        "doors": [],
+        "notes": [
+          "the assigned region covers only part of the long service facade, so the total bay count is omitted"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "696493992899445.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage",
+          "facades[0]"
+        ]
+      }
+    ],
+    "notes": [
+      "Only the clearly legible core business name is transcribed; punctuation and smaller wording are not inferred."
+    ]
+  },
+  "-1003546": {
+    "buildingSourceId": "overture:5ccbd781-f421-42fa-a2af-ad0bd8bd1cf8",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#eeeeeb",
+    "wallMaterial": "metal",
+    "trim": "#b32732",
+    "roof": {
+      "type": "flat",
+      "color": "#e7e7e3",
+      "material": "metal"
+    },
+    "style": "Marathon fuel canopy with a broad flat white fascia and red-and-blue corner bands",
+    "features": [
+      "wide rectangular pump canopy",
+      "red and blue fascia accents",
+      "white square support columns"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1261781945455853.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The descriptor applies to the mapped canopy footprint; the separate convenience-store building is not described here."
+    ],
+    "facades": []
+  },
+  "-1003499": {
+    "buildingSourceId": "overture:f3d217ee-d7ee-4ce9-bbf1-2709b9da983c",
+    "confidence": "medium",
+    "stories": 2,
+    "wall": "#274c43",
+    "wallMaterial": "siding",
+    "trim": "#d9ded9",
+    "roof": {
+      "type": "gable",
+      "color": "#3c413e",
+      "material": null
+    },
+    "style": "tall dark green two-story residence with horizontal siding and a simple gable roof",
+    "features": [
+      "dark green horizontal siding",
+      "white-trimmed side window",
+      "chain-link perimeter fence"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1065075278924066.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "Only the side and gable are visible; front-facade openings are not inferred."
+    ],
+    "facades": []
+  },
+  "-1000479": {
+    "buildingSourceId": "overture:56193714-d9af-4cfa-b105-67dc0ae5e5e1",
+    "confidence": "medium",
+    "stories": 2,
+    "wall": "#8ebed2",
+    "wallMaterial": "masonry",
+    "trim": "#ece9df",
+    "roof": {
+      "type": "flat",
+      "color": "#63676a",
+      "material": null
+    },
+    "style": "two-story blue roadside commercial building with a flat parapet and ground-floor laundromat",
+    "features": [
+      "pale blue painted masonry",
+      "regular small second-floor windows",
+      "ground-floor commercial sign band"
+    ],
+    "signage": [
+      {
+        "text": "LAUNDRY MAT",
+        "facadeEdge": 3,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1453015742726940.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      }
+    ],
+    "notes": [
+      "Only the large, clearly readable laundromat lettering is transcribed."
+    ],
+    "facades": []
+  },
+  "-1000547": {
+    "buildingSourceId": "overture:4121854a-3bba-45c0-891f-15ce9fef8dff",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#e9e5dc",
+    "wallMaterial": "stucco",
+    "trim": "#ef7b2c",
+    "roof": {
+      "type": "flat",
+      "color": "#5d5148",
+      "material": null
+    },
+    "style": "one-story Popeyes restaurant with a flat parapet, orange branding, and dark storefront glazing",
+    "features": [
+      "orange branded parapet panels",
+      "dark storefront windows",
+      "white and tan exterior bands"
+    ],
+    "signage": [
+      {
+        "text": "POPEYES",
+        "facadeEdge": 1,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1228046705396807.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      }
+    ],
+    "notes": [
+      "Parcel use, address, and the assigned region consistently identify the restaurant footprint."
+    ],
+    "facades": []
+  },
+  "-1003547": {
+    "buildingSourceId": "overture:5dfc6da7-9bf1-48b5-a256-4db82c119e45",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#ddd5c4",
+    "wallMaterial": "stucco",
+    "trim": "#405d7c",
+    "roof": {
+      "type": "flat",
+      "color": "#555a5d",
+      "material": null
+    },
+    "style": "one-story Marathon convenience store with a flat parapet and blue sign fascia",
+    "features": [
+      "blue branded parapet band",
+      "dark storefront glazing",
+      "shallow covered storefront walk"
+    ],
+    "signage": [
+      {
+        "text": "MARATHON",
+        "facadeEdge": 1,
+        "confidence": "medium"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1261781945455853.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      }
+    ],
+    "notes": [
+      "This is the store footprint paired with the separately described Marathon fuel canopy."
+    ],
+    "facades": []
+  },
+  "-1000533": {
+    "buildingSourceId": "overture:8531d716-e566-4e80-9f9c-8918409e4d9e",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#deded9",
+    "wallMaterial": "stucco",
+    "trim": "#596269",
+    "roof": {
+      "type": "gable",
+      "color": "#92999c",
+      "material": "metal"
+    },
+    "style": "small one-story white roadside commercial building with a gray metal gable roof",
+    "features": [
+      "tall front parapet return",
+      "dark glazed entrance bay",
+      "simple white side wall"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "731395123172767.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The entrance is partly boarded; no tenant identity is visible."
+    ],
+    "facades": []
+  },
+  "-1003579": {
+    "buildingSourceId": "overture:e08a2884-ccf9-4173-b642-5d05c9354319",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d9d9d2",
+    "wallMaterial": "siding",
+    "trim": "#8f704d",
+    "roof": {
+      "type": "gable",
+      "color": "#d0d1cb",
+      "material": "metal"
+    },
+    "style": "long one-story white residential building with a bright metal roof and repeating entrances",
+    "features": [
+      "repeating front doors",
+      "diamond-shaped tan wall accents",
+      "low red-brown foundation band"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1122074923097304.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The hedge obscures part of the left facade, but the long right section is clear."
+    ],
+    "facades": []
+  },
+  "-1003647": {
+    "buildingSourceId": "overture:1a257bad-0751-474e-9a1d-7a485a6571ec",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#d9ddda",
+    "wallMaterial": "siding",
+    "trim": "#f0eee8",
+    "roof": {
+      "type": "gable",
+      "color": "#c9c6bd",
+      "material": "metal"
+    },
+    "style": "light gray manufactured home with a shallow gable roof and small projecting entry cover",
+    "features": [
+      "white horizontal siding",
+      "small front entry cover",
+      "detached matching utility shed"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "2089445168209458.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1078183174191529.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "Both views are distant, so facade opening counts are omitted."
+    ],
+    "facades": []
+  },
+  "-1002404": {
+    "buildingSourceId": "overture:fe788da3-d338-4e55-b348-04689b2677b3",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d6cfbd",
+    "wallMaterial": "stucco",
+    "trim": "#426d91",
+    "roof": {
+      "type": "gable",
+      "color": "#e0e1dc",
+      "material": "metal"
+    },
+    "style": "small one-story beige industrial outbuilding with a bright metal gable roof",
+    "features": [
+      "blue metal service door",
+      "simple rectangular side windows",
+      "chain-link service-yard fence"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "2427463204395353.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1317788230398052.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "Two daylight views consistently isolate the same right-side building on the multi-building parcel."
+    ],
+    "facades": []
+  },
+  "-1000318": {
+    "buildingSourceId": "overture:14905d39-5654-4823-92ec-b189ef83e6b2",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d9d9d2",
+    "wallMaterial": "masonry",
+    "trim": "#486580",
+    "roof": {
+      "type": "flat",
+      "color": "#555a5d",
+      "material": null
+    },
+    "style": "small one-story fish-market storefront with a flat parapet and striped blue awnings",
+    "features": [
+      "repeating blue-and-white storefront awnings",
+      "dark rectangular entrance bays",
+      "freestanding fish market and produce sign"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "306140584398867.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The freestanding FISH MARKET / SEAFOOD / PRODUCE sign identifies the property but is not rendered as facade signage."
+    ],
+    "facades": []
+  },
+  "-1002106": {
+    "buildingSourceId": "overture:4fdbdb2f-59d1-4a7a-9a34-a48db03ce944",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#69706f",
+    "wallMaterial": "masonry",
+    "trim": "#d5d7d3",
+    "roof": {
+      "type": "flat",
+      "color": "#555b5b",
+      "material": null
+    },
+    "style": "one-story gray roadside commercial building with a flat parapet and recessed front bay",
+    "features": [
+      "dark gray painted side wall",
+      "light projecting front parapet",
+      "broad paved forecourt"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "737713922573414.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1276874333808093.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style"
+        ]
+      }
+    ],
+    "notes": [
+      "Two views consistently show the same corner building; small signage is not legible."
+    ],
+    "facades": []
+  },
+  "-1000755": {
+    "buildingSourceId": "overture:d3b88d66-5c08-45bb-85f2-0226c3739bed",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d7ccb7",
+    "wallMaterial": "siding",
+    "trim": "#eeeee8",
+    "roof": {
+      "type": "gable",
+      "color": "#c9cbc7",
+      "material": "metal"
+    },
+    "style": "one-story beige residence with a bright metal gable roof and small front porch",
+    "features": [
+      "front-facing porch gable",
+      "white square porch posts",
+      "paired rectangular front windows"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "552400471221058.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "Motion blur prevents precise opening counts, but the isolated facade form and palette are clear."
+    ],
+    "facades": []
+  },
+  "-1003550": {
+    "buildingSourceId": "overture:c1789a1a-b7ec-4c90-bbd1-b1c617a5b9e2",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#aeb2ae",
+    "wallMaterial": "siding",
+    "trim": "#e8e8e2",
+    "roof": {
+      "type": "gable",
+      "color": "#d1d2cd",
+      "material": "metal"
+    },
+    "style": "gray manufactured home with a shallow metal gable roof and light foundation skirting",
+    "features": [
+      "gray horizontal siding",
+      "white foundation skirting",
+      "small covered side area"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1449442532916354.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The assigned region captures the left portion and side of the isolated home; openings are omitted."
+    ],
+    "facades": []
+  },
+  "-1003478": {
+    "buildingSourceId": "overture:fa58c903-cc40-4984-aaa1-ecd131b431ff",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#bfc3c0",
+    "wallMaterial": "masonry",
+    "trim": "#34464f",
+    "roof": {
+      "type": "flat",
+      "color": "#555c60",
+      "material": null
+    },
+    "style": "low one-story roadside retail building with a flat roof and dark recessed entrance",
+    "features": [
+      "long light-gray wall",
+      "dark blue-gray entrance bay",
+      "low continuous roofline"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "683515064680512.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "Backlighting limits color precision and the freestanding sign is unreadable."
+    ],
+    "facades": []
+  },
+  "-1001293": {
+    "buildingSourceId": "overture:b532996c-becf-42b2-aa56-232ade5a90b5",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#6d777a",
+    "wallMaterial": "metal",
+    "trim": "#4c7a67",
+    "roof": {
+      "type": "hip",
+      "color": "#4c806c",
+      "material": "metal"
+    },
+    "style": "one-story vehicle dealership office with a green metal hip roof and dark glazed front",
+    "features": [
+      "green standing-seam hip roof",
+      "deep covered front walk",
+      "dark showroom or office glazing"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1260456035654307.jpg",
+        "facadeEdge": 2,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The descriptor is limited to the office footprint in the assigned region, not the adjacent service-bay building."
+    ],
+    "facades": []
+  },
+  "-1003135": {
+    "buildingSourceId": "overture:54a6e51e-cd85-4049-a61c-f47db32b2c62",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#c9bca8",
+    "wallMaterial": "stucco",
+    "trim": "#eee9df",
+    "roof": {
+      "type": "gable",
+      "color": "#d7d8d2",
+      "material": "metal"
+    },
+    "style": "one-story beige residence with a bright metal gable roof and attached garage",
+    "features": [
+      "front-facing garage gable",
+      "white vinyl side fence",
+      "arched entry recess"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1041110130973063.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The rainy view is distant but isolates the left-corner residence consistently with its single-building parcel."
+    ],
+    "facades": []
+  },
+  "-1002464": {
+    "buildingSourceId": "overture:bd2af242-c905-43fa-938e-ec5d3a6acd83",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#e5e4db",
+    "wallMaterial": "masonry",
+    "trim": "#eeeee8",
+    "roof": {
+      "type": "gable",
+      "color": "#d9dad5",
+      "material": "metal"
+    },
+    "style": "long one-story white church building with bright connected gable roofs and a covered front walk",
+    "features": [
+      "repeating white gable roofline",
+      "deep shaded front walkway",
+      "dark rectangular front openings",
+      "open corner lawn"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "757349116795449.jpg",
+        "facadeEdge": 7,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "714363451412127.jpg",
+        "facadeEdge": 7,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "Two rainy views consistently isolate the same church wing on the two-building parcel; the freestanding sign is too small to transcribe."
+    ],
+    "facades": []
+  },
+  "-1001288": {
+    "buildingSourceId": "overture:0bcc0d34-8564-41dd-8f30-165263ac4ec8",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d6cfbd",
+    "wallMaterial": "metal",
+    "trim": "#7f6047",
+    "roof": {
+      "type": "gable",
+      "color": "#c6c7c1",
+      "material": "metal"
+    },
+    "style": "one-story roadside bait-and-rental shop with pale metal siding, a deep covered porch, and a shallow metal gable roof",
+    "features": [
+      "full-width shaded front porch",
+      "open rental-display bays",
+      "simple rectangular roadside massing"
+    ],
+    "signage": [
+      {
+        "text": "JOLLY ROGER",
+        "facadeEdge": 0,
+        "confidence": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1320750323048506.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features",
+          "signage"
+        ]
+      }
+    ],
+    "notes": [
+      "The assigned region isolates the main shop building; smaller service wording is not transcribed."
+    ],
+    "facades": []
+  },
+  "-1002094": {
+    "buildingSourceId": "overture:ec70c392-82d3-468d-9a84-bfbd13dc922e",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#bfc1bd",
+    "wallMaterial": "masonry",
+    "trim": "#6f8178",
+    "roof": {
+      "type": "flat",
+      "color": "#555a59",
+      "material": null
+    },
+    "style": "small one-story roadside retail strip with a flat parapet and repeating recessed storefront bays",
+    "features": [
+      "row of dark glazed storefront openings",
+      "light-gray front wall",
+      "short green fascia accent",
+      "paved forecourt"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "658863037262557.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The single-building parcel is isolated at the left edge of the view; small tenant signs are unreadable."
+    ],
+    "facades": []
+  },
+  "-1000656": {
+    "buildingSourceId": "overture:ef377b45-eb4d-4923-976f-842c12618c23",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#b9a78f",
+    "wallMaterial": "stucco",
+    "trim": "#59483d",
+    "roof": {
+      "type": "flat",
+      "color": "#69645f",
+      "material": null
+    },
+    "style": "one-story tan roadside office with a flat roof and dark projecting window awnings",
+    "features": [
+      "three narrow dark front window bays",
+      "individual brown fabric awnings",
+      "plain rectangular parapet",
+      "setback sidewalk lawn"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1074776639832933.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The wide street view cleanly separates the office from the neighboring white commercial building."
+    ],
+    "facades": []
+  },
+  "894462378": {
+    "buildingSourceId": "osm:way/894462378",
+    "name": "First Baptist Church of Clewiston",
+    "confidence": "high",
+    "height": 6.8,
+    "stories": 2,
+    "wall": "#e9e6db",
+    "wallMaterial": "plain",
+    "trim": "#9ba2a1",
+    "roof": {
+      "type": "flat",
+      "color": "#d9d8d1"
+    },
+    "style": "large pale mid-century church complex dominated by a tall square entrance tower and needle-like metal spire",
+    "features": [
+      "two-story sanctuary mass",
+      "square entrance tower",
+      "louvered belfry openings",
+      "stepped tower cap",
+      "tall four-sided spire",
+      "low covered side walkways"
+    ],
+    "signage": [],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "first-baptist-clewiston:official-site",
+      "flickr:26974265159",
+      "osm:way/894462378"
+    ],
+    "notes": [
+      "The square tower, belfry, entrance, and spire are authored in the landmark layer from the 2017 exterior photograph."
+    ]
+  },
+  "821932757": {
+    "buildingSourceId": "osm:way/821932757",
+    "name": "Evangel Assembly of God",
+    "confidence": "high",
+    "height": 6,
+    "stories": 1,
+    "wall": "#d7d0c3",
+    "wallMaterial": "plain",
+    "trim": "#eeeae1",
+    "roof": {
+      "type": "hip",
+      "color": "#77736c"
+    },
+    "style": "broad contemporary sanctuary with a deep gray hipped roof, pale central clerestory, stone entrance wall, and small white spire",
+    "features": [
+      "large multi-plane sanctuary roof",
+      "central square clerestory",
+      "small roof spire",
+      "dark stone entrance wall",
+      "deep shaded entrance arcade"
+    ],
+    "signage": [],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "evangel-church-clewiston:official-site",
+      "osm:way/821932757"
+    ],
+    "notes": [
+      "The official sanctuary photograph establishes the roof silhouette, clerestory, stone entry accent, and spire authored in the landmark layer."
+    ]
+  },
+  "885973883": {
+    "buildingSourceId": "osm:way/885973883",
+    "name": "Clewiston City Hall",
+    "confidence": "high",
+    "height": 4.8,
+    "stories": 1,
+    "wall": "#dfd6c6",
+    "wallMaterial": "plain",
+    "trim": "#eceae2",
+    "roof": {
+      "type": "flat",
+      "color": "#d5d4cc"
+    },
+    "style": "low mid-century municipal building with a flat roof, decorative concrete screen, modest entrance porch, and twin flagpoles",
+    "features": [
+      "decorative breeze-block screen",
+      "recessed double entrance",
+      "flat entrance canopy",
+      "attached City Hall lettering",
+      "two civic flagpoles",
+      "formal hedge-lined lawn"
+    ],
+    "signage": [],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "city-of-clewiston:official-homepage",
+      "osm:way/885973883"
+    ],
+    "notes": [
+      "The north entrance canopy, concrete screen, lettering, and flags are authored in the landmark layer from the City's current exterior imagery."
+    ]
+  },
+  "894462400": {
+    "buildingSourceId": "osm:way/894462400",
+    "name": "Hampton Inn Clewiston",
+    "confidence": "high",
+    "stories": 4,
+    "height": 13.6,
+    "wall": "#e9e8e2",
+    "wallMaterial": "masonry",
+    "trim": "#7a858d",
+    "roof": {
+      "type": "flat",
+      "color": "#d2d7cb"
+    },
+    "style": "four-story modern roadside hotel with a long white facade, warm tan and brown accent panels, and a projecting entrance canopy",
+    "features": [
+      "four full guest-room levels",
+      "regular dark paired window bays",
+      "raised central parapet",
+      "warm tan ground-floor band",
+      "brown vertical facade panel",
+      "gray vertical stair-tower accent",
+      "deep flat porte-cochere on square columns",
+      "orange Hampton Inn script signage"
+    ],
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 2,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 0,
+            "windowPattern": "authored hotel entrance, ground-floor glazing, and three rows of repeating guest-room windows"
+          }
+        ],
+        "doors": [],
+        "lighting": []
+      }
+    ],
+    "suppressPlaceSignage": true,
+    "sources": [
+      "hilton:hampton-clewiston-gallery",
+      "aaa:hampton-clewiston-property-facts",
+      "osm:way/894462400"
+    ],
+    "notes": [
+      "AAA lists 86 units across four stories; the official Hilton exterior establishes the facade colors, parapet, window rhythm, signage, and porte-cochere.",
+      "The north facade's landmark details are authored in the landmark layer so the building remains recognizable at driving distance."
+    ]
+  },
+  "-1002454": {
+    "buildingSourceId": "overture:a25dc5fc-4132-4b0f-8ca4-237ef4cf153a",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#ddddd5",
+    "wallMaterial": "masonry",
+    "trim": "#eeeee8",
+    "roof": {
+      "type": "hip",
+      "color": "#4e5552",
+      "material": "shingle"
+    },
+    "style": "one-story white lodging wing with a dark hipped roof and repeating recessed guest-room bays",
+    "features": [
+      "rhythmic white pilasters",
+      "repeating dark window-and-entry bays",
+      "deep roof eaves",
+      "landscaped roadside setback"
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "935379738049321.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "features"
+        ]
+      }
+    ],
+    "notes": [
+      "The target is the left-hand lodging wing on the two-building parcel; the frame crops its far end, so bay counts are omitted."
+    ],
+    "facades": []
   }
 }

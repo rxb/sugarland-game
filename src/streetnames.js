@@ -10,6 +10,7 @@ import * as THREE from 'three';
 const SIGN_DIST = 260;
 const PAINT_DIST = 420;
 const PAINT_SPACING = 90;
+const SIGN_CURB_SETBACK = 1.4;
 
 const bladeTexCache = new Map();
 const paintTexCache = new Map();
@@ -70,6 +71,33 @@ function paintTexture(name) {
 const poleGeo = new THREE.CylinderGeometry(0.05, 0.05, 3.0, 6);
 const poleMat = new THREE.MeshLambertMaterial({ color: '#8a8f96' });
 
+export function findCurbOffset(roads) {
+  const clearances = roads.map(({ dir, width }) => ({
+    nx: -dir[1],
+    nz: dir[0],
+    required: (width || 7) / 2 + SIGN_CURB_SETBACK,
+  }));
+  const largestRoadEdge = Math.max(...clearances.map((r) => r.required));
+
+  // Search outward for the nearest point beyond every intersecting road edge.
+  // Five-degree samples are fine-grained enough for a small sign footprint and
+  // handle angled or three-way intersections without assuming a square corner.
+  for (let radius = largestRoadEdge; radius <= largestRoadEdge * 2.5 + 6; radius += 0.25) {
+    for (let step = 0; step < 72; step++) {
+      const angle = step * Math.PI / 36;
+      const ox = Math.cos(angle) * radius;
+      const oz = Math.sin(angle) * radius;
+      const offEveryRoad = clearances.every(({ nx, nz, required }) => (
+        Math.abs(ox * nx + oz * nz) >= required
+      ));
+      if (offEveryRoad) return [ox, oz];
+    }
+  }
+
+  // Degenerate overlapping road geometry: still move beyond the widest edge.
+  return [largestRoadEdge, largestRoadEdge];
+}
+
 function makeBlade(name, dir, y) {
   const tex = bladeTexture(name);
   const w = 1.5, h = 0.28;
@@ -112,7 +140,10 @@ export class StreetNames {
           const j = i < r.path.length - 1 ? i + 1 : i - 1;
           const dx = r.path[j][0] - x, dz = r.path[j][1] - z;
           const len = Math.hypot(dx, dz) || 1;
-          entry.names.set(r.name, [dx / len, dz / len]);
+          entry.names.set(r.name, { dir: [dx / len, dz / len], width: r.width || 7 });
+        } else {
+          const existing = entry.names.get(r.name);
+          existing.width = Math.max(existing.width, r.width || 7);
         }
       }
     }
@@ -127,21 +158,16 @@ export class StreetNames {
       if (posted.has(cellKey)) continue;
       posted.add(cellKey);
 
-      const dirs = [...names.values()];
-      // Offset the pole off the pavement, diagonally from the corner.
-      let ox = -dirs[0][1] + -dirs[1][1], oz = dirs[0][0] + dirs[1][0];
-      const olen = Math.hypot(ox, oz);
-      if (olen < 0.3) { ox = 1; oz = 1; }
-      const s = 7 / (Math.hypot(ox, oz) || 1);
+      const [ox, oz] = findCurbOffset([...names.values()]);
 
       const sign = new THREE.Group();
-      sign.position.set(x + ox * s, 0, z + oz * s);
+      sign.position.set(x + ox, 0, z + oz);
       const pole = new THREE.Mesh(poleGeo, poleMat);
       pole.position.y = 1.5;
       sign.add(pole);
       let y = 2.85;
-      for (const [name, dir] of names) {
-        sign.add(makeBlade(name, dir, y));
+      for (const [name, road] of names) {
+        sign.add(makeBlade(name, road.dir, y));
         y -= 0.34;
         if (y < 2.1) break; // cap at 3 blades
       }

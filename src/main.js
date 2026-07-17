@@ -35,12 +35,27 @@ async function start() {
   const trees = await fetch('data/trees.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
   const { collisionGrid } = buildWorld(scene, data, details, roofColors, trees, morphology);
   const player = new Player(scene, camera, canvas, collisionGrid, data.roads);
+  // Development-only landmark QA: ?spawn=x,z,yaw starts the preview at an
+  // exact world position without changing the normal production spawn.
+  if (import.meta.env.DEV) {
+    const previewSpawn = new URLSearchParams(window.location.search).get('spawn');
+    if (previewSpawn) {
+      const [x, z, yaw = player.yaw] = previewSpawn.split(',').map(Number);
+      if ([x, z, yaw].every(Number.isFinite)) {
+        player.pos.set(x, 0, z);
+        player.yaw = yaw;
+        player.heading = yaw;
+        player.mesh.position.copy(player.pos);
+      }
+    }
+  }
   const dayNight = new DayNight(scene);
   const floatingPois = SHOW_FLOATING_BUILDING_LABELS ? data.pois : [];
   const labels = new Labels(scene, document.body, floatingPois);
   const streetNames = new StreetNames(scene, data.roads);
   const places = await fetch('data/places.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
-  const signage = new Signage(scene, data.buildings, places, details);
+  const freestandingSigns = await fetch('data/freestanding-signs.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
+  const signage = new Signage(scene, data.buildings, places, details, freestandingSigns);
   const landmarks = new Landmarks(scene, data);
   loading.style.display = 'none';
   window.__game = { player, dayNight, scene, camera, renderer, labels, streetNames, signage, landmarks };

@@ -12,6 +12,7 @@ const CART_ACCEL = 7;
 const CART_TURN_SPEED = 1.7;
 const FOLLOW_PITCH = 0.12;
 const CAMERA_CATCHUP_TIME = 0.33;
+const CART_CAMERA_CATCHUP_GAIN = 0.8;
 const CART_INTERACTION_DISTANCE = 3.5;
 const CART_SUMMON_HOLD_TIME = 0.6;
 const CART_SUMMON_SPEED = 9;
@@ -360,7 +361,12 @@ export class Player {
     const target = cart.pos.clone().setY(1.7);
     const camPos = target.clone().addScaledVector(camDir, -6.2);
     if (camPos.y < 0.5) camPos.y = 0.5;
-    const cameraEase = 1 - Math.exp(-dt / CAMERA_CATCHUP_TIME);
+    const turboProgress = Math.max(0, Math.min(1,
+      (Math.abs(cart.speed) - CART_TOP_SPEED) / (CART_TURBO_SPEED - CART_TOP_SPEED)
+    ));
+    const cameraGap = this.camera.position.distanceTo(camPos);
+    const catchup = 1 + turboProgress * Math.max(0, cameraGap - 1) * CART_CAMERA_CATCHUP_GAIN;
+    const cameraEase = 1 - Math.exp(-dt * catchup / CAMERA_CATCHUP_TIME);
     this.camera.position.lerp(camPos, cameraEase);
     this.camera.lookAt(target);
   }

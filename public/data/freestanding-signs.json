@@ -1,0 +1,115 @@
+[
+  {
+    "id": "mcdonalds-sugarland-pylon",
+    "type": "freestanding-sign",
+    "style": "pole",
+    "pos": [-1164, -54],
+    "rotation": 90,
+    "height": 8.8,
+    "width": 4.2,
+    "depth": 0.42,
+    "supports": 1,
+    "supportWidth": 0.34,
+    "supportDepth": 0.34,
+    "panels": [
+      { "text": "McDonald's", "height": 1.65, "bg": "#b42126", "fg": "#f2c431", "edge": "#6f1b20" }
+    ],
+    "maxDistance": 420,
+    "confidence": "medium",
+    "sources": [
+      "mapillary:2771138403059783",
+      "overture-place:McDonald's@905 W Sugarland Hwy"
+    ],
+    "notes": "Roadside placement is approximate; the Mapillary frame documents the building and the pylon shadow rather than a full sign face."
+  },
+  {
+    "id": "walmart-sugarland-pylon",
+    "type": "freestanding-sign",
+    "style": "pylon",
+    "pos": [-1510, -72],
+    "rotation": 90,
+    "height": 10.5,
+    "width": 5.4,
+    "depth": 0.48,
+    "supports": 2,
+    "supportWidth": 0.26,
+    "panels": [
+      { "text": "Walmart", "height": 1.85, "bg": "#2871a8", "fg": "#ffffff", "accent": "#f1bd28", "edge": "#1d4f78" },
+      { "text": "SUPERCENTER", "height": 0.7, "widthScale": 0.82, "bg": "#ecebe5", "fg": "#315875", "edge": "#606b70" }
+    ],
+    "maxDistance": 520,
+    "confidence": "low",
+    "sources": [
+      "commons:Walmart_in_Clewiston,_FL.jpg",
+      "osm:way/384433391",
+      "overture-place:Walmart@1005 W Sugarland Hwy"
+    ],
+    "notes": "Store identity and palette are directly documented; roadside pylon position and dimensions are an approximate first pass pending a dedicated west-highway view."
+  },
+  {
+    "id": "popeyes-sugarland-pylon",
+    "type": "freestanding-sign",
+    "style": "pylon",
+    "pos": [550, -5],
+    "rotation": 90,
+    "height": 7.4,
+    "width": 3.5,
+    "depth": 0.4,
+    "supports": 2,
+    "panels": [
+      { "text": "Popeyes", "height": 1.35, "bg": "#d85a24", "fg": "#fff4dc", "edge": "#79351f" },
+      { "text": "DRIVE THRU", "height": 0.58, "widthScale": 0.78, "bg": "#ede2c7", "fg": "#4a2b20", "edge": "#6e6255" }
+    ],
+    "maxDistance": 380,
+    "confidence": "high",
+    "sources": [
+      "mapillary:1211851917321785",
+      "overture-place:Popeyes@504 E Sugarland Hwy"
+    ],
+    "notes": "The tall roadside sign and primary orange Popeyes panel are visible at the San Pedro Street intersection; secondary wording is simplified for game readability."
+  },
+  {
+    "id": "first-bank-sugarland-monument",
+    "type": "freestanding-sign",
+    "style": "monument",
+    "pos": [160, -18],
+    "rotation": 90,
+    "height": 3.1,
+    "width": 4.4,
+    "depth": 0.52,
+    "baseColor": "#ddd6c8",
+    "panels": [
+      { "text": "FIRST BANK", "height": 1.25, "bg": "#315d49", "fg": "#f4efe1", "accent": "#bda45b", "edge": "#27493b" },
+      { "text": "CLEWISTON", "height": 0.52, "widthScale": 0.75, "bg": "#eee8da", "fg": "#315d49", "edge": "#7e7565" }
+    ],
+    "maxDistance": 320,
+    "confidence": "medium",
+    "sources": [
+      "first-bank:300-e-sugarland-hwy",
+      "osm:way/384457185"
+    ],
+    "notes": "The current branch is consistently documented with a detached highway-facing identity sign; wording and exact dimensions are simplified for game readability."
+  },
+  {
+    "id": "st-margaret-schedule-sign",
+    "type": "freestanding-sign",
+    "style": "pole",
+    "pos": [164, -184],
+    "rotation": 0,
+    "height": 2.55,
+    "width": 2.7,
+    "depth": 0.28,
+    "supports": 2,
+    "supportWidth": 0.11,
+    "panels": [
+      { "text": "ST. MARGARET", "height": 1.05, "bg": "#272725", "fg": "#f2eee2", "edge": "#151514" }
+    ],
+    "maxDistance": 220,
+    "confidence": "high",
+    "sources": [
+      "commons:Clewiston_FL_St_Margarets_Catholic_Church04.jpg",
+      "overture-place:St Margaret's Catholic Church"
+    ],
+    "notes": "The black two-post schedule board is clearly visible in front of the tower; small service-time text is intentionally omitted."
+  }
+]
