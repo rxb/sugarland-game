@@ -123,7 +123,7 @@ Walking and driving share character-relative controls: forward/back moves along 
 
 On foot, movement probes slightly ahead of the character. When a move is blocked, it separately tries the `x` and `z` portions, producing inexpensive wall sliding. The character animation is four limb pivots driven by a sine wave. Jogging increases forward speed without changing turn speed, so its turning circle is wider.
 
-The golf cart uses a scalar speed, heading, acceleration toward a target speed, and a slower fixed turn rate. Holding Shift raises its forward target speed without changing the turn rate, creating a wider turbo turning circle. It probes the cart center plus a point 1.4 meters toward the moving end. A collision simply sets speed to zero.
+The golf cart uses a scalar speed, heading, acceleration toward a target speed, and a slower fixed turn rate. Holding Shift raises its forward target speed without changing the turn rate, creating a wider turbo turning circle. While driving, the existing character mesh is parented to the cart and given a scaled seated pose; exiting restores its standing pose and scene-level transform. The cart probes its center plus a point 1.4 meters toward the moving end. A collision simply sets speed to zero.
 
 `E` enters or exits the cart when it is nearby. Holding `E` while it is far away starts an animated summon: the cart appears beyond the rear edge of the camera, follows an eased quadratic curve into view, and stops beside or ahead of the walker. Candidate endpoints and sampled points along the approach reject positions whose center or footprint corners overlap a building. If every animated route is blocked, the cart falls back to an immediate safe placement.
 

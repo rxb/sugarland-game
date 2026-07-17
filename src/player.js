@@ -59,6 +59,7 @@ function buildCharacter() {
 
 export class Player {
   constructor(scene, camera, dom, collisionGrid, roads) {
+    this.scene = scene;
     this.camera = camera;
     this.dom = dom;
     this.grid = collisionGrid;
@@ -149,15 +150,40 @@ export class Player {
       this.cart.speed = 0;
       this.heading = this.cart.heading;
       this.recenterCamera(this.heading);
-      this.mesh.visible = true;
+      this.setWalkingPose();
     } else {
       const d = this.pos.distanceTo(this.cart.pos);
       if (d < CART_INTERACTION_DISTANCE) {
         this.driving = true;
-        this.mesh.visible = false;
+        this.setDrivingPose();
         this.recenterCamera(this.cart.heading);
       }
     }
+  }
+
+  setDrivingPose() {
+    this.cart.mesh.add(this.mesh);
+    this.mesh.visible = true;
+    this.mesh.position.set(-0.28, 0.45, -0.2);
+    this.mesh.rotation.set(0, 0, 0);
+    this.mesh.scale.setScalar(0.82);
+    this.parts.armL.rotation.x = -1.15;
+    this.parts.armR.rotation.x = -1.15;
+    this.parts.legL.rotation.x = -1.15;
+    this.parts.legR.rotation.x = -1.15;
+  }
+
+  setWalkingPose() {
+    this.scene.add(this.mesh);
+    this.mesh.visible = true;
+    this.mesh.scale.setScalar(1);
+    this.mesh.position.copy(this.pos);
+    this.mesh.rotation.set(0, this.heading, 0);
+    this.parts.armL.rotation.x = 0;
+    this.parts.armR.rotation.x = 0;
+    this.parts.legL.rotation.x = 0;
+    this.parts.legR.rotation.x = 0;
+    this.walkPhase = 0;
   }
 
   updateCartSummon(dt) {
