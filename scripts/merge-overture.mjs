@@ -58,7 +58,9 @@ const overture = JSON.parse(readFileSync(OVERTURE, 'utf8'));
 
 // Merged Overture buildings get negative ids; drop any from a previous run
 // so the script is idempotent.
-const osmBuildings = game.buildings.filter((b) => b.id > 0);
+const osmBuildings = game.buildings
+  .filter((b) => b.id > 0)
+  .map((b) => ({ ...b, sourceId: b.sourceId ?? `osm:way/${b.id}` }));
 
 // Coarse spatial index of existing OSM buildings for the safety overlap check.
 const CELL = 50;
@@ -86,7 +88,8 @@ for (const f of overture.features) {
   else if (f.geometry.type === 'MultiPolygon') rings = f.geometry.coordinates.map((c) => c[0]);
   else continue;
 
-  for (const ring of rings) {
+  for (let ringIndex = 0; ringIndex < rings.length; ringIndex++) {
+    const ring = rings[ringIndex];
     let poly = ring.map(project);
     // GeoJSON rings repeat the closing point; the game format does not.
     if (poly.length > 1 && poly[0][0] === poly[poly.length - 1][0] && poly[0][1] === poly[poly.length - 1][1]) {
@@ -116,7 +119,24 @@ for (const f of overture.features) {
       height = 4 * (0.9 + 0.2 * fract);
     }
     const type = SUBTYPE_TO_TYPE[p.subtype] || (area < 45 ? 'shed' : 'yes');
-    newBuildings.push({ id, poly, height: Math.round(height * 100) / 100, type });
+    const sourceId = `overture:${f.id}${rings.length > 1 ? `#${ringIndex}` : ''}`;
+    const building = {
+      id,
+      sourceId,
+      poly,
+      height: Math.round(height * 100) / 100,
+      type,
+    };
+    // Preserve the appearance fields supported by Overture even when this
+    // particular extract contains few of them. Future data refreshes can then
+    // improve the town without changing the runtime schema.
+    if (typeof p.num_floors === 'number') building.numFloors = p.num_floors;
+    if (p.facade_color) building.facadeColor = p.facade_color;
+    if (p.facade_material) building.facadeMaterial = p.facade_material;
+    if (p.roof_color) building.roofColor = p.roof_color;
+    if (p.roof_material) building.roofMaterial = p.roof_material;
+    if (p.roof_shape) building.roofShape = p.roof_shape;
+    newBuildings.push(building);
     added++;
   }
 }

@@ -22,23 +22,28 @@ const timeSlider = document.getElementById('time-slider');
 const timeReadout = document.getElementById('time-readout');
 const autoCheck = document.getElementById('time-auto');
 const loading = document.getElementById('loading');
+// Building names currently live on facade signage; retain the floating-label
+// renderer for future POIs without displaying the older building label set.
+const SHOW_FLOATING_BUILDING_LABELS = false;
 
 async function start() {
   const data = await (await fetch('data/clewiston.json')).json();
   const loadJson = (url) => fetch(url).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
   const details = await loadJson('data/building-details.json');
   const roofColors = await loadJson('data/roof-colors.json');
+  const morphology = await loadJson('data/building-morphology.json');
   const trees = await fetch('data/trees.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
-  const { collisionGrid } = buildWorld(scene, data, details, roofColors, trees);
+  const { collisionGrid } = buildWorld(scene, data, details, roofColors, trees, morphology);
   const player = new Player(scene, camera, canvas, collisionGrid, data.roads);
   const dayNight = new DayNight(scene);
-  const labels = new Labels(scene, document.body, data.pois);
+  const floatingPois = SHOW_FLOATING_BUILDING_LABELS ? data.pois : [];
+  const labels = new Labels(scene, document.body, floatingPois);
   const streetNames = new StreetNames(scene, data.roads);
   const places = await fetch('data/places.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
-  const signage = new Signage(scene, data.buildings, places);
+  const signage = new Signage(scene, data.buildings, places, details);
   const landmarks = new Landmarks(scene, data);
   loading.style.display = 'none';
-  window.__game = { player, dayNight, scene, camera, renderer, streetNames, signage, landmarks };
+  window.__game = { player, dayNight, scene, camera, renderer, labels, streetNames, signage, landmarks };
 
   dayNight.hours = parseFloat(timeSlider.value);
   timeSlider.addEventListener('input', () => {

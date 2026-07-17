@@ -101,11 +101,15 @@ async function fetchMapillary() {
     index.push({
       file,
       id: im.id,
+      source: 'mapillary',
       lat, lon, x, z,
       compass: im.computed_compass_angle, // degrees, 0 = north: ray toward the visible facade
+      projection: 'flat',
+      horizontalFov: 90,
       capturedAt: im.captured_at,
       creator: im.creator?.username,
       license: 'CC-BY-SA 4.0 (Mapillary)',
+      note: 'horizontalFov is a conservative default; replace it when camera metadata is known',
     });
     console.log(`mapillary: ${file} @ (${x},${z}) heading ${Math.round(im.computed_compass_angle)}deg`);
   }

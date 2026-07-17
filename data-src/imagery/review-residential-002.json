@@ -1,0 +1,288 @@
+[
+  {
+    "buildingId": -1000678,
+    "buildingSourceId": "overture:6aa2b0b6-edb5-4f9e-a2c0-8586a6b002c3",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#43a45f",
+    "wallMaterial": "stucco",
+    "trim": "#e8e8df",
+    "roof": {
+      "type": "complex",
+      "color": "#596465",
+      "material": "metal"
+    },
+    "style": "one-story bright-green stucco residence with a front gable and a recessed porch articulated by rounded arches",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "at least two tall front windows flank the recessed entry; trees and motion blur obscure the remainder"
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": [
+          "A central white entry door is visible behind a waist-high white porch gate.",
+          "The recessed porch has three rounded stucco arches and white railing or gates.",
+          "The left portion of the facade is heavily obscured by a tree, so a complete opening count is not defensible."
+        ]
+      },
+      {
+        "edgeIndex": 1,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "one narrow side window is visible, but most of this edge is cropped or obscured"
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": []
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1402328710776811.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "wallMaterial",
+          "trim",
+          "roof",
+          "style",
+          "windowPattern",
+          "porch",
+          "doorPlacement"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1008478591210731.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "wall",
+          "sideWindow"
+        ]
+      }
+    ],
+    "notes": [
+      "Image regions and the single-building parcel context support the footprint match."
+    ]
+  },
+  {
+    "buildingId": -1000687,
+    "buildingSourceId": "overture:4639fca3-6ae9-4ac0-abbb-6a013fde0b7a",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d7c9aa",
+    "wallMaterial": "unknown",
+    "trim": "#efeee7",
+    "roof": {
+      "type": "gable",
+      "color": "#bec5c3",
+      "material": "metal"
+    },
+    "style": "one-story light-beige horizontal-sided residence with a low cross-gable metal roof and a small projecting front-gable porch",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 3,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "at least two white-trimmed rectangular windows are clearly visible; the moving frame does not support a complete facade count"
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": [
+          "The principal entry sits beneath the small front-gable porch.",
+          "The porch is carried by two simple square white posts.",
+          "Horizontal lap siding is visible, but the image does not distinguish vinyl, fiber-cement, or wood reliably."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "552400471221058.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "windowPattern",
+          "porch",
+          "doorPlacement"
+        ]
+      }
+    ],
+    "notes": [
+      "The alternate frame is dominated by an adjacent property and does not contribute facade details."
+    ]
+  },
+  {
+    "buildingId": 1377669263,
+    "buildingSourceId": "osm:way/1377669263",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#88847c",
+    "wallMaterial": "unknown",
+    "trim": "#ecece7",
+    "roof": {
+      "type": "gable",
+      "color": "#d4d8d4",
+      "material": "metal"
+    },
+    "style": "one-story gray-taupe horizontal-sided manufactured residence with a shallow metal gable roof and an attached open-sided metal carport",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 4,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "end wall is substantially obscured by palms and landscaping"
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": [
+          "An open-sided dark metal carport adjoins this end of the residence.",
+          "Dense landscaping prevents a defensible opening count."
+        ]
+      },
+      {
+        "edgeIndex": 3,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "at least two small white-trimmed vertical windows are visible; the elevation continues beyond the frame"
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": [
+          "A white exterior door is visible toward the photographed end of this side elevation.",
+          "The complete side elevation is cropped, so exact opening counts and normalized positions are withheld."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "9680966452013954.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "stories",
+          "wall",
+          "wallMaterial",
+          "style",
+          "carport"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1338024500628626.jpg",
+        "facadeEdge": 4,
+        "supports": [
+          "wall",
+          "carport",
+          "footprintMatch"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1392293832113988.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "roof",
+          "sideWindowPattern",
+          "doorPlacement",
+          "footprintMatch"
+        ]
+      }
+    ],
+    "notes": [
+      "The three views consistently identify the same gray residence; the tan residence visible beside it is a separate building."
+    ]
+  },
+  {
+    "buildingId": -1000561,
+    "buildingSourceId": "overture:f0c57230-103c-4266-8d23-eab5634fcae0",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d69776",
+    "wallMaterial": "stucco",
+    "trim": "#75828b",
+    "roof": {
+      "type": "unknown",
+      "color": "#d8dcda",
+      "material": "metal"
+    },
+    "style": "one-story peach stucco residence with a very low roofline and an integrated blue-gray screened porch across the right portion of the street facade",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "at least one conventional rectangular window is visible left of the entry; the screened porch contains broad dark screened openings rather than ordinary glazed windows"
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": [
+          "The principal door is near the middle of the unscreened peach wall and is partially obscured by vegetation.",
+          "Blue-gray horizontal framing and screening enclose the right-hand porch.",
+          "The left endpoint and parts of the facade are blurred, so a complete opening count is not defensible."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "457199067419630.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "stories",
+          "wall",
+          "wallMaterial",
+          "trim",
+          "style",
+          "windowPattern",
+          "screenedPorch",
+          "doorPlacement"
+        ]
+      },
+      {
+        "source": "mapillary",
+        "file": "1478061919653716.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "screenedPorch",
+          "wall",
+          "trim"
+        ]
+      }
+    ],
+    "notes": [
+      "The roof is visibly low and light-colored, but the available moving frames do not resolve hip versus shed geometry."
+    ]
+  }
+]

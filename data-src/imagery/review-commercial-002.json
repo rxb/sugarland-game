@@ -1,0 +1,308 @@
+[
+  {
+    "buildingId": 850884201,
+    "buildingSourceId": "osm:way/850884201",
+    "name": "120 S W C Owen Avenue storefront strip",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#d3c3a6",
+    "wallMaterial": "mixed",
+    "trim": "#e9e8df",
+    "roof": {
+      "type": "flat",
+      "color": "#24506a"
+    },
+    "style": "one-story multi-tenant storefront strip with a shallow overhanging eave, blue roofline trim, cream upper walls, dark lower panels, and varied tenant bays",
+    "signage": [
+      {
+        "text": "COFFEE",
+        "facadeEdge": 0,
+        "confidence": "high"
+      },
+      {
+        "text": "Pampered Pets",
+        "facadeEdge": 0,
+        "confidence": "high"
+      }
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "alternating large dark storefront windows and narrow glazed entry bays; the extreme endpoints are cropped"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.37,
+            "type": "glazed single door",
+            "color": "#e7e8e2"
+          },
+          {
+            "position": 0.44,
+            "type": "glazed single door",
+            "color": "#e7e8e2"
+          },
+          {
+            "position": 0.83,
+            "type": "glazed single door",
+            "color": "#e7e8e2"
+          },
+          {
+            "position": 0.91,
+            "type": "single door",
+            "color": "#32383b"
+          }
+        ],
+        "lighting": [],
+        "notes": [
+          "A pink-painted tenant bay is partly visible at the left end; cream and dark gray are the predominant colors across the documented frontage.",
+          "Opening totals remain unset because both façade endpoints are cropped."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "3510539679079921.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "footprint match",
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "signage",
+          "windows",
+          "doors"
+        ]
+      }
+    ],
+    "notes": [
+      "The perpendicular daylight view and footprint geometry provide a strong match.",
+      "1752189312034418.jpg depicts adjacent building ends and is not used as evidence for this descriptor."
+    ]
+  },
+  {
+    "buildingId": -1000545,
+    "buildingSourceId": "overture:74bbad49-e6e2-4438-b431-d9bddd1edeab",
+    "name": "501 E Sugarland Highway auto-service strip",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#70404d",
+    "wallMaterial": "mixed",
+    "trim": "#e4e1d7",
+    "roof": {
+      "type": "flat"
+    },
+    "style": "one-story multi-tenant auto-service strip with burgundy, navy, and pale-gray storefront sections, a black-and-white checker accent band, and an open vehicle service passage",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "wallMaterial": "mixed",
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "small storefront glazing and service-office openings distributed among differently colored tenant bays; endpoints and several openings are obscured"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.22,
+            "type": "glazed single door",
+            "color": "#ece9df"
+          },
+          {
+            "position": 0.43,
+            "type": "single service door",
+            "color": "#d9d8d0"
+          },
+          {
+            "position": 0.64,
+            "type": "open vehicle service bay",
+            "color": "#22282b"
+          }
+        ],
+        "lighting": [],
+        "notes": [
+          "A palm trunk blocks the center-left frontage and the image crops both ends.",
+          "The checker pattern is concentrated along the lower wall and around the central service section."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1080850820662962.jpg",
+        "facadeEdge": 1,
+        "supports": [
+          "footprint match",
+          "stories",
+          "wall",
+          "trim",
+          "roof",
+          "style",
+          "windowPattern",
+          "doors"
+        ]
+      }
+    ],
+    "notes": [
+      "The close perpendicular view matches the long irregular footprint; parcel-level attributes are not used because the parcel contains four buildings.",
+      "No business wording is retained because the building-mounted text is blurred or cropped."
+    ]
+  },
+  {
+    "buildingId": -1000317,
+    "buildingSourceId": "overture:dcbf89dc-5dce-4b81-8bf7-accb9daaeed9",
+    "name": "Martinez Tires",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#c9ad98",
+    "wallMaterial": "masonry",
+    "trim": "#694e49",
+    "roof": {
+      "type": "flat"
+    },
+    "style": "one-story tire-service building with a tall painted parapet, deep corrugated-metal work canopy, white support posts, and multiple roll-up service bays",
+    "signage": [
+      {
+        "text": "MARTINEZ TIRES",
+        "facadeEdge": 3,
+        "confidence": "high"
+      }
+    ],
+    "facades": [
+      {
+        "edgeIndex": 3,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 0,
+            "windowPattern": null
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.29,
+            "type": "roll-up service door",
+            "color": "#4b5050"
+          },
+          {
+            "position": 0.5,
+            "type": "roll-up service door",
+            "color": "#4b5050"
+          },
+          {
+            "position": 0.7,
+            "type": "roll-up service door",
+            "color": "#4b5050"
+          },
+          {
+            "position": 0.87,
+            "type": "single metal door",
+            "color": "#777f7c"
+          }
+        ],
+        "lighting": [],
+        "notes": [
+          "The upper parapet is dusty beige-pink with dark reddish-brown lower wall bands.",
+          "Three complete roll-up doors are visible; an additional service area is cropped at the left edge and is not counted."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "1767445654652145.jpg",
+        "facadeEdge": 3,
+        "supports": [
+          "footprint match",
+          "identity",
+          "stories",
+          "wall",
+          "wallMaterial",
+          "trim",
+          "roof",
+          "style",
+          "signage",
+          "windows",
+          "doors"
+        ]
+      }
+    ],
+    "notes": [
+      "The five-meter perpendicular view gives a strong footprint and façade match.",
+      "Only the three fully visible roll-up bays are encoded."
+    ]
+  },
+  {
+    "buildingId": -1000405,
+    "buildingSourceId": "overture:12728821-27a3-4e91-b030-130a97f095f7",
+    "name": "500 S Francisco Street manufactured home",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#c5ddda",
+    "wallMaterial": "metal-siding",
+    "trim": "#e9ebe4",
+    "roof": {
+      "type": "flat",
+      "color": "#e4e7df"
+    },
+    "style": "single-wide manufactured home with pale aqua siding, white skirting and trim, a very shallow roof, and small irregularly spaced side openings",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": null,
+            "windowPattern": "at least two small rectangular windows, including one fitted with a window air-conditioning unit; the right end is obscured by vegetation"
+          }
+        ],
+        "doors": [
+          {
+            "position": 0.58,
+            "type": "single solid door",
+            "color": "#dddcd2"
+          }
+        ],
+        "lighting": [],
+        "notes": [
+          "White metal skirting runs along the full visible base.",
+          "A tree and palmetto obscure the right portion, so the total window count is left unset."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "9567161730041552.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "footprint match",
+          "stories",
+          "wall",
+          "wallMaterial",
+          "trim",
+          "roof",
+          "style",
+          "windowPattern",
+          "door"
+        ]
+      }
+    ],
+    "notes": [
+      "The narrow footprint dimensions, close perpendicular view, and matching long-side orientation provide a strong match.",
+      "The detached Everglades sign is not building signage.",
+      "552358074494978.jpg is too dark to add details, and 493362977076582.jpg does not target this footprint."
+    ]
+  }
+]

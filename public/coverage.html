@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sugarland · Mapillary coverage</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      background: #111713;
+      color: #edf4ed;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; }
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem .75rem;
+    }
+    h1 { margin: 0; font-size: clamp(1.3rem, 3vw, 2rem); letter-spacing: .08em; }
+    header a { color: #d9e7b3; }
+    main { padding: 0 1.5rem 1.5rem; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: .65rem;
+      margin-bottom: .8rem;
+    }
+    .card, .panel {
+      border: 1px solid #34443a;
+      border-radius: .65rem;
+      background: #18221c;
+    }
+    .card { padding: .7rem .85rem; }
+    .card strong { display: block; font-size: 1.35rem; }
+    .card span { color: #aab9ae; font-size: .8rem; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem 1.2rem;
+      align-items: center;
+      padding: .7rem .85rem;
+      margin-bottom: .8rem;
+    }
+    label { font-size: .85rem; white-space: nowrap; }
+    label span { display: inline-block; width: .7rem; height: .7rem; margin-right: .35rem; border-radius: 2px; }
+    .map-wrap { height: min(68vh, 760px); overflow: hidden; position: relative; }
+    svg { width: 100%; height: 100%; background: #0e1410; cursor: grab; }
+    svg:active { cursor: grabbing; }
+    .cell { stroke: #0e1410; stroke-width: 5; opacity: .72; }
+    .building { stroke: none; }
+    .available { fill: #456a50; }
+    .downloaded { fill: #3f69a8; }
+    .analyzed { fill: #b58836; }
+    .enhanced { fill: #d15f75; }
+    .needs-confirmation { fill: #a978d1; }
+    .rejected { fill: #737a76; }
+    .hint { color: #aab9ae; font-size: .78rem; margin: .55rem .15rem 0; }
+    #tooltip {
+      position: fixed;
+      display: none;
+      pointer-events: none;
+      max-width: 320px;
+      padding: .55rem .65rem;
+      border: 1px solid #708073;
+      border-radius: .4rem;
+      background: rgba(12, 17, 13, .95);
+      font-size: .78rem;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>MAPILLARY COVERAGE</h1>
+      <div>Clewiston enhancement ledger</div>
+    </div>
+    <a href="/">Back to Sugarland</a>
+  </header>
+  <main>
+    <section id="summary" class="summary" aria-label="Coverage summary"></section>
+    <section class="toolbar panel" aria-label="Map filters">
+      <strong>Show:</strong>
+      <label><input type="checkbox" data-state="available" checked> <span class="available"></span>available</label>
+      <label><input type="checkbox" data-state="downloaded" checked> <span class="downloaded"></span>downloaded</label>
+      <label><input type="checkbox" data-state="analyzed" checked> <span class="analyzed"></span>analyzed</label>
+      <label><input type="checkbox" data-state="enhanced" checked> <span class="enhanced"></span>enhanced</label>
+      <label><input type="checkbox" data-state="needs-confirmation" checked> <span class="needs-confirmation"></span>needs confirmation</label>
+      <label><input type="checkbox" data-state="rejected" checked> <span class="rejected"></span>rejected</label>
+    </section>
+    <section class="map-wrap panel">
+      <svg id="map" role="img" aria-label="Mapillary coverage status map"></svg>
+      <div id="tooltip"></div>
+    </section>
+    <p class="hint">Squares are 50-meter camera-coverage cells. Dots are buildings with candidate views. Scroll to zoom, drag to pan, and hover for provenance counts. “Available” is a planning estimate, not a claim that the façade is fully visible.</p>
+  </main>
+  <script type="module">
+    const data = await fetch('/data/imagery-coverage.json').then((response) => response.json());
+    const summary = document.querySelector('#summary');
+    const cards = [
+      [data.images.catalogListed.toLocaleString(), 'catalog-listed images'],
+      [data.images.downloaded.toLocaleString(), 'downloaded images'],
+      [data.buildings.enhanced.toLocaleString(), 'enhanced buildings'],
+      [data.buildings.downloadedAndMatched.toLocaleString(), 'matched, awaiting review'],
+      [data.buildings.needsConfirmation.toLocaleString(), 'held for confirmation'],
+      [data.buildings.availableOnly.toLocaleString(), 'additional candidates'],
+    ];
+    summary.innerHTML = cards.map(([number, label]) => `<div class="card"><strong>${number}</strong><span>${label}</span></div>`).join('');
+
+    const svg = document.querySelector('#map');
+    const tooltip = document.querySelector('#tooltip');
+    const ns = 'http://www.w3.org/2000/svg';
+    const xs = data.cells.map((cell) => cell.x);
+    const zs = data.cells.map((cell) => cell.z);
+    const padding = 120;
+    let view = {
+      x: Math.min(...xs) - padding,
+      y: Math.min(...zs) - padding,
+      w: Math.max(...xs) - Math.min(...xs) + data.gridCellMeters + padding * 2,
+      h: Math.max(...zs) - Math.min(...zs) + data.gridCellMeters + padding * 2,
+    };
+    const updateView = () => svg.setAttribute('viewBox', `${view.x} ${view.y} ${view.w} ${view.h}`);
+    updateView();
+
+    function addShape(name, attributes, datum, kind) {
+      const node = document.createElementNS(ns, name);
+      for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, value);
+      node.classList.add(datum.state, kind);
+      node.dataset.state = datum.state;
+      node.addEventListener('pointermove', (event) => {
+        tooltip.style.display = 'block';
+        tooltip.style.left = `${event.clientX + 14}px`;
+        tooltip.style.top = `${event.clientY + 14}px`;
+        tooltip.innerHTML = kind === 'cell'
+          ? `<strong>${datum.state}</strong><br>${datum.availableFrames} available · ${datum.downloadedFrames} downloaded · ${datum.analyzedFrames} analyzed · ${datum.enhancedBuildings} enhanced buildings`
+          : `<strong>${datum.name || datum.type || `Building ${datum.buildingId}`}</strong><br>${datum.state}<br>${datum.availableCandidateFrames} candidate frames · ${datum.matchedObservations} matched observations${datum.reviewDecision?.reason ? `<br><em>${datum.reviewDecision.reason}</em>` : ''}`;
+      });
+      node.addEventListener('pointerleave', () => { tooltip.style.display = 'none'; });
+      svg.append(node);
+    }
+    for (const cell of data.cells) {
+      addShape('rect', { x: cell.x, y: cell.z, width: data.gridCellMeters, height: data.gridCellMeters }, cell, 'cell');
+    }
+    for (const building of data.buildingLedger) {
+      addShape('circle', { cx: building.center[0], cy: building.center[1], r: 11 }, building, 'building');
+    }
+
+    document.querySelectorAll('[data-state]').forEach((input) => input.addEventListener('change', () => {
+      svg.querySelectorAll(`.${input.dataset.state}`).forEach((node) => { node.style.display = input.checked ? '' : 'none'; });
+    }));
+
+    svg.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      const factor = event.deltaY > 0 ? 1.15 : .87;
+      const rect = svg.getBoundingClientRect();
+      const px = view.x + (event.clientX - rect.left) / rect.width * view.w;
+      const py = view.y + (event.clientY - rect.top) / rect.height * view.h;
+      view.x = px - (px - view.x) * factor;
+      view.y = py - (py - view.y) * factor;
+      view.w *= factor;
+      view.h *= factor;
+      updateView();
+    }, { passive: false });
+    let drag = null;
+    svg.addEventListener('pointerdown', (event) => { drag = { x: event.clientX, y: event.clientY, view: { ...view } }; svg.setPointerCapture(event.pointerId); });
+    svg.addEventListener('pointermove', (event) => {
+      if (!drag) return;
+      const rect = svg.getBoundingClientRect();
+      view.x = drag.view.x - (event.clientX - drag.x) / rect.width * view.w;
+      view.y = drag.view.y - (event.clientY - drag.y) / rect.height * view.h;
+      updateView();
+    });
+    svg.addEventListener('pointerup', () => { drag = null; });
+  </script>
+</body>
+</html>

@@ -9,7 +9,22 @@
     "build": "vite build",
     "preview": "vite preview",
     "fetch-data": "node scripts/fetch-osm.mjs && node scripts/merge-overture.mjs",
-    "merge-overture": "node scripts/merge-overture.mjs"
+    "fetch-lidar": "node scripts/fetch-lidar.mjs",
+    "fetch-lidar-pilot": "node scripts/fetch-lidar.mjs --pilot --download",
+    "extract-lidar": "python3 scripts/extract-building-morphology.py",
+    "test-lidar": "python3 scripts/extract-building-morphology.py --self-test",
+    "fetch-parcel-context": "node scripts/fetch-parcel-context.mjs",
+    "merge-overture": "node scripts/merge-overture.mjs",
+    "imagery:import-capture": "node scripts/import-capture.mjs",
+    "imagery:import-descriptors": "node scripts/import-descriptors.mjs",
+    "imagery:inventory": "node scripts/inventory-mapillary.mjs",
+    "imagery:coverage": "node scripts/build-imagery-coverage.mjs",
+    "imagery:plan": "node scripts/plan-imagery-download.mjs",
+    "imagery:download-plan": "node scripts/download-mapillary-plan.mjs",
+    "imagery:review-queue": "node scripts/build-imagery-review-queue.mjs",
+    "imagery:match": "node scripts/match-imagery.mjs",
+    "imagery:tasks": "node scripts/build-descriptor-tasks.mjs",
+    "imagery:prepare": "npm run imagery:match && npm run imagery:tasks"
   },
   "dependencies": {
     "three": "^0.166.0"

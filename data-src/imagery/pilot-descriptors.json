@@ -1,0 +1,159 @@
+[
+  {
+    "buildingId": 886227325,
+    "buildingSourceId": "osm:way/886227325",
+    "name": "100 E Sugarland Highway teal commercial building",
+    "confidence": "high",
+    "stories": 1,
+    "wall": "#2aaeb1",
+    "wallMaterial": "stucco",
+    "trim": "#f2eee5",
+    "roof": { "type": "flat" },
+    "style": "one-story commercial building with a tall stepped Art Deco-influenced parapet and rounded central bay",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "wallMaterial": "stucco",
+        "floors": [{ "level": 1, "windows": 4, "windowPattern": "two pairs of tall rectangular windows flanking two central glazed entrances" }],
+        "doors": [
+          { "position": 0.43, "type": "glazed double door", "color": "#3e4140" },
+          { "position": 0.61, "type": "glazed double door", "color": "#3e4140" }
+        ],
+        "lighting": [
+          { "position": 0.34, "type": "sconce" },
+          { "position": 0.77, "type": "sconce" }
+        ],
+        "notes": ["Turquoise outer bays surround a taller dark-gray rounded central bay.", "White projecting trim surrounds all four windows."]
+      },
+      {
+        "edgeIndex": 1,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": null }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Partially visible dark-gray side wall has turquoise vertical pilasters; the service-door position is uncertain."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "981044354238121.jpg", "facadeEdge": 0, "supports": ["stories", "wall", "windows", "doors", "lighting"] },
+      { "source": "mapillary", "file": "760483353156254.jpg", "facadeEdge": 0, "supports": ["wall", "style", "windows", "doors"] },
+      { "source": "mapillary", "file": "1049301266622611.jpg", "facadeEdge": 1, "supports": ["side-wall notes"] }
+    ],
+    "notes": ["This corrects the prior unresolved record: repeated views align the teal facade with 886227325, not 886227326."]
+  },
+  {
+    "buildingId": 554185195,
+    "buildingSourceId": "osm:way/554185195",
+    "name": "Clewiston Museum & Chamber of Commerce",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#c7c5a8",
+    "wallMaterial": "stucco",
+    "trim": "#66675f",
+    "roof": { "type": "flat" },
+    "style": "single-story roadside commercial block with a shallow flat parapet and repeated arched facade recesses",
+    "signage": [{ "text": "CLEWISTON MUSEUM & CHAMBER OF COMMERCE", "facadeEdge": 0, "confidence": "high" }],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "openings sit within repeated shallow arched recesses, but parked vehicles prevent a reliable count" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Muted light sage-beige facade with a simple parapet cap.", "The lower facade is heavily obscured by dealership vehicles."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "1319057109825748.jpg", "facadeEdge": 0, "supports": ["stories", "wall", "roof", "style", "signage"] },
+      { "source": "mapillary", "file": "1362808674961963.jpg", "facadeEdge": 0, "supports": ["stories", "wall", "signage"] }
+    ],
+    "notes": ["The geographic target is consistent, but the earlier theatre-versus-museum discrepancy still merits field confirmation."]
+  },
+  {
+    "buildingId": 886227327,
+    "buildingSourceId": "osm:way/886227327",
+    "name": "Badcock Home Furniture",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d3c2a6",
+    "wallMaterial": "stucco",
+    "trim": "#4b3e38",
+    "roof": { "type": "flat" },
+    "style": "one-story roadside furniture-store block with a broad mostly blank parapet facade",
+    "signage": [{ "text": "Badcock HOME FURNITURE &more", "facadeEdge": 0, "confidence": "medium" }],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": null }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Broad beige wall with a dark-brown base course.", "A nearer building hides the right end, so whole-edge opening counts remain unknown."]
+      }
+    ],
+    "evidence": [{ "source": "mapillary", "file": "1049301266622611.jpg", "facadeEdge": 0, "supports": ["stories", "wall", "roof", "style", "signage"] }],
+    "notes": ["Only one daytime frame provides useful evidence; the rest are occluded, distant, or dark."]
+  },
+  {
+    "buildingId": -1002452,
+    "buildingSourceId": "overture:e4736416-51f6-4b7d-83be-41446d40bf2f",
+    "name": "Sugarland Highway dealership office (identity unresolved)",
+    "confidence": "low",
+    "stories": 1,
+    "wall": "#b49a83",
+    "wallMaterial": "unknown",
+    "trim": "#4b453f",
+    "roof": { "type": "flat" },
+    "style": "small one-story dealership office or showroom block with a flat parapet",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": null }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Tan commercial facade behind several rows of vehicles.", "Lower-wall openings and the wall wordmark are not reliably readable."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "627163309193121.jpg", "facadeEdge": 1, "supports": ["stories", "wall", "roof", "style"] },
+      { "source": "mapillary", "file": "2071744059678824.jpg", "facadeEdge": 1, "supports": ["stories", "wall"] }
+    ],
+    "notes": ["This replaces the incompatible Museum descriptor previously assigned to this footprint.", "The predicted image region is shifted; identity and wording require better evidence."]
+  },
+  {
+    "buildingId": 886227326,
+    "buildingSourceId": "osm:way/886227326",
+    "name": "Mattress Depot multi-tenant commercial block",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#b87973",
+    "wallMaterial": "mixed",
+    "trim": "#ddd7cc",
+    "roof": { "type": "flat" },
+    "style": "one-story multi-tenant commercial block with varied parapet bays, storefront glazing, and brick accents",
+    "signage": [{ "text": "MATTRESS DEPOT USA", "facadeEdge": 0, "confidence": "high" }],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "wallMaterial": "mixed",
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "multiple full-height storefront-glass bays separated by differently treated tenant sections" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Tenant bays use mauve, cream, gray, dark blue, and red-brown brick accents.", "Oblique and incomplete views prevent whole-edge opening counts."]
+      },
+      {
+        "edgeIndex": 9,
+        "wall": "#b87973",
+        "floors": [{ "level": 1, "windows": 0, "windowPattern": "blank salmon-painted side wall" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Exterior HVAC units and surface-mounted conduit are visible; no windows appear on this edge."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "1106656411050377.jpg", "facadeEdge": 0, "supports": ["stories", "style", "signage", "storefront pattern"] },
+      { "source": "mapillary", "file": "1100735808831183.jpg", "facadeEdge": 0, "supports": ["wall", "trim", "style", "side-wall windows"] },
+      { "source": "mapillary", "file": "1049301266622611.jpg", "facadeEdge": 9, "supports": ["side-wall color", "side-wall windows"] }
+    ],
+    "notes": ["The prior teal descriptor belonged to adjacent 886227325.", "One building-level wall color cannot fully represent this multi-tenant facade."]
+  }
+]

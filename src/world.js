@@ -42,6 +42,15 @@ function roofColorFor(b) {
   return new THREE.Color(HOUSE_ROOFS[Math.floor(h * HOUSE_ROOFS.length)]);
 }
 
+function facadeArchetype(material, fallback) {
+  if (!material) return fallback;
+  if (material === 'metal') return 'industrial';
+  if (material === 'glass') return 'storefront';
+  if (material === 'wood-siding') return 'house';
+  if (material === 'brick' || material === 'stucco' || material === 'concrete-block' || material === 'mixed') return 'commercial';
+  return fallback;
+}
+
 
 
 // Minimum-area oriented rectangle over the footprint, for gable roof placement.
@@ -81,11 +90,11 @@ function orientedRect(poly) {
 }
 
 // Simple gabled roof prism sitting on top of the walls.
-function gableRoofGeometry(rect, wallTop, roofColor) {
+function gableRoofGeometry(rect, wallTop, roofColor, observedRise = null) {
   const { cx, cz, ux, uz, halfL, halfW } = rect;
   const vx = -uz, vz = ux;
   const L = halfL + 0.35, W = halfW + 0.35;
-  const rise = Math.min(halfW * 0.75, 2.4);
+  const rise = observedRise != null ? Math.max(0.25, observedRise) : Math.min(halfW * 0.75, 2.4);
   const p = (u, v, y) => [cx + u * ux + v * vx, y, cz + u * uz + v * vz];
   const a = p(-L, -W, wallTop), b = p(L, -W, wallTop);
   const c = p(L, W, wallTop), d = p(-L, W, wallTop);
@@ -386,7 +395,7 @@ function addWall(bucket, ax, az, bx, bz, y0, y1, color, uPerM, v0, v1) {
   }
 }
 
-export function buildWorld(scene, data, details = {}, roofColors = {}, trees = []) {
+export function buildWorld(scene, data, details = {}, roofColors = {}, trees = [], morphology = {}) {
   const rng = mulberry32(1928); // year Clewiston incorporated
   const collisionGrid = new SpatialGrid(24);
 
@@ -414,46 +423,106 @@ export function buildWorld(scene, data, details = {}, roofColors = {}, trees = [
     if (b.poly.length < 3) { skippedCount++; continue; }
     // Appearance overrides: photo-derived details, then NAIP roof colors.
     const det = details[b.id];
-    const wall = det?.wall ? new THREE.Color(det.wall) : wallColorFor(b);
+    const morph = morphology[b.sourceId] ?? morphology[b.id];
+    const useMorphHeight = morph?.confidence?.height?.score >= 0.55;
+    const useMorphRoof = morph?.confidence?.roofShape?.score >= 0.55;
+    const wall = det?.wall
+      ? new THREE.Color(det.wall)
+      : b.facadeColor
+        ? new THREE.Color(b.facadeColor)
+        : wallColorFor(b);
     const roof = det?.roof?.color
       ? new THREE.Color(det.roof.color)
+      : b.roofColor
+        ? new THREE.Color(b.roofColor)
       : roofColors[b.id]
         ? new THREE.Color(roofColors[b.id])
         : roofColorFor(b);
-    const height = det?.height ?? (det?.stories ? det.stories * 3.4 : b.height);
+    const height = det?.height
+      ?? (useMorphHeight ? morph.morphology.eaveHeightM : null)
+      ?? (det?.stories ? det.stories * 3.4 : null)
+      ?? (b.numFloors ? b.numFloors * 3.4 : b.height);
     const area = polyArea(b.poly);
     const arch = archetypeFor(b, height, area);
     const uPerM = 1 / MODULE.width;
+    const facadeDetails = new Map((det?.facades ?? []).map((f) => [f.edgeIndex, f]));
 
     try {
       // Walls, edge by edge.
       for (let i = 0; i < b.poly.length; i++) {
         const [ax, az] = b.poly[i];
         const [bx, bz] = b.poly[(i + 1) % b.poly.length];
-        if (arch === 'storefront' && height > 4.4) {
+        const facade = facadeDetails.get(i);
+        const edgeLength = Math.hypot(bx - ax, bz - az);
+        const facadeWall = facade?.wall ? new THREE.Color(facade.wall) : wall;
+        const observedWindows = facade?.floors?.find((f) => Number.isInteger(f.windows))?.windows;
+        const facadeArch = observedWindows === 0
+          ? 'plain'
+          : facadeArchetype(facade?.wallMaterial ?? det?.wallMaterial ?? b.facadeMaterial, arch);
+        const facadeUPerM = observedWindows > 0 && edgeLength > 0 ? observedWindows / edgeLength : uPerM;
+        if (facadeArch === 'storefront' && height > 4.4) {
           // Ground-floor storefront band + stucco upper floors.
-          addWall(buckets.storefront, ax, az, bx, bz, 0, 3.4, wall, uPerM, 0, 1);
+          addWall(buckets.storefront, ax, az, bx, bz, 0, 3.4, facadeWall, facadeUPerM, 0, 1);
           // Whole window rows only: stretch the module rather than clipping it.
           const upperFloors = Math.max(1, Math.round((height - 3.4) / MODULE.height));
-          addWall(buckets.commercial, ax, az, bx, bz, 3.4, height, wall, uPerM, 0, upperFloors);
+          addWall(buckets.commercial, ax, az, bx, bz, 3.4, height, facadeWall, facadeUPerM, 0, upperFloors);
         } else {
-          const floors = Math.max(1, Math.round(height / MODULE.height));
-          addWall(buckets[arch], ax, az, bx, bz, 0, height, wall, uPerM, 0, floors);
+          const floors = facade?.floors?.length || Math.max(1, Math.round(height / MODULE.height));
+          addWall(buckets[facadeArch], ax, az, bx, bz, 0, height, facadeWall, facadeUPerM, 0, floors);
+        }
+
+        // Descriptor doors use their measured position along this exact wall.
+        for (const door of facade?.doors ?? []) {
+          const t = Math.max(0.04, Math.min(0.96, door.position ?? 0.5));
+          const dx = (bx - ax) / edgeLength, dz = (bz - az) / edgeLength;
+          const nx = dz, nz = -dx;
+          const mx = ax + (bx - ax) * t, mz = az + (bz - az) * t;
+          const doorColor = new THREE.Color(door.color ?? det?.trim ?? '#4a3b32');
+          const width = door.type?.includes('double') ? 1.8 : 1.05;
+          for (const side of [1, -1]) {
+            const ox = mx + nx * 0.065 * side, oz = mz + nz * 0.065 * side;
+            const q = [
+              [ox - dx * width / 2, 0, oz - dz * width / 2], [ox + dx * width / 2, 0, oz + dz * width / 2], [ox + dx * width / 2, 2.3, oz + dz * width / 2],
+              [ox - dx * width / 2, 0, oz - dz * width / 2], [ox + dx * width / 2, 2.3, oz + dz * width / 2], [ox - dx * width / 2, 2.3, oz - dz * width / 2],
+            ];
+            for (const [x, y, z] of q) {
+              doorBucket.pos.push(x, y, z); doorBucket.nor.push(nx * side, 0, nz * side);
+              doorBucket.col.push(doorColor.r, doorColor.g, doorColor.b);
+            }
+          }
+        }
+
+        // A few observed fixtures are cheap as individual emissive meshes and
+        // materially improve a facade at dusk/night.
+        for (const fixture of facade?.lighting ?? []) {
+          const t = Math.max(0.02, Math.min(0.98, fixture.position ?? 0.5));
+          const dx = (bx - ax) / edgeLength, dz = (bz - az) / edgeLength;
+          const nx = dz, nz = -dx;
+          const lamp = new THREE.Mesh(
+            new THREE.SphereGeometry(fixture.type === 'flood' ? 0.13 : 0.09, 6, 4),
+            new THREE.MeshStandardMaterial({ color: '#fff1c4', emissive: '#ffd67a', emissiveIntensity: 1.4 })
+          );
+          lamp.position.set(ax + (bx - ax) * t + nx * 0.12, fixture.height ?? 2.5, az + (bz - az) * t + nz * 0.12);
+          scene.add(lamp);
         }
       }
 
       // Roof cap + optional gable.
       roofGeos.push(flatPolyGeometry(b.poly, height, roof));
-      const wantGable = det?.roof?.type
-        ? det.roof.type === 'gable'
+      const observedRoofShape = det?.roof?.type
+        ?? (useMorphRoof ? morph.morphology.roof.shape : null)
+        ?? b.roofShape;
+      const wantGable = observedRoofShape
+        ? observedRoofShape === 'gable'
         : HOUSE_TYPES.has(b.type) && area < 350 && b.poly.length <= 10;
       if (wantGable) {
         const rect = orientedRect(b.poly);
-        if (rect && rect.halfW > 1.2) roofGeos.push(gableRoofGeometry(rect, height, roof));
+        const rise = useMorphRoof ? morph.morphology.roof.riseM : null;
+        if (rect && rect.halfW > 1.2) roofGeos.push(gableRoofGeometry(rect, height, roof, rise));
       }
 
       // Front door decal on houses: longest edge, centered.
-      if (arch === 'house' || arch === 'plain') {
+      if ((arch === 'house' || arch === 'plain') && ![...facadeDetails.values()].some((f) => f.doors?.length)) {
         let bi = 0, bl = 0;
         for (let i = 0; i < b.poly.length; i++) {
           const [ax, az] = b.poly[i];

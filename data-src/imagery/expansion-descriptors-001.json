@@ -1,0 +1,170 @@
+[
+  {
+    "buildingId": 850715431,
+    "buildingSourceId": "osm:way/850715431",
+    "name": "Central State Bank",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#bca993",
+    "wallMaterial": "mixed",
+    "trim": "#f0eee7",
+    "roof": { "type": "flat" },
+    "style": "one-story bank with broad arched parapet panels, stone-veneer piers, recessed glazing, and an attached drive-through canopy",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "large dark-glazed openings separated by white rounded pilasters and a central stone-veneer pier" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Tan upper wall has repeated shallow white arched panels; blur and cropping prevent complete opening counts."]
+      },
+      {
+        "edgeIndex": 9,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "largely blank side wall, partly obscured by a tree" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Broad dark drive-through canopy is carried by square tan columns with reddish-brown bases."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "585533171255221.jpg", "facadeEdge": 0, "supports": ["stories", "wall", "trim", "style", "windowPattern"] },
+      { "source": "mapillary", "file": "878482011030569.jpg", "facadeEdge": 9, "supports": ["wallMaterial", "drive-through canopy"] },
+      { "source": "mapillary", "file": "8806414832780314.jpg", "facadeEdge": 9, "supports": ["roof", "drive-through canopy"] }
+    ],
+    "notes": ["Identity comes from the mapped footprint and parcel context; bank wording is not readable in these frames."]
+  },
+  {
+    "buildingId": 554185214,
+    "buildingSourceId": "osm:way/554185214",
+    "name": "Dunkin'",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#bbae9c",
+    "wallMaterial": "mixed",
+    "trim": "#f2f1ed",
+    "roof": { "type": "flat", "color": "#434b4d" },
+    "style": "one-story drive-through restaurant with a raised sign tower, horizontal accent strips, and dark metal-panel side walls",
+    "signage": [{ "text": "DUNKIN'", "facadeEdge": 3, "confidence": "high" }],
+    "facades": [
+      {
+        "edgeIndex": 3,
+        "floors": [{ "level": 1, "windows": 0, "windowPattern": null }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Beige tower has thin white, orange, and pink strips; adjoining side wall is charcoal vertical metal panel.", "This is a side/rear elevation, not the public entrance."]
+      }
+    ],
+    "evidence": [{ "source": "mapillary", "file": "4146004702307865.jpg", "facadeEdge": 3, "supports": ["identity", "stories", "wall", "roof", "style", "signage", "windows"] }],
+    "notes": ["The freestanding drive-through sign is not building-mounted signage."]
+  },
+  {
+    "buildingId": 383907710,
+    "buildingSourceId": "osm:way/383907710",
+    "name": "Clewiston Marathon convenience store",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d7d0c2",
+    "wallMaterial": "mixed",
+    "trim": "#37566e",
+    "roof": { "type": "flat" },
+    "style": "one-story roadside gas-station convenience store behind a wide flat pump canopy",
+    "signage": [{ "text": "Food Center", "facadeEdge": 0, "confidence": "medium" }],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "dark storefront glazing below the fascia, obscured by vehicles and pump structures" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Pale walls have dark blue-gray fascia trim and narrow red accents; the fuel canopy obscures much of the facade."]
+      }
+    ],
+    "evidence": [{ "source": "mapillary", "file": "115292194620445.jpg", "facadeEdge": 0, "supports": ["identity", "stories", "wall", "trim", "roof", "style", "signage"] }],
+    "notes": ["The Marathon pole sign and fuel canopy are separate structures, not facade features."]
+  },
+  {
+    "buildingId": 554185227,
+    "buildingSourceId": "osm:way/554185227",
+    "name": "McDonald's",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#30353a",
+    "wallMaterial": "mixed",
+    "trim": "#f0f1ed",
+    "roof": { "type": "flat" },
+    "style": "one-story fast-food building with a charcoal facade, wood-look accent bays, red inset panels, and small white metal canopies",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [{ "level": 1, "windows": 2, "windowPattern": "two small white-framed windows in wood-look vertical bays with red panels above" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Visible side elevation is predominantly blank charcoal wall; the left window has a projecting white canopy."]
+      }
+    ],
+    "evidence": [{ "source": "mapillary", "file": "2771138403059783.jpg", "facadeEdge": 0, "supports": ["stories", "wall", "trim", "roof", "style", "windows"] }],
+    "notes": ["Identity comes from the mapped building and parcel context; only the side elevation is documented."]
+  },
+  {
+    "buildingId": 894462376,
+    "buildingSourceId": "osm:way/894462376",
+    "name": "341 Central Avenue masonry service building",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#d8d2bc",
+    "wallMaterial": "concrete-block",
+    "trim": "#e9e6dc",
+    "roof": { "type": "gable", "color": "#e5e8e3" },
+    "style": "plain one-story masonry service building with a low-pitch ribbed-metal gable roof",
+    "signage": [],
+    "facades": [
+      {
+        "edgeIndex": 2,
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "at least two narrow vertical windows; the complete edge is cropped" }],
+        "doors": [],
+        "lighting": [],
+        "notes": ["Light beige masonry wall, white metal roof, medium-blue exterior door, and surface-mounted utilities are visible."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "2427463204395353.jpg", "facadeEdge": 2, "supports": ["stories", "wall", "wallMaterial", "roof", "windowPattern", "doorColor"] },
+      { "source": "mapillary", "file": "1317788230398052.jpg", "facadeEdge": 2, "supports": ["stories", "wall", "roof", "doorColor"] }
+    ],
+    "notes": ["Camera geometry confirms the target despite the cropped facade."]
+  },
+  {
+    "buildingId": -1000541,
+    "buildingSourceId": "overture:bb1bbaa5-b3d4-4168-9c36-a6b25f963b34",
+    "name": "528 E Sugarland Highway real-estate office",
+    "confidence": "medium",
+    "stories": 1,
+    "wall": "#bca28e",
+    "wallMaterial": "mixed",
+    "trim": "#eeeae2",
+    "roof": { "type": "flat", "color": "#873f3d" },
+    "style": "one-story storefront office with tan stucco, stacked-stone veneer, white-framed glazing, and a deep red-brown metal parapet canopy",
+    "signage": [{ "text": "Real Estate", "facadeEdge": 1, "confidence": "high" }],
+    "facades": [
+      {
+        "edgeIndex": 1,
+        "wallMaterial": "mixed",
+        "floors": [{ "level": 1, "windows": null, "windowPattern": "large white-framed picture windows alternate with glazed entry doors; right endpoint is cropped" }],
+        "doors": [
+          { "position": 0.5, "type": "glazed single door", "color": "#eeeeea" },
+          { "position": 0.72, "type": "glazed single door", "color": "#eeeeea" }
+        ],
+        "lighting": [
+          { "position": 0.43, "type": "strip" },
+          { "position": 0.62, "type": "sconce" }
+        ],
+        "notes": ["Stacked multicolor stone veneer covers the lower wall below white belt trim; positions are approximate because the view is oblique."]
+      }
+    ],
+    "evidence": [
+      { "source": "mapillary", "file": "1185754372857684.jpg", "facadeEdge": 1, "supports": ["stories", "wall", "trim", "style", "windows", "doors", "lighting"] },
+      { "source": "mapillary", "file": "2648879875465596.jpg", "facadeEdge": 1, "supports": ["roofColor", "signage"] }
+    ],
+    "notes": ["Only the exact readable text “Real Estate” is retained; the cropped neighboring wording is not guessed."]
+  }
+]

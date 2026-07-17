@@ -108,6 +108,36 @@ export class Signage {
     const mounted = new Set(); // avoid stacking identical signs
     let count = 0;
 
+    const mountSign = (name, building, edge, t = 0.5, paletteHint = null) => {
+      const dedupe = `${name}|${building.id}`;
+      if (mounted.has(dedupe)) return;
+      mounted.add(dedupe);
+      const [ax, az] = building.poly[edge];
+      const [bx, bz] = building.poly[(edge + 1) % building.poly.length];
+      const ex = bx - ax, ez = bz - az, edgeLen = Math.hypot(ex, ez);
+      if (edgeLen < 1.5) return;
+      let nx = ez / edgeLen, nz = -ex / edgeLen;
+      const [ccx, ccz] = polyCentroid(building.poly);
+      const px = ax + ex * t, pz = az + ez * t;
+      if ((px - ccx) * nx + (pz - ccz) * nz < 0) { nx = -nx; nz = -nz; }
+      const palette = paletteHint ?? PALETTES[Math.floor(hash01(name.length * 7 + name.charCodeAt(0)) * PALETTES.length)];
+      const { tex, textW } = signTexture(name, palette);
+      const w = Math.min(MAX_SIGN_W, Math.max(2.2, textW * MAX_SIGN_W), edgeLen - 0.5);
+      if (w < 1.5) return;
+      const half = w / 2;
+      const clampedT = Math.max(half / edgeLen, Math.min(1 - half / edgeLen, t));
+      const sx = ax + ex * clampedT, sz = az + ez * clampedT;
+      const detailHeight = details[building.id]?.height ?? (details[building.id]?.stories ? details[building.id].stories * 3.4 : null);
+      const y = Math.min(SIGN_Y, Math.max(2.2, (detailHeight ?? building.height ?? 4) - 0.6));
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, SIGN_H), new THREE.MeshBasicMaterial({ map: tex }));
+      mesh.position.set(sx + nx * 0.09, y, sz + nz * 0.09);
+      mesh.rotation.y = Math.atan2(nx, nz);
+      mesh.visible = false;
+      this.group.add(mesh);
+      this.items.push({ obj: mesh, x: sx, z: sz });
+      count++;
+    };
+
     for (const place of places) {
       if (!place.name || place.name.length < 2) continue;
       const [x, z] = place.pos;
@@ -119,40 +149,34 @@ export class Signage {
       }
       if (!best) continue;
 
-      const dedupe = `${place.name}|${bestB.id}`;
-      if (mounted.has(dedupe)) continue;
-      mounted.add(dedupe);
-
-      // Sign wall segment: edge direction + outward normal (away from centroid).
-      const ex = best.bx - best.ax, ez = best.bz - best.az;
-      const el = Math.hypot(ex, ez);
-      const dx = ex / el, dz = ez / el;
-      let nx = dz, nz = -dx;
-      const [ccx, ccz] = polyCentroid(bestB.poly);
-      if ((best.px - ccx) * nx + (best.pz - ccz) * nz < 0) { nx = -nx; nz = -nz; }
-
       const palette = PALETTES[Math.floor(hash01(place.name.length * 7 + place.name.charCodeAt(0)) * PALETTES.length)];
-      const { tex, textW } = signTexture(place.name, palette);
-      const w = Math.min(MAX_SIGN_W, Math.max(2.2, textW * MAX_SIGN_W), best.edgeLen - 0.5);
-      if (w < 1.5) continue;
+      const edgeIndex = bestB.poly.findIndex(([x, z]) => x === best.ax && z === best.az);
+      mountSign(place.name, bestB, Math.max(0, edgeIndex), best.t, palette);
+    }
 
-      // Keep the sign fully on its wall segment.
-      const half = w / 2;
-      const tMin = half / best.edgeLen, tMax = 1 - half / best.edgeLen;
-      const t = Math.max(tMin, Math.min(tMax, best.t));
-      const sx = best.ax + ex * t, sz = best.az + ez * t;
-      const y = Math.min(SIGN_Y, Math.max(2.2, (bestB.height ?? 4) - 0.6));
-
-      const mesh = new THREE.Mesh(
-        new THREE.PlaneGeometry(w, SIGN_H),
-        new THREE.MeshBasicMaterial({ map: tex })
-      );
-      mesh.position.set(sx + nx * 0.09, y, sz + nz * 0.09);
-      mesh.rotation.y = Math.atan2(nx, nz);
-      mesh.visible = false;
-      this.group.add(mesh);
-      this.items.push({ obj: mesh, x: sx, z: sz });
-      count++;
+    // Photo/model descriptors can provide exact wording even when OSM has no
+    // business point. Explicit facadeEdge wins; otherwise use the longest wall.
+    const buildingById = new Map(buildings.map((b) => [String(b.id), b]));
+    for (const [id, detail] of Object.entries(details)) {
+      const building = buildingById.get(id);
+      if (!building || !detail.signage) continue;
+      const signs = typeof detail.signage === 'string'
+        ? [{ text: detail.signage }]
+        : detail.signage;
+      if (!Array.isArray(signs)) continue;
+      let longestEdge = 0, longest = 0;
+      for (let i = 0; i < building.poly.length; i++) {
+        const a = building.poly[i], b = building.poly[(i + 1) % building.poly.length];
+        const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
+        if (length > longest) { longest = length; longestEdge = i; }
+      }
+      for (const sign of signs) {
+        if (!sign?.text) continue;
+        const edge = Number.isInteger(sign.facadeEdge) ? sign.facadeEdge : longestEdge;
+        if (edge < 0 || edge >= building.poly.length) continue;
+        const palette = { bg: detail.trim ?? '#f2ede0', fg: '#202020' };
+        mountSign(sign.text, building, edge, sign.position ?? 0.5, palette);
+      }
     }
 
     this.cooldown = 0;

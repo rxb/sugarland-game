@@ -1,0 +1,5 @@
+dist/
+.venv*/
+data-src/.mapillary_token
+data-src/lidar/*.laz
+data-src/lidar/*.part

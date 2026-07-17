@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "USGS 3D Elevation Program / The National Map",
+  "project": "FL_Peninsular_FDEM_2018_D19_DRRA",
+  "workUnits": [
+    "FL_Peninsular_FDEM_Hendry_2018"
+  ],
+  "acquisition": "2018-2019",
+  "scope": "top-five-imagery-tasks",
+  "buildingIds": [
+    554185195,
+    886227325,
+    886227326,
+    886227327,
+    -1002452
+  ],
+  "queryBbox": [
+    -80.93501605648073,
+    26.753197204631807,
+    -80.93319376716144,
+    26.754248787769136
+  ],
+  "catalogUrl": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-80.93501605648073%2C26.753197204631807%2C-80.93319376716144%2C26.754248787769136&prodFormats=LAZ&max=500&outputFormat=JSON",
+  "totalBytes": 203643054,
+  "tiles": [
+    {
+      "id": "60c40496d34e86b938982373",
+      "title": "USGS Lidar Point Cloud FL_Peninsular_FDEM_2018_D19_DRRA LID2019_297402_E",
+      "file": "USGS_LPC_FL_Peninsular_FDEM_2018_D19_DRRA_LID2019_297402_E.laz",
+      "url": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/FL_Peninsular_FDEM_2018_D19_DRRA/FL_Peninsular_FDEM_Hendry_2018/LAZ/USGS_LPC_FL_Peninsular_FDEM_2018_D19_DRRA_LID2019_297402_E.laz",
+      "bytes": 203643054,
+      "boundingBox": {
+        "minX": -80.94229321304643,
+        "maxX": -80.92696407710727,
+        "minY": 26.74091241135843,
+        "maxY": 26.754674841279225
+      },
+      "publicationDate": "2021-05-19",
+      "metadataUrl": "https://www.sciencebase.gov/catalog/item/60c40496d34e86b938982373",
+      "workUnit": "FL_Peninsular_FDEM_Hendry_2018"
+    }
+  ]
+}

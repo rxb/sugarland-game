@@ -1,0 +1,69 @@
+[
+  {
+    "buildingId": -1001572,
+    "buildingSourceId": "overture:eb856ce2-b8a9-46e9-8a11-e4beb4622dce",
+    "name": "New Harvest Church",
+    "confidence": "high",
+    "stories": 1,
+    "height": null,
+    "wall": "#d3d0c1",
+    "wallMaterial": "metal",
+    "trim": "#4c5a60",
+    "roof": {
+      "type": "unknown",
+      "color": null,
+      "material": null
+    },
+    "style": "large single-story worship hall with pale vertical metal siding and a deep continuous dark fascia",
+    "signage": [
+      {
+        "text": "New Harvest Church",
+        "facadeEdge": 0,
+        "confidence": "high"
+      }
+    ],
+    "facades": [
+      {
+        "edgeIndex": 0,
+        "floors": [
+          {
+            "level": 1,
+            "windows": 0,
+            "windowPattern": null
+          }
+        ],
+        "doors": [],
+        "lighting": [],
+        "notes": [
+          "Long, nearly blank wall clad in pale beige-gray vertical metal panels.",
+          "Dark blue-gray fascia runs continuously across the top of the elevation.",
+          "Raised brown word signage is mounted high on the wall.",
+          "No doors are visible on this elevation."
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source": "mapillary",
+        "file": "540538735185096.jpg",
+        "facadeEdge": 0,
+        "supports": [
+          "identity",
+          "stories",
+          "wall",
+          "wallMaterial",
+          "trim",
+          "style",
+          "signage",
+          "windows",
+          "doors"
+        ]
+      }
+    ],
+    "notes": [
+      "The parcel contains nine buildings, but the assigned image region cleanly covers this signed wall and the large footprint geometry is consistent with the visible worship hall.",
+      "The roof surface is hidden by the fascia and should not be inferred as flat.",
+      "The foreground ornamental fence is not part of the building."
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "decisions": {
+    "867864266": {
+      "status": "rejected",
+      "reason": "The useful target region overlaps two manufactured-home display units only about seven meters apart; alternate frames provide no confirmation.",
+      "reviewedAt": "2026-07-16"
+    },
+    "894462414": {
+      "status": "needs-confirmation",
+      "reason": "The urgent-care image includes neighboring storefronts and the parcel contains four buildings; facade-edge identity needs confirmation.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000924": {
+      "status": "needs-confirmation",
+      "reason": "Several nearly identical manufactured homes share the parcel and tree cover prevents a confirming oblique view.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000934": {
+      "status": "needs-confirmation",
+      "reason": "Only one useful daylight view exists and neighboring manufactured homes are tightly spaced.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000543": {
+      "status": "rejected",
+      "reason": "Three views show a vacant paved slab, fencing, or neighboring structures rather than a building at the mapped footprint, indicating that it is absent or demolished.",
+      "reviewedAt": "2026-07-16"
+    },
+    "614620912": {
+      "status": "needs-confirmation",
+      "reason": "A plausible church appears at the far left of the image, but the assigned edge-4 region falls over lawn and street; the visible tower and wall cannot be safely attached to that edge.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1000549": {
+      "status": "rejected",
+      "reason": "The assigned regions are obscured by a vehicle or show the adjacent real-estate storefront; no Masonic Lodge facade or signage is defensibly visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "1377670846": {
+      "status": "needs-confirmation",
+      "reason": "The assigned region contains a residential-looking manufactured building and carport with no religious or civic identity; parcel use alone is insufficient.",
+      "reviewedAt": "2026-07-16"
+    },
+    "-1002111": {
+      "status": "rejected",
+      "reason": "The assigned regions contain fence, trees, and lawn; a gray building appears outside the indicated region and no readable church signage is visible.",
+      "reviewedAt": "2026-07-16"
+    },
+    "867861753": {
+      "status": "needs-confirmation",
+      "reason": "The predicted regions contain several closely spaced manufactured or display homes and never isolate one complete facade; the apparent units also conflict with the parcel context.",
+      "reviewedAt": "2026-07-16"
+    }
+  }
+}
