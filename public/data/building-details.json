@@ -1042,34 +1042,30 @@
   },
   "850884198": {
     "buildingSourceId": "osm:way/850884198",
+    "name": "Alan Jay Chrysler Dodge Ram Jeep of Clewiston",
     "confidence": "high",
     "stories": 1,
+    "height": 6.6,
     "wall": "#4a5051",
-    "wallMaterial": "stucco",
+    "wallMaterial": "plain",
     "trim": "#b58455",
     "roof": {
       "type": "flat",
       "color": "#3e4344",
       "material": null
     },
-    "style": "modern one-story Jeep dealership with a dark flat parapet and tan-framed showroom bays",
+    "style": "modern one-story Alan Jay dealership with a dark Jeep showroom, warm wood portal frames, a white Chrysler-Dodge-RAM wing, arched glass entrance, and broad inventory lot",
     "features": [
       "full-height glazed showroom entrances",
       "dark charcoal facade panels",
-      "tan vertical portal frames"
+      "warm wood-look Jeep portal frames",
+      "white Alan Jay wing with tall arched glass bay",
+      "west-side service openings",
+      "broad east-side inventory forecourt with dense vehicle rows and colored sales balloons",
+      "highway palm row and four-brand pylon"
     ],
-    "signage": [
-      {
-        "text": "Jeep",
-        "facadeEdge": 6,
-        "confidence": "high"
-      },
-      {
-        "text": "MOPAR",
-        "facadeEdge": 6,
-        "confidence": "high"
-      }
-    ],
+    "suppressPlaceSignage": true,
+    "signage": [],
     "evidence": [
       {
         "source": "mapillary",

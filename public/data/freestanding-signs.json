@@ -87,6 +87,21 @@
     "notes": "Large solid directory monument south of Sugarland Highway with mint plaza lettering, dense tenant stack, heavy beige piers, stone base, and stepped pale-green pavilion roof."
   },
   {
+    "id": "alan-jay-brand-pylon",
+    "type": "freestanding-sign",
+    "style": "custom",
+    "customModel": "alan-jay-brand-pylon",
+    "pos": [-153.0, -11.0],
+    "rotation": 90,
+    "height": 9.8,
+    "width": 3.45,
+    "depth": 0.52,
+    "maxDistance": 360,
+    "confidence": "high",
+    "sources": ["user-reference:alan-jay-clewiston-2026-07-22", "osm:way/850884198"],
+    "notes": "Narrow four-panel Jeep, Chrysler, Dodge, and RAM pylon on the east inventory-lot frontage. Rendered as part of the custom Alan Jay landmark."
+  },
+  {
     "id": "clewiston-plaza-directory",
     "type": "freestanding-sign",
     "style": "custom",

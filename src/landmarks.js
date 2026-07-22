@@ -2313,8 +2313,218 @@ function buildDunkinAccents() {
   addBox(0.15, 2.15, 5.5, white, -1305.7, 1.08, 27.0);
   for (let z = 24.5; z <= 29.5; z += 1.0) addBox(0.2, 2.3, 0.2, pale, -1305.6, 1.15, z);
 
+  // The first photo-derived pass was authored a quarter-turn counterclockwise
+  // on the parcel. Re-center the complete assembly on the mapped footprint and
+  // rotate it clockwise as one unit so every attached detail remains aligned.
+  const sitePivot = new THREE.Vector3(-1312.79, 0, 16.83);
+  for (const child of restaurant.children) {
+    child.position.x -= sitePivot.x;
+    child.position.z -= sitePivot.z;
+  }
+  restaurant.position.copy(sitePivot);
+  restaurant.rotation.y = -Math.PI / 2;
+
   restaurant.userData.landmark = 'dunkin-clewiston';
   return restaurant;
+}
+
+function buildAlanJayDealership() {
+  const dealer = new THREE.Group();
+  const charcoal = new THREE.MeshLambertMaterial({ color: '#252b31' });
+  const charcoal2 = new THREE.MeshLambertMaterial({ color: '#3a4146' });
+  const white = new THREE.MeshLambertMaterial({ color: '#e9e9e5' });
+  const silver = new THREE.MeshLambertMaterial({ color: '#bfc5c5' });
+  const wood = new THREE.MeshLambertMaterial({ color: '#ad6835' });
+  const glass = new THREE.MeshBasicMaterial({ color: '#263c45', toneMapped: false });
+  const asphalt = new THREE.MeshLambertMaterial({ color: '#65696a' });
+  const stripe = new THREE.MeshBasicMaterial({ color: '#e7e4dc', toneMapped: false });
+  const black = new THREE.MeshLambertMaterial({ color: '#1e2224' });
+  const trunkMat = new THREE.MeshLambertMaterial({ color: '#755536' });
+  const frondMat = new THREE.MeshLambertMaterial({ color: '#315c36' });
+
+  const addBox = (width, height, depth, material, x, y, z, parent = dealer) => {
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(width, height, depth), material);
+    mesh.position.set(x, y, z);
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+    parent.add(mesh);
+    return mesh;
+  };
+  const addFrontText = (label, width, height, x, y, color, font = '900 120px Arial, sans-serif') => {
+    const text = landmarkTextPlane(label, width, height, color, font);
+    text.rotation.y = Math.PI;
+    text.position.set(x, y, -8.94);
+    dealer.add(text);
+    return text;
+  };
+
+  // North-facing frontage: a dark Jeep showroom to the east and a taller
+  // white Alan Jay / Chrysler-Dodge-RAM volume to the west.
+  const frontZ = -8.72;
+  addBox(23.2, 6.8, 0.35, charcoal, -186.55, 3.45, frontZ);
+  addBox(29.7, 7.35, 0.38, white, -213.25, 3.72, frontZ);
+  addBox(53.0, 0.18, 0.5, black, -201.55, 0.13, frontZ - 0.05);
+
+  // Warm wood portals frame the two full-height Jeep display bays.
+  addBox(7.2, 5.9, 0.28, wood, -193.2, 3.05, frontZ - 0.19);
+  addBox(10.8, 4.8, 0.28, wood, -181.85, 2.52, frontZ - 0.19);
+  addBox(5.65, 3.45, 0.33, glass, -193.2, 1.86, frontZ - 0.39);
+  addBox(8.95, 3.2, 0.33, glass, -181.85, 1.72, frontZ - 0.39);
+  addBox(0.12, 3.5, 0.38, silver, -193.2, 1.86, frontZ - 0.43);
+  for (const x of [-185.1, -181.85, -178.6]) addBox(0.1, 3.2, 0.38, silver, x, 1.72, frontZ - 0.43);
+  addBox(6.25, 0.34, 1.0, silver, -193.2, 3.66, frontZ - 0.44);
+  const jeepName = addFrontText('Jeep', 5.5, 1.05, -193.2, 5.35, '#e4e6e3', '900 146px Arial, sans-serif');
+  jeepName.position.z = -9.1;
+
+  // The central transition bay remains dark and glassy between brand halves.
+  addBox(5.1, 3.55, 0.32, glass, -199.4, 1.9, frontZ - 0.38);
+  for (const x of [-201.0, -199.4, -197.8]) addBox(0.09, 3.55, 0.38, silver, x, 1.9, frontZ - 0.42);
+
+  // White brand facade with a tall arched showroom window. The arch is a
+  // white ring around a rectangular lower bay and semicircular glazed head.
+  const archX = -214.6;
+  addBox(7.1, 4.35, 0.34, glass, archX, 2.28, frontZ - 0.39);
+  const archRing = new THREE.Mesh(new THREE.TorusGeometry(2.75, 0.3, 8, 28, Math.PI), white);
+  archRing.rotation.y = Math.PI;
+  archRing.position.set(archX, 3.15, frontZ - 0.48);
+  dealer.add(archRing);
+  addBox(0.22, 4.45, 0.4, silver, archX, 2.32, frontZ - 0.5);
+  for (const x of [archX - 2.35, archX + 2.35]) addBox(0.18, 4.25, 0.4, silver, x, 2.22, frontZ - 0.49);
+  for (const y of [1.35, 2.7]) addBox(7.0, 0.12, 0.4, silver, archX, y, frontZ - 0.49);
+
+  // Flanking glass bays and exact high-level identity hierarchy.
+  addBox(5.45, 3.75, 0.34, glass, -224.4, 1.98, frontZ - 0.39);
+  addBox(5.25, 3.75, 0.34, glass, -204.8, 1.98, frontZ - 0.39);
+  for (const x of [-226.1, -224.4, -222.7, -206.5, -204.8, -203.1]) addBox(0.1, 3.75, 0.39, silver, x, 1.98, frontZ - 0.43);
+  addFrontText('ALAN JAY', 10.0, 1.0, -214.6, 6.42, '#272c2f', '900 132px Arial Black, Arial, sans-serif');
+  addFrontText('RAM', 4.2, 0.75, -224.35, 5.7, '#32383a', '900 118px Arial Black, Arial, sans-serif');
+  addFrontText('CHRYSLER', 5.2, 0.5, -204.6, 6.05, '#374a4e', '800 88px Arial, sans-serif');
+  addFrontText('DODGE', 4.6, 0.55, -204.6, 5.38, '#b63833', '900 98px Arial Black, Arial, sans-serif');
+
+  // Small east-side service connector and deep overhead openings visible from
+  // the W.C. Owen corner view.
+  addBox(15.5, 4.5, 0.35, white, -235.9, 2.3, 11.5);
+  addBox(4.8, 3.5, 0.42, black, -242.7, 1.8, 11.25);
+  addBox(4.8, 3.5, 0.42, black, -236.8, 1.8, 11.25);
+  const service = landmarkTextPlane('SERVICE', 4.7, 0.6, '#34383a', '900 90px Arial, sans-serif');
+  service.rotation.y = Math.PI;
+  service.position.set(-239.7, 4.05, 11.28);
+  dealer.add(service);
+
+  // Broad, shallow inventory forecourt east of the showroom. From Sugarland
+  // Highway this is the lot to the left of the building, filling most of the
+  // open frontage toward the former Dixie Crystal Theatre.
+  const lot = addBox(112.0, 0.045, 33.0, asphalt, -113.0, 0.035, 7.5);
+  lot.castShadow = false;
+  for (let x = -168.0; x <= -58.0; x += 4.1) {
+    for (const z of [-3.0, 9.0, 21.0]) {
+      // Preserve the small mapped dealership office and its apron in the
+      // middle of the lot instead of striping through the building.
+      if (z === 9.0 && x > -142.0 && x < -112.0) continue;
+      const mark = addBox(0.08, 0.018, 5.1, stripe, x, 0.07, z);
+      mark.castShadow = false;
+    }
+  }
+
+  const carColors = ['#ece8df', '#24282c', '#8e2529', '#315e8a', '#c96a34', '#596167', '#6b3d77'];
+  const addInventoryCar = (x, z, color, tall = false) => {
+    const car = new THREE.Group();
+    const bodyMat = new THREE.MeshLambertMaterial({ color });
+    const body = new THREE.Mesh(new THREE.BoxGeometry(1.85, tall ? 0.72 : 0.58, 4.25), bodyMat);
+    body.position.y = 0.52;
+    body.castShadow = true;
+    car.add(body);
+    const cabin = new THREE.Mesh(new THREE.BoxGeometry(1.58, tall ? 0.9 : 0.72, 2.05), glass);
+    cabin.position.set(0, tall ? 1.22 : 1.08, -0.15);
+    cabin.castShadow = true;
+    car.add(cabin);
+    for (const wx of [-0.98, 0.98]) for (const wz of [-1.35, 1.35]) {
+      const wheel = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.32, 0.18, 10), black);
+      wheel.rotation.z = Math.PI / 2;
+      wheel.position.set(wx, 0.34, wz);
+      car.add(wheel);
+    }
+    car.position.set(x, 0.08, z);
+    dealer.add(car);
+    return car;
+  };
+  let carIndex = 0;
+  for (const z of [-3.0, 9.0, 21.0]) {
+    for (let x = -165.8; x <= -60.0; x += 4.1) {
+      const officeApron = z === 9.0 && x > -143.0 && x < -111.0;
+      if (!officeApron && (carIndex + (z > 10 ? 2 : 0)) % 13 !== 0) {
+        addInventoryCar(x, z, carColors[carIndex % carColors.length], carIndex % 4 === 0);
+      }
+      carIndex++;
+    }
+  }
+  // Larger pickup display row in front of the showroom.
+  for (const [x, color] of [[-228.0, '#f0eee7'], [-223.7, '#922e2e'], [-219.4, '#315f89'], [-210.0, '#22272a']]) {
+    addInventoryCar(x, -3.2, color, true);
+  }
+
+  // Colored sales balloons float above selected inventory rows.
+  const balloonColors = ['#ef3f36', '#f39b2f', '#e6ce35', '#4baad4', '#8548b6', '#58a647'];
+  let balloonIndex = 0;
+  for (const [x, z] of [[-164, -3], [-148, -3], [-132, -3], [-116, -3], [-100, -3], [-84, -3], [-68, -3], [-156, 9], [-108, 9], [-92, 9], [-76, 9], [-160, 21], [-140, 21], [-120, 21], [-100, 21], [-80, 21], [-64, 21]]) {
+    const balloonMat = new THREE.MeshBasicMaterial({ color: balloonColors[balloonIndex++ % balloonColors.length], toneMapped: false });
+    const balloon = new THREE.Mesh(new THREE.SphereGeometry(0.34, 10, 7), balloonMat);
+    balloon.scale.y = 1.16;
+    balloon.position.set(x, 3.0, z);
+    dealer.add(balloon);
+    dealer.add(cylinderBetween(new THREE.Vector3(x, 1.65, z), new THREE.Vector3(x, 2.65, z), 0.012, silver, 5));
+  }
+
+  // Slender parking lights and the formal highway palm row establish the
+  // dealership's unusually large open frontage.
+  for (const [x, z] of [[-165, 3], [-137, 3], [-109, 3], [-81, 3], [-58, 3], [-151, 15], [-123, 15], [-95, 15], [-67, 15]]) {
+    const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.11, 8.5, 8), charcoal2);
+    pole.position.set(x, 4.25, z);
+    pole.castShadow = true;
+    dealer.add(pole);
+    addBox(0.75, 0.18, 0.4, white, x, 8.42, z);
+  }
+  const addPalm = (x, z, height) => {
+    const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.32, height, 9), trunkMat);
+    trunk.position.set(x, height / 2, z);
+    trunk.castShadow = true;
+    dealer.add(trunk);
+    for (let i = 0; i < 7; i++) {
+      const a = i * Math.PI * 2 / 7;
+      dealer.add(cylinderBetween(
+        new THREE.Vector3(x, height, z),
+        new THREE.Vector3(x + Math.cos(a) * 2.7, height - 0.75, z + Math.sin(a) * 2.7),
+        0.09,
+        frondMat,
+        6
+      ));
+    }
+  };
+  for (const [x, h] of [[-166, 8.8], [-142, 9.5], [-118, 8.7], [-94, 9.4], [-70, 8.9]]) addPalm(x, -15.2, h);
+
+  // Four-brand pylon at the east inventory-lot frontage, kept narrow like the
+  // reference and aligned to be read from Sugarland Highway.
+  const pylon = new THREE.Group();
+  const addPylonPanel = (label, y, color) => {
+    addBox(3.45, 0.83, 0.5, white, 0, y, 0, pylon);
+    for (const [z, ry] of [[0.27, 0], [-0.27, Math.PI]]) {
+      const text = landmarkTextPlane(label, 3.1, 0.5, color, '900 92px Arial Narrow, Arial, sans-serif');
+      text.rotation.y = ry;
+      text.position.set(0, y, z);
+      pylon.add(text);
+    }
+  };
+  addBox(0.52, 9.6, 0.52, silver, 0, 4.8, 0, pylon);
+  addPylonPanel('JEEP', 9.35, '#444b4e');
+  addPylonPanel('CHRYSLER', 8.42, '#526267');
+  addPylonPanel('DODGE', 7.49, '#bc3c35');
+  addPylonPanel('RAM', 6.56, '#384046');
+  pylon.position.set(-153.0, 0.05, -11.0);
+  pylon.rotation.y = Math.PI / 2;
+  dealer.add(pylon);
+
+  dealer.userData.landmark = 'alan-jay-clewiston';
+  return dealer;
 }
 
 function buildSugarlandPlazaPylon() {
@@ -2334,9 +2544,9 @@ function buildSugarlandPlazaPylon() {
     return mesh;
   };
   const panel = (label, y, height, bg, fg = '#f4f2eb', width = 5.15) => {
-    const back = addBox(width, height, 0.44, new THREE.MeshLambertMaterial({ color: bg }), 0, y, 0);
+    const back = addBox(width, height, 1.24, new THREE.MeshLambertMaterial({ color: bg }), 0, y, 0);
     back.castShadow = true;
-    for (const [z, rotation] of [[0.24, 0], [-0.24, Math.PI]]) {
+    for (const [z, rotation] of [[0.64, 0], [-0.64, Math.PI]]) {
       const text = landmarkTextPlane(label, width - 0.25, height * 0.67, fg, '900 94px Arial Narrow, Arial, sans-serif');
       text.rotation.y = rotation;
       text.position.set(0, y, z);
@@ -3016,6 +3226,8 @@ export class Landmarks {
     scene.add(walmart);
     const dunkin = buildDunkinAccents();
     scene.add(dunkin);
+    const alanJay = buildAlanJayDealership();
+    scene.add(alanJay);
     const sugarlandPlazaSign = buildSugarlandPlazaPylon();
     scene.add(sugarlandPlazaSign);
     const clewistonPlazaSign = buildClewistonPlazaPylon();
