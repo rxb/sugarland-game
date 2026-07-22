@@ -2,25 +2,27 @@
   {
     "id": "mcdonalds-sugarland-pylon",
     "type": "freestanding-sign",
-    "style": "pole",
+    "style": "custom",
+    "customModel": "mcdonalds-golden-arches",
     "pos": [-1164, -54],
     "rotation": 90,
-    "height": 8.8,
-    "width": 4.2,
-    "depth": 0.42,
+    "height": 13.2,
+    "width": 5.2,
+    "depth": 0.7,
     "supports": 1,
     "supportWidth": 0.34,
     "supportDepth": 0.34,
     "panels": [
-      { "text": "McDonald's", "height": 1.65, "bg": "#b42126", "fg": "#f2c431", "edge": "#6f1b20" }
+      { "text": "GOLDEN ARCHES", "height": 4.4, "bg": "#b42126", "fg": "#f2c431", "edge": "#6f1b20" },
+      { "text": "WELCOME", "height": 1.45, "bg": "#171717", "fg": "#f2c431", "edge": "#393939" }
     ],
     "maxDistance": 420,
-    "confidence": "medium",
+    "confidence": "high",
     "sources": [
       "mapillary:2771138403059783",
       "overture-place:McDonald's@905 W Sugarland Hwy"
     ],
-    "notes": "Roadside placement is approximate; the Mapillary frame documents the building and the pylon shadow rather than a full sign face."
+    "notes": "Rendered as a custom landmark model with tall yellow arches over a red base and a separate electronic message board."
   },
   {
     "id": "walmart-sugarland-pylon",
@@ -47,6 +49,59 @@
     "notes": "Store identity and palette are directly documented; roadside pylon position and dimensions are an approximate first pass pending a dedicated west-highway view."
   },
   {
+    "id": "dunkin-sugarland-drive-thru-sign",
+    "type": "freestanding-sign",
+    "style": "pylon",
+    "pos": [-1303.5, 1.0],
+    "rotation": 90,
+    "height": 4.1,
+    "width": 4.0,
+    "depth": 0.34,
+    "supports": 2,
+    "supportWidth": 0.13,
+    "panels": [
+      { "text": "DUNKIN'", "height": 1.0, "bg": "#f5f1e9", "fg": "#ef7d22", "accent": "#d82f88", "edge": "#8b8984" },
+      { "text": "DRIVE THRU", "height": 0.62, "widthScale": 0.78, "bg": "#d82f88", "fg": "#ffffff", "edge": "#9a1f60" }
+    ],
+    "maxDistance": 300,
+    "confidence": "high",
+    "sources": [
+      "user-reference:dunkin-sugarland-highway-2026-07-22",
+      "osm:way/554185214"
+    ],
+    "notes": "Two-post white roadside panel with orange Dunkin identity above a pink DRIVE THRU bar, placed on the highway lawn east of the restaurant."
+  },
+  {
+    "id": "sugarland-plaza-directory",
+    "type": "freestanding-sign",
+    "style": "custom",
+    "customModel": "sugarland-plaza-directory",
+    "pos": [-1207.5, 1.8],
+    "rotation": 90,
+    "height": 14.7,
+    "width": 7.25,
+    "depth": 2.05,
+    "maxDistance": 480,
+    "confidence": "high",
+    "sources": ["user-reference:sugarland-plaza-pylon-2026-07-22"],
+    "notes": "Large solid directory monument south of Sugarland Highway with mint plaza lettering, dense tenant stack, heavy beige piers, stone base, and stepped pale-green pavilion roof."
+  },
+  {
+    "id": "clewiston-plaza-directory",
+    "type": "freestanding-sign",
+    "style": "custom",
+    "customModel": "clewiston-plaza-directory",
+    "pos": [-1207.5, -60.8],
+    "rotation": 90,
+    "height": 13.1,
+    "width": 6.0,
+    "depth": 1.5,
+    "maxDistance": 480,
+    "confidence": "high",
+    "sources": ["user-reference:clewiston-plaza-pylon-2026-07-22"],
+    "notes": "Open-legged directory north of Sugarland Highway with red metal cap and tenant panels for Marshalls, Tractor Supply, Bealls, Dollar General, local shops, and Goodwill."
+  },
+  {
     "id": "popeyes-sugarland-pylon",
     "type": "freestanding-sign",
     "style": "pylon",
@@ -71,24 +126,27 @@
   {
     "id": "first-bank-sugarland-monument",
     "type": "freestanding-sign",
-    "style": "monument",
-    "pos": [160, -18],
+    "style": "pylon",
+    "pos": [135, -16.5],
     "rotation": 90,
-    "height": 3.1,
-    "width": 4.4,
-    "depth": 0.52,
-    "baseColor": "#ddd6c8",
+    "height": 7.2,
+    "width": 5.2,
+    "depth": 0.65,
+    "supports": 2,
+    "supportWidth": 0.72,
+    "supportDepth": 0.72,
+    "supportColor": "#c9c3b6",
     "panels": [
-      { "text": "FIRST BANK", "height": 1.25, "bg": "#315d49", "fg": "#f4efe1", "accent": "#bda45b", "edge": "#27493b" },
-      { "text": "CLEWISTON", "height": 0.52, "widthScale": 0.75, "bg": "#eee8da", "fg": "#315d49", "edge": "#7e7565" }
+      { "text": "FIRST 1 BANK", "height": 1.75, "bg": "#eee8da", "fg": "#315d49", "accent": "#bda45b", "edge": "#9c9588" },
+      { "text": "83°", "height": 1.0, "widthScale": 0.62, "bg": "#171717", "fg": "#ff4438", "edge": "#8e887d" }
     ],
     "maxDistance": 320,
-    "confidence": "medium",
+    "confidence": "high",
     "sources": [
       "first-bank:300-e-sugarland-hwy",
       "osm:way/384457185"
     ],
-    "notes": "The current branch is consistently documented with a detached highway-facing identity sign; wording and exact dimensions are simplified for game readability."
+    "notes": "The tall two-post highway sign carries the First Bank identity panel above a red digital temperature display; dimensions are simplified for game readability."
   },
   {
     "id": "st-margaret-schedule-sign",

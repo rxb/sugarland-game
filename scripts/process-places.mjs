@@ -11,6 +11,11 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const MIN_CONFIDENCE = 0.65;
+// Recurring events can be geocoded to their host address even though they are
+// not permanent venues and should not become year-round building signage.
+const NON_PLACE_NAMES = new Set([
+  'clewistonsugarfestival',
+]);
 
 const LAT0 = 26.754, LON0 = -80.9335;
 const M_PER_LON = 111320 * Math.cos((LAT0 * Math.PI) / 180);
@@ -32,13 +37,14 @@ for (const poi of game.pois) {
   seen.add(norm(poi.name));
 }
 
-let added = 0, skippedConf = 0, skippedDup = 0;
+let added = 0, skippedConf = 0, skippedDup = 0, skippedNonPlace = 0;
 for (const f of overture.features) {
   const p = f.properties || {};
   const name = p.names?.primary;
   const conf = p.confidence ?? 0;
   if (!name || conf < MIN_CONFIDENCE) { skippedConf++; continue; }
   const n = norm(name);
+  if (NON_PLACE_NAMES.has(n)) { skippedNonPlace++; continue; }
   if (seen.has(n)) { skippedDup++; continue; }
   seen.add(n);
   out.push({
@@ -52,4 +58,4 @@ for (const f of overture.features) {
 }
 
 writeFileSync(new URL('../public/data/places.json', import.meta.url), JSON.stringify(out));
-console.log(`places: ${out.length} total (${game.pois.length} OSM + ${added} Overture; skipped ${skippedConf} low-confidence, ${skippedDup} duplicates)`);
+console.log(`places: ${out.length} total (${game.pois.length} OSM + ${added} Overture; skipped ${skippedConf} low-confidence, ${skippedDup} duplicates, ${skippedNonPlace} non-places)`);

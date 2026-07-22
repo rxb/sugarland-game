@@ -37,6 +37,23 @@
       padding: 1px 5px; font-family: inherit; font-size: 11px;
     }
 
+    #minimap-panel {
+      right: 14px; bottom: 16px;
+      width: 202px; height: 202px;
+      padding: 7px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.16);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      pointer-events: none;
+    }
+    #minimap {
+      display: block; width: 100%; height: 100%;
+      border-radius: 7px;
+    }
+
+    @media (max-width: 1100px) {
+      #minimap-panel { width: 166px; height: 166px; bottom: 58px; }
+    }
+
     #loading {
       position: fixed; inset: 0; z-index: 20;
       display: flex; align-items: center; justify-content: center;
@@ -109,6 +126,10 @@
 
   <div class="panel" id="hint-panel">
     Click to look around &nbsp;•&nbsp; <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move/steer &nbsp;•&nbsp; <kbd>Shift</kbd> jog/turbo &nbsp;•&nbsp; <kbd>E</kbd> cart (hold to summon) &nbsp;•&nbsp; slider sets time of day
+  </div>
+
+  <div class="panel" id="minimap-panel">
+    <canvas id="minimap" aria-label="Overhead town map showing the player's position"></canvas>
   </div>
 
   <div id="title-screen">

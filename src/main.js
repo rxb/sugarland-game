@@ -6,6 +6,7 @@ import { Labels } from './labels.js';
 import { StreetNames } from './streetnames.js';
 import { Signage } from './signage.js';
 import { Landmarks } from './landmarks.js';
+import { Minimap } from './minimap.js';
 
 const canvas = document.getElementById('game');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
@@ -54,11 +55,12 @@ async function start() {
   const labels = new Labels(scene, document.body, floatingPois);
   const streetNames = new StreetNames(scene, data.roads);
   const places = await fetch('data/places.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
+  const minimap = new Minimap(document.getElementById('minimap'), data, places);
   const freestandingSigns = await fetch('data/freestanding-signs.json').then((r) => (r.ok ? r.json() : [])).catch(() => []);
   const signage = new Signage(scene, data.buildings, places, details, freestandingSigns);
   const landmarks = new Landmarks(scene, data);
   loading.style.display = 'none';
-  window.__game = { player, dayNight, scene, camera, renderer, labels, streetNames, signage, landmarks };
+  window.__game = { player, dayNight, scene, camera, renderer, labels, streetNames, signage, landmarks, minimap };
 
   dayNight.hours = parseFloat(timeSlider.value);
   timeSlider.addEventListener('input', () => {
@@ -73,6 +75,7 @@ async function start() {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
     labels.resize();
+    minimap.resize();
   });
 
   // ---- Title screen: slow aerial orbit, then a swoop down to the spawn. ----
@@ -143,6 +146,7 @@ async function start() {
     streetNames.update(dt, player.pos);
     signage.update(dt, player.pos);
     landmarks.update(dt, clock.elapsedTime);
+    minimap.update(dt, player);
     if (dayNight.auto) timeSlider.value = dayNight.hours.toFixed(2);
     timeReadout.textContent = dayNight.timeLabel();
     renderer.render(scene, camera);

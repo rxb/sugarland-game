@@ -265,6 +265,10 @@ function buildTrees(scene, data, collisionGrid, roadMask, rng, treeData = []) {
   if (treeData.length) {
     // Real trees from NAIP canopy detection; species by simple habitat rules.
     for (const [x, z, r] of treeData) {
+      // Civic Park's interlocking mature crowns merge into noisy detections,
+      // including false trunks on the tennis courts. Its landmark layer now
+      // supplies the surveyed grove with a dedicated spreading-cypress model.
+      if (x >= -180 && x <= -14 && z >= -142 && z <= -32) continue;
       if (roadMask.isMarked(x, z)) continue;
       let blocked = false;
       for (const b of collisionGrid.query(x, z)) {
@@ -439,6 +443,27 @@ export function buildWorld(scene, data, details = {}, roofColors = {}, trees = [
   let builtCount = 0, skippedCount = 0;
 
   for (const b of data.buildings) {
+    // The small pavilion beside the Youth Center is rebuilt as an open
+    // chickee in landmarks.js; omit its generic enclosed-building shell.
+    if (String(b.id) === '1484095981') { skippedCount++; continue; }
+    // Git-N-Split is a drive-through building, so its mapped solid footprint
+    // is replaced by two collision wings with a genuinely traversable lane.
+    if (String(b.id) === '-1000545') {
+      const wings = [
+        [[551.92, -57.1], [580.5, -57.1], [580.5, -70.09], [551.92, -70.09]],
+        [[588.1, -57.13], [593.62, -57.13], [593.62, -70.09], [588.1, -70.09]],
+      ];
+      for (const poly of wings) collisionGrid.insertPoly(poly, { ...b, poly });
+      skippedCount++;
+      continue;
+    }
+    // First Bank's generic rectangular shell is replaced by a photo-derived
+    // two-story landmark with corner towers and a green roof composition.
+    if (String(b.id) === '384457185') {
+      collisionGrid.insertPoly(b.poly, b);
+      skippedCount++;
+      continue;
+    }
     if (b.poly.length < 3) { skippedCount++; continue; }
     // Appearance overrides: photo-derived details, then NAIP roof colors.
     const det = details[b.id];

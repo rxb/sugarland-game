@@ -298,6 +298,9 @@ export class Signage {
     let freestandingCount = 0;
     for (const definition of freestandingSigns) {
       if (definition?.type !== 'freestanding-sign' || !Array.isArray(definition.pos)) continue;
+      // Distinctive sculptural signs (such as McDonald's golden arches) are
+      // built alongside their landmark so they are not reduced to text boxes.
+      if (definition.customModel) continue;
       const sign = buildFreestandingSign(definition);
       this.group.add(sign);
       this.items.push({
